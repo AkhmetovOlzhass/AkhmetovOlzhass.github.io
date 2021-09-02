@@ -241,7 +241,8 @@ nav {
   background: linear-gradient(180deg, #1F1E1B 0%, #505050 100%);
   border-radius: 0px 0px 10px 10px;
   top: -90px;
-  display: none; }
+  display: none;
+  z-index: 99; }
   .dropdown-child a {
     color: #fff;
     text-decoration: none;
@@ -404,7 +405,7 @@ footer {
     .factory__wrapper-descr {
       font-family: Montserrat;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 15px;
       margin-top: 10px;
       width: auto; }
     .factory__wrapper-btn {
@@ -1002,6 +1003,8 @@ footer {
     text-decoration: none; }
   .info-block .phone::before {
     background: url(../img/phone.png) 50% center/cover no-repeat; }
+  .info-block .phone2::before {
+    background: url(../img/phone2.png) 50% center/cover no-repeat; }
   .info-block .email::before {
     background: url(../img/mail.png) 50% center/cover no-repeat; }
   .info-block .address::before {
@@ -1204,7 +1207,7 @@ footer {
     margin-bottom: 30px; } }
 
 @media (max-width: 767px) {
-  .lab__table table {
+  .lab .lab__table table {
     position: relative;
     left: -50%;
     transform: translate(28%, 0); }
@@ -1463,7 +1466,7 @@ footer {
       font-size: 14px;
       margin-top: 10px; }
     .tech .factory__wrapper-descr {
-      font-size: 8px; }
+      font-size: 10px; }
     .tech .factory__wrapper-btn {
       position: relative;
       width: 140px;
@@ -1478,14 +1481,14 @@ footer {
       font-size: 14px;
       margin-top: 10px; }
     .factory__wrapper-descr {
-      font-size: 8px; }
+      font-size: 10px; }
     .factory__wrapper-btn {
       width: 100px;
       height: 30px;
       font-size: 14px;
       margin-top: 5px; }
   .header__img img {
-    width: 50px;
+    width: 100%;
     display: block;
     margin: 0 auto; }
   .menu nav {
@@ -1494,7 +1497,8 @@ footer {
     display: flex;
     justify-content: center; }
     .header__info a {
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-size: 12px; }
   .header__btn {
     margin: 0 auto;
     margin-top: 10px;
@@ -1504,8 +1508,10 @@ footer {
     top: -40px; }
   header {
     padding-top: 20px;
-    height: 150px;
+    height: 180px;
     display: block; }
+  .factory__wrapper-info {
+    padding-bottom: 15px; }
   .menu__block {
     width: 300px;
     padding-left: 20px; }
@@ -1525,10 +1531,13 @@ footer {
   .sector__block-rectangle {
     margin-right: 10px; }
   .service__wrapper {
-    margin-bottom: 160px; }
+    margin-bottom: 60px; }
+  .company {
+    padding-bottom: 0px; }
   .special__wrapper-img {
     right: 0;
-    top: 120px; }
+    top: 120px;
+    z-index: 99; }
   .special .service__wrapper-img {
     top: 80px; }
   .service__wrapper-img {
@@ -1536,7 +1545,7 @@ footer {
   .work__wrapper-text {
     font-size: 10px;
     width: 48%; }
-  .lab__table table {
+  .lab .lab__table table {
     display: none; }
   .lab table.hidden {
     transform: none;
@@ -1549,4 +1558,14 @@ footer {
     font-size: 13px; }
   .lab__info-descr {
     font-size: 12px;
-    line-height: 14px; } }
+    line-height: 14px; }
+  .news__wrapper {
+    height: auto;
+    padding-bottom: 20px; }
+  .lab-slider__slide {
+    height: 550px;
+    margin: 0 auto; } }
+
+@media (max-width: 340px) {
+  .lab-slider__slide {
+    height: 450px; } }

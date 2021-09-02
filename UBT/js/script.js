@@ -172,6 +172,7 @@ for (let i = 0; i < specialWrapper2.length; i++) {
         specialWrapper2[i].classList.add('special__wrapper-title');
       } else {
         specialBlock2[a].classList.remove('special-active');
+        specialWrapper2[a].classList.remove('special__wrapper-title');
       }
     });
   }
