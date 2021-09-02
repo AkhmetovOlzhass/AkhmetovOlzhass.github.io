@@ -440,6 +440,16 @@ footer {
         background: #505050; }
       .asphalt__wrapper-btn:active {
         background: linear-gradient(180deg, #505050 0%, #1F1E1B 100%); }
+  .asphalt__text {
+    color: #505050;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 20px; }
+
+.rubble .asphalt-block img {
+  width: 100%;
+  margin-top: 30px; }
 
 .material {
   background: linear-gradient(180deg, #1F1E1B 0%, #505050 100%);
@@ -1568,7 +1578,9 @@ footer {
     padding-bottom: 20px; }
   .lab-slider__slide {
     height: 550px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .asphalt__text {
+    font-size: 14px; } }
 
 @media (max-width: 340px) {
   .lab-slider__slide {
