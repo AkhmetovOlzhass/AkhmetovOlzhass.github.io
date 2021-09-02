@@ -233,6 +233,10 @@ nav {
 .dropdown {
   position: relative;
   float: left; }
+  .dropdown:nth-child(3) .mainmenubtn::after {
+    display: none; }
+  .dropdown:nth-child(5) .mainmenubtn::after {
+    display: none; }
 
 .dropdown-child {
   position: absolute;
