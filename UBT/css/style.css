@@ -1580,7 +1580,9 @@ footer {
     height: 550px;
     margin: 0 auto; }
   .asphalt__text {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .concrete__info .title {
+    font-size: 18px; } }
 
 @media (max-width: 340px) {
   .lab-slider__slide {
