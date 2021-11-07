@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.carousel__inner').slick({
+    $('.carousel__inner-1').slick({
         speed: 1200,
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
@@ -9,6 +9,26 @@ $(document).ready(function(){
                 breakpoint: 992,
                 settings: {
                     dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    });
+    $('.carousel__inner-2').slick({
+        speed: 1200,
+        adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     arrows: false
                 }
             }
@@ -116,4 +136,39 @@ $(document).ready(function(){
     });
 
     new WOW().init();
+});
+
+$("a[href=#up]").click(function(){
+    let a = prompt('Код пожалуйста?', '');
+    if (a=='3248'){
+        alert('LETS GOOOO');
+        a = prompt('Как меня зовут?', '');
+        if(a=='Саяра'||a=='саяра'||a=='Сая'||a=='сая'){
+            alert('Афигеть ты умная');
+            a = prompt('Назови поизводную 20Х^5', 'Не надейся на подсказку :З');
+            if (a == '100X^4') {
+                alert('ОГОООООООООООООО, время финального вопроса');
+                a = prompt('ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ?', 'нет');
+                if (a=='Да' || a=='да') {
+                    alert('Теперь точно последний');
+                    a = prompt('Что ты говоришь когда я дурак?', 'а?');
+                    if (a=='Дурашка?' || a=='дурашка?') {
+                        alert('ЮХУУУУУУУУ, наслаждайся новым блоком)');
+                        let cor = document.getElementById('carousel-2');
+                        cor.style.display = 'block';
+                    } else {
+                        alert('Не удивляйся :D');
+                    }
+                } else{
+                    alert('Да, я издеваюсь');
+                }
+            } else {
+                alert('Интересно, я сам правильно решил?))');
+            }
+        } else {
+            alert('Думай лучше -_-');
+        }
+    } else {
+        alert('Ну и ладно(');
+    }
 });
