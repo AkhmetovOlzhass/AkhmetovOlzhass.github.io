@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap);*{box-sizing:border-box;margin:0;padding:0;font-family:Merienda,cursive}a{text-decoration:none}.title{font-weight:400;font-size:36px;color:#000;text-align:center}.icon{display:block;margin:0 auto;width:auto;margin-top:20px;position:relative}.icon img{width:100%}.icon::before{content:"";display:block;width:80px;height:2px;background-color:#fff;position:absolute;left:-90px;top:10px}.icon::after{content:"";display:block;width:80px;height:2px;background-color:#fff;position:absolute;right:-90px;top:10px} .menu{list-style:none;position:relative}.menu a{font-size:20px;color:#fff;text-shadow:0 4px 4px rgba(0,0,0,.25)}.menu li{display:inline;padding-right:40px}.menu li:hover a{border-bottom:1px solid #fff}.menu::before{content:"";background-image:url(../img/icons/logo.png);display:block;color:#fff;width:45px;height:40px;position:absolute;left:-40px;top:-20px} .promo{min-height:100vh;background:url(../img/main-bg.jpg) no-repeat 50%/cover;position:relative;padding-top:60px;padding-bottom:50px}.promo__title{font-weight:700;font-size:55px;color:#fff;text-shadow:0 4px 4px rgba(0,0,0,.25);text-align:center;margin-top:140px}.promo__text{font-weight:700;font-size:24px;color:#fff;text-shadow:0 4px 4px rgba(0,0,0,.25);text-align:center;margin-top:38px;line-height:50px}.promo__button{width:140px;height:40px;border:1px solid #fff;filter:drop-shadow(0 4px 4px rgba(0, 0, 0, .25));border-radius:3px;display:block;margin:0 auto;text-align:center;color:#fff;padding:5px;margin-top:23px;transition:all .5s}.promo__button:hover{background-color:#fff;color:#000;filter:drop-shadow(0 4px 4px rgba(0, 0, 0, .7))}.about{padding:80px}.about__icon::before{background-color:#000}.about__icon::after{background-color:#000}.about__text{font-size:24px;text-align:center;margin-top:40px}.best{padding:80px;background:url(../img/best-bg.jpg) no-repeat 50%/cover}.best__block{width:90%;height:400px;background:rgba(255,255,255,.65);border-radius:8px;padding-top:40px;margin:0 auto;margin-top:39px}.best__block-img{width:230px;display:block;margin:0 auto}.best__block-img img{width:100%;display:block;margin:0 auto}.best__block-title{text-align:center;margin-top:30px}.best__block-title a{font-size:20px;color:#000}.best__block-price{text-align:right;margin-top:20px;margin-right:40px;font-size:18px}.footer{padding:50px}.footer__wrapper{display:flex;justify-content:center}.footer__menu{margin-left:50px}.footer__menu a{color:#000}.footer__menu::before{content:"";background-image:url(../img/icons/logo-black.png);width:35px;height:35px}.footer__menu li:hover a{border-bottom:1px solid #000}.footer__menu li:nth-last-child(1){padding:0}.our-coffee{min-height:260px;padding-bottom:100px;background:url(../img/our-coffee-main.jpg) no-repeat 50%/cover;position:relative;padding-top:60px}.about-beans{padding:40px 0 40px}.about-beans__img{position:relative}.about-beans__img img{position:absolute;right:0}.about-beans__title{font-size:20px}.about-beans__icon{display:flex;justify-content:center}.about-beans__icon::before{background-color:#000;left:100px}.about-beans__icon::after{background-color:#000;right:100px}.about-beans__icon img{width:30px}.about-beans__text{text-align:center;margin-top:25px}.about-beans__coffee{font-size:30px}.about-beans__coffee-text{text-align:left}.about-beans__coffee-text span{font-weight:700}.about-beans__coffee-text b{font-size:30px}.buy{padding:80px 0}.buy__wrapper{display:flex;justify-content:space-between;align-items:center}.buy__wrapper-text{font-size:20px}.buy__wrapper input{background:#fff;box-shadow:4px 4px 20px rgba(0,0,0,.25);border-radius:4px;border:none;width:250px;height:40px;font-size:16px;line-height:17px;text-align:center;color:rgba(0,0,0,.5)}.buy__wrapper-btns{display:flex;justify-content:space-between;width:75%}.buy__wrapper-button{width:100px;height:40px;background:#fff;box-shadow:4px 4px 20px rgba(0,0,0,.25);border-radius:4px 0 0 4px;border:none;cursor:pointer}.buy__block{width:90%;background:#fff;border-radius:8px;margin:0 auto;filter:drop-shadow(5px 5px 15px rgba(0, 0, 0, .25));padding:35px 30px 20px;margin-top:80px}.buy__block-img{width:100%;display:block;margin:0 auto;margin-bottom:20px}.buy__block-img img{width:100%}.buy__block a,.buy__block-price,.buy__block-title{text-align:right;color:#000;font-size:20px;line-height:30px}.buy__block-price{font-weight:700}.plessure{min-height:160px;padding-bottom:70px;background:url(../img/plessure-bg.png) no-repeat 50%/cover}.plessure .promo__title{margin-top:50px}
+
+*{
+    transition: all, .5s;
+}
+
+
+.promo__button:hover, .buy__block:hover, .best__block:hover {
+    animation: 1.8s ease-in-out 0s normal none 1 running trambling-animation;
+}
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-1deg);
+    }
+    20%, 40% {
+        transform: rotate(1deg);
+    }
+}
+@keyframes up-animation {
+    0%, 100% {
+        transform:translateY(0);
+    }
+    50% {
+        transform:translateY(8%);
+    }
+    70% {
+        transform:translateY(2%);
+    }
+}
+.buy__wrapper-button:hover{
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 60%);
+    animation: .6s ease-in-out 0s normal none infinite running up-animation;
+}
+
+.btn-light{
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 60%);
+}
