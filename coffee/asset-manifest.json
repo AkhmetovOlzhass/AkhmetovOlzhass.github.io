@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0231d29.css",
+    "main.js": "/static/js/main.390202a5.js",
+    "static/media/best-bg.jpg": "/static/media/best-bg.e73347dac8273b8cda2a.jpg",
+    "static/media/plessure-bg.png": "/static/media/plessure-bg.35c27187490c5bc2a38d.png",
+    "static/media/main-bg.jpg": "/static/media/main-bg.bccd9c9f5aecec766f7f.jpg",
+    "static/media/our-coffee-main.jpg": "/static/media/our-coffee-main.3602fdfebe6d51af1e5d.jpg",
+    "static/media/about-coffee-block.jpg": "/static/media/about-coffee-block.3eb733de14ec5582d43c.jpg",
+    "static/media/about-beans-img.png": "/static/media/about-beans-img.953df41acbf6568a8ca6.png",
+    "static/media/plessure-img.png": "/static/media/plessure-img.d41239d9897fb0fc06a8.png",
+    "static/media/best3.png": "/static/media/best3.4c831881bdeb0e226910.png",
+    "static/media/buy-wrapper-img.png": "/static/media/buy-wrapper-img.4c831881bdeb0e226910.png",
+    "static/media/best1.png": "/static/media/best1.04652e2dc0d5fe1e2c12.png",
+    "static/media/best2.png": "/static/media/best2.204060d0bc63cb9ef032.png",
+    "index.html": "/index.html",
+    "main.e0231d29.css.map": "/static/css/main.e0231d29.css.map",
+    "main.390202a5.js.map": "/static/js/main.390202a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0231d29.css",
+    "static/js/main.390202a5.js"
+  ]
+}
