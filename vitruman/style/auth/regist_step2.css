@@ -1,0 +1,177 @@
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header__profile {
+    width: 20%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth {
+    padding: 65px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.auth__form {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth__span {
+    margin: 30px 0 10px 0;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.auth__title {
+    font-size: 32px;
+}
+
+.auth__text {
+    margin: 20px auto 0;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.auth__login {
+    margin-top: 15px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--bcg-button);
+    text-decoration: none;
+}
+
+.auth__login:hover {
+    color: #C2B290;
+}
+
+.input__select_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input__select {
+    position: relative;
+    width: 27%;
+}
+
+.input__select_value {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background-color: #2E3337;
+    border-radius: 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+    user-select: none;
+}
+
+.input__select_value > img {
+    margin-right: 10px;
+}
+
+.input__select_arrow {
+    margin-left: auto;
+    color: var(--bcg-button);
+    transform: rotate(90deg);
+}
+
+.input__select_list {
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input__select_list_hidden {
+    height: 0;
+}
+
+.input__select_item {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background-color: #2E3337;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.input__select_item:hover {
+    color: var(--bcg-button);
+    background-color: #4c545b;
+}
+
+.input__select_item > img {
+    margin-right: 10px;
+}
+
+.auth__input {
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    background-color: #2E3337;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #D9D9D9;
+}
+.error {
+    margin-top: 10px;
+    max-width: 400px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: #FF0000;
+}
+
+.auth__next {
+    margin-top: 25px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--bcg-button);
+    border-radius: 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 18px;
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+}
+
+.auth__next:visited {
+    color: var(--text);
+}
+
+.auth__next:hover {
+    background-color: var(--bcg-button-hov);
+}

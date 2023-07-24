@@ -1,0 +1,256 @@
+.wrap {
+    margin-top: 15px;
+    width: 100%;
+    padding: 21px 23px;
+    background-color: var(--bcg-block);
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #000;
+}
+
+h2 {
+    font-family: RobotoRegular, sans-serif;
+    color: var(--text);
+    font-weight: 400;
+    font-size: 24px;
+    padding: 25px 0;
+    margin-top: 35px;
+}
+
+.manager__box, .manager__box__active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manager__box__active {
+    display: block;                         /* <<<<<<<<<<<<<<<<<ОЖИДАЙТЕ ЗВОНКА */
+}
+
+.top__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom__box > figure {
+    display: block;
+    text-align: center;
+}
+
+.bottom__box > figure > img {
+    padding: 0px 0 15px;
+}
+
+.left__box {
+    display: flex;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+figcaption {
+    margin-left: 23px;
+    font-size: 18px;
+    font-family: RobotoRegular, sans-serif;
+    color: var(--text);
+}
+
+.contact__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact__link > span {
+    font-size: 16px;
+    font-family: RobotoRegular, sans-serif;
+    color: var(--text);
+    margin-bottom: 7px;
+}
+
+.contact__link > a {
+    margin: 0 8px;
+}
+
+.call__back {
+    background-color: #000;
+    padding: 10px 135px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.call__back:hover {
+    background-color: var(--bcg);
+}
+
+
+.support__chat_message {
+    display: flex;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 135%;
+}
+
+.support__chat_right {
+    margin-left: 20px;
+}
+
+.support__chat_right > span {
+    margin-right: 16px;
+}
+
+.support__chat_right > p {
+    margin-top: 5px;
+    max-width: 87%;
+}
+
+.online__chat {
+    margin-top: 30px;
+    position: relative;
+}
+
+.online__chat_text {
+    width: 90%;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    line-height: 135%;
+    padding: 10px 20px;
+    outline: none;
+    color: var(--text);
+    background-color: var(--bcg-block);
+    border: none;
+    border-radius: 10px;
+}
+
+.online__chat_submit {
+    height: 22px;
+    position: absolute;
+    top: 10px;
+    left: 86%;
+    cursor: pointer;
+}
+
+.online__chat_submit:hover > svg > path {
+    fill: var(--icon);
+} 
+
+.online__chat_foto {
+    background: url(../img/support/foto.svg) no-repeat;
+    position: relative;
+    top: -6px;
+    left: 7px;
+}
+
+.online__chat_foto:hover {
+    fill: var(--bcg);
+}
+
+.online__chat_foto > input {
+    width: 40px;
+    height: 40px;
+    opacity: 0%;
+}
+
+.online__chat_document {
+    background: url(../img/support/document.svg) no-repeat;
+    position: relative;
+    top: -6px;
+    left: 14px;
+}
+
+.online__chat_document > input {
+    width: 40px;
+    height: 40px;
+    opacity: 0%;
+}
+
+
+.box__btn {
+    margin-bottom: 35px;
+}
+
+.box__btn__choice {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 2px 17px;
+    border-radius: 5px;
+}
+
+.box__btn__choice:hover:not(.active) {
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.numbers {
+    font-size: 16px;
+    font-family: RobotoRegular, sans-serif;
+    color: var(--text);
+    line-height: 135%;
+}
+
+.numbers__top {
+    display: flex;
+}
+
+.play {
+    margin-left: 70%;
+}
+
+.play > svg:hover > circle {
+    fill: var(--bcg);
+}
+
+.status {
+    margin-left: 41px;
+}
+
+.numbers__bottom {
+    margin-top: 16px;
+    width: 85%;
+}
+
+.topic > input {
+    width: 100%;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    line-height: 135%;
+    padding: 10px 20px;
+    outline: none;
+    color: var(--text);
+    background-color: var(--bcg-block);
+    border: none;
+    border-radius: 10px;
+}
+
+.message > textarea {
+    width: 100%;
+    min-height: 168px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    line-height: 135%;
+    padding: 10px 20px;
+    outline: none;
+    resize: none;
+    color: var(--text);
+    background-color: var(--bcg-block);
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0 20px;
+}
+
+.btn__submit {
+    width: 205px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn__submit:hover {
+    background-color: var(--bcg-block);
+}

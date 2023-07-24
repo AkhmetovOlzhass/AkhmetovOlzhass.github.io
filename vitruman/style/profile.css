@@ -1,0 +1,350 @@
+.profile__advertising {
+    width: 100%;
+    padding: 35px 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.profile__advertising_content {
+    margin-left: 45px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile__advertising_title {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.profile__advertising_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__advertising_text > p {
+    width: 65%;
+    margin: 40px 0;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.profile__advertising_text > a {
+    display: block;
+    padding: 10px 65px;
+    text-decoration: none;
+    background-color: var(--bcg-button);
+    border-radius: 5px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.profile__advertising_text > a:hover {
+    background-color: var(--bcg-button-hov);
+}
+
+.profile__advertising_text > a:visited {
+    color: var(--text);
+}
+
+.profile__advertising_icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__advertising_icons > img {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.profile__advertising_icons > img:hover {
+    opacity: 65%;
+}
+
+.profile__learn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.profile__learn_box {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.profile__learn_box:hover > img {
+    opacity: 0.7;
+}
+
+.profile__learn_box:hover h2 {
+    color: var(--text-gray);
+}
+
+
+.profile__learn_box > img {
+    border-radius: 15px;
+}
+
+.profile__learn_content {
+    margin-left: 25px;
+}
+
+.profile__learn_title > a {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.profile__learn_title > a:visited {
+    color: var(--text);
+}
+
+.profile__learn_title:hover > a {
+    color: var(--text-gray);
+}
+
+.profile__learn_text {
+    margin-top: 20px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 18px;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.profile__learn_items {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.profile__learn_item_text {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.profile__learn_item_text > img {
+    margin-right: 10px;
+}
+
+.profile__learn_progress {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.profile__learn_progress > p {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--bcg-button);
+}
+
+.profile__learn_progress_box {
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: #FFF;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.profile__learn_progress_value {
+    width: 20%;
+    height: 100%;
+    background-color: var(--bcg-button);
+}
+
+.profile__accounts {
+    margin-top: 30px;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.profile__accounts_box {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.profile__accounts_item {
+    margin-right: 25px;
+    padding: 20px 14px 20px 20px;
+    background-color: #2A3139;
+    border-radius: 15px;
+    width: 284px;
+    border: solid 2px transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.profile__accounts_item:hover {
+    background-color: var(--bcg-block);
+    border: solid 2px var(--bcg-button);
+}
+
+.profile__accounts_item:hover > div > svg > path {
+    fill: var(--bcg-button);
+}
+
+.connect__accounts_text {
+    margin: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.connect__accounts_text > img {
+    margin-left: 15px;
+}
+
+.connect__accounts_value {
+    margin: 10px 0 0 15px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+}
+
+.profile__stats {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile__stats_card {
+    margin-top: 20px;
+    width: 49%;
+    padding: 25px;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.profile__stats_head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profile__stats_head > img {
+    width: 70px;
+    height: 70px;
+}
+
+.profile__stats_title {
+    margin-left: 20px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.profile__stats_values {
+    width: 100%;
+}
+
+.profile__stats_box {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__stats_name {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.profile__stats_value {
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 24px;
+    color: var(--text);
+}
+
+.profile__stats_value > img {
+    margin-left: 10px;
+}
+
+.profile__stats_link {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.profile__stats_link:visited {
+    color: var(--text);
+}
+
+.profile__stats_link:hover {
+    color: var(--text-gray);
+}
+
+.profile__news {
+    margin-top: 50px;
+}
+
+.profile__news_box {
+    width: 100%;
+    margin-top: 25px;
+    padding: 30px;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.profile__news_item {
+    margin-bottom: 30px;
+}
+
+.profile__news_item:last-child {
+    margin-bottom: 0;
+}
+
+.profile__news_preview {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.profile__news_preview:hover {
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.profile__news_time {
+    margin-top: 5px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.profile__recommendations {
+    margin-top: 50px;
+    width: 100%;
+}

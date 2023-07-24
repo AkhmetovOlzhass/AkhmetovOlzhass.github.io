@@ -1,0 +1,629 @@
+.editor {
+    width: 100%;
+    padding: 30px;
+    background-color: var(--bcg-block);
+    border-radius: 15px;   
+}
+   
+.editor__title {
+    margin-top: 20px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__info {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor__info_balance {
+    width: 25%;
+}
+
+.editor__info_title {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__info_value {
+    margin: 5px 0 25px 0;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 22px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+}
+
+.editor__info_value > img {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.editor__info_work {
+    width: 40%;
+}
+
+.editor__info_list {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.editor__info_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor__info_list_title {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__info_list_value {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__invest {
+    margin: 60px 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.editor__invest_box {
+    margin-right: 15px;
+}
+
+.editor__invest_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__invest_title > h3 {
+    font-weight: 400;
+}
+
+.editor__invest_title > p > span {
+    color: #A4A4A6;
+}
+
+.editor__invest_values {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: var(--bcg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 18px;
+    color: #A4A4A6;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.editor__invest_chart_bcg {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+}
+
+.editor__invest_chart {
+    margin: 30px 5% 30px 0;
+    width: 100%;
+    height: 2px;
+    background-color: #A4A4A6;
+}
+
+.editor__invest_chart_mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #9F9F9F;
+}
+
+.editor__invest_chart_mark_active {
+    background-color: #FFF;
+}
+
+.editor__invest_chart_mark_focus {
+    width: 15px;
+    height: 15px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.editor__invest_chart_mark_value {
+    position: absolute;
+    bottom: 25px;
+    right: -15px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #FFF;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+}
+
+.editor__auto {
+    display: flex;
+    width: 75%;
+}
+
+.editor__auto_text {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.editor__auto_info {
+    font-size: 11px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.editor__auto_info > img {
+    margin-right: 10px;
+}
+
+.editor__auto_select {
+    padding: 2px;
+    min-width: 40px;
+    height: 20px;
+    background: #9F9F9F;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.editor__auto_select_active {
+    justify-content: flex-end;
+    background-color: #32CD32;
+}
+
+.editor__auto_circle {
+    width: 16px;
+    height: 16px;
+    background-color: #FFF;
+    border-radius: 100%;
+}
+
+.editor__invest_btn {
+    margin-top: 45px;
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.editor__invest_btn:hover {
+    background-color: var(--bcg-button);
+}
+
+.editor__valute {
+    width: 80%;
+    display: flex;
+}
+
+.editor__valute_title {
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__valute_info {
+    cursor: pointer;
+}
+
+.editor__valute_info_box_close {
+    cursor: pointer;
+}
+
+.editor__valute_info_box {
+    position: absolute;
+    padding: 5px 15px;
+    top: -50px;
+    max-width: 310px;
+    display: flex;
+    background-color: #373C45;
+    border-radius: 5px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+    display: none;
+}
+
+.editor__valute_info_box_active {
+    display: flex;
+}
+
+.editor__valute_info_box > span {
+    margin-left: 5px;
+}
+
+.editor__valute_title > img {
+    margin-right: 10px;
+}
+
+.editor__valute__names {
+    width: 30%;
+}
+
+.editor__valute_name {
+    margin-top: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__valute_box {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editor__valute__value {
+    position: relative;
+    width: 70%;
+}
+
+.editor__valute_mark {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.editor__valute_mark > span {
+    height: 5px;
+    width: 1px;
+    border-left: 1px solid var(--text);
+}
+
+.editor__valute_scale {
+    position: relative;
+    margin-top: 5px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.editor__valute_scale > input {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+    height: 10px;
+    -webkit-appearance: none;
+}
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 1.4em + var(--ratio) * (100% - 1.4em));
+}
+
+input[type=range].styled-slider:focus {
+    outline: none;
+}
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 1em;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 2px #FFFFFF;
+    margin-top: calc(1em * 0.5 - 1.4em * 0.5);
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 1em;
+    border: none;
+    border-radius: 0;
+    background: #FFFFFF;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #C1A875 150px, #000 150px) 0/var(--sx) 100% no-repeat, #FFFFFF;
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 1em;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 2px #FFFFFF;
+}
+
+input[type=range].styled-slider::-moz-range-track {
+    height: 1em;
+    border: none;
+    border-radius: 0;
+    background: #FFFFFF;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+    background: linear-gradient(to right, #C1A875 150px, #000 150px) 0/var(--sx) 100% no-repeat, #FFFFFF;
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 1em;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 2px #FFFFFF;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-track {
+    height: 1em;
+    border-radius: 0;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+    height: 1em;
+    border-radius: 0 0 0 0;
+    background: linear-gradient(to right, #C1A875 150px, #000 150px);
+    border: none;
+    border-right-width: 0;
+}
+
+.editor__valute_scale_start {
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+}
+
+.editor__valute_scale_start_finish {
+    position: absolute;
+    top: 20px;
+    left: 25%;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--bcg-button);
+}
+
+.editor__valute_scale_end {
+    position: absolute;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+    top: 20px;
+    right: -15px;
+}
+
+.editor__valute_scale_end_finish {
+    position: absolute;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+    top: 20px;
+    right: 57%;
+}
+
+
+.editor__valute_left_sticky {
+    position: absolute;
+    bottom: -25px;
+    left: -10%;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+}
+
+.editor__valute_left_fixed {
+    position: absolute;
+    bottom: -25px;
+    right: -10%;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--bcg-button);
+}
+
+.editor__valute_left_max {
+    position: absolute;
+    bottom: -25px;
+    right: -5%;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+}
+
+.editor__value_delete {
+    position: absolute;
+    top: -5px;
+    right: -40px;
+    cursor: pointer;
+}
+
+.editor__controls {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.editor__added {
+    display: flex;
+}
+
+.editor__added_btn {
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.editor__added_box {
+    width: 300px;
+    margin-left: 30px;
+}
+
+.editor__added_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.editor_added_input:focus ~ .editor_added_input_box {
+    display: block;
+}
+
+.editor_added_input_box {
+    position: absolute;
+    background-color: #000;
+    top: 40px;
+    left: 10px;
+    right: 5px;
+    display: none;
+}
+
+.editor__added_clear {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.editor_added_input {
+    width: 95%;
+    height: 30px;
+    margin: 10px;
+    padding-left: 35px;
+    border: 1px solid var(--bcg-button);
+    border-radius: 5px;
+    background-color: #000;
+    background-image: url("../img/editor/search.svg");
+    background-position: 10px;
+    background-repeat: no-repeat;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.editor__added_value {
+    padding: 15px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.editor__added_value:hover {
+    color: var(--bcg-button);
+    background-color: #303136;
+}
+
+.editor_added_input:focus {
+    outline: none;
+}
+
+.editor__save {
+    margin-left: 30px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: var(--bcg-button);
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.editor__stop {
+    margin-top: 30px;
+}
+
+.editor__stop > .editor__save {
+    margin-left: 0;
+}
+
+.editor__stop_info {
+    margin-top: 10px;
+    width: 25%;
+    display: flex;
+}
+
+.editor__stop_info > p {
+    margin-left: 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 12px;
+    color: var(--text);
+}
+
+.editor__save:hover {
+    background-color: var(--bcg-button-hov);
+}
+
+.history {
+    margin-top: 20px;
+}
+
+.back:hover {
+    stroke: var(--bcg-button-hov);
+}

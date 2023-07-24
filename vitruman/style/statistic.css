@@ -1,0 +1,312 @@
+.presents {
+    margin-top: 30px;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.presents__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presents__header > img {
+    width: 110px;
+}
+
+.presents__title {
+    margin-left: 15px;
+    max-width: 450px;
+}
+
+.presents__title > h2 {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.presents__title > p {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.presents__button {
+    display: block;
+    margin-top: 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--bcg-button);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.presents__button_hide {
+    opacity: 0;
+}
+
+.presents__trigger {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.presents__trigger > span {
+    text-align: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 30px;
+    color: var(--text);
+    padding: 10px 0;
+}
+
+.presents__trigger > button {
+    padding: 15px 0;
+    background-color: var(--bcg-button);
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.presents__trigger > button:hover {
+    background-color: var(--bcg-button-hov);
+}
+
+.presents__balance {
+    width: 50%;
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.presents__input {
+    margin-bottom: 10px;
+    padding: 12px 0;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 14px;
+    color: #D9D9D9;
+    text-align: center;
+    background: none;
+    border: 1px solid #D9D9D9;
+    outline: none;
+}
+
+.presents__input:focus {
+    outline: none;
+}
+
+.presents__box {
+    height: 0;
+    overflow: hidden;
+}
+
+.presents__box_active {
+    height: auto;
+}
+
+.presents__text {
+    margin-top: 30px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.presents__btn {
+    margin-top: 25px;
+    width: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.presents__btn:hover {
+    color: var(--bcg-button);
+}
+
+.presents__btn > span {
+    transform: rotate(270deg);
+}
+
+.rate {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--bcg-block);
+}
+
+.rate__title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 18px;
+    color: var(--text);
+}
+
+.rate__title_commission {
+    margin-left: 40px;
+}
+
+.rate__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 18px;
+    color: var(--text);
+}
+
+.rate__chart {
+    width: 100%;
+    height: 15px;
+    margin: 10px 0;
+    background-color: #424952;
+    border-radius: 50px;
+}
+
+.rate__chart_value {
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+    border-radius: 50px;
+}
+
+.rate__row_text > span {
+    color: #A4A4A6;
+}
+
+.rate__row_link {
+    margin-top: 30px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.rate__row_link:visited {
+    color: var(--text);
+}
+
+.rate__row_link:hover {
+    color: var(--bcg-button);
+}
+
+.accounts {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.accounts__title {
+    width: 100%;
+    padding: 20px 25px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 24px;
+    color: var(--text);
+}
+
+.accounts__select {
+    margin-top: 20px;
+    display: flex;
+}
+
+.accounts__select_active {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 10px 0 0 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.accounts__select_close {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 10px 10px 0; 
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    cursor: pointer;
+    background-color: var(--bcg-block);
+}
+
+.accounts__item {
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 100px 70px 20px;
+    background-color: var(--bcg-block);
+    border-radius: 15px;
+}
+
+.accounts__item:hover {
+    background-color: #191D23;
+}
+
+.accounts__item_title {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accounts__item_id {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.accounts__item_stats {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accounts__item_stats_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.accounts__item_stats_name {
+    display: flex;
+    align-items: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.accounts__item_stats_name > img {
+    margin-left: 5px;
+}
+
+.accounts__item_stats_value {
+    margin-top: 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 22px;
+    color: var(--text);
+}
+
+.accounts__btn {
+    display: block;
+    margin: 40px auto 80px;
+    padding: 20px 70px;
+    background-color: var(--bcg-button);
+    border-radius: 10px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.accounts__btn:hover {
+    background-color: var(--bcg-button-hov);
+}
