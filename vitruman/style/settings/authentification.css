@@ -1,0 +1,30 @@
+.authentification__block{
+    display: flex;
+    align-items: center;
+    background-color: #20252B;
+    border-radius: 10px;
+    padding: 19px;
+    position: relative;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.authentification__block_img{
+    position: relative;
+    margin-right: 56px;
+
+}
+.authentification__block_img_child{
+    position: absolute;
+    bottom: -7px;
+    left: 28px;
+}
+
+.authentification__block_text{
+    color: white;
+    font-family: RobotoRegular, sans-serif;
+}
+
+.conditions__block_switch{
+    position: absolute;
+    right: 40px;
+}

@@ -1,0 +1,66 @@
+.money__saved{
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 12px;
+}
+.money__saved_logo{
+    margin-right: 10px;
+}
+
+.money__saved_number{
+    font-family: RobotoRegular, sans-serif;
+}
+
+.money__saved_icon{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.money__saved_change{
+    right: 40px;
+}
+
+.profile__main_title_money{
+    margin-top: 30px;
+}
+
+.profile__main_title_text{
+    font-size: 16px;
+}
+
+.replenishment__container{
+    margin: 0;
+    padding: 0;
+}
+.replenishment__input{
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.system{
+    margin-top: 10px;
+}
+
+.replenishment__valute_dropdown_value{
+    border: 1px solid #333;
+    background: #000;
+    border-radius: 10px;
+}
+
+.system__list_text{
+    text-transform: uppercase;
+}
+
+.system__list_text span{
+    text-transform: none;
+}

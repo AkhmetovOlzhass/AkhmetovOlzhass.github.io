@@ -1,0 +1,185 @@
+.profile__title{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.profile__content{
+    margin-top: 24px;
+    margin-bottom: 250px;
+}
+.profile__sidenav {
+    display: inline-block;
+    width: 33%;
+    background-color: #000;
+    border-radius: 10px;
+    height: 950px;
+    padding-left: 25px;
+    float: left;
+    padding-top: 23px;
+}
+.profile__sidenav_link.profile__sidenav_active{
+    background-color: #191A1F;
+    padding: 14px 0 15px 15px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0;
+}
+
+.profile__sidenav_link{
+    display: block;
+    font-family: RobotoRegular, sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+
+.profile__main{
+    display: inline-block;
+    width: 66%;
+    height: 879px;
+    padding-left: 60px;
+}
+
+.profile__main_avatar{
+    height: 78px;
+}
+
+.profile__main_avatar_img{
+    display: inline-block;
+    float: left;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile__main_avatar_img img{
+    width: 100%;
+}
+
+.profile__main_avatar_info{
+    height: 100%;
+}
+
+.profile__main_avatar_info_name{
+    color: #fff;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.profile__main_avatar_info_id{
+    color: #A4A4A6;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.profile__main_avatar_info_wrapper{
+    position: relative;
+}
+
+.profile__main_avatar_info_btn{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.profile__main_avatar_info_label{
+    background-color: #FFF;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 18px;
+    border-radius: 10px;
+}
+
+.profile__main_data{
+    margin-top: 20px;
+}
+
+.profile__main_title{
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.settings__input{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #000;
+    padding: 12px 0 12px 15px;
+    margin-top: 15px;
+    color: #fff;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+}
+
+.settings__btn{
+    border-radius: 10px;
+    font-family: RobotoRegular, sans-serif;
+    background: #FFF;
+    color: #000;
+    padding: 7px 55px 6px 56px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.profile__main_socials{
+    margin-top: 30px;
+}
+
+.profile__main_socials_el{
+    position: relative;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background: #000;
+    text-decoration: none;
+    padding-left: 5px;
+    border-bottom: 1px #191A1F solid;
+}
+
+.profile__main_socials .profile__main_socials_el:nth-child(2) {
+    border-radius: 10px 10px 0 0;
+}
+
+.profile__main_socials .profile__main_socials_el:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.profile__main_socials_img{
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-right: 7px;
+}
+.profile__main_socials_img img{
+    width: 100%;
+}
+
+.profile__main_socials_info{
+    font-family: RobotoRegular, sans-serif;
+    color: #fff;
+}
+.profile__main_socials_info_name{
+    font-size: 16px;
+}
+.profile__main_socials_info_text{
+    font-size: 14px;
+}
+
+.profile__main_socials_info_arrow{
+    position: absolute;
+    right: 25px;
+}
+
+.profile__main_account_img{
+    width: 16px;
+    height: 16px;
+    margin: 0 16px;
+}
