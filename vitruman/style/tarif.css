@@ -1,0 +1,123 @@
+.tarif__title{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 61px;
+}
+
+.tarif__text{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.tarif__table{
+    background-color: #070707;
+    border-radius: 15px 15px 15px 15px;
+    color: #fff;
+    font-family: RobotoRegular, sans-serif;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tarif__table tr:first-child{
+    text-transform: uppercase;
+}
+
+.tarif__table tr:first-child th{
+   padding: 40px 0;
+   font-size: 18px;
+}
+
+.tarif__table tr:nth-child(even){
+    background-color: #101010;
+}
+
+.tarif__table tr th:first-child{
+    text-transform: none;
+    font-size: 14px;
+}
+
+.tarif__table th{
+    width: 16.6%;
+    padding: 20px 0;
+    font-weight: 400;
+    border-right: 1px #000 solid;
+    font-size: 14px;
+}
+
+.tarif__content{
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #000;
+    padding: 12px 42px 12px 34px;
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+
+.connect__exchange{
+    background-color: transparent;
+    padding: 0;
+}
+
+.referral__trigger{
+    background-color: #00B488;
+}
+
+.referral__link{
+    background-color: #000;
+}
+
+.partners__input{
+    border-radius: 10px;
+}
+.partners__title{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.partners__btn{
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.increase__title{
+    text-align: center;
+}
+
+.increase__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.increase__block{
+    text-align: center;
+    font-family: RobotoRegular, sans-serif;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+.increase__block_number{
+    color: #A4A4A6;
+    font-size: 48px;
+}
+
+.increase__block_text{
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+
+.increase__block_button{
+    text-transform: uppercase;
+    padding: 5px 37px 6px 36px;
+    border-radius: 10px;
+    background: #000;
+    margin-top: 30px;
+}
+
+.increase{
+    margin-bottom: 150px;
+}
