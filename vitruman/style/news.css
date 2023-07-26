@@ -111,9 +111,12 @@
     margin-bottom: 100px;
     cursor: pointer;
     transition: .2s all;
+    padding: 20px 10px;
+    border-radius: 5px;
+
 }
 .article__wrapper:hover {
-    opacity: .8;
+    background-color: #20252B;
 }
 
 .article__img {

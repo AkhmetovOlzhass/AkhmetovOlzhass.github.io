@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/partners.css">
+    <link rel="stylesheet" href="../style/payments.css">
     <link rel="stylesheet" href="../style/editor.css">
     <title>Vitruman Trade</title>
 </head>
@@ -195,6 +197,9 @@
                             <li class="nav__sub_menu_item">
                                 <a href="../index.html" class="nav__sub_menu_link">Блог</a>
                             </li>
+                            <li class="nav__sub_menu_item">
+                                <a href="../pages/blog2.html" class="nav__sub_menu_link">Блог2</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -215,9 +220,7 @@
             <div class="container">
                 <section class="editor">
                     <a href="./account.html">
-                        <svg class="back" width="50" height="50" viewBox="-1 -1 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25ZM0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25ZM28.3894 35.1952C28.7149 35.5207 28.7149 36.0496 28.3894 36.3751C28.0639 36.7006 27.535 36.7006 27.2095 36.3548L16.2441 25.3894C16.0814 25.2267 16 25.0029 16 24.7994C16 24.5757 16.0814 24.3722 16.2441 24.2095L27.2095 13.2441C27.535 12.9186 28.0639 12.9186 28.3894 13.2441C28.7149 13.5696 28.7149 14.0986 28.3894 14.4241L17.9937 24.8198L28.3894 35.1952Z" fill="#C1A875"/>
-                        </svg>
+                        <img src="../img/partners/big_arrow_left.svg" alt="">
                     </a>
                     <h2 class="editor__title"><img src="../img/editor/binance.png" alt="binance">ID - 3742836</h2>
                     <div class="editor__info">
@@ -367,57 +370,70 @@
                         </div>
                     </div>
                 </section>
-                <section class="history">
-                    <h2 class="history__title title">ИСТОРИЯ ОПЕРАЦИЙ</h2>
-                    <div class="history__filter">
-                        Дата операции: от <input type="text" class="date" value="29.06.2023"/>
-                        до <input type="text" class="date" value="29.06.2023"/>
-                        Биржа: <div class="dropdown"><span class="dropdown__value">Binance</span> &#9660;
-                        <div class="dropdown__box">
-                            <div class="dropdown__item">Binance</div>
-                            <div class="dropdown__item">Binance1</div>
-                            <div class="dropdown__item">Binance2</div>
-                            <div class="dropdown__item">Binance3</div>
-                        </div>
+                <div class="statistics__accurate">
+                    <h2>ИСТОРИЯ ОПЕРАЦИЙ</h2>
+                    <div  class="statistics__accurate_menu">
+                        <button class="statistics__accurate_menu_btn">Все</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за сегодня</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за неделю</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за месяц</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за год</button>
+                        <button class="statistics__accurate_menu_reset">Сбросить</button>                 
                     </div>
-                        Тип операции: <div class="dropdown"><span class="dropdown__value">Ввод</span> &#9660;
-                        <div class="dropdown__box">
-                            <div class="dropdown__item">Ввод</div>
-                            <div class="dropdown__item">Вывод</div>
-                        </div>
-                    </div>
-                        <button class="history__filter_save">Показать</button>
-                        <button>Сбросить</button>
-                    </div>
-                    <div class="history__table">
-                        <div class="history__table_column">
-                            <div class="history__table_title">
-                                Дата <img src="../img/sort.svg" alt="sort">
-                            </div>
-                            <div class="history__table_value">29.06.2022</div>
-                            <div class="history__table_value">29.06.2022</div>
-                        </div>
-                        <div class="history__table_column">
-                            <div class="history__table_title">
-                                Операция (вводы, выводы)
-                            </div>
-                            <div class="history__table_value">Редактирование баланса</div>
-                            <div class="history__table_value">Редактирование баланса</div>
-                        </div>
-                        <div class="history__table_column">
-                            <div class="history__table_title">
-                                Сумма <img src="../img/sort.svg" alt="sort">
-                            </div>
-                            <div class="history__table_value">29329399239229</div>
-                            <div class="history__table_value">29329399239229</div>
-                        </div>
-                    </div>
+    
+                    <ul class="statistics__accurate_filter">
+                           <li class="statistics__accurate_filter_item">
+                                <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                           </li>
+                           <li class="statistics__accurate_filter_item">
+                                <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                           </li>
+                           <li class="statistics__accurate_filter_item">
+                                <button class="statistics__accurate_filter_item_offers-btn">
+                                    <span>Биржа</span>
+                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
+                                    </svg>
+                                </button>
+                           </li>
+                           <li class="statistics__accurate_filter_item">
+                            <button class="statistics__accurate_filter_item_offers-btn">
+                                <span>Тип операции</span>
+                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
+                                </svg>
+                            </button>
+                       </li>            
+                    </ul>                   
+    
+                    <table class="statistics__accurate_table">
+                        <tr>
+                            <th class="statistics__accurate_table-head">Даты</th>
+                            <th class="statistics__accurate_table-head">Операция (вводы, выводы)</th>
+                            <th class="statistics__accurate_table-head">Сумма</th>
+                        </tr>
+                        <tr>
+                            <td class="statistics__accurate_table-district">31.02.2023</td>
+                            <td class="statistics__accurate_table-district">Редактирование баланса</td>
+                            <td class="statistics__accurate_table-district">29329399239229</td>
+                        </tr>
+                        <tr>
+                            <td class="statistics__accurate_table-district">31.02.2023</td>
+                            <td class="statistics__accurate_table-district">Редактирование баланса</td>
+                            <td class="statistics__accurate_table-district">29329399239229</td>
+                        </tr>
+                    </table>
                     <div class="pages">
                         <button class="pages__prev">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="20" fill="white"/>
-                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#C1A875" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
+    
                         </button>
                         <a href="#" class="pages__num pages__num_active">1</a>
                         <a href="#" class="pages__num">2</a>
@@ -427,59 +443,72 @@
                         <button class="pages__next">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="20" fill="white"/>
-                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#C1A875" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
                         </button>
                     </div>
-                </section>
-                <section class="history">
-                    <h2 class="history__title title">ИСТОРИЯ ИЗМЕНЕНИЙ</h2>
-                    <div class="history__filter">
-                        Дата операции: от <input type="text" class="date" value="29.06.2023"/>
-                        до <input type="text" class="date" value="29.06.2023"/>
-                        <div class="history__filter_box">
-                            Тип операции: <div class="dropdown"><span class="dropdown__value">Ввод</span> &#9660;
-                            <div class="dropdown__box">
-                                <div class="dropdown__item">Ввод</div>
-                                <div class="dropdown__item">Вывод</div>
-                            </div>
-                        </div>
-                            <button class="history__filter_save">Показать</button>
-                            <button>Сбросить</button>
-                        </div>
+                </div>
+                <div class="statistics__accurate">
+                    <h2>ИСТОРИЯ ИЗМЕНЕНИЙ</h2>
+                    <div  class="statistics__accurate_menu">
+                        <button class="statistics__accurate_menu_btn">Все</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за сегодня</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за неделю</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за месяц</button>
+                        <div class="statistics__accurate_menu_line"></div>
+                        <button class="statistics__accurate_menu_btn">за год</button>
+                        <button class="statistics__accurate_menu_reset">Сбросить</button>                 
                     </div>
-                    <div class="history__table">
-                        <div class="history__table_column">
-                            <div class="history__table_title">
-                                Дата <img src="../img/sort.svg" alt="sort">
-                            </div>
-                            <div class="history__table_value">29.06.2022</div>
-                            <div class="history__table_value">29.06.2022</div>
-                            <div class="history__table_value">29.06.2022</div>
-                        </div>
-                        <div class="history__table_column">
-                            <div class="history__table_title">
-                                Операция (вводы, выводы)
-                            </div>
-                            <div class="history__table_value">Редактирование баланса</div>
-                            <div class="history__table_value">Редактирование баланса</div>
-                            <div class="history__table_value">Редактирование баланса</div>
-                        </div>
-                        <div class="history__table_column">
-                            <div class="history__table_title">
-                                Сумма <img src="../img/sort.svg" alt="sort">
-                            </div>
-                            <div class="history__table_status history__table_status_red">Отклонена</div>
-                            <div class="history__table_status history__table_status_gray">В ожидании</div>
-                            <div class="history__table_status history__table_status_green">Завершена</div>
-                        </div>
-                    </div>
+
+                    <ul class="statistics__accurate_filter">
+                           <li class="statistics__accurate_filter_item">
+                                <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                           </li>
+                           <li class="statistics__accurate_filter_item">
+                                <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                           </li>
+                           <li class="statistics__accurate_filter_item">
+                                <button class="statistics__accurate_filter_item_offers-btn">
+                                    <span>Тип операции </span>
+                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
+                                    </svg>
+                                </button>
+                           </li>         
+                    </ul>                   
+
+                    <table class="statistics__accurate_table">
+                        <tr>
+                            <th class="statistics__accurate_table-head">Даты</th>
+                            <th class="statistics__accurate_table-head">Операция (вводы, выводы)</th>
+                            <th class="statistics__accurate_table-head">Статус</th>
+                        </tr>
+                        <tr>
+                            <td class="statistics__accurate_table-district">31.02.2023</td>
+                            <td class="statistics__accurate_table-district"><div class="payments__table_block">Редактирование баланса</div></td>
+                            <td class="statistics__accurate_table-district"><div class="payments__table_block_wrapper"><p class="payments__status payments__status_no">отклонена</p></div></td>
+                        </tr>
+                        <tr>
+                            <td class="statistics__accurate_table-district">31.02.2023</td>
+                            <td class="statistics__accurate_table-district"><div class="payments__table_block">Редактирование баланса</div></td>
+                            <td class="statistics__accurate_table-district"><div class="payments__table_block_wrapper"><p class="payments__status payments__status_wait">в ожидание</p></div></td>
+                        </tr>
+                        <tr>
+                            <td class="statistics__accurate_table-district">31.02.2023</td>
+                            <td class="statistics__accurate_table-district"><div class="payments__table_block">Редактирование баланса</div></td>
+                            <td class="statistics__accurate_table-district"><div class="payments__table_block_wrapper"><p class="payments__status payments__status_finished">Завершена</p></div></td>
+                        </tr>
+                    </table>
                     <div class="pages">
                         <button class="pages__prev">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="20" fill="white"/>
-                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#C1A875" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
+    
                         </button>
                         <a href="#" class="pages__num pages__num_active">1</a>
                         <a href="#" class="pages__num">2</a>
@@ -489,11 +518,11 @@
                         <button class="pages__next">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="20" fill="white"/>
-                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#C1A875" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M15 20.0104L21.0104 14M21.0104 26.0104L15 20" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
                         </button>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </main>

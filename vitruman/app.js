@@ -135,10 +135,18 @@ if(educationTabs && educationTabs.length > 0) {
     })
 }
 
+
+
 if(headerValute) {
-    headerValute.addEventListener('click', () => {
-        headerValute.querySelector('.header__value_dropdown').classList.toggle('header__value_dropdown_active');
+
+    document.querySelector('body').addEventListener('click', (e) => {
+        if(e.target.parentNode == headerValute){
+            headerValute.querySelector('.header__value_dropdown').classList.toggle('header__value_dropdown_active');
+        } else{
+            headerValute.querySelector('.header__value_dropdown').classList.remove('header__value_dropdown_active');
+        }
     })
+
 
     const itemsDropdown = document.querySelectorAll('.header__value_dropdown_item');
 

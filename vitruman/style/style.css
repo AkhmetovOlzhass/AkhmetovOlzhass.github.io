@@ -187,7 +187,7 @@ button {
 }
 
 .pages__num_active {
-    border: 1px solid var(--bcg-button);
+    border: 1px solid #fff;
 }
 
 .history {
@@ -293,7 +293,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bcg);
+    background-color: #000;
 }
 
 .header__balance {

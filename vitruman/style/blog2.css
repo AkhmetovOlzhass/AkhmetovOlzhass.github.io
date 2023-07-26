@@ -1,0 +1,111 @@
+.blog2.advertising__img{
+    height: 350px;
+}
+
+.blog2 .content{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.blog2 .payment__credit_button{
+    background-color: #000;
+}
+
+.blog2 .payment__loan_btn{
+    background-color: #000;
+}
+
+.blog2 .payment__loan_stick{
+    background-color: #00B488;
+}
+
+.blog2 .payment__loans_btn{
+    background-color: #000;
+}
+
+.article {
+    width: 100%;
+}
+
+.article__header {
+   margin: 40px 0 25px;
+   font-family: RobotoRegular, sans-serif;
+   font-size: 24px;
+   color: var(--text);
+}
+
+.article__tags {
+   width: 100%;
+   padding: 15px 0;
+   background-color: var(--bcg-block);
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   list-style-type: none;
+}
+
+.article__tag {
+   margin: 0 15px;
+   font-family: RobotoRegular, sans-serif;
+   font-size: 16px;
+   color: var(--text);
+   cursor: pointer;
+}
+
+.article__tag:hover {
+   color: var(--bcg-button);
+}
+
+.article__container {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+}
+
+.article__wrapper {
+   width: 32%;
+   cursor: pointer;
+   transition: .2s all;
+   padding: 20px 10px;
+   border-radius: 5px;
+
+}
+.article__wrapper:hover {
+   background-color: #20252B;
+}
+
+.article__img {
+    position: relative;
+   width: 100%;
+   height: 260px
+}
+
+.article__img img{
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+}
+
+.article__title{
+   font-size: 18px;
+   font-family: RobotoRegular, sans-serif;
+   margin-top: 15px;
+   color: #fff;
+}
+
+.article__text{
+   font-size: 12px;
+   font-family: RobotoRegular, sans-serif;
+   margin-top: 6px;
+   color: #A4A4A6;
+}
+
+.article__date{
+   font-size: 12px;
+   font-family: RobotoRegular, sans-serif;
+   margin-top: 6px;
+   color: #fff;
+}

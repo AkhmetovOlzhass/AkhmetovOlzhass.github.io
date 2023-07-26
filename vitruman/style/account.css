@@ -9,7 +9,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .account__title {
@@ -110,7 +110,7 @@
 .account__link {
     width: 100%;
     padding: 10px 15px;
-    background-color: var(--bcg-button);
+    background-color: #000;
     border-radius: 10px;
     text-align: center;
     font-family: RobotoRegular, sans-serif;
@@ -118,14 +118,6 @@
     color: var(--text);  
     text-decoration: none;
     cursor: pointer;
-}
-
-.account__link:visited {
-    color: var(--text);
-}
-
-.account__link:hover {
-    background-color: var(--bcg-button-hov);
 }
 
 .account__btns_text {
