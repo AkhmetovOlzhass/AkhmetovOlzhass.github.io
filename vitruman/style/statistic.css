@@ -25,6 +25,7 @@
     font-size: 20px;
     color: var(--text);
     line-height: 1.5;
+    font-weight: 400;
 }
 
 .presents__title > p {
@@ -34,13 +35,18 @@
 }
 
 .presents__button {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-top: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
-    color: var(--bcg-button);
+    color: var(--text);
     text-decoration: none;
     cursor: pointer;
+}
+
+.presents__button img{
+    margin-left: 5px;
 }
 
 .presents__button_hide {
@@ -64,7 +70,8 @@
 
 .presents__trigger > button {
     padding: 15px 0;
-    background-color: var(--bcg-button);
+    background-color: var(--bcg-button-black);
+    border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
@@ -76,7 +83,7 @@
 }
 
 .presents__balance {
-    width: 50%;
+    width: 80%;
     align-self: center;
     border-radius: 10px;
     margin-top: 40px;
@@ -92,6 +99,7 @@
     background: none;
     border: 1px solid #D9D9D9;
     outline: none;
+    border-radius: 10px;
 }
 
 .presents__input:focus {
@@ -213,14 +221,20 @@
 .accounts__select {
     margin-top: 20px;
     display: flex;
+    background-color: #20252B;
+    padding: 5px 0 5px 30px;
+    text-transform: lowercase;
+    border-radius: 5px;
 }
 
 .accounts__select_active {
-    width: 50%;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
     text-align: center;
     background-color: #000;
-    border-radius: 10px 0 0 10px;
+    border-radius: 5px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
@@ -228,7 +242,7 @@
 }
 
 .accounts__select_close {
-    width: 50%;
+    width: 10%;
     padding: 10px;
     text-align: center;
     border-radius: 0 10px 10px 0; 
@@ -239,16 +253,24 @@
     background-color: var(--bcg-block);
 }
 
+.account__list{
+    display: flex;
+}
+
 .accounts__item {
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     margin-top: 20px;
-    padding: 30px 100px 70px 20px;
+    padding: 30px 30px 20px 20px;
     background-color: var(--bcg-block);
     border-radius: 15px;
+    cursor: pointer;
+    margin-right: 3%;
 }
 
 .accounts__item:hover {
     background-color: #191D23;
+    border: #fff 1px solid
 }
 
 .accounts__item_title {
@@ -257,18 +279,19 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.accounts__item_id {
-    font-family: RobotoRegular, sans-serif;
-    font-size: 16px;
-    color: var(--text);
-}
-
 .accounts__item_stats {
     width: 100%;
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+}
+
+.accounts__item_stats a{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translate(-50%, -50%);
 }
 
 .accounts__item_stats_box {
@@ -282,6 +305,7 @@
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
+    margin-top: 10px;
 }
 
 .accounts__item_stats_name > img {
@@ -289,7 +313,6 @@
 }
 
 .accounts__item_stats_value {
-    margin-top: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 22px;
     color: var(--text);
@@ -299,7 +322,8 @@
     display: block;
     margin: 40px auto 80px;
     padding: 20px 70px;
-    background-color: var(--bcg-button);
+    background-color: #20252B;
+    text-transform: uppercase;
     border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;

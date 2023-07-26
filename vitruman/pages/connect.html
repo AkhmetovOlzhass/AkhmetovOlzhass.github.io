@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/connect.css">
+    <link rel="stylesheet" href="../style/statistic.css">
     <title>Vitruman Trade</title>
 </head>
 <body>
@@ -191,6 +192,9 @@
                             </li>
                             <li class="nav__sub_menu_item">
                                 <a href="../pages/payments.html" class="nav__sub_menu_link">Выплаты</a>
+                            </li>
+                            <li class="nav__sub_menu_item">
+                                <a href="../index.html" class="nav__sub_menu_link">Блог</a>
                             </li>
                         </ul>
                     </div>
@@ -734,34 +738,54 @@
 
             <section class="connect__accounts">
                 <div class="connect__accounts_title title">АКТИВНЫЕ АККАУНТЫ</div>
-                <div class="connect__accounts_box">
-                    <div class="connect__accounts_item">
-                        <div>
-                            <img src="../img/connect/binance.png" alt="binance">
-                            <p class="connect__accounts_text">PnL за сегодня <img src="../img/connect/info.svg" alt="info"></p>
-                            <p class="connect__accounts_value green">+2,96 %</p>
-                            <p class="connect__accounts_text">PnL за 7 дн. <img src="../img/connect/info.svg" alt="info"></p>
-                            <p class="connect__accounts_value red">-0,23 %</p>
+                <div class="accounts__list">
+                    <div class="accounts__item">
+                        <div class="accounts__item_title">
+                            <img class="accounts__item_img" src="../img/statistics/binance.png" alt="binance">
                         </div>
-                        <div>
-                            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M42 21.5C42 32.8218 32.8218 42 21.5 42C10.1782 42 1 32.8218 1 21.5C1 10.1782 10.1782 1 21.5 1C32.8218 1 42 10.1782 42 21.5ZM43 21.5C43 33.3741 33.3741 43 21.5 43C9.62588 43 0 33.3741 0 21.5C0 9.62588 9.62588 0 21.5 0C33.3741 0 43 9.62588 43 21.5ZM18.1249 13.1792C17.8449 12.8993 17.8449 12.4444 18.1249 12.1644C18.4048 11.8845 18.8597 11.8845 19.1396 12.1819L28.5698 21.6121C28.7098 21.7521 28.7798 21.9445 28.7798 22.1195C28.7798 22.312 28.7098 22.4869 28.5698 22.6269L19.1396 32.0571C18.8597 32.337 18.4048 32.337 18.1249 32.0571C17.8449 31.7771 17.8449 31.3223 18.1249 31.0423L27.0652 22.102L18.1249 13.1792Z" fill="#A4A4A6"/>
-                            </svg>
-                        </div>                          
+                        <div class="accounts__item_stats">
+                            <div class="accounts__item_stats_box">
+                                <span class="accounts__item_stats_name">
+                                    PnL за сегодня <img src="../img/statistics/info.png" alt="info">
+                                </span>
+                                <span class="accounts__item_stats_value green">
+                                    +2,96 %
+                                </span>
+                            </div>
+                            <div class="accounts__item_stats_box">
+                                <span class="accounts__item_stats_name">
+                                    PnL за 7 дн. <img src="../img/statistics/info.png" alt="info">
+                                </span>
+                                <span class="accounts__item_stats_value red">
+                                    -0,23 %
+                                </span>
+                            </div>
+                            <a href="./account.html"><img class="account__item_stats_box" src="../img/partners/big_arrow_right.svg" alt="next"></a>
+                        </div>
                     </div>
-                    <div class="connect__accounts_item">
-                        <div>
-                            <img src="../img/connect/binance.png" alt="binance">
-                            <p class="connect__accounts_text">PnL за сегодня <img src="../img/connect/info.svg" alt="info"></p>
-                            <p class="connect__accounts_value green">+2,96 %</p>
-                            <p class="connect__accounts_text">PnL за 7 дн. <img src="../img/connect/info.svg" alt="info"></p>
-                            <p class="connect__accounts_value red">-0,23 %</p>
+                    <div class="accounts__item">
+                        <div class="accounts__item_title">
+                            <img class="accounts__item_img" src="../img/statistics/binance.png" alt="binance">
                         </div>
-                        <div>
-                            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M42 21.5C42 32.8218 32.8218 42 21.5 42C10.1782 42 1 32.8218 1 21.5C1 10.1782 10.1782 1 21.5 1C32.8218 1 42 10.1782 42 21.5ZM43 21.5C43 33.3741 33.3741 43 21.5 43C9.62588 43 0 33.3741 0 21.5C0 9.62588 9.62588 0 21.5 0C33.3741 0 43 9.62588 43 21.5ZM18.1249 13.1792C17.8449 12.8993 17.8449 12.4444 18.1249 12.1644C18.4048 11.8845 18.8597 11.8845 19.1396 12.1819L28.5698 21.6121C28.7098 21.7521 28.7798 21.9445 28.7798 22.1195C28.7798 22.312 28.7098 22.4869 28.5698 22.6269L19.1396 32.0571C18.8597 32.337 18.4048 32.337 18.1249 32.0571C17.8449 31.7771 17.8449 31.3223 18.1249 31.0423L27.0652 22.102L18.1249 13.1792Z" fill="#A4A4A6"/>
-                            </svg>
-                        </div>                           
+                        <div class="accounts__item_stats">
+                            <div class="accounts__item_stats_box">
+                                <span class="accounts__item_stats_name">
+                                    PnL за сегодня <img src="../img/statistics/info.png" alt="info">
+                                </span>
+                                <span class="accounts__item_stats_value green">
+                                    +2,96 %
+                                </span>
+                            </div>
+                            <div class="accounts__item_stats_box">
+                                <span class="accounts__item_stats_name">
+                                    PnL за 7 дн. <img src="../img/statistics/info.png" alt="info">
+                                </span>
+                                <span class="accounts__item_stats_value red">
+                                    -0,23 %
+                                </span>
+                            </div>
+                            <a href="./account.html"><img class="account__item_stats_box" src="../img/partners/big_arrow_right.svg" alt="next"></a>
+                        </div>
                     </div>
                 </div>
             </section>

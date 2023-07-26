@@ -42,6 +42,9 @@
     width: 100%;
     margin-top: 35px;
 }
+.news__img img{
+    width: 100%;
+}
 
 .news__preview {
     margin-top: 30px;
@@ -98,95 +101,49 @@
 
 .article__container {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
-.article__list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.article__item {
-    position: relative;
-    width: 24%;
-    height: 240px;
-    overflow: hidden;
-    border-radius: 15px;
+.article__wrapper {
+    width: 32%;
+    margin-bottom: 100px;
     cursor: pointer;
+    transition: .2s all;
 }
-
-.article__item:hover > .article__img {
-    opacity: 0.8;
+.article__wrapper:hover {
+    opacity: .8;
 }
 
 .article__img {
-    position: absolute;
-    left: 0;
-    top: 0;
+    width: 100%;
+    height: 260px
+}
+
+.article__img img{
+    border-radius: 10px;
     width: 100%;
     height: 100%;
-    z-index: 0;
 }
 
-.article__box {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    padding: 10px 10px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: none;
-}
-
-.article__item_tags {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.article__item_tag {
-    padding: 6px;
-    margin-left: 5px;
+.article__title{
+    font-size: 18px;
     font-family: RobotoRegular, sans-serif;
-    font-size: 6px;
-    color: var(--text);
-    background-color: var(--bcg-button);
-    border-radius: 5px;
+    margin-top: 15px;
+    color: #fff;
 }
 
-.article__content {
-    width: 100%;
-    min-height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.article__title {
-    font-family: RobotoRegular, sans-serif;
-    font-size: 14px;
-    color: var(--text);
-    opacity: 1;
-}
-
-.article__time {
-    margin: 5px 0;
-    font-family: RobotoRegular, sans-serif;
-    font-size: 10px;
-    color: var(--text);
-}
-
-.article__button {
-    padding: 10px 15px;
-    font-family: RobotoRegular, sans-serif;
+.article__text{
     font-size: 12px;
-    color: var(--text);
-    background-color: var(--bcg-button);
-    border-radius: 5px;
+    font-family: RobotoRegular, sans-serif;
+    margin-top: 6px;
+    color: #A4A4A6;
+}
+
+.article__date{
+    font-size: 12px;
+    font-family: RobotoRegular, sans-serif;
+    margin-top: 6px;
+    color: #fff;
 }

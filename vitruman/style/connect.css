@@ -117,7 +117,7 @@
     display: flex;
     align-items: center;
     background-color: #000;
-    border-radius: 50px;
+    border-radius: 15px;
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
     color: var(--text);
@@ -142,11 +142,7 @@
     text-decoration: none;
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
-    color: var(--bcg-button);
-}
-
-.connect__exchange_next:visited {
-    color: var(--bcg-button);
+    color: #fff;
 }
 
 .connect__exchange_next > span {
@@ -182,7 +178,7 @@
     width: 170px;
     padding: 5px 20px;
     border-radius: 5px;
-    background-color: #64BC26;
+    background-color: #00B488;
     font-family: RobotoRegular, sans-serif;
     font-size: 14px;
     color: var(--text);
@@ -239,7 +235,7 @@
 
 .referral__link {
     padding: 10px 30px;
-    background-color: var(--bcg-button);
+    background-color: var(--bcg-button-black);
     border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
@@ -251,9 +247,6 @@
     color: var(--text);
 }
 
-.referral__link:hover, .partners__btn:hover {
-    background-color: var(--bcg-button-hov);
-}
 
 .referral__btn {
     margin-top: 10px;
@@ -332,7 +325,7 @@
     display: flex;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
-    color: var(--bcg-button);
+    color: var(--bcg-button-black);
     cursor: pointer;
 }
 
@@ -364,10 +357,11 @@
 .partners__input {
     display: block;
     margin: 30px auto 0;
-    padding: 10px 0;
+    padding: 16px 0;
     width: 375px;
     outline: none;
-    background-color: var(--bcg-block);
+    background-color: #20252B;
+    border-radius: 10px;
     border: 1px solid #D9D9D9;
     text-align: center;
     color: #D9D9D9;
@@ -375,11 +369,12 @@
 
 .partners__btn {
     margin: 10px auto 0;
-    padding: 10px 0;
+    padding: 16px 0;
     display: flex;
     justify-content: center;
     width: 375px;
-    background-color: var(--bcg-button);
+    background-color: var(--bcg-button-black);
+    border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
@@ -390,7 +385,7 @@
     margin-top: 30px;
     width: 100%;
     padding: 30px;
-    background-color: var(--bcg-block);
+    background-color: #191A1F;
     border-radius: 15px;
 }
 
