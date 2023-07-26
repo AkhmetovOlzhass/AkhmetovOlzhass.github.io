@@ -87,6 +87,9 @@ figcaption {
     background-color: var(--bcg);
 }
 
+.support__chat{
+    margin-top: 100px;
+}
 
 .support__chat_message {
     display: flex;
@@ -253,4 +256,32 @@ figcaption {
 
 .btn__submit:hover {
     background-color: var(--bcg-block);
+}
+
+.profile__sidenav_link span{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile__sidenav_link span img{
+    margin-left: 10px;
+}
+
+.profile__sidenav_link span:last-child{
+    margin: 0;
+}
+.profile__sidenav_link span:first-child{
+    font-size: 18px;
+}
+
+.profile__sidenav{
+    margin-right: 40px;
+    height: 545px;
+}
+
+.problem__description{
+    color:#FFF;
+    font-family: RobotoRegular, sans-serif;
+    line-height: 150%;
+    font-size: 16px;
 }

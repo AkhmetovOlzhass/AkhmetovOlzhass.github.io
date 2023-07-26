@@ -48,8 +48,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #A4A4A6;
-    border-radius: 50px;
+    border: 1px solid #333;
+    background-color: #000;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -142,9 +143,9 @@
 .replenishment__input {
     width: 100%;
     padding: 15px 15px;
-    border: 1px solid #A4A4A6;
-    border-radius: 50px;
-    background-color: var(--bcg-block);
+    border: 1px solid #333;
+    border-radius: 15px;
+    background-color: #000;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: #A4A4A6;
@@ -231,27 +232,18 @@
 
 .replenishment__next {
     margin-top: 20px;
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--bcg-button);
-    border-radius: 50px;
+    background-color: #000;
+    border-radius: 15px;
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
     color: var(--text);
     text-decoration: none;
 }
-
-.replenishment__next:visited {
-    color: var(--text);
-}
-
-.replenishment__next:hover {
-    background-color: var(--bcg-button-hov);
-} 
-
 .replenishment__info_title {
     margin: 20px 0;
     font-family: RobotoRegular, sans-serif;

@@ -351,3 +351,7 @@
 .red {
     color: #D24646;
 }
+
+.transfer__input_dropdown{
+    margin: 0;
+}

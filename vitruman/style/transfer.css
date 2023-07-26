@@ -7,7 +7,7 @@
     max-width: 530px;
     padding: 30px 40px;
     margin: 20px auto 0;
-    background-color: #000;
+    background-color: var(--bcg-block);
     border-radius: 15px;
 }
 
@@ -36,7 +36,7 @@
     max-width: 420px;
     margin: 50px auto 0;
     padding: 20px;
-    background-color: var(--bcg-block);
+    background-color: #000;
     border-radius: 10px;
 }
 
@@ -236,15 +236,15 @@
 
 .transfer__rate {
     margin: 20px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #20252B;
-    border-radius: 50px;
+    background-color: #fff;
+    border-radius: 15px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
-    color: var(--text);
+    color: #000;
 }
 
 .transfer__rate_value {
@@ -259,21 +259,18 @@
 
 .transfer__next {
     margin: 10px 20px;
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
-    background-color: var(--bcg-button);
-    border-radius: 50px;
+    background-color: #000;
+    border-radius: 15px;
     text-decoration: none;
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
     color: var(--text);
 }
 
-.transfer__next:visited {
-    color: var(--text);
-}
 
-.transfer__next:hover {
-    background-color: var(--bcg-button-hov);
+.transfer__input_dropdown {
+    margin: 0;
 }

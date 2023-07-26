@@ -49,6 +49,8 @@
     margin-left: 0;
 }
 .statistics__accurate_filter_item{
+    display: flex;
+    align-items: center;
     margin-right: 10px;
 }
 
