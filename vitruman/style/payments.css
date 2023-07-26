@@ -48,6 +48,9 @@
     justify-content: start;
     margin-left: 0;
 }
+.statistics__accurate_filter_item{
+    margin-right: 10px;
+}
 
 .payments__table_block{
     display: flex;
