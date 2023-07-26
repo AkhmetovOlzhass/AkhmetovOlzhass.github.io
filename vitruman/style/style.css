@@ -54,6 +54,11 @@ button {
     color: var(--text);
 }
 
+.profile__title{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 .date {
     display: block;
     width: 100px;
