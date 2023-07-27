@@ -3,6 +3,7 @@ const partnersTabBox = document.querySelectorAll('.tab__box')
 const partnersReferal = document.querySelector('.referral')
 const partnersTables = document.querySelectorAll('.investors__window_data_box')
 const partnersArrows = document.querySelectorAll('.investors__window_arrow')
+const partnersLine= document.querySelectorAll('.investors__window_line')
 const textLinc = document.getElementById('referral__link')
 const copyBtn = document.getElementById('referral__copy_link')
 const successReferral = document.querySelector('.copy-confirmation-referral')
@@ -38,11 +39,12 @@ partnersTabs.forEach((tab, index) => {
     })
 })
 
-partnersArrows.forEach((arrow, index) => {
-    arrow.addEventListener('click', (e) => {
-        e.currentTarget.classList.toggle('investors__window_arrow_active')
+
+partnersLine.forEach((line, i) => {
+    line.addEventListener('click', (e) => {
+        e.currentTarget.querySelector('img').classList.toggle('investors__window_arrow_active');
         partnersTables.forEach((table, ind) => {
-            if (index === ind) table.classList.toggle('investors__window_data_active')
+            if (i === ind) table.classList.toggle('investors__window_data_active');
         })
     })
 })

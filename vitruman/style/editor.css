@@ -658,7 +658,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     margin-left: 30px;
     padding: 5px 25px;
     border-radius: 10px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);

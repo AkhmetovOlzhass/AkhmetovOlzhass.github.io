@@ -266,6 +266,17 @@ if(connectButtons && connectButtons.length > 0 && !noConnect) {
     })
 }
 
+if(noConnect){
+    connectButtons.forEach((btn, ind) => {
+        btn.addEventListener('click', () => {
+            connectButtons.forEach((item, index) => {
+                if(ind !== index) item.classList.remove('connect__exchange_section_btn_action');
+                else item.classList.add('connect__exchange_section_btn_action');
+            })
+        })
+    })
+}
+
 if(exchangeButtons && exchangeButtons.length > 0) {
     exchangeButtons.forEach(btnActive => {
         btnActive.addEventListener('click', e => {
@@ -402,14 +413,38 @@ if(transferButtons && transferButtons.length > 0) {
 }
 
 if(transferDropDownBtns && transferDropDownBtns.length > 0) {
+
+    const transferList = document.querySelectorAll('.transfer__input_dropdown_list');
+    const transferTrigger = document.querySelectorAll('.transfer__input_dropdown_value');
+
+    document.querySelector('body').addEventListener('click', (e) => {
+        if(e.target != transferTrigger[0]){
+            if(e.target.parentNode.parentNode != transferTrigger[0]){
+                transferList[0].classList.remove('transfer__input_dropdown_list_active');
+            }
+
+        }
+    })
+    if(transferTrigger.length >1 && transferList.length >1){
+        document.querySelector('body').addEventListener('click', (e) => {
+            if(e.target != transferTrigger[1]){
+                transferList[1].classList.remove('transfer__input_dropdown_list_active');
+            }
+        })
+    }
+
+
     transferDropDownBtns.forEach(btn => {
         btn.addEventListener('click', e => {
+            
             const transferList = e.currentTarget.parentNode.querySelector('.transfer__input_dropdown_list');
+            
             const transferArrow = e.currentTarget.querySelector('.transfer__input_dropdown_value_arrow');
             if(transferList.classList.contains('transfer__input_dropdown_list_active')) {
                 transferList.classList.remove('transfer__input_dropdown_list_active');
                 transferArrow.querySelector('svg').style.transform = 'rotate(0deg)';
             } else {
+                
                 transferList.classList.add('transfer__input_dropdown_list_active');
                 transferArrow.querySelector('svg').style.transform = 'rotate(180deg)';
             }
@@ -430,9 +465,9 @@ if(transferDropDownBtns && transferDropDownBtns.length > 0) {
                     box.querySelector('.transfer__input_dropdown_item_check').classList.add('transfer__input_dropdown_item_check_active');
                 }
             })
-            e.currentTarget.parentNode.classList.remove('transfer__input_dropdown_list_active');
         })
     })
+
 }
 
 if(langBtn) {
@@ -556,40 +591,6 @@ if(typeBtn){
 
 }
 
-//support questions
-const supportParent = document.querySelector('.profile__sidenav');
-const supportBlocks = document.querySelectorAll('.profile__sidenav_link');
-
-const appendBlock = document.querySelector('.manager__problem');
-
-
-texts = [
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur dignissimos beatae sunt necessitatibus vel natus fugit perspiciatis eum aliquam? Iusto illum, eum labore assumenda enim iure corrupti reprehenderit vitae illo.',
-    'Акция публичной компании — это доля в бизнесе. Чтобы понять, сколько она должна стоить, нужно оценить, как скоро вложения в конкретного эмитента окупятся. С одной стороны, компания может вернуть инвестору деньги только одним способом: поделиться прибылью, то есть, заплатить дивиденды.С другой стороны, помимо выплаты дивидендов, компания может направить свою прибыль на развитие бизнеса. Тогда финансовые показатели эмитента могут улучшиться, и его акции подорожают. В любом случае вы или сразу вернете часть денег, или ваша доля подорожает.Если вы разом купите все акции ВТБ по нынешней цене и его годовая прибыль не изменится — значит вам понадобится примерно 13 годовых прибылей, чтобы вложение окупилось. Или, другими словами, 13 лет. Если на таких же условиях купить «Норникель» — он окупится примерно через 10 лет. Выходит, по соотношению цена/прибыль акция «Норникеля» за 11 000 рублей выгоднее, чем акция ВТБ за 5 копеек.Формулы для такой оценки акций называются мультипликаторами. Это производные показатели, которые отражают соотношение между финансовыми результатами компании (прибыль, выручка, долги, капитал) и ее капитализацией.Или, другими словами, 13 лет. Если на таких же условиях купить «Норникель» — он окупится примерно через 10 лет. Выходит, по соотношению цена/прибыль акция «Норникеля» за 11 000 рублей выгоднее, чем акция ВТБ за 5 копеек.Формулы для такой оценки акций называются мультипликаторами. Это производные показатели, которые отражают с',
-    'wwwwwwwwwwwwwwwwwwwwwwwww',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officiis eveniet maiores porro, deleniti repudiandae praesentium, quas repellat est magni voluptate? Earum aperiam vel minima nulla id omnis architecto numquam!',
-    'Lorem ipsum dolor sit amet consectetur id omnis architecto numquam!',
-]
-
-if(supportBlocks){
-    supportBlocks.forEach((item, i) => {
-        item.addEventListener('click', () => {
-            const delBlock = document.querySelector('.problem__description');
-            delBlock.remove();
-
-            let div = document.createElement('div');
-            div.innerHTML = texts[i];
-            div.classList.add('problem__description');
-            appendBlock.appendChild(div);
-
-            supportBlocks.forEach((it) => {
-                it.classList.remove('profile__sidenav_active');
-            })
-
-            item.classList.add('profile__sidenav_active');
-        })
-    })
-}
 
 //footer cookie
 

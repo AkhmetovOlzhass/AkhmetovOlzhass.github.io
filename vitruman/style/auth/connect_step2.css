@@ -5,7 +5,10 @@ body {
 }
 
 .header__profile {
-    width: 20%;
+    width: auto;
+}
+.header__theme {
+    margin-right: 30px;
 }
 
 .main {
@@ -77,12 +80,12 @@ body {
 }
 
 .auth__steps_item_active {
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
 }
 
 .auth__steps_link {
     padding: 10px 20px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
@@ -312,7 +315,7 @@ body {
 
 .referral__link {
     padding: 10px 30px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;

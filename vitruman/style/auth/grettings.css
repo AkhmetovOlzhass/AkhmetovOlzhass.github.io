@@ -7,9 +7,11 @@ body {
 }
 
 .header__profile {
-    width: 20%;
+    width: auto;
 }
-
+.header__theme {
+    margin-right: 30px;
+}
 .main {
     flex-grow: 1;
 }
@@ -59,7 +61,7 @@ body {
     margin-top: 25px;
     padding: 10px 0;
     width: 100%;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 18px;

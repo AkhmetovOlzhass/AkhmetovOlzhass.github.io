@@ -632,3 +632,7 @@
 .education__chat_link:hover {
     background-color: #373C45;
 }
+
+.education__lesson_item_active{
+    border: 1px #fff solid;
+}

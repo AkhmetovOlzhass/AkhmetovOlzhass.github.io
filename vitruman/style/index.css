@@ -218,7 +218,7 @@
     font-family: RobotoRegular, sans-serif;
     font-size: 6px;
     color: var(--text);
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 5px;
 }
 
@@ -249,7 +249,7 @@
     font-family: RobotoRegular, sans-serif;
     font-size: 12px;
     color: var(--text);
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 5px;
 }
 
@@ -491,7 +491,7 @@
     padding: 10px 20px;
     margin-right: 20px;
     border-radius: 10px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
@@ -570,7 +570,7 @@
     padding: 10px 25px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -621,7 +621,7 @@
     padding: 10px 25px;
     font-family: RobotoRegular, sans-serif;
     font-size: 14px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 10px;
     cursor: pointer;
 }

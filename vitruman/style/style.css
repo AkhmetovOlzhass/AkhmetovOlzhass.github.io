@@ -2,8 +2,8 @@
     --text: #FFF;
     --text-gray: #8F8F91;
     --bcg: #191A1F;
-    --bcg-button: #C1A875;
-    --bcg-button-hov: #C2B290;
+    --bcg-button: #8F8F91;
+    --bcg-button-hov: #8F8F91;
     --icon: #A4A4A6;
     --bcg-block: #25282F;
     --nav-active: rgba(64, 64, 64, 0.5);
@@ -311,7 +311,7 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    background-color: var(--bcg-button);
+    background-color:#C1A875;
     font-size: 30px;
     color: var(--text);
 }
@@ -387,7 +387,7 @@ button {
 .header__replenish {
     padding: 10px 25px;
     border-radius: 50px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
@@ -418,7 +418,7 @@ button {
 .header__regist {
     padding: 10px 25px;
     border-radius: 50px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     cursor: pointer;
@@ -732,27 +732,27 @@ button {
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
-    background-color: rgb(112, 112, 112);
+    background-color: rgb(63, 63, 63);
     position: fixed;
     bottom: 0;
 }
 
 .footer__cookie_text > a {
     text-decoration: none;
-    color: var(--bcg-button);
+    color: #C1A875;
 }
 
 .footer__cookie_text > a:visited {
-    color: var(--bcg-button);
+    color: #C1A875;
 }
 
 .footer__cookie_text > a:hover {
-    color: var(--bcg-button-hov);
+    color: #C1A875;
 }
 
 .footer__cookie_btn {
     padding: 5px 30px;
-    background-color: var(--bcg-button);
+    background-color: #C1A875;
     border-radius: 4px;
     cursor: pointer;
 }

@@ -53,13 +53,18 @@ partnersListBtn.forEach((arrow, index) => {
 
 dropdownContent.forEach((item, index) => {
     item.addEventListener('click', () => {
+        dropdownContent.forEach(i => {
+            i.classList.remove('dropdown__active');
+        });
+        dropdownContent[index].classList.add('dropdown__active');
         contentText.textContent = dropdownData[index]
     })
+
 })
 
 copyDeposits.addEventListener('click', function() {
-    textDeposits.select()
-    textDeposits.setSelectionRange(0, 99999)
+    textDeposits.select();
+    textDeposits.setSelectionRange(0, 99999);
     document.execCommand('copy')
     success.classList.add('copy-confirmation_active')
     setTimeout(function(){
