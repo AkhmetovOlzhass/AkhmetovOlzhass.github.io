@@ -244,6 +244,10 @@
     color: var(--text);
     text-decoration: none;
 }
+
+.replenishment__next:hover{
+    background-color: #373C45;
+}
 .replenishment__info_title {
     margin: 20px 0;
     font-family: RobotoRegular, sans-serif;

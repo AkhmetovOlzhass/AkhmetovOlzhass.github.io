@@ -21,7 +21,7 @@ const editorSelect = document.querySelector('.editor__auto_select');
 const editorInfo = document.querySelector('.editor__valute_info');
 const headerValute = document.querySelector('.header__value');
 const educationTabs = document.querySelectorAll('.education__about_title');
-const educationTasks = document.querySelectorAll('.education__task_title > button');
+const educationTasks = document.querySelectorAll('.education__task_header');
 const educationSlider = document.querySelector('.education__slider');
 const ranges = document.querySelectorAll('input[type="range"].slider-progress');
 
@@ -102,6 +102,11 @@ if(educationSlider) {
 
 if(educationTasks && educationTasks.length > 0) {
     const educationTasksHidden = document.querySelectorAll('.education__task_close');
+    educationTasks.forEach(btn => {
+        btn.addEventListener('click', e => {
+            e.currentTarget.parentNode.querySelector('.education__task_content').classList.add('education__task_content_visible');
+        })
+    })
 
     educationTasksHidden.forEach(btn => {
         btn.addEventListener('click', e => {
@@ -109,12 +114,7 @@ if(educationTasks && educationTasks.length > 0) {
             e.currentTarget.parentNode.parentNode.querySelector('.education__task_title > button').style.display = 'flex';
         })
     })
-    educationTasks.forEach(btn => {
-        btn.addEventListener('click', e => {
-            e.currentTarget.style.display = 'none';
-            e.currentTarget.parentNode.parentNode.parentNode.querySelector('.education__task_content').classList.add('education__task_content_visible');
-        })
-    })
+
 }
 
 if(educationTabs && educationTabs.length > 0) {
@@ -250,8 +250,8 @@ if(slider) {
         buttonBox.append(btn);
     })
 }
-
-if(connectButtons && connectButtons.length > 0) {
+const noConnect = document.querySelector('.not-connect');
+if(connectButtons && connectButtons.length > 0 && !noConnect) {
     const containerContentWidth = document.querySelector('.connect__exchange_box').getBoundingClientRect().width;
     const contentBox = document.querySelector('.connect__exchange_container');
 
@@ -438,9 +438,13 @@ if(transferDropDownBtns && transferDropDownBtns.length > 0) {
 if(langBtn) {
     const sliderBox = document.querySelector('.header__lang_dropdown');
     const langItems = document.querySelectorAll('.header__lang_dropdown_item');
-
-    langBtn.addEventListener('click', e => {
-        sliderBox.classList.toggle('header__lang_dropdown_active');
+    
+    document.querySelector('body').addEventListener('click', (e) => {
+        if(e.target.parentNode == langBtn){
+            sliderBox.classList.toggle('header__lang_dropdown_active');
+        } else{
+            sliderBox.classList.remove('header__lang_dropdown_active');
+        }
     })
 
     langItems.forEach(item => {
@@ -468,5 +472,132 @@ if(statisticBtn && statisticBtn.length > 0) {
             e.currentTarget.classList.add('presents__button_hide');
             e.currentTarget.parentNode.parentNode.parentNode.querySelector('.presents__box').classList.add('presents__box_active');
         })
+    })
+}
+
+try{
+    var sheet = document.createElement('style'),  
+  $rangeInput = $('.range input'),
+  prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+
+document.body.appendChild(sheet);
+
+var getTrackStyle = function (el) {  
+  var curVal = el.value,
+      val = (curVal - 1) * 25,
+      style = '';
+  
+  // Set active label
+  $('.range-labels li').removeClass('active selected');
+  
+  var curLabel = $('.range-labels').find('li:nth-child(' + curVal + ')');
+  
+  curLabel.addClass('active selected');
+  curLabel.prevAll().addClass('selected');
+  
+  // Change background gradient
+  for (var i = 0; i < prefs.length; i++) {
+    style += '.range {background: linear-gradient(to right, #b2b2b2 0%, #b2b2b2 ' + val + '%, #fff ' + val + '%, #b2b2b2 100%)}';
+    style += '.range input::-' + prefs[i] + '{background: linear-gradient(to right, #b2b2b2 0%, #b2b2b2 ' + val + '%, #b2b2b2 ' + val + '%, #b2b2b2 100%)}';
+  }
+
+  return style;
+}
+
+$rangeInput.on('input', function () {
+  sheet.textContent = getTrackStyle(this);
+});
+
+// Change input value on label click
+$('.range-labels li').on('click', function () {
+  var index = $(this).index();
+  
+  $rangeInput.val(index + 1).trigger('input');
+  
+});
+}
+catch{}
+
+
+//Дроп меню
+const buyBtn = document.querySelectorAll('.statistics__accurate_filter_item_offers-btn_buy');
+const typeBtn = document.querySelectorAll('.statistics__accurate_filter_item_offers-btn_type');
+
+const buyBlock = document.querySelectorAll('.market__active_buy');
+const typeBlock = document.querySelectorAll('.market__active_type');
+
+if(buyBtn){
+    document.querySelector('body').addEventListener('click', (e) => {
+        // if((e.target == buyBtn || e.target.parentNode.parentNode == buyBtn  || e.target.parentNode.parentNode.parentNode == buyBtn)){
+        //     buyBlock.classList.toggle('market__active_visible');
+        // } else if(!(e.target == buyBlock || e.target.parentNode == buyBlock  || e.target.parentNode.parentNode == buyBlock)){
+        //     buyBlock.classList.remove('market__active_visible');
+        // }
+        buyBtn.forEach((item, i) => {
+            if((e.target == item || e.target.parentNode == item  || e.target.parentNode.parentNode == item || e.target.parentNode.parentNode.parentNode == item)){
+                buyBlock[i].classList.toggle('market__active_visible');
+            } else if(!(e.target == buyBlock[i] || e.target.parentNode == buyBlock[i]  || e.target.parentNode.parentNode == buyBlock[i] || e.target.parentNode.parentNode.parentNode == buyBlock[i])){
+                buyBlock[i].classList.remove('market__active_visible');
+            }
+        })
+    })
+}
+if(typeBtn){
+    document.querySelector('body').addEventListener('click', (e) => {
+
+        typeBtn.forEach((item, i) => {
+            if(e.target == item || e.target.parentNode == item  || e.target.parentNode.parentNode == item || e.target.parentNode.parentNode.parentNode == item){
+                typeBlock[i].classList.toggle('market__active_visible');
+            } else if(!(e.target == typeBlock[i] || e.target.parentNode == typeBlock[i]  || e.target.parentNode.parentNode == typeBlock[i] || e.target.parentNode.parentNode.parentNode == typeBlock[i])){
+                typeBlock[i].classList.remove('market__active_visible');
+            }
+        })
+    })
+
+}
+
+//support questions
+const supportParent = document.querySelector('.profile__sidenav');
+const supportBlocks = document.querySelectorAll('.profile__sidenav_link');
+
+const appendBlock = document.querySelector('.manager__problem');
+
+
+texts = [
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur dignissimos beatae sunt necessitatibus vel natus fugit perspiciatis eum aliquam? Iusto illum, eum labore assumenda enim iure corrupti reprehenderit vitae illo.',
+    'Акция публичной компании — это доля в бизнесе. Чтобы понять, сколько она должна стоить, нужно оценить, как скоро вложения в конкретного эмитента окупятся. С одной стороны, компания может вернуть инвестору деньги только одним способом: поделиться прибылью, то есть, заплатить дивиденды.С другой стороны, помимо выплаты дивидендов, компания может направить свою прибыль на развитие бизнеса. Тогда финансовые показатели эмитента могут улучшиться, и его акции подорожают. В любом случае вы или сразу вернете часть денег, или ваша доля подорожает.Если вы разом купите все акции ВТБ по нынешней цене и его годовая прибыль не изменится — значит вам понадобится примерно 13 годовых прибылей, чтобы вложение окупилось. Или, другими словами, 13 лет. Если на таких же условиях купить «Норникель» — он окупится примерно через 10 лет. Выходит, по соотношению цена/прибыль акция «Норникеля» за 11 000 рублей выгоднее, чем акция ВТБ за 5 копеек.Формулы для такой оценки акций называются мультипликаторами. Это производные показатели, которые отражают соотношение между финансовыми результатами компании (прибыль, выручка, долги, капитал) и ее капитализацией.Или, другими словами, 13 лет. Если на таких же условиях купить «Норникель» — он окупится примерно через 10 лет. Выходит, по соотношению цена/прибыль акция «Норникеля» за 11 000 рублей выгоднее, чем акция ВТБ за 5 копеек.Формулы для такой оценки акций называются мультипликаторами. Это производные показатели, которые отражают с',
+    'wwwwwwwwwwwwwwwwwwwwwwwww',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officiis eveniet maiores porro, deleniti repudiandae praesentium, quas repellat est magni voluptate? Earum aperiam vel minima nulla id omnis architecto numquam!',
+    'Lorem ipsum dolor sit amet consectetur id omnis architecto numquam!',
+]
+
+if(supportBlocks){
+    supportBlocks.forEach((item, i) => {
+        item.addEventListener('click', () => {
+            const delBlock = document.querySelector('.problem__description');
+            delBlock.remove();
+
+            let div = document.createElement('div');
+            div.innerHTML = texts[i];
+            div.classList.add('problem__description');
+            appendBlock.appendChild(div);
+
+            supportBlocks.forEach((it) => {
+                it.classList.remove('profile__sidenav_active');
+            })
+
+            item.classList.add('profile__sidenav_active');
+        })
+    })
+}
+
+//footer cookie
+
+const footerCookie = document.querySelector('.footer__cookie');
+const footerCookieClose = document.querySelector('.footer__cookie_btn');
+
+if(footerCookie){
+    footerCookieClose.addEventListener('click', () => {
+        footerCookie.remove();
     })
 }

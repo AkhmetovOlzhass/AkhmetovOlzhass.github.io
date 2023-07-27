@@ -25,12 +25,11 @@ body {
     padding: 65px 50px;
     display: flex;
     justify-content: space-between;
-    background-color: var(--bcg-block);
+    background-color: #20252B;
     border-radius: 15px;
 }
 
 .auth__form {
-    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;

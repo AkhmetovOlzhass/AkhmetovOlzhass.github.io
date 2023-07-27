@@ -713,6 +713,7 @@ h5 {
 .statistics__accurate_filter {
     display: flex;
     justify-content: space-between;
+    position: relative;
     width: 92.68%;
     height: 30px;
     border-spacing: 0px;
@@ -1963,4 +1964,75 @@ h5 {
 
 .tab__box_active {
     display: block;
+}
+
+.market__active{
+    position: absolute;
+    border-radius: 10px;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    top: 40px;
+    z-index: 9999999;
+    display: none;
+}
+.market__active_buy{
+    left: 300px;
+}
+
+.market__active_type{
+    left: 450px;
+}
+
+.market__active_visible{
+    display: block;
+}
+
+
+.market__active_input{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px #A4A4A6 solid;
+    padding-bottom: 5px;
+}
+
+.market__active_input img{
+    margin-left: 5px;
+}
+
+.market__active_input input{
+    color: #A4A4A6;
+    background-color: #000;
+    border: none;
+    margin-left: 5px;
+}
+
+.market__active_choose{
+    color: #A4A4A6;
+    padding: 8px 0 5px 10px;
+}
+
+.market__active_choose:hover{
+   background-color: #373C45;
+}
+
+.market__active_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.market__active_btn{
+    padding: 1px 8px 2px 7px;
+    color: #A4A4A6;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.market__active_btn:last-child{
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.market__active_btn:hover {
+    background-color: #20252B;
 }

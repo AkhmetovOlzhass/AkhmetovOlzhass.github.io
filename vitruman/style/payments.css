@@ -33,6 +33,13 @@
     font-weight: 400;
 }
 
+.paymnets__table tr th input{
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+}
+
 .paymnets__table tr th span{
     color: #A4A4A6;
 }
@@ -42,6 +49,11 @@
     background-color: #000;
     padding: 10px 52px 10px 51px;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.payments__btn:hover {
+    background-color: #373C45;
 }
 
 .statistics__accurate_filter{
@@ -136,6 +148,11 @@
     justify-content: center;
     margin: 0 auto;
     margin-top: 8px;
+    cursor: pointer;
+}
+
+.debut__block_btn:hover{
+    background-color: #373C45;
 }
 
 .debut__block_text span{

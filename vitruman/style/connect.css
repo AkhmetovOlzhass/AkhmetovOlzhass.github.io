@@ -243,8 +243,8 @@
     text-decoration: none;
 }
 
-.referral__link:visited {
-    color: var(--text);
+.referral__link:hover {
+    background-color: #373C45;
 }
 
 
@@ -325,7 +325,7 @@
     display: flex;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
-    color: var(--bcg-button-black);
+    color: #fff;
     cursor: pointer;
 }
 
@@ -379,6 +379,10 @@
     font-size: 16px;
     color: var(--text);
     cursor: pointer;
+}
+
+.partners__btn:hover{
+    background-color: #373C45;
 }
 
 .connect__accounts {

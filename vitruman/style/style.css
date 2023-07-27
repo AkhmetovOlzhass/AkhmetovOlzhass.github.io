@@ -477,12 +477,14 @@ button {
 }
 
 .header__lang {
-    width: 75px;
     color: var(--icon);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+.header__lang img{
+    padding-right: 5px;
 }
 
 .header__lang:hover > span {
@@ -491,6 +493,7 @@ button {
 
 .lang__value {
     font-family: RobotoRegular, sans-serif;
+    padding-right: 5px;
 }
 
 .header__lang_dropdown {
@@ -723,14 +726,15 @@ button {
 .footer__cookie {
     padding: 30px 0;
     width: 100%;
-    margin: 0 0 55px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
-    background-color: rgb(10, 10, 12);
+    background-color: rgb(112, 112, 112);
+    position: fixed;
+    bottom: 0;
 }
 
 .footer__cookie_text > a {

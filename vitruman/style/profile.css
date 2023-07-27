@@ -48,8 +48,8 @@
 }
 
 
-.profile__advertising_text > a:visited {
-    color: var(--text);
+.profile__advertising_text > a:hover {
+    background-color: #373C45;
 }
 
 .profile__advertising_icons {

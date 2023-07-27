@@ -260,19 +260,17 @@
                                 <h3>Инвестиции (маржа)</h3>
                                 <p><span>Доступно</span> 17,45 USDT</p>
                             </div>
-                            <div class="editor__invest_values">
-                                <p class="editor__invest_value">13,25</p>
-                                <p class="editor__invest_name">USDT</p>
-                            </div>
-                            <div class="editor__invest_chart">
-                                <div class="editor__invest_chart_bcg">
-                                    <div class="editor__invest_chart_mark editor__invest_chart_mark_active"></div>
-                                    <div class="editor__invest_chart_mark editor__invest_chart_mark_active"></div>
-                                    <div class="editor__invest_chart_mark editor__invest_chart_mark_active"></div>
-                                    <div class="editor__invest_chart_mark editor__invest_chart_mark_focus"><div class="editor__invest_chart_mark_value">20%</div></div>
-                                    <div class="editor__invest_chart_mark"></div>
-                                </div>
-                            </div>
+                            <input placeholder="13,25 USDT" class="editor__invest_values"/>
+                            <div class="range">
+                                <input type="range" min="1" max="5" steps="1" value="1">
+                              </div>
+                            <ul class="range-labels">
+                                <li class="active selected"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
                             <div class="editor__auto">
                                 <div class="editor__auto_text">
                                     АВТОМАТИЧЕСКАЯ НАСТРОЙКА
@@ -392,22 +390,48 @@
                            <li class="statistics__accurate_filter_item">
                                 <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
                            </li>
-                           <li class="statistics__accurate_filter_item">
-                                <button class="statistics__accurate_filter_item_offers-btn">
-                                    <span>Биржа</span>
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
-                                    </svg>
-                                </button>
-                           </li>
-                           <li class="statistics__accurate_filter_item">
+                           <li class="statistics__accurate_filter_item statistics__accurate_filter_item_offers-btn_buy">
+                            <button class="statistics__accurate_filter_item_offers-btn">
+                                <span>Биржа</span>
+                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </li>
+                       <div class="market__active market__active_buy">
+                            <div class="market__active_input">
+                                <img src="../img/transfer/search.svg" alt="search">
+                                <input type="text" placeholder="Выберите">
+                            </div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_wrapper">
+                                <div class="market__active_btn">Применить</div>
+                                <div class="market__active_btn">Очистить</div>
+                            </div>
+                        </div>
+                        <li class="statistics__accurate_filter_item statistics__accurate_filter_item_offers-btn_type">
                             <button class="statistics__accurate_filter_item_offers-btn">
                                 <span>Тип операции</span>
                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
                                 </svg>
                             </button>
-                       </li>            
+                        </li>   
+                        <div class="market__active market__active_type">
+                            <div class="market__active_input">
+                                <img src="../img/transfer/search.svg" alt="search">
+                                <input type="text" placeholder="Выберите">
+                            </div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_wrapper">
+                                <div class="market__active_btn">Применить</div>
+                                <div class="market__active_btn">Очистить</div>
+                            </div>
+                        </div>         
                     </ul>                   
     
                     <table class="statistics__accurate_table">
@@ -470,14 +494,27 @@
                            <li class="statistics__accurate_filter_item">
                                 <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
                            </li>
-                           <li class="statistics__accurate_filter_item">
-                                <button class="statistics__accurate_filter_item_offers-btn">
-                                    <span>Тип операции </span>
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
-                                    </svg>
-                                </button>
-                           </li>         
+                           <li class="statistics__accurate_filter_item statistics__accurate_filter_item_offers-btn_buy">
+                            <button class="statistics__accurate_filter_item_offers-btn">
+                                <span>Тип операции</span>
+                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </li>
+                       <div class="market__active market__active_buy">
+                            <div class="market__active_input">
+                                <img src="../img/transfer/search.svg" alt="search">
+                                <input type="text" placeholder="Выберите">
+                            </div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_choose">Выберите</div>
+                            <div class="market__active_wrapper">
+                                <div class="market__active_btn">Применить</div>
+                                <div class="market__active_btn">Очистить</div>
+                            </div>
+                        </div>
                     </ul>                   
 
                     <table class="statistics__accurate_table">
@@ -564,6 +601,7 @@
             </div>
         </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script defer src="../app.js"></script>
 </body>
 </html>

@@ -120,6 +120,10 @@
     cursor: pointer;
 }
 
+.account__link:hover {
+background-color: #373C45;
+}
+
 .account__btns_text {
     margin-top: 5px;
     width: 100%;

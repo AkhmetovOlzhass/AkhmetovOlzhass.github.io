@@ -75,11 +75,12 @@
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
+    border: #25282F 1px solid;
     cursor: pointer;
 }
 
 .presents__trigger > button:hover {
-    background-color: var(--bcg-button-hov);
+    background-color: #373C45;
 }
 
 .presents__balance {
@@ -227,24 +228,22 @@
     border-radius: 5px;
 }
 
+.accounts__select_close:hover {
+    color: #8F8F91;
+}
+
 .accounts__select_active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10%;
-    text-align: center;
-    border-radius: 5px;
-    font-family: RobotoRegular, sans-serif;
-    font-size: 16px;
-    color: var(--text);
-    cursor: pointer;
+    background-color: #000;
+}
+.accounts__select_active:hover {
+    color: #fff;
 }
 
 .accounts__select_close {
     width: 10%;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    border-radius: 0 10px 10px 0; 
+    border-radius: 5px 5px 5px 5px; 
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
@@ -327,5 +326,10 @@
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
     color: var(--text);
+    border: #20252B 1px solid;
     cursor: pointer;
+}
+
+.accounts__btn:hover{
+    border: #ffffff 1px solid;
 }

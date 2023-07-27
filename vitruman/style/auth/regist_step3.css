@@ -122,3 +122,14 @@ body {
 .auth__next:hover {
     background-color: var(--bcg-button-hov);
 }
+
+.auth__text-repeat{
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.auth__text-repeat:hover{
+    color: #c9c9c9;
+}

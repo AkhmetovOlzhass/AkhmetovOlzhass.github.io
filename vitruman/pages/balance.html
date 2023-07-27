@@ -381,28 +381,54 @@
                 </div>
 
                 <ul class="statistics__accurate_filter">
-                       <li class="statistics__accurate_filter_item">
-                            <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
-                       </li>
-                       <li class="statistics__accurate_filter_item">
-                            <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
-                       </li>
-                       <li class="statistics__accurate_filter_item">
-                            <button class="statistics__accurate_filter_item_offers-btn">
-                                <span>Биржа</span>
-                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
-                                </svg>
-                            </button>
-                       </li>
-                       <li class="statistics__accurate_filter_item">
+                    <li class="statistics__accurate_filter_item">
+                        <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                    </li>
+                    <li class="statistics__accurate_filter_item">
+                        <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                    </li>
+                    <li class="statistics__accurate_filter_item statistics__accurate_filter_item_offers-btn_buy">
+                        <button class="statistics__accurate_filter_item_offers-btn">
+                            <span>Биржа</span>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </li>
+                   <div class="market__active market__active_buy">
+                        <div class="market__active_input">
+                            <img src="../img/transfer/search.svg" alt="search">
+                            <input type="text" placeholder="Выберите">
+                        </div>
+                        <div class="market__active_choose">Выберите</div>
+                        <div class="market__active_choose">Выберите</div>
+                        <div class="market__active_choose">Выберите</div>
+                        <div class="market__active_wrapper">
+                            <div class="market__active_btn">Применить</div>
+                            <div class="market__active_btn">Очистить</div>
+                        </div>
+                    </div>
+                    <li class="statistics__accurate_filter_item statistics__accurate_filter_item_offers-btn_type">
                         <button class="statistics__accurate_filter_item_offers-btn">
                             <span>Тип операции</span>
                             <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.5 12L0.00481024 0.749998L12.9952 0.75L6.5 12Z" fill="white"/>
                             </svg>
                         </button>
-                   </li>            
+                    </li>   
+                    <div class="market__active market__active_type">
+                        <div class="market__active_input">
+                            <img src="../img/transfer/search.svg" alt="search">
+                            <input type="text" placeholder="Выберите">
+                        </div>
+                        <div class="market__active_choose">Выберите</div>
+                        <div class="market__active_choose">Выберите</div>
+                        <div class="market__active_choose">Выберите</div>
+                        <div class="market__active_wrapper">
+                            <div class="market__active_btn">Применить</div>
+                            <div class="market__active_btn">Очистить</div>
+                        </div>
+                    </div>
                 </ul>                   
 
                 <table class="statistics__accurate_table">
@@ -446,6 +472,44 @@
         </div>
     </div>
 </main>
+<footer class="footer">
+    <div class="footer__box">
+        <div class="footer__info">
+            <img src="../img/logo.svg" alt="logo">
+            <p class="footer__copyright">
+                © 2021-2022 “Name Name” - прибыльные
+                инвестиции. Все права защищены.
+            </p>
+            <p class="footer__social">Следите за нами в соц.сетях:</p>
+            <div class="footer__social_container">
+                <a href="#" class="footer__social_link"><img src="../img/footer/telegram.png" alt="telegram"></a>
+                <a href="#" class="footer__social_link"><img src="../img/footer/whatsapp.png" alt="whatsapp"></a>
+                <a href="#" class="footer__social_link"><img src="../img/footer/vk.png" alt="vk"></a>
+            </div>
+        </div>
+        <nav class="footer__nav">
+            <div class="footer__nav_list">
+                <a href="#" class="footer__nav_link">О СИСТЕМЕ</a>
+                <a href="#" class="footer__nav_link">Lorem ipsum</a>
+                <a href="#" class="footer__nav_link">Lorem ipsum</a>
+                <a href="#" class="footer__nav_link">Lorem ipsum</a>
+                <a href="#" class="footer__nav_link">Lorem ipsum</a>
+            </div>
+            <div class="footer__nav_list">
+                <a href="#" class="footer__nav_link">ПОЧЕМУ МЫ?</a>
+                <a href="#" class="footer__nav_link">Информация</a>
+                <a href="#" class="footer__nav_link">Подарок</a>
+                <a href="#" class="footer__nav_link">Блог</a>
+                <a href="#" class="footer__nav_link">FAQ</a>
+            </div>
+        </nav>
+        <div class="footer__contacts">
+            <a href="tel:+79999999" class="footer__contacts_phone">8 999 999 99 99</a>
+            <a href="#" class="footer__contacts_link">namenamE.com</a>
+            <a href="#" class="footer__contacts_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</a>
+        </div>
+    </div>
+</footer>
 <script defer src="../app.js"></script>
 </body>
 </html>

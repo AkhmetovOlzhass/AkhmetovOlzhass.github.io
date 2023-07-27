@@ -275,8 +275,8 @@ figcaption {
 }
 
 .profile__sidenav{
-    margin-right: 40px;
     height: 545px;
+    float: none;
 }
 
 .problem__description{
@@ -284,4 +284,10 @@ figcaption {
     font-family: RobotoRegular, sans-serif;
     line-height: 150%;
     font-size: 16px;
+    width: 63%;
+    float: right;
+}
+
+.profile__sidenav_link{
+    cursor: pointer;
 }

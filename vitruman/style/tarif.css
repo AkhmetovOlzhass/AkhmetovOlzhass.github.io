@@ -55,6 +55,10 @@
     margin-top: 20px;
 }
 
+.tarif__content:hover{
+    background-color: #373C45;
+}
+
 .connect__exchange{
     background-color: transparent;
     padding: 0;
@@ -114,8 +118,13 @@
     text-transform: uppercase;
     padding: 5px 37px 6px 36px;
     border-radius: 10px;
-    background: #000;
+    background-color: #000;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+.increase__block_button:hover {
+    background-color: #373C45;
 }
 
 .increase{

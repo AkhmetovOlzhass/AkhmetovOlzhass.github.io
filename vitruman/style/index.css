@@ -27,6 +27,7 @@
     padding: 20px;
     display: flex;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 .news__item:hover {
