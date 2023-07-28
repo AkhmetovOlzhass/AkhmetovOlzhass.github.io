@@ -843,7 +843,8 @@ h5 {
 }
 
 .opportunities__btn:hover {
-    background-color: var(--bcg);
+    background-color: #C1A875;
+    color: #fff;
 }
 
 .investors {
@@ -1021,7 +1022,8 @@ h5 {
 }
 
 .offers__element_center_btn:hover {
-    background-color: var(--bcg);
+    background-color: #C1A875;
+    color: #fff;
 }
 
 #ali__link {
@@ -1725,7 +1727,7 @@ h5 {
 }
 
 .advertising__exchanges_box_btn:hover {
-    background-color: var(--bcg);
+    background-color: #C1A875;
 } 
 
 .advertising__exchanges_btn {
@@ -1813,7 +1815,7 @@ h5 {
 }
 
 .advertisement__funnels_lvl-up_btn:hover {
-    background-color: var(--bcg-block);
+    background-color: #C1A875;
 }
 
 .advertisement__increase_lvl-active_title {
@@ -1951,7 +1953,7 @@ h5 {
 }
 
 .advertisement__increase_lvl-active_list_status_btn:hover {
-    background-color: var(--bcg);
+    background-color: #C1A875;
 } 
 
 .hiding {

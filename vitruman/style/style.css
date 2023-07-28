@@ -3,7 +3,7 @@
     --text-gray: #8F8F91;
     --bcg: #191A1F;
     --bcg-button: #8F8F91;
-    --bcg-button-hov: #8F8F91;
+    --bcg-button-hov: #C1A875;
     --icon: #A4A4A6;
     --bcg-block: #25282F;
     --nav-active: rgba(64, 64, 64, 0.5);
@@ -568,7 +568,7 @@ button {
 
 .nav__item > a {
     font-family: RobotoRegular, sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--text);
     text-decoration: none;
 }
@@ -667,7 +667,7 @@ button {
     display: flex;
     align-items: center;
     font-family: RobotoRegular, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text);
     text-decoration: none;
 }

@@ -179,7 +179,8 @@
 }
 
 .balance__replenishment:hover {
-    background-color: #373C45;
+    background-color: #C1A875;
+    color: #fff;
 }
 
 .tokens {

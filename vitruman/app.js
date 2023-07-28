@@ -602,3 +602,16 @@ if(footerCookie){
         footerCookie.remove();
     })
 }
+
+const partners__tabs = document.querySelectorAll('.statistics__general_title_tab_btn')
+
+if(partners__tabs){
+    partners__tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            partners__tabs.forEach((el) => {
+                el.classList.remove('statistics__general_title_tab_btn-active');
+            });
+            tab.classList.add('statistics__general_title_tab_btn-active');
+        });
+    });
+}

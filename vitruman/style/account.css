@@ -121,7 +121,8 @@
 }
 
 .account__link:hover {
-background-color: #373C45;
+background-color: #C1A875;
+color: #fff;
 }
 
 .account__btns_text {

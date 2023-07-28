@@ -84,7 +84,7 @@ figcaption {
 }
 
 .call__back:hover {
-    background-color: var(--bcg);
+    background-color: #C1A875;
 }
 
 .support__chat{
@@ -255,7 +255,7 @@ figcaption {
 }
 
 .btn__submit:hover {
-    background-color: var(--bcg-block);
+    background-color: #C1A875;
 }
 
 .profile__sidenav_link span{

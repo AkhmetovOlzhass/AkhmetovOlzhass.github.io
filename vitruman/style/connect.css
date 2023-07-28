@@ -244,7 +244,8 @@
 }
 
 .referral__link:hover {
-    background-color: #373C45;
+    background-color: #C1A875;
+    color: #fff;
 }
 
 
@@ -382,7 +383,7 @@
 }
 
 .partners__btn:hover{
-    background-color: #373C45;
+    background-color: #C1A875;
 }
 
 .connect__accounts {
