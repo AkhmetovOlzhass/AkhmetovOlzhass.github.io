@@ -489,4 +489,7 @@ body {
     .auth__steps{
         padding-left: 0;
     }
+    html{
+        background-color: #191A1F;
+    }
 }

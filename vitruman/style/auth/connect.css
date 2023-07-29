@@ -212,4 +212,7 @@ body {
     .auth__steps_link{
         display: none;
     }
+    html{
+        background-color: #191A1F;
+    }
 }

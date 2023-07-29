@@ -209,4 +209,7 @@ body {
     .auth__form > img{
         width: 100%;
     }
+    html{
+        background-color: #191A1F;
+    }
 }

@@ -133,4 +133,7 @@ body {
     .auth__content_title{
         font-size: 20px;
     }
+    html{
+        background-color: #191A1F;
+    }
 }
