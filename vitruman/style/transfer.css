@@ -283,3 +283,24 @@
 .transfer__input_dropdown {
     margin: 0;
 }
+
+@media(max-width: 576px){
+    .transfer__box{
+        padding: 26px 20px;
+    }
+    .transfer__input_text_small{
+        margin-left: 5px;
+    }
+    .transfer__input{
+        padding-top: 5px;
+    }
+    .transfer__rate_value{
+        font-size: 16px;
+    }
+    .transfer__rate_value > img{
+        display: none;
+    }
+    .transfer{
+        margin-top: 10px;
+    }
+}

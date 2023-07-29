@@ -266,3 +266,158 @@ color: #fff;
 .back:hover {
     stroke: var(--bcg-button-hov);
 }
+.account__box_small{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .statistic__total_value{
+        font-size: 20px;
+    }
+    .statistics__accurate_filter_item_offers-btn span{
+        font-size: 10px;
+    }
+    .statistics__accurate_table-head{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 769px){
+    .account{
+        padding: 30px 10px;
+    }
+    .statistic__period{
+        font-size: 12px;
+    }
+    .account__btns_container{
+        width: 50%;
+    }
+    .account__title{
+        width: 50%;
+    }
+    .positions__container{
+        width: 100%;
+    }
+    .statistic__total_name{
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    .statistic__total_value{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px){
+    .positions__title{
+        font-size: 14px;
+    }
+    .account__link{
+        font-size: 12px;
+    }
+    .account__info_value{
+        font-size: 14px;
+    }
+    .account__info_list_value{
+        font-size: 14px;
+    }
+    .account__info_list{
+        width: 50%;
+    }
+    .account__info_balance{
+        width: 40%;
+    }
+    .account__info_list_title, .account__info_title{
+        font-size: 12px;
+    }
+    .account__title{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .account{
+        position: relative;
+        padding-top: 20px;
+    }
+    .account__box{
+        display: none;
+    }
+    .account__box_small{
+        display: block;
+    }
+    .account__btns_container{
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .account__btns_text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .account__box_small-link {
+        position: absolute;
+        top: 20px;
+    }
+    .positions__container{
+        display: block;
+    }
+    .positions__item{
+        display: inline-block;
+        width: 48%;
+    }
+    .positions__item_name{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .positions__item_value{
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .statistic__period{
+        display: block;
+        font-size: 12px;
+    }
+    .date{
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+        width: 80px;
+    }
+    .dropdown{
+        margin-left: 0;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .statistic__total{
+        display: block;
+    }
+    .statistic__total_name{
+        font-size: 16px;
+    }
+    .statistic__total_value{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .statistic__table_header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        padding: 0;
+        line-height: 6px;
+        height: 20px;
+    }
+    .statistic__table_column:nth-child(6){
+        display: none;
+    }
+    .statistic__table_column:nth-child(5){
+        display: none;
+    }
+    .statistic__table_column:nth-child(4){
+        display: none;
+    }
+    .statistic__table_header_first{
+        border-radius: 0
+    }
+}

@@ -240,7 +240,8 @@
 }
 
 .accounts__select_close {
-    width: 10%;
+    margin-right: 20px;
+    width: auto;
     padding: 5px;
     text-align: center;
     border-radius: 5px 5px 5px 5px; 
@@ -332,4 +333,101 @@
 
 .accounts__btn:hover{
     border: #ffffff 1px solid;
+}
+
+@media(max-width: 769px){
+    .accounts__item{
+        display: block;
+        width: 100%;
+    }
+    .presents__input{
+        font-size: 12px;
+        padding: 12px 6px;
+    }
+    .presents__trigger > button{
+        padding: 5px 0;
+    }
+    .presents__header > img{
+        width: 90px;
+    }
+    .presents__title h2{  
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .presents__text{
+        line-height: 18px;
+    }
+    .rate__row_text{
+        font-size: 16px;
+        width: 360px;
+    }
+    .rate__row{
+        margin-top: 10px;
+    }
+    .rate__row_link{
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 576px){
+    .presents{
+        padding: 10px;
+    }
+    .presents__header{
+        display: block;
+    }
+    .presents__title{
+        margin-left: 0;
+        display: inline-block;
+        width: 68%;
+    }
+    .presents__header > img{
+        width: 30%;
+    }
+    .presents__trigger{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .presents__input{
+        padding: 6px;
+    }
+    .presents__title > p{
+        font-size: 11px;
+    }
+    .accounts__title{
+        padding-bottom: 0;
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .accounts__select{
+        margin-top: 5px;
+    }
+    .accounts__select{
+        padding: 0;
+    }
+    .accounts__select_close{
+        margin: 0;
+        width: 50%;
+    }
+    .accounts__btn{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .rate__title{
+        display: block;
+    }
+    .rate__title_commission{
+        margin-left: 0;
+    }
+    .rate__row{
+        display: block;
+    }
+    .rate{
+        padding: 10px;
+    }
+    .rate__row_text{
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
 }

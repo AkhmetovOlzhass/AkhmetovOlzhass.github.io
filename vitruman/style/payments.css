@@ -167,3 +167,75 @@
 .debut{
     margin-top: 60px;
 }
+
+@media (max-width: 1200px){
+    .statistics__accurate_filter_item{
+        width: 18%;
+    }
+}
+
+@media (max-width: 769px){
+    .statistics__accurate_filter_item{
+        width: 30%;
+    }
+    .payments__status_wait{
+        font-size: 8px;
+    }
+    .debut__wrapper{
+        display: block;
+    }
+    .debut__block{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .statistics__accurate_filter_item{
+        width: 80%;
+    }
+    .payments__table_block_wrapper img{
+        display: none;
+    }
+    .replenishment__container{
+        max-width: 100%;
+    }
+    .payments__wrapper{
+        padding: 20px 10px;
+    }
+    .paymnets__table{
+        display: block;
+        width: 100%;
+    }
+    .paymnets__table tbody{
+        width: 100%;
+        font-size: 14px;
+    }
+    .paymnets__table tr th span{
+        font-size: 10px;
+    }
+    .paymnets__table tr th{
+        width: 70%;
+        line-height: 10px;
+        text-align: left;
+    }
+    .paymnets__table tr th input{
+        width: 100%;
+    }
+    .paymnets__table tr{
+        width: 100%;
+    }
+    .payments__table_block img{
+        display: none;
+    }
+    .statistics__accurate_table-head{
+        padding-bottom: 5px;
+        font-size: 8px;
+    }
+    .payments__table_block_wrapper{
+        display: block;
+    }
+    .payments__status{
+        width: 100%;
+    }
+}

@@ -356,3 +356,57 @@
 .transfer__input_dropdown{
     margin: 0;
 }
+
+@media (max-width: 1200px){
+    .balance__buttons{
+        margin-top: 20px;
+    }
+    .balance__container{
+        display: block;
+    }
+}
+
+@media (max-width: 769px){
+    .tokens__table_action{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    .tokens__table_action{
+        display: block;
+    }
+    .tokens{
+        padding: 10px;
+    }
+    .tokens_search{
+        display: block;
+    }
+    .tokens__table_title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 10px;
+        width: 88px;
+    }
+    .balance__value > p{
+        font-size: 12px;
+        margin-right: 0;
+    }
+    .balance__value{
+        justify-content: space-between;
+    }
+    .balance__buttons{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .balance__btn, .balance__replenishment{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

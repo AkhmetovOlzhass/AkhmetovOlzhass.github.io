@@ -1979,11 +1979,11 @@ h5 {
     display: none;
 }
 .market__active_buy{
-    left: 300px;
+    left: 0px;
 }
 
 .market__active_type{
-    left: 450px;
+    left: 0;
 }
 
 .market__active_visible{
@@ -2043,4 +2043,576 @@ h5 {
     background-color: #25282F;
     padding: 10px 0 10px 15px;
     border-radius: 5px 0 0 5px;
+}
+.referral__scheme_mobile{
+    display: none;
+}
+.investors__window_data_box_mobile{
+    display: none;
+}
+.copy-confirmation-third, .copy-confirmation-two, .copy-confirmation{
+    display: none;
+}
+@media(max-width: 992px){
+    .offers__division_ali{
+        padding: 10px;
+    }
+    .offers__division_ali {
+        grid-template-columns: 72px 133px 186px 178px;
+        column-gap: 20px;
+    }
+    .offers__division_content_col-one > li {
+        padding-left: 57px;
+    }
+    .offers__division_content_col-two > ul > li{
+        padding-right: 11px;
+        font-size: 12px;
+    }
+    .offers__banners_content_column_html > textarea{
+        width: 100%;
+        font-size: 12px;
+    }
+    .offers__banners{
+        padding-bottom: 20px;
+    }
+    
+    .offers__division_content_col-two > ul > li > span{
+        font-size: 12px;
+    }
+    .copy-confirmation-loans, .copy-confirmation-bank__credit{
+        display: none;
+    }
+    .offers__division_content_col-three > li > p{
+        font-size: 12px;
+    }
+    .offers__division_content_col-two_copy_btn{
+        display: none;
+    }
+    .referral__scheme{
+        display: none;
+    }
+    .offers__division_ali_column{
+        margin-top: 20px;
+    }
+    .referral__scheme_mobile{
+        display: block;
+    }
+    .referral__step{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .referral__step_block{
+        margin-left: 20px;
+    }
+    #referral__link{
+        margin: 0;
+        margin-top: 5px;
+    }
+    #referral__copy_link{
+        margin-top: 10px;
+    }
+    .transfer__input_dropdown{
+        margin: 0;
+    }
+    .statistics__accurate_chart svg{
+        width: 100%;
+    }
+    .copy-confirmation-referral{
+        display: none;
+    }
+    .investors__window_data{
+        font-size: 10px;
+    }
+    .offers__element_center_statistic{
+        display: block;
+    }
+    .offers__element_center_statistic_col{
+        display: flex;
+    }
+    .copy-confirmation-offer, .copy-confirmation-offer-two, .copy-confirmation-offer-three{
+        display: none;
+    }
+}
+@media(max-width: 769px){
+    .statistics__accurate_table-head{
+        font-size: 12px;
+    }
+    .statistics__accurate_table-district{
+        font-size: 10px;
+    }
+    .statistics__accurate_filter_item{
+        width: 25%;
+    }
+    .statistics__accurate_filter_item_date-btn{
+        font-size: 12px;
+    }
+    .statistics__accurate_menu_btn{
+        font-size: 16px;
+    }
+    .statistic__table_header{
+        padding: 10px 0;
+        font-size: 10px;
+    }
+    .market__active{
+        width: 170px;
+    }
+    .market__active_input img{
+        display: none;
+    }
+    .market__active_input{
+        width: 170px;
+    }
+    .market__active_btn{
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .statistics__general_title{
+        display: block;
+        width: 210px;
+    }
+    .statistics__general_title_tab{
+        margin-top: 10px;
+    }
+    .statistics__general_info{
+        display: block;
+    }
+    .statistics__general_info_col > p{
+        display: inline-block;
+    }
+    .investors__window_line{
+        font-size: 10px;
+    }
+    .investors__window_data_cell{
+        padding: 2px 12px 10px;
+    }
+    .opportunities__advantages figure figcaption{
+        font-size: 12px;
+        text-align: center;
+    }
+    .opportunities__advantages figure img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    .opportunities {
+        margin-top: 15px;
+        padding: 30px 0px 40px 0px;
+    }
+    .offers__element_link button{
+        display: none;
+    }
+    .offers__level{
+        padding: 10px;
+    }
+    .partners__text_btn{
+        display: none;
+    }
+    .right__col-text{
+        font-size: 12px;
+    }
+    .partners__btn{
+        font-size: 12px;
+    }
+    .advertising__exchanges_box{
+        width: 49%;
+    }
+    .manager__box, .manager__box__active{
+        display: block;
+    }
+    .top__box{
+        display: block;
+    }
+    .offers__faq_content > ul{
+        padding-left: 10px;
+    }
+    .dropdown__content{
+        font-size: 12px;
+    }
+    .dropdown__content_text{
+        font-size: 12px;
+    }
+    .support__chat{
+        margin-top: 20px;
+    }
+    .support__chat_right > p{
+        max-width: 100%;
+    }
+    .offers__division_ali{
+        display: block;
+    }
+    .offers__division_ali_column{
+        width: 49%;
+        display: inline-block;
+    }
+    .offers__division_ali_left, .offers__division_ali_right{
+        display: inline-block;
+        width: 49%;
+        font-size: 12px;
+    }
+    .offers__division_content_col-two{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .offers__division_ali_right span{
+        width: 100%;
+        position: relative;
+    }
+    .offers__division_content_col-one > li > span{
+        font-size: 14px;
+    }
+    .offers__division_content_col-one > li{
+        font-size: 14px;
+    }
+    .offers__division_content_col-three{
+        display: block;
+        width: 100%;
+    }
+    .offers__division_content{
+        display: block;
+        position: relative;
+    }
+    .offers__banners_menu{
+        width: 100%;
+    }
+    .offers__banners_menu_item_btn{
+        font-size: 14px;
+    }
+    .offers__banners_content_column:last-child{
+        display: none;
+    }
+    .offers__banners_content_column{
+        width: 49%;
+    }
+    .copy-confirmation-first, .copy-confirmation-bank{
+        display: none;
+    }
+    .copy-confirmation-second{
+        display: none;
+    }
+}
+
+@media(max-width: 576px){
+    .offers__division_wrap h2{
+        font-size: 16px;
+    }
+    .offers__division_ali_column{
+        width: 100%;
+    }
+    .offers__division_ali_left, .offers__division_ali_right {
+        width: 48%;
+    }
+    .offers__division_title h5{
+        display: none;
+    }
+    .offers__division_wrap{
+        padding: 20px 10px;
+    }
+    .offers__division_content_col-one > li{
+        width: 160px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .offers__banners_menu{
+        height: auto;
+    }
+    .offers__banners_content{
+        display: block;
+    }
+    .offers__banners_content_column{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .offers__banners_content_column:last-child{
+        display: block;
+    }
+    .offers__banners_menu_list{
+        display: block;
+    }
+    .statistics__accurate{
+        padding: 30px 0px 42px 0px;
+    }
+    .statistics__accurate_filter{
+        display: block;
+        height: auto;
+    }
+    .statistics__accurate_filter_item{
+        width: 50%;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    .statistics__accurate_menu_btn{
+        font-size: 10px;
+    }
+    .statistics__accurate_menu_reset{
+        padding: 5px 0;
+    }
+    .pages__num, .pages span{
+        display: none;
+    }
+    .referral{
+        padding: 10px;
+    }
+    .referral h2{
+        font-size: 16px;
+    }
+    .referral__step img{
+        width: 60px;
+    }
+    .referral__step_block{
+        margin-left: 5px;
+    }
+    .referral__title, .referral__description, #referral__link{
+        font-size: 12px;
+    }
+    .referal__btn{
+        display: none;
+    }
+    .partners{
+        padding: 10px;
+        display: block;
+    }
+    .left__col{
+        width: 100%;
+    }
+    .partners h2{
+        font-size: 16px;
+    }
+    .right__col{
+        width: 100%;
+        padding-left: 0;
+    }
+    .right__col-procent{
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .right__col-place{
+        display: block;
+    }
+    .right__col-place > div{
+        width: 100%;
+    }
+    .partners__btn{
+        display: none;
+    }
+    .tab__menu{
+        padding: 0px;
+    }
+    .copy-confirmation, .copy-confirmation-two, .copy-confirmation-three{
+        display: none;
+    }
+    .statistics__accurate_chart h2{
+        font-size: 14px;
+    }
+    .statistics__accurate_chart div svg{
+        height: auto;
+    }
+    .opportunities h2{
+        font-size: 16px;
+    }
+    .opportunities p{
+        font-size: 12px;
+    }
+    .opportunities__advantages{
+        display: block;
+    }
+    .opportunities__advantages figure{
+        margin-bottom: 10px;
+    }
+    .opportunities__btn{
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+    }
+    .investors{
+        padding: 10px 10px 20px 10px;
+    }
+    .statistics__general{
+        padding: 10px;
+    }
+    .opportunities{
+        padding-top: 0;
+    }
+    .tab__menu_btn{
+        width: 100%;
+    }
+    .investors__window_data{
+        display: none;
+    }
+    .investors__window_data_mobile{
+        display: block;
+    }
+    .offers__wrap{
+        padding: 0 10px;
+        padding-bottom: 20px;
+    }
+    .offers__element_status{
+        display: none;
+    }
+    .offers__element img{
+        width: 80px;
+        height: 19px;
+    }
+    .offers__element{
+        display: block;
+    }
+    .offers__element_center{
+        display: inline-block;
+        width: auto;
+    }
+    .offers__element_link{
+        display: block;
+    }
+    .offers__element_center_btn{
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .advertising__exchanges_box{
+        width: 100%;
+    }
+    .advertisement__funnels_title{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .advertisement__funnels{
+        padding: 10px;
+    }
+    .advertisement__funnels_box{
+        display: block;
+    }
+    .advertisement__funnels_box_lvl{
+        width: 100%;
+    }
+    .advertisement__funnels_box_line{
+        width: 100%;
+        margin-top: 20px;
+    }.advertisement__funnels_lvl-up{
+        display: block;
+        padding: 10px;
+    }
+    .advertisement__funnels_lvl-up_text{
+        width: 100%;
+        font-size: 16px;
+    }
+    .advertisement__funnels_lvl-up_btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .advertisement__increase_lvl-active{
+        padding: 10px;
+    }
+    .advertisement__increase_lvl-active_title{
+        margin: 0;
+        margin-top: 10px;
+    }
+    .advertisement__increase_lvl-active_title::after{
+        display: none;
+    }
+    .advertisement__increase_lvl-active_list{
+        margin-top: 20px;
+    }
+    .lvl-active_list{
+        display: block;
+        width: 100%;
+    }
+    .lvl-active_list_items{
+        width: 100%;
+        font-size: 12px;
+    }
+    .advertisement__increase_lvl-active_list_status{
+        display: none;
+    }
+    .advertisement__increase_lvl-active_line{
+        width: 100%;
+    }
+    .lvl-active_list .lvl-active_list_items:last-child{
+        display: none;
+    }
+    .wrap{
+        padding: 10px 5px;
+        display: block;
+    }
+    .contact__link{
+        display: inline-block;
+    }
+    .contact__link > span{
+        display: block;
+        width: 100%;
+    }
+    .contact__link > a{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .call__back{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    figcaption{
+        margin-left: 0;
+    }
+    figure img{
+        margin-right: 10px;
+    }
+    .offers__faq_content > ul{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .offers__faq_description{
+        display: block;
+        width: 100%;
+    }
+    .offers__faq_content{
+        display: block;
+    }
+    .offers__faq h2{
+        margin-bottom: 0;
+    }
+    .support__chat h2{
+        padding: 0;
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .support__chat_right{
+        margin-left: 0;
+    }
+    .support__chat_right > p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .online__chat_text{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .online__chat_submit{
+        display: none;
+    }
+    .online__chat_foto {
+        top: -42px;
+        left: 240px;
+    }
+    .online__chat_document {
+        top: -42px;
+        left: 150px;
+    }
+    .applications h2{
+        margin-top: 0;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+    .box__btn__choice{
+        padding: 1px 10px;
+    }
+    .number__application{
+        font-size: 14px;
+    }
+    .numbers__bottom{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .status{
+        margin-left: 20px;
+    }
 }

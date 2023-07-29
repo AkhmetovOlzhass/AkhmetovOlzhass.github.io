@@ -232,7 +232,6 @@ body {
 
 .referral {
     margin-top: 40px;
-    background-color: var(--bcg);
 }
 
 .referral__item {
@@ -424,4 +423,70 @@ body {
 .referral__content_hide {
     max-height: 0;
     padding: 0;
+}
+
+@media(max-width: 1200px){
+    body{
+        overflow: auto;
+    }
+    .auth__input_instruction{
+        display: none;
+    }
+}
+
+@media(max-width: 769px){
+    .auth{
+        display: block;
+    }
+    .auth__form{
+        width: 100%;
+    }
+    .auth__content{
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px){
+    .input__select_arrow{
+        display: none;
+    }
+    .input__select_value, .input__select_item{
+        padding-left: 5px;
+    }
+    .auth__input, .auth__input_pass{
+        font-size: 16px;
+    }
+    .auth__code{
+        width: 100%;
+    }
+    .auth__code_text{
+        font-size: 20px;
+    }
+    .auth{
+        padding: 10px;
+    }
+    .auth__title{
+        font-size: 20px;
+    }
+    .auth__next{
+        font-size: 16px;
+    }
+    .auth__text{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .auth__content_title{
+        font-size: 20px;
+    }
+    .auth__input, .auth__input_pass{
+        width: 100%;
+    }
+    .auth__steps_link{
+        display: none;
+    }
+    .auth__steps{
+        padding-left: 0;
+    }
 }

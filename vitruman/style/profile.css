@@ -357,3 +357,117 @@
     display: flex;
     align-items: center
 }
+
+@media (max-width: 769px){
+    .profile__advertising_img{
+        width: 125px;
+    }
+    .profile__advertising_text{
+        display: block;
+    }
+    .profile__advertising_title{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .profile__advertising_text > p{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .profile__advertising_text > a{
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px;
+        width: 130px;
+    }
+    .profile__advertising{
+        padding: 15px 10px;
+    }
+    .profile__advertising_content{
+        margin-left: 10px;
+    }
+    .profile__learn_box img{
+        width: 248px;
+    }
+    .profile__learn{
+        padding: 10px;
+    }
+    .profile__learn_content{
+        margin-left: 10px;
+    }
+    .profile__learn_text{
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .profile__learn_title a{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .profile__learn_item_text{
+        margin-right: 0;
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    .profile__learn_item_text > img {
+        margin-right: 0px;
+    }
+    .profile__stats{
+        display: block;
+    }
+    .profile__stats_card{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 769px){
+    .profile__advertising_img{
+        width: 56px;
+        height: 56px;
+    }
+    .profile__advertising_title{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .profile__advertising{
+        display: block;
+    }
+    .profile__advertising_text{
+        font-size: 11px;
+    }
+    .profile__learn_box{
+        display: block;
+    }
+    .profile__learn_title a{
+        font-size: 14px;
+    }
+    .profile__learn_title{
+        margin-top: 5px;
+        line-height: 13px;
+    }
+    .profile__learn_items{
+        display: none;
+    }
+    .account__item_stats_box{
+        display: none;
+    }
+    .profile__learn_text{
+        font-size: 11px;
+        margin-top: 7px;
+    }
+    .profile__stats_box{
+        display: block;
+    }
+    .profile__news_preview{
+        font-size: 14px;
+    }
+    .profile__learn_content{
+        margin-left: 0;
+    }
+    .profile__news_box{
+        padding: 20px 15px;
+    }
+}

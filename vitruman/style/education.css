@@ -636,3 +636,237 @@
 .education__lesson_item_active{
     border: 1px #fff solid;
 }
+
+@media (max-width: 1200px){
+    .education__progress_profile{
+        display: block;
+    }
+    .education__progress_img ,.education__progress_info, .education__progress_task{
+        display: inline-block;
+        margin-right: 40px;
+    }
+    .education__progress_link{
+        margin-left: 0;
+        display: block;
+        margin-top: 20px;
+        width: 40%;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .education__lesson_item:last-child{
+        display: none;
+    }
+    .education__content_video img{
+        width: 100%;
+    }
+    .education__program_wrapper{
+        display: block;
+        padding-left: 20px;
+    }
+    .education__program_item{
+        display: inline-block;
+        max-width: 32%;
+        margin-top: 20px;
+    }
+    .education__program_title span{
+        display: block;
+    }
+    .education__program_title{
+        font-size: 20px;
+    }
+    .education__program_text{
+        font-size: 16px;
+    }
+    .education__program_tag{
+        font-size: 8px;
+    }
+}   
+
+@media (max-width: 769px){
+    .education__progress_link{
+        width: 100%;
+    }
+    .education__progress_task{
+        display: none;
+    }
+    .education__progress_img{
+        margin-right: 10px;
+    }
+    .education__lesson_item{
+        display: flex;
+        align-items: start;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .education__lesson{
+        display: block;
+    }
+    .education__lesson_item_img{
+        display: inline-block;
+    }
+    .education__lesson_item_info{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .education__lesson_item_time_check{
+        display: none;
+    }
+    .education__program_item{
+        max-width: 100%;
+    }
+    .education__program_tag{
+        font-size: 12px;
+    }
+    .education__program_wrapper{
+        padding-left: 0;
+    }
+    .education__slider_items{
+        margin: 0;
+    }
+    .education__slider_wrapper{
+        margin: 0 auto;
+    }
+    .education__slider{
+        padding: 0;
+        padding-top: 20px;
+    }
+    .education__slider_item > img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+@media (max-width: 576px){
+    .education__progress_img{
+        margin: 0;
+        width: 60px;
+    }
+    .education__progress_img img{ 
+        width: 100%;
+    }
+    .education__progress_info{
+        margin-right: 0;
+        margin-left: 5px;
+        padding: 0;
+    }
+    .education__progress_info > h3, .education__progress_info > p{
+        font-size: 14px;
+    }
+    .education__progress_bar_text{
+        font-size: 12px;
+    }
+    .education__about_content_wrapper{
+        display: block;
+    }
+    .education__about_content_list{
+        min-width: 100%;
+    }
+    .education__about_content_output{
+        min-width: 100%;
+        margin-top: 20px;
+    }
+    .education__info_link{
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .education__program_title{
+        font-size: 16px;
+    }
+    .education__program_wrapper{
+        margin-top: 0;
+    }
+    .education__program_title{
+        font-size: 14px;
+    }
+    .education__program_text{
+        font-size: 12px;
+    }
+    .education__program_tag{
+        font-size: 10px;
+    }   
+    .education__task_header{
+        padding-left: 0;
+        position: relative;
+        padding-right: 0;
+    }
+    .education__task_title{
+        margin-left: 0;
+    }
+    .education__task_title > h3{
+        font-size: 18px;
+    }
+    .education__task_bonus{
+        position: absolute;
+        top: -20px;
+        right: 0;
+    }
+    .education__task_title > p{
+        font-size: 12px;
+    }
+    .education__task_content_visible{
+        padding: 0 5px;
+    }
+    .education__task_text{
+        font-size: 14px;
+    }
+    .education__slider_title{
+        font-size: 20px;
+    }
+    .education__slider_box{
+        display: none;
+    }
+    .education__slider_text{
+        margin: 0;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .education__slider_content{
+        min-height: 120px;
+    }
+    .education__slider_item{
+        width: 30px;
+        height: 30px;
+    }
+    .education__slider_item > img{
+        width: 100%;
+        height: 100%;
+    }
+    .education__slider_wrapper{
+        margin-top: 100px;
+    }
+    .education__slider{
+        padding-bottom: 20px;
+    }
+    .education__chat{
+        padding-left: 10px;
+        display: block;
+    }
+    .education__slider_arrow svg{
+        width: 20px;
+        height: 15px;
+    }
+    .education__chat_img{
+        width: 40px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .education__chat_title{
+        font-size: 16px;
+    }
+    .education__chat_text{
+        font-size: 12px;
+    }
+    .education__chat_link{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .education__chat_img img{
+        width: 100%;
+    }
+}

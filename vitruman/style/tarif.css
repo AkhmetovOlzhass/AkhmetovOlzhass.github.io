@@ -130,3 +130,56 @@
 .increase{
     margin-bottom: 150px;
 }
+.tarif__table_mobile{
+    display: none;
+}
+
+@media(max-width: 769px){
+    .tarif__table tr:first-child th {
+        padding: 20px 0;
+        font-size: 13px;
+    }
+    .tarif__table tr th:first-child {
+        text-transform: none;
+        font-size: 10px;
+    }
+    .tarif__table th{
+        font-size: 10px;
+    }
+    .increase__block_text{
+        font-size: 13px;
+    }
+    .increase__title{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 577px){
+    .tarif__table{
+        display: none;
+    }
+    .tarif__table_mobile{
+        display: block;
+    }
+    .tarif__table tr:first-child{
+        text-transform: none;
+    }
+    .tarif__table tr:first-child th{
+        font-size: 9px;
+    }
+    .increase__wrapper{
+        display: block;
+    }
+    .increase{
+        padding: 15px;
+    }
+    .increase__block_text{
+        text-align: center;
+    }
+    .increase__block{
+        margin-top: 15px;
+    }
+    .partners{
+        padding: 20px;
+    }
+}

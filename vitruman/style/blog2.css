@@ -120,3 +120,236 @@
    margin-top: 6px;
    color: #fff;
 }
+
+@media (max-width: 1200px){
+   .main__nav{
+       display: none;
+   }
+   .payment__loans_item{
+       padding: 50px 0px 15px;
+   }
+   .payment__item{
+       padding: 20px 10px;
+   }
+
+   .content{
+       width: 100%;
+   }
+   .news__item{
+       padding: 5px;
+   }
+   .news__text{
+       font-size: 12px;
+       margin: 0;
+       margin-bottom: 10px;
+   }
+   .news__btn{
+       font-size: 12px;
+   }
+   .article__tags{
+       width: auto;
+       padding: 5px 0;
+   }
+   .article__tag{
+       font-size: 10px;
+       margin: 0;
+       margin-right: 10px;
+   }
+   .sections{
+       padding: 5px;
+   }
+   .sections__name{
+       font-size: 14px;
+   }
+}
+
+@media (max-width: 769px){
+   .payment__item_link{
+       width: auto;
+   }
+   .payment__item_img{
+       width: 20%;
+   }
+   .payment__credit{
+       padding: 25px 0;
+   }
+   .payment__credit_img{
+       width: 30%;
+       height: 100px;
+   }
+   .payment__credit_title{
+       font-size: 16px;
+   }
+   .payment__credit_trigger_item > p{
+       font-size: 20px;
+   }
+   .payment__credit_button{
+       padding: 5px 10px;
+   }
+   .payment__credit_link{
+       font-size: 12px;
+   }
+   .payment__loans_img{
+       width: 100%;
+   }
+   .news{
+       padding: 5px;
+   }
+   .social__box{
+       display: block;
+   }
+   .social__item{
+       margin-bottom: 20px;
+       width: 100%;
+   }
+   .social__trigger{
+       display: block;
+   }
+   .social__trigger_item{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 576px){
+   .payment__loans{
+       display: block;
+
+   }
+   .payment__loans_item{
+       width: 100%;
+       margin-top: 20px;
+       padding-top: 20px;
+   }
+   .payment__loans_img{
+       width: auto;
+   }
+   .payment__loan{
+       display: block;
+   }
+   .payment__loan_text{
+       text-align: left;
+       margin-top: 15px;
+   }
+   .payment__loan_btn{
+       margin-top: 15px;
+   }
+   .payment__credit_offer{
+       flex-direction: column;
+   }
+   .payment__credit_item{
+       margin-top: 15px;
+   }
+   .payment__credit_trigger{
+       width: 100%;
+       margin-top: 20px;
+   }
+   .payment__credit_trigger_items{
+       display: block;
+   }
+   .payment__credit_trigger_item {
+       display: inline-block;
+       margin-top: 10px;
+       width: 40%;
+   }
+   .paymnet__credit_buttons{
+       margin-top: 10px;
+   }
+   .payment__credit_trigger_item > span{
+       font-size: 10px;
+   }
+   .payment__credit{
+       display: block;
+       padding: 10px;
+   }
+   .payment__credit_img{
+       width: auto;
+   }
+   .payment__credit_list{
+       width: 100%;
+   }
+   .payment__item_text {
+       font-size: 10px;
+   }
+   .payment__item {
+       display: block;
+       position: relative;
+   }
+   .payment__item_img {
+       width: 35%;
+       display: inline-block;
+   }
+   .payment__item_balls{
+       display: none;
+   }
+   .payment__item_link{
+       position: absolute;
+       right: 20px;
+       top: 23px;
+   }
+   .news__item{
+       display: block;
+   }
+   .news__img{
+       width: 100%;
+       object-fit: cover;
+       object-position: 0 0;
+       border-radius: 15px
+   }
+   .news__content{
+       margin-left: 0;
+   }
+   .news__tags{
+       margin-top: 0;
+   }
+   .news__btn{
+       display: none;
+   }
+   .article__tags{
+       display: none;
+   }
+   .article__img{
+       height: auto;
+   }
+   .article__item{
+       margin-bottom: 30px;
+       width: 100%;
+       display: block;
+       min-height: 100px;
+   }
+   .article__list{
+       display: block;
+   }
+   .article__content{
+       min-height: auto;
+   }
+   .sections__name{
+       font-size: 10px;
+       margin-top: 0;
+   }
+   .sections__img{
+       width: 50px;
+       display: block;
+       margin: 0 auto;
+   }
+   .sections__list{
+       display: block;
+   }
+   .sections__item{
+       display: inline-block;
+       width: 32%;
+   }
+   .sections{
+       padding: 0;
+       padding-bottom: 20px;
+       padding-top: 19px;
+   }
+
+   .sections__title{
+       margin-left: 24px;
+   }
+   .sections__text{
+       margin-left: 24px;
+   }
+
+}

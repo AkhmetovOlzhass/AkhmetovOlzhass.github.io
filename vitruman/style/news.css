@@ -150,3 +150,41 @@
     margin-top: 6px;
     color: #fff;
 }
+
+@media(max-width: 769px){
+    .news__title{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .news__text{
+        margin-bottom: 10px;
+    }
+    .article__tag{
+        margin: 0 5px;
+        font-size: 12px;
+    }
+    .article__img{
+        height: auto;
+    }
+    .article__title{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 576px){
+    .article__tags{
+        display: none;
+    }
+    .article__container{
+        display: block;
+    }
+    .article__wrapper{
+        width: 100%;
+    }
+    .article__wrapper{
+        margin-bottom: 10px;
+    }
+    .news__preview, .news__text{
+        font-size: 16px;
+    }
+}

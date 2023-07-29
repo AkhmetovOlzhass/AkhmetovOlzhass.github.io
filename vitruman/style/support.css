@@ -291,3 +291,129 @@ figcaption {
 .profile__sidenav_link{
     cursor: pointer;
 }
+
+@media(max-width: 1200px){
+    .numbers{
+        position: relative;
+    }
+    .play{
+        position: absolute;
+        right: 20px;
+    }
+    .online__chat_text{
+        width: 80%;
+    }
+    .online__chat_submit{
+        left: 75%;
+    }
+}
+@media(max-width: 769px){
+    .manager__box, .manager__box__active{
+        display: block;
+    }
+    .top__box{
+        display: block;
+    }
+    .offers__faq_content > ul{
+        padding-left: 10px;
+    }
+    .dropdown__content{
+        font-size: 12px;
+    }
+    .dropdown__content_text{
+        font-size: 12px;
+    }
+    .support__chat{
+        margin-top: 20px;
+    }
+    .support__chat_right > p{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 576px){
+    .wrap{
+        padding: 10px 5px;
+        display: block;
+    }
+    .contact__link{
+        display: inline-block;
+    }
+    .contact__link > span{
+        display: block;
+        width: 100%;
+    }
+    .contact__link > a{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .call__back{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    figcaption{
+        margin-left: 0;
+    }
+    figure img{
+        margin-right: 10px;
+    }
+    .offers__faq_content > ul{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .offers__faq_description{
+        display: block;
+        width: 100%;
+    }
+    .offers__faq_content{
+        display: block;
+    }
+    .offers__faq h2{
+        margin-bottom: 0;
+    }
+    .support__chat h2{
+        padding: 0;
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .support__chat_right{
+        margin-left: 0;
+    }
+    .support__chat_right > p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .online__chat_text{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .online__chat_submit{
+        display: none;
+    }
+    .online__chat_foto {
+        top: -42px;
+        left: 240px;
+    }
+    .online__chat_document {
+        top: -42px;
+        left: 150px;
+    }
+    .applications h2{
+        margin-top: 0;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+    .box__btn__choice{
+        padding: 1px 10px;
+    }
+    .number__application{
+        font-size: 14px;
+    }
+    .numbers__bottom{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .status{
+        margin-left: 20px;
+    }
+}

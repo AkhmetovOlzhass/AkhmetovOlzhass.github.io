@@ -144,3 +144,42 @@ body {
     color: #A4A4A6;
     text-align: center;
 }
+
+@media(max-width: 1200px){
+    body{
+        overflow: auto;
+    }
+}
+
+@media(max-width: 769px){
+    .auth{
+        display: block;
+    }
+    .auth__form{
+        width: 100%;
+    }
+    .auth__content{
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px){
+    .auth{
+        padding: 10px;
+    }
+    .auth__title{
+        font-size: 20px;
+    }
+    .auth__next{
+        font-size: 16px;
+    }
+    .auth__text{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .auth__content_title{
+        font-size: 20px;
+    }
+}

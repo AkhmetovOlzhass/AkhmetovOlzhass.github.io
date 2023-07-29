@@ -16,6 +16,7 @@
 .connect__optimization_content > img {
     margin: 10px 0;
     border-radius: 15px;
+    width: 100%;
 }
 
 .connect__optimization_title {
@@ -438,4 +439,107 @@
     margin: 10px 0 0 15px;
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
+}
+
+@media (max-width: 769px){
+    .referral__content_container_item > p{
+        font-size: 16px;
+    }
+    .referral__content_container_list{
+        margin-right: 20px;
+    }
+    .referral__box{
+        flex-direction: unset;
+    }
+    .referral__link{
+        padding: 3px 20px;
+        margin-top: 10px;
+    }
+
+    .referral__box > span, .referral__box > p{
+        font-size: 12px;
+    }
+    
+    .referral__box_content > p, .referral__box_content > span{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .referral__box_content{
+        margin-right: 5px;
+    }
+    .referral__box_content > p{
+        margin-left: 0;
+    }
+    .referral__item{
+        padding: 20px;
+    }
+    .referral__container{
+        display: block;
+        margin-left: 10px;
+    }
+    .referral__line{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .referral__trigger{
+        top: -40px;
+    }
+    .referral__title{
+        font-size: 14px;
+    }
+    .referral__box{
+        display: block;
+        width: 100%;
+    }
+    .referral__item{
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .referral__img{
+        width: 100px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .referral__img img{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .connect__optimization_title, .connect__exchange_title{
+        font-size: 18px;
+    }
+    .connect__optimization_text, .connect__exchange_text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .connect__exchange_section_btn{
+        display: block;
+        padding: 5px 10px;
+    }
+    .connect__exchange_next{
+        margin-left: 25px;
+        margin-top: 5px;
+    }
+    .referral__preview{
+        display: block;
+    }
+    .referral__box_content{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .referral__box_content > span {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    
+    .partners__input{
+        width: 100%;
+    }
+    .partners__btn{
+        width: 100%;
+    }
+    .connect__exchange{
+        padding: 10px;
+    }
 }

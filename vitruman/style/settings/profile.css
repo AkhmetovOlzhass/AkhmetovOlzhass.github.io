@@ -178,3 +178,62 @@
     height: 16px;
     margin: 0 16px;
 }
+
+.profile__title_mobile{
+    display: none;
+}
+
+@media(max-width: 769px){
+    .profile__main{
+        padding-left:10px;
+    }
+}
+@media(max-width: 576px){
+    .profile__sidenav, .profile__title{
+        display: none;
+    }
+    .profile__main{
+        padding-left: 0;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .profile__main_avatar_info_label{
+        padding: 3px;
+    }
+    .profile__main_socials_info{
+        font-size: 12px;
+    }
+    .profile__main_avatar_info_btn{
+        width: 100px;
+    }
+    .profile__title_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 29px;
+        background-color: #191A1F;
+        text-align: center;
+        position: relative;
+        top: 0;
+        width: 100%;
+        border-bottom: 1px #20252B solid;
+        padding: 20px 0;
+    }
+    .main__content{
+        padding: 0;
+    }
+    .profile__title_mobile span{
+        font-size: 14px;
+        color: #FFF;
+        font-family: RobotoRegular, sans-serif;
+    }
+    .profile__title_mobile a{
+        position: absolute;
+        left: 10px;
+        transform: rotate(180deg);
+    }
+    html{
+        background-color: #191A1F
+    }
+}

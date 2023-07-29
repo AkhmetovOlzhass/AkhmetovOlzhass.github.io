@@ -89,6 +89,7 @@
     background-color: #191A1F;
     border-radius: 15px;
     height: 0;
+    z-index: 99999;
     overflow: hidden;
 }
 
@@ -263,4 +264,25 @@
     font-family: RobotoRegular, sans-serif;
     color: var(--text);
     font-size: 14px;
+}
+
+@media(max-width: 576px){
+    .replenishment__title{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .replenishment{
+        padding: 20px 10px;
+    }
+    .replenishment__header_link{
+        font-size: 11px;
+        padding: 5px 5px;
+    }
+    .replenishment__valute_dropdown_value{
+        padding: 5px 10px;
+    }
+    .system__btn{
+        padding: 20px;
+        font-size: 14px;
+    }
 }
