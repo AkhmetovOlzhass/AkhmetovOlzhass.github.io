@@ -177,6 +177,7 @@
         text-align: center;
     }
     .increase__block{
+        margin: 0 auto;
         margin-top: 15px;
     }
     .partners{
