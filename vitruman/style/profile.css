@@ -357,6 +357,9 @@
     display: flex;
     align-items: center
 }
+.profile__advertising_mobile{
+    display: none;
+}
 
 @media (max-width: 769px){
     .profile__advertising_img{
@@ -421,19 +424,28 @@
         display: block;
         width: 100%;
     }
-}
-
-@media (max-width: 769px){
-    .profile__advertising_img{
-        width: 56px;
-        height: 56px;
-    }
-    .profile__advertising_title{
-        font-size: 12px;
-        line-height: 16px;
-    }
     .profile__advertising{
+        display: none;
+    }
+    .profile__advertising_mobile{
         display: block;
+    }
+
+    .profile__advertising_img{
+        width: 100px;
+        height: auto;
+        float: left;
+        margin-right: 20px;
+    }
+    .profile__advertising_mobile a{
+        color: #FFF;
+        text-decoration: none;
+        font-family: RobotoRegular, sans-serif;
+        background-color: #000;
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-top: 10px;
     }
     .profile__advertising_text{
         font-size: 11px;
@@ -451,9 +463,6 @@
     .profile__learn_items{
         display: none;
     }
-    .account__item_stats_box{
-        display: none;
-    }
     .profile__learn_text{
         font-size: 11px;
         margin-top: 7px;
@@ -469,5 +478,24 @@
     }
     .profile__news_box{
         padding: 20px 15px;
+    }
+}
+
+
+@media (max-width: 576px){
+    .profile__advertising_img{
+        width: 56px;
+        height: auto;
+    }
+    .profile__advertising_title{
+        font-size: 14px;
+    }
+    .profile__advertising_mobile a{
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .profile__learn_box img{
+        width: 100%;
     }
 }

@@ -2053,6 +2053,17 @@ h5 {
 .copy-confirmation-third, .copy-confirmation-two, .copy-confirmation{
     display: none;
 }
+
+.advertising__exchanges_wrap_mobile{
+    display: none;
+}
+
+.partners_mobile{
+    display: none;
+}
+.advertisement__increase_wrapper_mobile{
+    display: none;
+}
 @media(max-width: 992px){
     .offers__division_ali{
         padding: 10px;
@@ -2204,9 +2215,6 @@ h5 {
     .offers__level{
         padding: 10px;
     }
-    .partners__text_btn{
-        display: none;
-    }
     .right__col-text{
         font-size: 12px;
     }
@@ -2293,6 +2301,80 @@ h5 {
 }
 
 @media(max-width: 576px){
+    .advertisement__increase_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .advertisement__increase_container img{
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .advertisement__increase_container p{
+        font-size: 20px;
+    }
+    .advertisement__increase_container span{
+        margin-top: 5px;
+    }
+    .advertisement__increase_block{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .advertisement__increase_money{
+        font-size: 20px;
+    }
+    .advertisement__increase_money span{
+        font-size: 14px;
+    }
+    .advertisement__increase_btn{
+        background-color: #000;
+        padding: 1px 10px;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    .advertisement__increase_wrapper{
+        display: none;
+    }
+    .advertisement__increase_wrapper_mobile{
+        display: block;
+    }
+    .tab__box{
+        padding: 10px;
+    }
+    .advertising__exchanges_wrap{
+        display: none;
+    }
+    .advertising__exchanges_wrap_mobile{
+        display: block;
+    }
+    .advertising__exchanges_wrap_mobile .advertising__exchanges_box{
+        padding: 20px 10px;
+    }
+    .advertising__exchanges_box div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .advertising__exchanges_box_btn{
+        width: 50%;
+        padding: 7px 10px;
+    }
+    .advertising__exchanges_box_description{
+        font-size: 10px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .advertising__exchanges_box img{
+        width: 83px;
+    }
     .offers__division_wrap h2{
         font-size: 16px;
     }
@@ -2370,6 +2452,9 @@ h5 {
     }
     .partners{
         padding: 10px;
+        display: none;
+    }
+    .partners_mobile{
         display: block;
     }
     .left__col{
@@ -2381,10 +2466,11 @@ h5 {
     .right__col{
         width: 100%;
         padding-left: 0;
+        margin-top: 10px;
     }
     .right__col-procent{
         margin-top: 0;
-        font-size: 16px;
+        font-size: 24px;
     }
     .right__col-place{
         display: block;
@@ -2396,6 +2482,8 @@ h5 {
         display: none;
     }
     .tab__menu{
+        overflow: auto;
+        white-space: nowrap;
         padding: 0px;
     }
     .copy-confirmation, .copy-confirmation-two, .copy-confirmation-three{
@@ -2432,9 +2520,6 @@ h5 {
     }
     .opportunities{
         padding-top: 0;
-    }
-    .tab__menu_btn{
-        width: 100%;
     }
     .investors__window_data{
         display: none;

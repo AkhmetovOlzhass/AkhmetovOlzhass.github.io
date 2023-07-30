@@ -334,7 +334,9 @@
 .accounts__btn:hover{
     border: #ffffff 1px solid;
 }
-
+.presents__trigger_mobile{
+    display: none;
+}
 @media(max-width: 769px){
     .accounts__item{
         display: block;
@@ -385,8 +387,15 @@
         width: 30%;
     }
     .presents__trigger{
+        display: none;
+    }
+    .presents__trigger_mobile{
+        display: block;
         width: 100%;
         margin-top: 20px;
+    }
+    .presents__trigger > button{
+        width: 100%;
     }
     .presents__input{
         padding: 6px;

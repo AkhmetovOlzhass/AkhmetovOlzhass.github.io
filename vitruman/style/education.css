@@ -473,9 +473,22 @@
     border-radius: 10px;
     border: 1px solid #A4A4A6;
     display: flex;
-    overflow: hidden;
+    position: relative;
 }
 
+
+.education__task_wrapper .copy-confirmation-referral{
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    display: none;
+    transition: all .5s;
+}
+
+.education__task_wrapper .copy-confirmation-referral_active{
+    opacity: 1;
+    display: flex;
+}
 .education__task_img {
     width: 40px;
     padding: 8px;
@@ -532,7 +545,7 @@
 }
 
 .education__slider_text {
-    height: 60px;
+    min-height: 60px;
     display: flex;
     justify-content: center;
     margin: 35px 15px;
@@ -637,6 +650,19 @@
     border: 1px #fff solid;
 }
 
+.education__task_wrapper #referral__link{
+    padding-left: 10px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 14px;
+    color: #A4A4A6;
+    background-color: #fff;
+    margin-top: 0;
+}
+
+
 @media (max-width: 1200px){
     .education__progress_profile{
         display: block;
@@ -683,6 +709,30 @@
 }   
 
 @media (max-width: 769px){
+    .education__task_wrapper .copy-confirmation-referral{
+        top: 40px;
+        left: 20%;
+        opacity: 0;
+        display: none;
+        transition: all .5s;
+    }
+    
+    .education__task_wrapper .copy-confirmation-referral_active{
+        opacity: 1;
+        display: flex;
+    }
+    .education__task_wrapper .copy-confirmation{
+        top: 40px;
+        left: 20%;
+        opacity: 0;
+        display: none;
+        transition: all .5s;
+    }
+    
+    .education__task_wrapper .copy-confirmation-referral_active{
+        opacity: 1;
+        display: flex;
+    }
     .education__progress_link{
         width: 100%;
     }
@@ -739,6 +789,9 @@
 
 
 @media (max-width: 576px){
+    .education__about{
+        padding: 15px;
+    }
     .education__progress_img{
         margin: 0;
         width: 60px;
@@ -788,6 +841,7 @@
     }
     .education__program_tag{
         font-size: 10px;
+        padding: 5px 10px;
     }   
     .education__task_header{
         padding-left: 0;
@@ -829,15 +883,15 @@
         min-height: 120px;
     }
     .education__slider_item{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
     .education__slider_item > img{
         width: 100%;
         height: 100%;
     }
     .education__slider_wrapper{
-        margin-top: 100px;
+        margin-top: 20px;
     }
     .education__slider{
         padding-bottom: 20px;

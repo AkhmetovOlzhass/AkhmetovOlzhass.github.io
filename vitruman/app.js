@@ -6,6 +6,7 @@ const slider = document.querySelector('.slider');
 const connectButtons = document.querySelectorAll('.connect__exchange_section_btn');
 const exchangeButtons = document.querySelectorAll('.connect__exchange_items_btn');
 const referralButtons = document.querySelectorAll('.referral__btn');
+const referralButtonsMobile = document.querySelectorAll('.referral__btn_mobile');
 const showPassword = document.querySelectorAll('.auth__input_show');
 const selectPhone = document.querySelector('.input__select_value');
 const balanceCheckbox = document.querySelector('.tokens__search_checkbox');
@@ -104,7 +105,7 @@ if(educationTasks && educationTasks.length > 0) {
     const educationTasksHidden = document.querySelectorAll('.education__task_close');
     educationTasks.forEach(btn => {
         btn.addEventListener('click', e => {
-            e.currentTarget.parentNode.querySelector('.education__task_content').classList.add('education__task_content_visible');
+            e.currentTarget.parentNode.querySelector('.education__task_content').classList.toggle('education__task_content_visible');
         })
     })
 
@@ -249,6 +250,21 @@ if(slider) {
         })
         buttonBox.append(btn);
     })
+    let ind = 1;
+    setInterval(() => {
+        if(ind>images.length-1){
+            ind = 0;
+        } else if(ind <0){
+            ind = images.length-1;
+        }
+        const sliderBoxWidth = slider.querySelector('.slider__box').getBoundingClientRect().width;
+        buttonBox.querySelectorAll('.slider__button').forEach((btn, index) => {
+            if(ind !== index) btn.classList.remove('slider__button_active');
+            else btn.classList.add('slider__button_active');
+            sliderContent.style.transform = `translate(${-ind * sliderBoxWidth}px)`;
+        })
+        ind +=1;
+    }, 5000);
 }
 const noConnect = document.querySelector('.not-connect');
 if(connectButtons && connectButtons.length > 0 && !noConnect) {
@@ -261,7 +277,7 @@ if(connectButtons && connectButtons.length > 0 && !noConnect) {
                 if(ind !== index) item.classList.remove('connect__exchange_section_btn_action');
                 else item.classList.add('connect__exchange_section_btn_action');
             })
-            contentBox.style.transform = `translate(${-ind * containerContentWidth}px)`;
+            contentBox.style.transform = `translate(${-ind * 100}%)`;
         })
     })
 }
@@ -302,6 +318,25 @@ if(referralButtons && referralButtons.length > 0) {
         btn.addEventListener('click', e => {
             const container = e.target.parentNode.parentNode.parentNode;
             container.querySelector('.referral__btn').style.display = 'block';
+            container.querySelector('.referral__content').classList.add('referral__content_hide');
+        })
+    })
+}
+
+if(referralButtonsMobile && referralButtonsMobile.length > 0) {
+    const referralButtonsHide = document.querySelectorAll('.referral__content_btn');
+
+    referralButtonsMobile.forEach(btn => {
+        btn.addEventListener('click', e => {
+            e.target.parentNode.parentNode.parentNode.querySelector('.referral__content').classList.remove('referral__content_hide');
+            e.target.style.display = 'none';
+        })
+    });
+
+    referralButtonsHide.forEach(btn => {
+        btn.addEventListener('click', e => {
+            const container = e.target.parentNode.parentNode.parentNode;
+            container.querySelector('.referral__btn_mobile').style.display = 'block';
             container.querySelector('.referral__content').classList.add('referral__content_hide');
         })
     })
@@ -635,3 +670,77 @@ document.querySelector('.menu__link').addEventListener('click', () => {
 closeElem.addEventListener('click', (e) => {
     menu.classList.remove('active');
 });
+
+const menuLangBtns = document.querySelectorAll('.menu__lang_block_wrapper_btn');
+const menuLinkBtn = document.querySelector('.menu__link_lang');
+const menuLang = document.querySelector('.menu__lang');
+const menuLangClose = document.querySelector('.menu__lang_close');
+const menuLangBlocks = document.querySelectorAll('.menu__lang_block_content-lang');
+const menuBlockLinkFirst = menuLangBlocks[0].querySelectorAll('.menu__lang_block_link');
+const menuBlockLinkSecond = menuLangBlocks[1].querySelectorAll('.menu__lang_block_link');
+
+
+menuLinkBtn.addEventListener('click', () => {
+    menu.classList.remove('active');
+    menuLang.classList.add('active');
+    document.querySelector('html').style.overflow = 'hidden';
+})
+
+menuLangClose.addEventListener('click', () => {
+    menuLang.classList.remove('active');
+    document.querySelector('html').style.overflow = 'auto';
+})
+
+menuBlockLinkFirst.forEach(link => {
+    link.addEventListener('click', () => {
+        menuBlockLinkFirst.forEach(el => {
+            el.classList.remove('active');
+        })
+        link.classList.add('active');
+    })
+});
+menuBlockLinkSecond.forEach(link => {
+    link.addEventListener('click', () => {
+        menuBlockLinkSecond.forEach(el => {
+            el.classList.remove('active');
+        })
+        link.classList.add('active');
+    })
+});
+
+menuLangBtns.forEach((menuLangBtn, index) => {
+    menuLangBtn.addEventListener('click', () => {
+        menuLangBtns.forEach((menuLangBtn) => {
+            menuLangBtn.classList.remove('menu__lang_block_wrapper_btn_active');
+        })
+        menuLangBlocks.forEach((menuLangBtn) => {
+            menuLangBtn.classList.remove('active');
+        })
+        menuLangBtn.classList.add('menu__lang_block_wrapper_btn_active');
+        menuLangBlocks[index].classList.add('active');
+    })
+})
+
+const tokenBtns = document.querySelectorAll('.tokens__table_action_item-img');
+
+
+if(tokenBtns){
+    const tokenBlock = document.querySelector('.token__block');
+    const tokenClose = document.querySelectorAll('.token__close');
+    const tokenTitle = document.querySelectorAll('.tokens__table_name_box');
+
+    tokenBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            tokenBlock.classList.add('active');
+            tokenBlock.querySelector('.token__title').innerHTML = tokenTitle[index].querySelector('span').innerHTML;
+            tokenBlock.querySelector('.token__subtitle').innerHTML = tokenTitle[index].querySelector('p').innerHTML;
+        })
+    })
+
+
+    tokenClose.forEach((close) => {
+        close.addEventListener('click', () => {
+            tokenBlock.classList.remove('active');
+        })
+    })
+}

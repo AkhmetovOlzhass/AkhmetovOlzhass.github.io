@@ -333,7 +333,7 @@ figcaption {
 
 @media(max-width: 576px){
     .wrap{
-        padding: 10px 5px;
+        padding: 20px 15px;
         display: block;
     }
     .contact__link{

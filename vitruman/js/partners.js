@@ -51,92 +51,123 @@ partnersLine.forEach((line, i) => {
 
 // Скопировать "Ваша ссылка"
 
-copyBtn.addEventListener('click', function() {
-    textLinc.select()
-    textLinc.setSelectionRange(0, 99999)
-    document.execCommand('copy')
-    successReferral.classList.add('copy-confirmation-referral_active')
-    setTimeout(function(){
-        successReferral.classList.remove('copy-confirmation-referral_active')
-    }, 1000)
+try{
+    copyBtn.addEventListener('click', function() {
+        textLinc.select()
+        textLinc.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        successReferral.classList.add('copy-confirmation-referral_active')
+        setTimeout(function(){
+            successReferral.classList.remove('copy-confirmation-referral_active')
+        }, 1000)
+    
+        console.log('copy successful')
+    })
+    copyDeposits.addEventListener('click', function() {
+        textDeposits.select()
+        textDeposits.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        success.classList.add('copy-confirmation_active')
+        setTimeout(function(){
+            success.classList.remove('copy-confirmation_active')
+        }, 1000)
+    
+        console.log('copy successful')
+    })
+} catch{}
 
-    console.log('copy successful')
-})
+try{
+    textLinc.addEventListener('click', function() {
+        textLinc.select()
+        textLinc.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        successReferral.classList.add('copy-confirmation-referral_active')
+        setTimeout(function(){
+            successReferral.classList.remove('copy-confirmation-referral_active')
+        }, 1000)
+    
+        console.log('copy successful')
+    })
+    copyDeposits.addEventListener('click', function() {
+        copyDeposits.select()
+        copyDeposits.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        success.classList.add('copy-confirmation-referral_active')
+        setTimeout(function(){
+            success.classList.remove('copy-confirmation-referral_active')
+        }, 1000)
+    
+        console.log('copy successful')
+    })
+
+} catch{}
 
 // Скопировать "Лендинг 1"
 
-copyDeposits.addEventListener('click', function() {
-    textDeposits.select()
-    textDeposits.setSelectionRange(0, 99999)
-    document.execCommand('copy')
-    success.classList.add('copy-confirmation_active')
-    setTimeout(function(){
-        success.classList.remove('copy-confirmation_active')
-    }, 1000)
+try{
 
-    console.log('copy successful')
-})
-
-// Скопировать "Лендинг 2"
-
-copyCredit.addEventListener('click', function() {
-    textCredit.select()
-    textCredit.setSelectionRange(0, 99999)
-    document.execCommand('copy')
-    successTwo.classList.add('copy-confirmation-two_active')
-    setTimeout(function(){
-        successTwo.classList.remove('copy-confirmation-two_active')
-    }, 1000)
     
-    console.log('copy successful')
-})
-
-// Скопировать "Лендинг 3"
-
-copyCrypt.addEventListener('click', function() {
-    textCrypt.select()
-    textCrypt.setSelectionRange(0, 99999)
-    document.execCommand('copy')
-    successThree.classList.add('copy-confirmation-three_active')
-    setTimeout(function(){
-        successThree.classList.remove('copy-confirmation-three_active')
-    }, 1000)
+    // Скопировать "Лендинг 2"
     
-    console.log('copy successful')
-})
-
-btnOne.addEventListener('click', function() {
-    offerOne.select()
-    offerOne.setSelectionRange(0, 99999)
-    document.execCommand('copy')
-    successFour.classList.add('copy-confirmation-offer_active')
-    setTimeout(function(){
-        successFour.classList.remove('copy-confirmation-offer_active')
-    }, 1000)
-
-    console.log('copy successful')
-})
-
-btnTwo.addEventListener('click', function() {
-    offerTwo.select()
-    offerTwo.setSelectionRange(0, 99999)
-    document.execCommand('copy')
-    successFive.classList.add('copy-confirmation-offer-two_active')
-    setTimeout(function(){
-        successFive.classList.remove('copy-confirmation-offer-two_active')
-    }, 1000)
+    copyCredit.addEventListener('click', function() {
+        textCredit.select()
+        textCredit.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        successTwo.classList.add('copy-confirmation-two_active')
+        setTimeout(function(){
+            successTwo.classList.remove('copy-confirmation-two_active')
+        }, 1000)
+        
+        console.log('copy successful')
+    })
     
-    console.log('copy successful')
-})
-
-btnThree.addEventListener('click', function() {
-    offerThree.select()
-    offerThree.setSelectionRange(0, 99999)
-    document.execCommand('copy')
-    successSix.classList.add('copy-confirmation-offer-three_active')
-    setTimeout(function(){
-        successSix.classList.remove('copy-confirmation-offer-three_active')
-    }, 1000)
+    // Скопировать "Лендинг 3"
     
-    console.log('copy successful')
-})
+    copyCrypt.addEventListener('click', function() {
+        textCrypt.select()
+        textCrypt.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        successThree.classList.add('copy-confirmation-three_active')
+        setTimeout(function(){
+            successThree.classList.remove('copy-confirmation-three_active')
+        }, 1000)
+        
+        console.log('copy successful')
+    })
+    
+    btnOne.addEventListener('click', function() {
+        offerOne.select()
+        offerOne.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        successFour.classList.add('copy-confirmation-offer_active')
+        setTimeout(function(){
+            successFour.classList.remove('copy-confirmation-offer_active')
+        }, 1000)
+    
+        console.log('copy successful')
+    })
+    
+    btnTwo.addEventListener('click', function() {
+        offerTwo.select()
+        offerTwo.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        successFive.classList.add('copy-confirmation-offer-two_active')
+        setTimeout(function(){
+            successFive.classList.remove('copy-confirmation-offer-two_active')
+        }, 1000)
+        
+        console.log('copy successful')
+    })
+    
+    btnThree.addEventListener('click', function() {
+        offerThree.select()
+        offerThree.setSelectionRange(0, 99999)
+        document.execCommand('copy')
+        successSix.classList.add('copy-confirmation-offer-three_active')
+        setTimeout(function(){
+            successSix.classList.remove('copy-confirmation-offer-three_active')
+        }, 1000)
+        
+        console.log('copy successful')
+    })
+} catch{}
