@@ -2087,14 +2087,15 @@ h5 {
     .offers__division_content_col-two > ul > li > span{
         font-size: 12px;
     }
-    .copy-confirmation-loans, .copy-confirmation-bank__credit{
-        display: none;
-    }
     .offers__division_content_col-three > li > p{
         font-size: 12px;
     }
     .offers__division_content_col-two_copy_btn{
-        display: none;
+        right: auto;
+        left: -130%;
+    }
+    .offers__division_content_col-two_copy_btn svg{
+        width: 30px;
     }
     .referral__scheme{
         display: none;
@@ -2290,9 +2291,17 @@ h5 {
         width: 49%;
     }
     .copy-confirmation-first, .copy-confirmation-bank{
-        display: none;
+        top: auto;
+        left: -500%;
+    }
+    .copy-confirmation-loans, .copy-confirmation-bank__credit{
+        top: auto;
+        left: -500%;
     }
     .copy-confirmation-second{
+        display: none;
+    }
+    .copy-confirmation-third{
         display: none;
     }
 }
@@ -2352,6 +2361,9 @@ h5 {
         padding: 1px 10px;
         text-transform: uppercase;
         border-radius: 5px;
+    }
+    .advertisement__increase_btn:hover{
+        background-color: #C1A875;
     }
     .advertisement__increase_wrapper{
         display: none;
@@ -2423,8 +2435,15 @@ h5 {
         display: block;
     }
     .offers__banners_menu_list{
-        display: block;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        white-space: nowrap;
     }
+    .offers__banners_menu_list::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+  }
     .statistics__accurate{
         padding: 30px 0px 42px 0px;
     }

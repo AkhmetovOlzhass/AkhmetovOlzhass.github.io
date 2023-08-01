@@ -661,12 +661,21 @@
     background-color: #fff;
     margin-top: 0;
 }
-
+.education__progress_profile_mobile{
+    display: none;
+}
+.education__progress_link-second{
+    display: none;
+}
 
 @media (max-width: 1200px){
     .education__progress_profile{
         display: block;
     }
+    .education__progress_profile_mobile{
+        display: none;
+    }
+    
     .education__progress_img ,.education__progress_info, .education__progress_task{
         display: inline-block;
         margin-right: 40px;
@@ -678,6 +687,9 @@
         width: 40%;
         text-align: center;
         padding: 5px 0;
+    }
+    .education__progress_link-second{
+        display: none;
     }
     .education__lesson_item:last-child{
         display: none;
@@ -789,6 +801,21 @@
 
 
 @media (max-width: 576px){
+    .education__progress_profile{
+        display: none;
+    }
+    .education__progress_profile_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .education__progress_link-second{
+        display: block;
+    }
+    .education__progress_info_block{
+        font-size: 14px;
+        margin-left: 16px;
+    }
     .education__about{
         padding: 15px;
     }

@@ -170,3 +170,17 @@ btnThird.addEventListener('click', function() {
     
     console.log('copy successful')
 })
+
+try{
+    const copyBtns = document.querySelectorAll('.copy-info');
+const copyContent = document.querySelectorAll('.copy-block');
+
+copyBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        copyContent[index].classList.add('copy-confirmation-referral_active')
+        setTimeout(function(){
+            copyContent[index].classList.remove('copy-confirmation-referral_active')
+        }, 1000)
+    })
+})
+} catch{}

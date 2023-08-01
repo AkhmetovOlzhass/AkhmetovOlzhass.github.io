@@ -986,6 +986,9 @@ button {
 .hamburger{
     display: none;
 }
+.reg__hide{
+    display: none;
+}
 .menu {
     position: fixed;
     bottom: -100%;
@@ -995,6 +998,7 @@ button {
     z-index: 99999999999999999;
     visibility: hidden;
     overflow: auto;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -1054,7 +1058,7 @@ button {
 
 .menu__line{
     position: absolute;
-    top: 10px;
+    top: 50px;
     width: 30%;
     height: 1px;
     background-color: #fff;
