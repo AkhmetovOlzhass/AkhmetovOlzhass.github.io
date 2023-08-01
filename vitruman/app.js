@@ -3,6 +3,7 @@ const leftPaneBtn = document.querySelector('.main__nav_btn');
 const leftPaneBtnIcon = document.querySelector('.main__nav_icon');
 const navItems = document.querySelectorAll('.nav__item');
 const slider = document.querySelector('.slider');
+const slider2 = document.querySelector('.slider2');
 const connectButtons = document.querySelectorAll('.connect__exchange_section_btn');
 const exchangeButtons = document.querySelectorAll('.connect__exchange_items_btn');
 const referralButtons = document.querySelectorAll('.referral__btn');
@@ -15,7 +16,7 @@ const replenishmentSystem = document.querySelectorAll('.system__btn');
 const transferButtons = document.querySelectorAll('.transfer__button');
 const transferDropDownBtns = document.querySelectorAll('.transfer__input_dropdown_value');
 const langBtn = document.querySelector('.header__lang');
-const statisticBtn = document.querySelectorAll('.presents__button');
+const statisticBtn = document.querySelectorAll('.presents__header');
 const statisticBtnHide = document.querySelectorAll('.presents__btn');
 const dropDown = document.querySelectorAll('.dropdown');
 const editorSelect = document.querySelector('.editor__auto_select');
@@ -100,6 +101,19 @@ if(educationSlider) {
         }
     }
 }
+const footerBtns = document.querySelectorAll('.footer__el');
+const footerContent = document.querySelectorAll('.footer__el_content');
+footerBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        footerContent[index].classList.toggle('active');
+        if(footerContent[index].classList.contains('active')){
+            btn.querySelector('img').style.transform = `rotate(180deg)`;
+        } else{
+            btn.querySelector('img').style.transform = `rotate(360deg)`;
+        }
+        
+    })
+})
 
 if(educationTasks && educationTasks.length > 0) {
     const educationTasksHidden = document.querySelectorAll('.education__task_close');
@@ -262,6 +276,41 @@ if(slider) {
             if(ind !== index) btn.classList.remove('slider__button_active');
             else btn.classList.add('slider__button_active');
             sliderContent.style.transform = `translate(${-ind * sliderBoxWidth}px)`;
+        })
+        ind +=1;
+    }, 5000);
+}
+
+if(slider2) {
+    const sliderContent2 = slider2.querySelector('.slider__content2');
+    const images = sliderContent2.querySelectorAll('img');
+    const buttonBox2 = slider2.querySelector('.slider__buttons2');
+    images.forEach((item, ind) => {
+        const btn2 = document.createElement('div');
+        btn2.classList.add('slider__button2');
+        if(ind === 0) btn2.classList.add('slider__button_active2');
+        btn2.addEventListener('click', () => {
+            const sliderBoxWidth2 = slider2.querySelector('.slider__box2').getBoundingClientRect().width;
+            buttonBox2.querySelectorAll('.slider__button2').forEach((btn, index) => {
+                if(ind !== index) btn.classList.remove('slider__button_active2');
+                else btn.classList.add('slider__button_active2');
+                sliderContent2.style.transform = `translate(${-ind * 100}%)`;
+            })
+        })
+        buttonBox2.append(btn2);
+    })
+    let ind = 1;
+    setInterval(() => {
+        if(ind>images.length-1){
+            ind = 0;
+        } else if(ind <0){
+            ind = images.length-1;
+        }
+        const sliderBoxWidth2 = slider2.querySelector('.slider__box2').getBoundingClientRect().width;
+        buttonBox2.querySelectorAll('.slider__button2').forEach((btn, index) => {
+            if(ind !== index) btn.classList.remove('slider__button_active2');
+            else btn.classList.add('slider__button_active2');
+            sliderContent2.style.transform = `translate(${-ind * 100}%)`;
         })
         ind +=1;
     }, 5000);
@@ -538,9 +587,11 @@ if(statisticBtn && statisticBtn.length > 0) {
     })
 
     statisticBtn.forEach(btn => {
+
         btn.addEventListener('click', e => {
-            e.currentTarget.classList.add('presents__button_hide');
-            e.currentTarget.parentNode.parentNode.parentNode.querySelector('.presents__box').classList.add('presents__box_active');
+            console.log(e.currentTarget);
+            e.currentTarget.querySelector('.presents__button').classList.add('presents__button_hide');
+            e.currentTarget.parentNode.querySelector('.presents__box').classList.add('presents__box_active');
         })
     })
 }
@@ -657,19 +708,28 @@ const hamburger = document.querySelector('.hamburger'),
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
+    document.querySelector('.menu__overlay').classList.add('active');
 });
 
-document.querySelector('.menu__overlay').addEventListener('click', (e) => {
+document.querySelector('.menu__overlay').addEventListener('click', () => {
     menu.classList.remove('active');
+    document.querySelector('.menu__overlay').classList.remove('active');
 });
 
 document.querySelector('.menu__link').addEventListener('click', () => {
     menu.classList.remove('active');
+    document.querySelector('.menu__overlay').classList.remove('active');
 })
 
 closeElem.addEventListener('click', (e) => {
     menu.classList.remove('active');
+    document.querySelector('.menu__overlay').classList.remove('active');
+    menu.style.bottom = -100 + "%";
+    document.querySelector('.menu__overlay').classList.remove('active');
+    document.querySelector('body').style.overflow = 'auto';
 });
+
+drag(menu, closeElem, hamburger, document.querySelector('.menu__overlay'))
 
 const menuLangBtns = document.querySelectorAll('.menu__lang_block_wrapper_btn');
 const menuLinkBtn = document.querySelector('.menu__link_lang');
@@ -722,62 +782,90 @@ menuLangBtns.forEach((menuLangBtn, index) => {
 })
 
 const tokenBtns = document.querySelectorAll('.tokens__table_action_item-img');
+const tokenTitle = document.querySelectorAll('.tokens__table_name_box');
+const tokenOverflow = document.querySelector('.token__overflow');
 
-
-if(tokenBtns){
+if(tokenBtns && tokenOverflow){
     const tokenBlock = document.querySelector('.token__block');
     const tokenClose = document.querySelectorAll('.token__close');
-    const tokenTitle = document.querySelectorAll('.tokens__table_name_box');
-
-    var Ystart;
-    var pageYel;
     tokenBtns.forEach((btn, index) => {
         btn.addEventListener('click', () => {
-            tokenBlock.style.bottom = 0;
-            document.querySelector('.token__overflow').classList.add('active');
-            document.querySelector('body').style.overflow = 'hidden';
             tokenBlock.querySelector('.token__title').innerHTML = tokenTitle[index].querySelector('span').innerHTML;
             tokenBlock.querySelector('.token__subtitle').innerHTML = tokenTitle[index].querySelector('p').innerHTML;
         })
     })
 
-    document.querySelector('.token__overflow').addEventListener('click', () => {
-        tokenBlock.style.bottom = -100 + "%";
-        document.querySelector('.token__overflow').classList.remove('active');
-        document.querySelector('body').style.overflow = 'auto';
-    });
-
-
-    tokenClose.forEach((close) => {
-        close.addEventListener('click', () => {
+    drag(tokenBlock, tokenClose, tokenBtns, tokenOverflow);
+    tokenClose.forEach((btn) => {
+        btn.addEventListener('click', () => {
             tokenBlock.style.bottom = -100 + "%";
-            document.querySelector('.token__overflow').classList.remove('active');
+            tokenOverflow.classList.remove('active');
             document.querySelector('body').style.overflow = 'auto';
         })
     })
+}
+
+function drag(block, close, btns, overflow){
+    var Ystart;
+    var pageYel;
+    if(btns.length>1){
+        btns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                block.style.bottom = 0;
+                overflow.classList.add('active');
+                document.querySelector('body').style.overflow = 'hidden';
+            })
+        })
+    } else{
+        try{
+            btns.addEventListener('click', () => {
+                block.style.bottom = 0 + '%';
+                overflow.classList.add('active');
+                document.querySelector('body').style.overflow = 'hidden';
+            })
+        } catch{}
+    }
+
+    overflow.addEventListener('click', () => {
+        block.style.bottom = -100 + "%";
+        overflow.classList.remove('active');
+        document.querySelector('body').style.overflow = 'auto';
+    });
+    if(close.length>1){
+        close.forEach((close) => {
+            close.addEventListener('click', () => {
+                block.style.bottom = -100 + "%";
+                overflow.classList.remove('active');
+                document.querySelector('body').style.overflow = 'auto';
+            })
+        })
+    } 
+
 
     function moveAt(Ystart, pageY) {
         pageYel = pageY;
         if(!(Ystart-pageYel >0)){
-            tokenBlock.style.bottom =Ystart - pageYel + 'px';
+            block.style.bottom =Ystart - pageYel + 'px';
         }
     }
 
-    tokenBlock.addEventListener('touchstart', (event) => {
+    block.addEventListener('touchstart', (event) => {
         Ystart = event.targetTouches[0].pageY;
     })
-    tokenBlock.addEventListener('touchmove', (event) => {
+    block.addEventListener('touchmove', (event) => {
         moveAt(Ystart, event.targetTouches[0].pageY);
     })
-    tokenBlock.addEventListener('touchend', () => {
-        if(Ystart-pageYel<= -tokenBlock.offsetHeight +50){
+    block.addEventListener('touchend', () => {
+        if(Ystart-pageYel<= -block.offsetHeight +50){
             document.querySelector('body').style.overflow = 'auto';
-            tokenBlock.style.bottom = -100 + "%";
-            document.querySelector('.token__overflow').classList.remove('active');
+            block.style.bottom = -100 + "%";
+            overflow.classList.remove('active');
             Ystart = 0;
             pageYel = 0;
-        } else if(Ystart-pageYel<= tokenBlock.offsetHeight) {
-            tokenBlock.style.bottom = 0;
+        } else if(Ystart-pageYel<= block.offsetHeight) {
+            block.style.bottom = -0 + '%';
         }
     })
 }
+
+

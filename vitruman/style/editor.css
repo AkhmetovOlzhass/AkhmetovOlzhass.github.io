@@ -698,6 +698,10 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     stroke: var(--bcg-button-hov);
 }
 
+.editor__valute_mobile{
+    display: none
+}
+
 @media (max-width: 769px){
     .editor__save{
         margin-left: 0;
@@ -712,14 +716,62 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 
 @media (max-width: 576px){
+    .editor__save{
+        background-color: #000;
+    }
+    .editor__stop > .editor__save{
+        width: 100%;
+    }
+    .editor__added_clear{
+        right: 30px;
+    }
+    .editor__invest_btn{
+        margin-top: 20px;
+    }
+    .editor__info{
+        display: block;
+    }
+    .editor__info_balance{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     .editor__valute{
         width: 100%;
+        display: none;
+    }
+    .editor__valute_mobile{
+        display: block;
+    }
+    .editor__valute_mobile .editor__valute__value{
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
+    .editor__added{
+        display: block;
+    }
+    .editor_added_input{
+        margin-left: 0;
     }
     .editor__title{
         width: 100%;
     }
     .editor__info_list{
-        width: 60%;
+        width: 100%;
+    }
+    .editor__invest_title > h3{
+        font-size: 12px;
+    }
+    .editor__invest_title > p {
+        font-size: 12px;
+    }
+    .editor__invest_values{
+        font-size: 14px;
+    }
+    .editor__auto{
+        width: 100%;
+        margin-top: 20px;
     }
     .editor{
         padding: 10px;
@@ -741,11 +793,12 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     .editor__auto_select{
         margin-left: 25px;
     }
-    .editor__auto_info{
+    .editor__auto_info p{
         line-height: 12px;
+        font-size: 10px;
     }
     .editor__auto_text{
-        font-size: 16px;
+        font-size: 12px;
     }
     .editor__controls{
         display: block;
@@ -766,12 +819,14 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     }
     .editor__added_box{
         margin-left: 0;
+        width: 100%;
     }
     .editor__stop_info{
         width: 100%;
+        line-height: 14px;
     }
     .editor__info_value{
-        font-size: 12px;
+        font-size: 18px;
     }
     .editor__info_list_title{
         font-size: 14px;

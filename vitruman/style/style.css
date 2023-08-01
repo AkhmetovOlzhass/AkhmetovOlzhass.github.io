@@ -106,9 +106,14 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 1;
+    opacity: .5;
+    background-color: #000;
+    display: none;
 }
-
+.menu__overlay.active{
+    display: block;
+    z-index: 9999999;
+}
 .dropdown__box {
     position: absolute;
     left: 0;
@@ -929,13 +934,62 @@ button {
 .slider__button_active {
     background-color: #FFF;
 }
+
+
+.slider2 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.slider__box2 {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.slider__content2 {
+    min-width: 100%;
+    display: flex;
+    transition: transform ease-in 0.3s;
+}
+
+.slider__content2 > img {
+    min-width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.slider__content2 > img:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.slider__buttons2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__button2 {
+    margin: 10px;
+    width: 40px;
+    height: 5px;
+    background-color: #B4B4B4;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider__button_active2 {
+    background-color: #FFF;
+}
+
 .hamburger{
     display: none;
 }
 .menu {
     position: fixed;
-    top: 0;
-    right: -100%;
+    bottom: -100%;
+    right: 0;
     width: 100%;
     height: 100vh;
     z-index: 99999999999999999;
@@ -948,6 +1002,7 @@ button {
     visibility: visible;
     opacity: 1;
     right: 0;
+    bottom: -10%;
     background-color: #000;
 }
 .menu__block {
@@ -1005,6 +1060,10 @@ button {
 .menu__lang_block_content-money{
     display: none;
 }
+
+.footer__box_mobile{
+    display: none
+}
 @media (max-width: 1200px){
     .main {
         display: block;
@@ -1048,7 +1107,23 @@ button {
 }
 
 @media (max-width: 769px){
+    .menu__account{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        text-transform: none;
+        font-size: 16px;
+    }
+    .menu__account span{
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
     .slider__box{
+        overflow: scroll;
+    }
+    .slider__box2{
         overflow: scroll;
     }
     .menu__lang_block_content-lang.active{
@@ -1187,12 +1262,68 @@ button {
     .slider__content > img {
         height: 150px;
     }
-    .footer{
-        display: none;
+    .slider__content2 > img {
+        height: 150px;
+    }
+    .footer__box{
+        padding: 10px;
     }
 }
 
 @media (max-width: 576px){
+    .footer__text{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .footer__info{
+        margin-bottom: 20px;
+    }
+    .footer__box{
+        display: none;
+    }
+    .footer__box_mobile{
+        display: block;
+    }
+    .footer__box_mobile .footer__social_container{
+        margin-top: 0;
+    }
+    .footer__box_mobile .footer__el{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        font-family: RobotoRegular, sans-serif;
+        border-bottom: 1px #191A1F solid;
+        margin-top: 10px;
+        color: #fff;
+    }
+    .footer__box_mobile .footer__el img{
+        width: 30px;
+        transition: all .2s;
+    }
+    .footer__el_content{
+        display: none;
+    }
+    .footer__el_content.active{
+        display: block;
+    }
+    .footer__el_content.active li{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .footer__el_content.active li a{
+        font-family: RobotoRegular, sans-serif;
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer__text{
+        font-family: RobotoRegular, sans-serif;
+        color: #fff;
+    }
+    .footer__social_container{
+        margin-bottom: 10px;
+    }
+
     .menu__lang_block_link{
         display: block;
         width: 100%;
@@ -1212,6 +1343,9 @@ button {
         padding: 3px 8px;
     }
     .slider__content > img {
+        height: 100px;
+    }
+    .slider__content2 > img {
         height: 100px;
     }
     .menu__lang_block_link.active{

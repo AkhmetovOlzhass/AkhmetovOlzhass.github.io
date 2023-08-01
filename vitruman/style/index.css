@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+.advertising__img2 {
+    width: 100%;
+}
+
+
 .main__content_box {
     display: flex;
     justify-content: space-between;
@@ -793,12 +798,15 @@
     .news{
         padding: 5px;
     }
-    .social__box{
-        display: block;
-    }
     .social__item{
-        margin-bottom: 20px;
-        width: 100%;
+        padding: 10px;
+    }
+    .social__item svg{
+        width: 40px;
+        height: 40px;
+    }
+    .social__name{
+        font-size: 14px;
     }
     .social__trigger{
         display: block;
@@ -810,6 +818,17 @@
 }
 
 @media (max-width: 576px){
+    .social__trigger{
+        margin-top: 20px;
+    }
+    .social__name{
+        display: none;
+    }
+    .social__item svg{
+        width: 20px;
+        height: 20px;
+        border-radius: 5px
+    }
     .payment__loans{
         display: block;
 

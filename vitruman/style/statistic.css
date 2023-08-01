@@ -372,6 +372,9 @@
 }
 
 @media(max-width: 576px){
+    .accounts__item_stats a{
+        top: 20%;
+    }
     .accounts__item{
         padding-right: 5px;
     }
@@ -379,7 +382,7 @@
         padding: 10px;
     }
     .presents__header{
-        display: block;
+        display: flex;
     }
     .presents__title{
         margin-left: 0;
@@ -436,10 +439,20 @@
     }
     .rate{
         padding: 10px;
+        position: relative;
     }
     .rate__row_text{
-        width: 100%;
+        width: 49%;
+        display: inline-block;
         font-size: 12px;
         margin-bottom: 10px;
+    }
+    .rate__row:last-child .rate__row_text{
+        width: 75%;
+    }
+    .rate__row_link{
+        position: absolute;
+        right: 20px;
+        font-size: 14px;
     }
 }
