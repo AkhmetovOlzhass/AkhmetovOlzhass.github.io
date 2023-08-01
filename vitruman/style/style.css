@@ -1053,6 +1053,7 @@ button {
     display: none;
     visibility: hidden;
     opacity: 0;
+    z-index: 9999999999999999999999;
 }
 .menu__lang_block_content-lang{
     display: none;

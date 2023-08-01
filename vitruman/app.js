@@ -725,7 +725,6 @@ closeElem.addEventListener('click', (e) => {
     menu.classList.remove('active');
     document.querySelector('.menu__overlay').classList.remove('active');
     menu.style.bottom = -100 + "%";
-    document.querySelector('.menu__overlay').classList.remove('active');
     document.querySelector('body').style.overflow = 'auto';
 });
 
@@ -749,6 +748,7 @@ menuLinkBtn.addEventListener('click', () => {
 menuLangClose.addEventListener('click', () => {
     menuLang.classList.remove('active');
     document.querySelector('html').style.overflow = 'auto';
+    document.querySelector('.menu__overlay').classList.remove('active');
 })
 
 menuBlockLinkFirst.forEach(link => {
