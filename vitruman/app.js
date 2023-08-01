@@ -729,18 +729,55 @@ if(tokenBtns){
     const tokenClose = document.querySelectorAll('.token__close');
     const tokenTitle = document.querySelectorAll('.tokens__table_name_box');
 
+    var Ystart;
+    var pageYel;
     tokenBtns.forEach((btn, index) => {
         btn.addEventListener('click', () => {
-            tokenBlock.classList.add('active');
+            tokenBlock.style.bottom = 0;
+            document.querySelector('.token__overflow').classList.add('active');
+            document.querySelector('body').style.overflow = 'hidden';
             tokenBlock.querySelector('.token__title').innerHTML = tokenTitle[index].querySelector('span').innerHTML;
             tokenBlock.querySelector('.token__subtitle').innerHTML = tokenTitle[index].querySelector('p').innerHTML;
         })
     })
 
+    document.querySelector('.token__overflow').addEventListener('click', () => {
+        tokenBlock.style.bottom = -100 + "%";
+        document.querySelector('.token__overflow').classList.remove('active');
+        document.querySelector('body').style.overflow = 'auto';
+    });
+
 
     tokenClose.forEach((close) => {
         close.addEventListener('click', () => {
-            tokenBlock.classList.remove('active');
+            tokenBlock.style.bottom = -100 + "%";
+            document.querySelector('.token__overflow').classList.remove('active');
+            document.querySelector('body').style.overflow = 'auto';
         })
+    })
+
+    function moveAt(Ystart, pageY) {
+        pageYel = pageY;
+        if(!(Ystart-pageYel >0)){
+            tokenBlock.style.bottom =Ystart - pageYel + 'px';
+        }
+    }
+
+    tokenBlock.addEventListener('touchstart', (event) => {
+        Ystart = event.targetTouches[0].pageY;
+    })
+    tokenBlock.addEventListener('touchmove', (event) => {
+        moveAt(Ystart, event.targetTouches[0].pageY);
+    })
+    tokenBlock.addEventListener('touchend', () => {
+        if(Ystart-pageYel<= -tokenBlock.offsetHeight +50){
+            document.querySelector('body').style.overflow = 'auto';
+            tokenBlock.style.bottom = -100 + "%";
+            document.querySelector('.token__overflow').classList.remove('active');
+            Ystart = 0;
+            pageYel = 0;
+        } else if(Ystart-pageYel<= tokenBlock.offsetHeight) {
+            tokenBlock.style.bottom = 0;
+        }
     })
 }

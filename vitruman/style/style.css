@@ -932,10 +932,6 @@ button {
 .hamburger{
     display: none;
 }
-
-.nav__phone{
-    display: none;
-}
 .menu {
     position: fixed;
     top: 0;
@@ -1132,22 +1128,6 @@ button {
         display: none;
     }
 
-    .nav__phone{
-        display: block;
-        background-color: #191A1F;
-        padding: 20px 0;
-    }
-    .nav__phone .nav__list{
-        max-width: 50%;
-        padding: 0 20px;
-    }
-
-    .nav__phone .nav__item a{
-        font-size: 14px;
-        text-transform: none;
-        color: #A4A4A6;
-    }
-
     .hamburger{
         display: flex;
         width: 32px;
@@ -1220,12 +1200,6 @@ button {
     .menu__lang {
         background-color: #000;
         overflow: auto;
-    }
-    .nav__phone{
-        padding: 10px 0;
-    }
-    .nav__phone .nav__list{
-        max-width: 100%;
     }
     .header__container{
         padding: 0 5px;

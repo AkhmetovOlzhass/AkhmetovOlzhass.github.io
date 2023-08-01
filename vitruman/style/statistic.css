@@ -372,6 +372,9 @@
 }
 
 @media(max-width: 576px){
+    .accounts__item{
+        padding-right: 5px;
+    }
     .presents{
         padding: 10px;
     }

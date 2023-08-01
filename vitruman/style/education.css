@@ -879,9 +879,6 @@
         text-align: left;
         margin-left: 20px;
     }
-    .education__slider_content{
-        min-height: 120px;
-    }
     .education__slider_item{
         width: 35px;
         height: 35px;
@@ -892,6 +889,7 @@
     }
     .education__slider_wrapper{
         margin-top: 20px;
+        width: 100%;
     }
     .education__slider{
         padding-bottom: 20px;

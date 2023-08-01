@@ -502,6 +502,9 @@
 }
 
 @media (max-width: 576px){
+    .connect__accounts{
+        padding: 0;
+    }
     .referral__link{
         display: block;
         text-align: center;
