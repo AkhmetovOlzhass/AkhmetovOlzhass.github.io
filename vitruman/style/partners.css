@@ -2050,9 +2050,6 @@ h5 {
 .investors__window_data_box_mobile{
     display: none;
 }
-.copy-confirmation-third, .copy-confirmation-two, .copy-confirmation{
-    display: none;
-}
 
 .advertising__exchanges_wrap_mobile{
     display: none;
@@ -2301,6 +2298,23 @@ h5 {
 }
 
 @media(max-width: 576px){
+    .copy-confirmation{
+        left: 0;
+        top: auto;
+    }
+    .copy-confirmation-two{
+        left: 0;
+        top: auto;
+    }
+    .copy-confirmation-three{
+        left: 0;
+        top: auto;
+    }
+    .copy-confirmation-referral{
+        display: flex;
+        left: 20%;
+        top: auto;
+    }
     .advertisement__increase_container{
         display: flex;
         flex-direction: column;
@@ -2483,12 +2497,15 @@ h5 {
     }
     .tab__menu{
         overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         white-space: nowrap;
         padding: 0px;
     }
-    .copy-confirmation, .copy-confirmation-two, .copy-confirmation-three{
-        display: none;
-    }
+    .tab__menu::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+  }
     .statistics__accurate_chart h2{
         font-size: 14px;
     }

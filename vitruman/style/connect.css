@@ -534,7 +534,13 @@
     .connect__exchange_section{
         overflow: auto;
         white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
+    .connect__exchange_section::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+  }
     .connect__exchange_items_btn{
         padding: 10px;
         text-transform: uppercase;

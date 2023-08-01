@@ -26,6 +26,7 @@ const offerThree = document.getElementById('ali__link_three')
 const btnThree = document.getElementById('offers__btn_copy_three')
 const successSix = document.querySelector('.copy-confirmation-offer-three')
 
+
 partnersTabs.forEach((tab, index) => {
     tab.addEventListener('click', (e) => {
         document.querySelector('.tab__menu_btn_active').classList.remove('tab__menu_btn_active')
@@ -38,7 +39,6 @@ partnersTabs.forEach((tab, index) => {
         })
     })
 })
-
 
 partnersLine.forEach((line, i) => {
     line.addEventListener('click', (e) => {
@@ -105,8 +105,6 @@ try{
 // Скопировать "Лендинг 1"
 
 try{
-
-    
     // Скопировать "Лендинг 2"
     
     copyCredit.addEventListener('click', function() {
@@ -170,4 +168,18 @@ try{
         
         console.log('copy successful')
     })
+} catch{}
+
+try{
+    const copyBtns = document.querySelectorAll('.copy-info');
+const copyContent = document.querySelectorAll('.copy-block');
+
+copyBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        copyContent[index].classList.add('copy-confirmation-referral_active')
+        setTimeout(function(){
+            copyContent[index].classList.remove('copy-confirmation-referral_active')
+        }, 1000)
+    })
+})
 } catch{}

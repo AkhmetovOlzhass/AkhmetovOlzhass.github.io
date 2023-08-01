@@ -392,12 +392,13 @@ figcaption {
     }
     .online__chat_foto {
         top: -42px;
-        left: 240px;
+        left: 70%;
     }
     .online__chat_document {
         top: -42px;
-        left: 150px;
+        left: 70%;
     }
+
     .applications h2{
         margin-top: 0;
         line-height: 26px;

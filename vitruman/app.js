@@ -581,17 +581,16 @@ if(statisticBtn && statisticBtn.length > 0) {
 
     statisticBtnHide.forEach(btn => {
         btn.addEventListener('click', e => {
-            e.currentTarget.parentNode.classList.remove('presents__box_active');
-            e.currentTarget.parentNode.parentNode.querySelector('.presents__button').classList.remove('presents__button_hide');
+            e.currentTarget.parentNode.classList.toggle('presents__box_active');
+            e.currentTarget.parentNode.parentNode.querySelector('.presents__button').classList.toggle('presents__button_hide');
         })
     })
 
     statisticBtn.forEach(btn => {
-
         btn.addEventListener('click', e => {
-            console.log(e.currentTarget);
-            e.currentTarget.querySelector('.presents__button').classList.add('presents__button_hide');
-            e.currentTarget.parentNode.querySelector('.presents__box').classList.add('presents__box_active');
+            e.currentTarget.querySelector('.presents__button').classList.toggle('presents__button_hide');
+            e.currentTarget.parentNode.querySelector('.presents__box').classList.toggle('presents__box_active');
+            console.log(e.currentTarget.parentNode.querySelector('.presents__box'))
         })
     })
 }
@@ -819,7 +818,7 @@ function drag(block, close, btns, overflow){
     } else{
         try{
             btns.addEventListener('click', () => {
-                block.style.bottom = -15 + '%';
+                block.style.bottom = 0 + '%';
                 overflow.classList.add('active');
                 document.querySelector('body').style.overflow = 'hidden';
             })
@@ -866,7 +865,7 @@ function drag(block, close, btns, overflow){
             if(btns.length>1){
                 block.style.bottom = 0 + '%';
             } else{
-                block.style.bottom = -15 + '%';
+                block.style.bottom = 0 + '%';
             }
             
         }
