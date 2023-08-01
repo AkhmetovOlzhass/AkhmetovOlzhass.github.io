@@ -811,7 +811,7 @@ function drag(block, close, btns, overflow){
     if(btns.length>1){
         btns.forEach((btn, index) => {
             btn.addEventListener('click', () => {
-                block.style.bottom = 0;
+                block.style.bottom = 0 + "%";
                 overflow.classList.add('active');
                 document.querySelector('body').style.overflow = 'hidden';
             })
@@ -819,7 +819,7 @@ function drag(block, close, btns, overflow){
     } else{
         try{
             btns.addEventListener('click', () => {
-                block.style.bottom = 0 + '%';
+                block.style.bottom = -15 + '%';
                 overflow.classList.add('active');
                 document.querySelector('body').style.overflow = 'hidden';
             })
@@ -863,7 +863,12 @@ function drag(block, close, btns, overflow){
             Ystart = 0;
             pageYel = 0;
         } else if(Ystart-pageYel<= block.offsetHeight) {
-            block.style.bottom = -0 + '%';
+            if(btns.length>1){
+                block.style.bottom = 0 + '%';
+            } else{
+                block.style.bottom = -15 + '%';
+            }
+            
         }
     })
 }
