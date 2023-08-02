@@ -887,8 +887,10 @@ if(questionBtns){
         btn.addEventListener('click', () => {
             if(questionContent[index].innerHTML == questionFullArr[index]){
                 questionContent[index].innerHTML = questionFullArr[index].slice(0, 109) + "...";
+                btn.innerHTML = '+';
             } else{
                 questionContent[index].innerHTML = questionFullArr[index];
+                btn.innerHTML = '&#8722;';
             }
         })
     })
