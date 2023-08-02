@@ -873,3 +873,23 @@ function drag(block, close, btns, overflow){
 }
 
 
+const questionBtns = document.querySelectorAll('.questions__block-btn');
+const questionContent = document.querySelectorAll('.questions__block-text-descr');
+
+if(questionBtns){
+    let questionFullArr = [];
+    questionContent.forEach((question) => {
+        let fullContent = question.innerHTML;
+        questionFullArr.push(fullContent);
+        question.innerHTML = fullContent.slice(0, 109) + "...";
+    })
+    questionBtns.forEach((btn, index)=> {
+        btn.addEventListener('click', () => {
+            if(questionContent[index].innerHTML == questionFullArr[index]){
+                questionContent[index].innerHTML = questionFullArr[index].slice(0, 109) + "...";
+            } else{
+                questionContent[index].innerHTML = questionFullArr[index];
+            }
+        })
+    })
+}

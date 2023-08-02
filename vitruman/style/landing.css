@@ -1,0 +1,549 @@
+.trade{
+    min-height: 840px;
+    background: url(../img/landing/tradeBg.png) no-repeat 50%/cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container__landing{
+    padding: 0 193px;
+}
+
+.trade__wrapper{
+    display: block;
+    width: 50%;
+    text-align: left;
+}
+
+.trade__title{
+    font-family: RobotoRegular, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+.subtitle{
+    font-family: RobotoRegular, sans-serif;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+.trade__subtitle{
+    width: 80%;
+    margin-top: 30px;
+}
+
+.trade__wrapper-btn{
+    display: flex;
+    width: 220px;
+    height: 70px;
+    color: #FFF;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #C1A875;
+    margin-top: 50px;
+}
+.trade__message{
+    position: absolute;
+    bottom: 30px;
+    right: 190px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.advantages{
+    height: 1517px;
+    background: url(../img/landing/advantagesBg.png) no-repeat 50%/cover;
+    padding-top: 60px;
+    position: relative;
+}
+
+.advantages__line{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 25%;
+}
+.advantages__wrapper{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 150px;
+    margin-top: 110px;
+}
+
+.advantages__block{
+    width: 48%;
+    height: 300px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 35px;
+    background-color: #fff;
+    position: relative;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.advantages__block-title{
+    color: #000;
+    font-family: RobotoRegular, sans-serif;
+    width: 70%;
+    font-size: 30px;
+}
+.advantages__block-text{
+    color: #000;
+    font-family: RobotoRegular, sans-serif;
+    color: #9B9B9B;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.advantages__block-shadow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.business{
+    position: relative;
+    height: 1080px;
+    background: url(../img/landing/businessBg.png) no-repeat 50%/cover;
+}
+.business__block{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+    padding: 0 210px 0 45px;
+    width: 540px;
+    display: flex;
+    align-items: center;
+}
+.business__block-title{
+    font-family: RobotoRegular, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+.business__block-text{
+    font-family: RobotoRegular, sans-serif;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 42px;
+}
+.business__block-btn{
+    display: flex;
+    width: 220px;
+    height: 70px;
+    color: #FFF;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #C1A875;
+    margin-top: 60px;
+}
+
+.business__play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.get{
+    height: 951px;
+    background: url(../img/landing/getBg.png) no-repeat 50%/cover;
+    padding-top: 87px;
+}
+
+.get__wrapper{
+    width: 100%;
+    height: 400px;
+    margin-top: 170px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px;
+    padding-top: 89px;
+}
+
+.get__block{
+    width: 22%;
+}
+
+.get__block-title{
+    color: #000;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 26px;
+    margin-top: 40px;
+}
+.get__block-subtitle{
+    margin-top: 18px;
+    color: #000;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+}
+
+.how{
+    height: 2269px;
+    background: url(../img/landing/howBg.png) no-repeat 50%/cover;
+    position: relative;
+}
+.how__block{
+    width: 48%;
+    height: 340px;
+}
+
+.how .row{
+    padding: 0 80px;
+}
+
+.gold{
+    background-color: #C1A875;
+    color: #fff;
+}
+
+.gold .advantages__block-title{
+    color: #fff;
+}
+
+.gold .advantages__block-text{
+    color: #fff;
+}
+
+.how__block .advantages__block-title{
+    width: 100%;
+}
+
+.how__block span{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.row .how__block:last-child{
+    margin-top: 45px;
+}
+
+.how__line{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 13%;
+}
+
+.how__btn{
+    display: flex;
+    width: 220px;
+    height: 70px;
+    color: #FFF;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #C1A875;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.how__wrapper{
+    height: 1000px;
+    width: 100%;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(15px);
+    margin-top: 130px;
+    padding-top: 60px;
+}
+.how__wrapper .row{
+    padding: 0;
+    margin-top: 90px;
+}
+
+.how__wrapper-title{
+    color: #FFF;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.how__wrapper-block{
+    color: #FFF;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    width: 45%;
+    margin-left: 132px;
+}
+.how__wrapper-block:last-child{
+    margin-right: 130px;
+}
+.how__wrapper-block span{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.time{
+    background: url(../img/landing/timeBg.png) no-repeat 50%/cover;
+    height: 912px;
+    display: flex;
+    align-items: center;
+}
+
+.time .trade__subtitle{
+    font-size: 22px;
+}
+
+.time .trade__wrapper{
+    width: 60%;
+}
+
+.income{
+    background-color: #000;
+    padding-top: 108px;
+    padding-bottom: 113px;
+}
+.income__title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.income__block{
+    color: #fff;
+    text-align: center;
+    width: 20%;
+}
+.income__block-title{
+    color: #F2EEED;
+    margin-top: 45px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 30px;
+}
+.income__block-text{
+    color: #F2EEED;
+    margin-top: 45px;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+}
+.income__block-img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.robot{
+    background: url(../img/landing/robotBg.png) no-repeat 50%/cover;
+    padding: 100px 0 124px;
+}
+
+.robot__wrapper{
+    height: 451px;
+    width: 100%;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+.robot__wrapper-img{
+    margin-right: 80px;
+}
+
+.robot__wrapper-descr-title{
+    font-size: 30px;
+    font-family: RobotoRegular, sans-serif;
+    margin-bottom: 30px;
+}
+.robot__wrapper-descr-text{
+    font-size: 20px;
+    font-family: RobotoRegular, sans-serif;
+}
+
+.price{
+    background-color: #000;
+    padding: 76px 0 124px;
+}
+.tarif__table{
+    margin-top: 60px;
+}
+.tarif__table th{
+    font-size: 22px;
+}
+.tarif__table tr:first-child th{
+    font-size: 20px;
+}
+.tarif__table tr th:first-child{
+    font-size: 20px;
+}
+
+.markets{
+    padding: 115px 0 90px;
+    background: url(../img/landing/marketsBg.png) no-repeat 50%/cover;
+}
+
+.markets__subtitle{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.markets__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.markets__wrapper-el{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.reviews{
+    background-color: #000;
+    padding: 100px 0 121px;
+}
+
+.education__slider{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: #000;
+}
+.education__slider_content{
+    width: 50%;
+    margin-bottom: 80px;
+    display: inline-flex;
+    height: 350px;
+}
+.reviews__graphic{
+    float: right;
+    margin-bottom: 50px;
+}
+.education__slider_text{
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.education__slider_item > img{
+    width: 100px;
+    height: 100px;
+}
+
+.questions{
+    padding: 88px 0 80px;
+    background: url(../img/landing/questionsBg.png) no-repeat 50%/cover;
+    height: 1600px;
+}
+
+.questions__wrapper{
+    min-height: 156px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(30px);
+    margin-top: 50px;
+    padding: 40px 22px 35px;
+}
+
+.questions__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions__block-text{
+    color: #fff;
+    font-family: RobotoRegular, sans-serif;
+    width: 94%;
+}
+
+.questions__block-text-title{
+    font-size: 30px;
+}
+.questions__block-text-descr{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.questions__block-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 40px;
+    background-color: #fff; 
+    width: 40px;
+    height: 40px;
+}
+
+.special{
+    padding: 145px 0;
+    background: url(../img/landing/specialBg.png) no-repeat 50%/cover;
+}
+
+.special .trade__title{
+    margin-bottom: 60px;
+}
+
+.special .trade__subtitle{
+    font-size: 20px;
+    width: 50%;
+}
+
+.special__block{
+    background: url(../img/landing/specialBlock.png) no-repeat 50%/cover;
+    width: 700px;
+    height: 449px;
+    margin-top: 120px;
+    padding: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.special__block-title{
+    font-size: 40px;
+    font-family: RobotoRegular, sans-serif;
+    color: #000;
+}
+.special__block_text{
+    font-family: RobotoRegular, sans-serif;
+    color: #000;
+    width: 60%;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.special__block_btn{
+    text-decoration: none;
+    border-radius: 100px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 70px;
+    color: #000;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 20px;
+    margin-top: 53px;
+}
