@@ -668,6 +668,10 @@
     display: none;
 }
 
+.rates__table{
+    margin: 80px 0;
+}
+
 @media (max-width: 1200px){
     .education__progress_profile{
         display: block;
