@@ -805,6 +805,9 @@
 
 
 @media (max-width: 576px){
+    .slider__none{
+        display: none;
+    }
     .education__progress_profile{
         display: none;
     }
@@ -911,8 +914,8 @@
         margin-left: 20px;
     }
     .education__slider_item{
-        width: 35px;
-        height: 35px;
+        width: 70px;
+        height: 70px;
     }
     .education__slider_item > img{
         width: 100%;

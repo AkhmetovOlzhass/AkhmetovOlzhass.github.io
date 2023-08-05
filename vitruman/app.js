@@ -69,6 +69,7 @@ if(educationSlider) {
         if(action === 'prev') {
             sliderItems.forEach((item, ind) => {
                 item.classList.remove('education__slider_item_active');
+                item.classList.add('slider__none');
                 if(ind === sliderItems.length - 1) {
                     cache = item;
                 } else {
@@ -78,13 +79,19 @@ if(educationSlider) {
             newItems.unshift(cache);
             sliderItemsContainer.innerHTML = '';
             newItems.forEach((item, ind) => {
-                if(ind === 3) item.classList.add('education__slider_item_active');
+                if(ind === 3) {
+                    item.classList.add('education__slider_item_active');
+                };
+                if(ind === 3 || ind === 4 || ind === 2){
+                    item.classList.remove('slider__none');
+                }
                 sliderText.textContent = messages[item.id];
                 sliderItemsContainer.appendChild(item);
             })
         } else {
             sliderItems.forEach((item, ind) => {
                 item.classList.remove('education__slider_item_active');
+                item.classList.add('slider__none');
                 if(ind === 0) {
                     cache = item;
                 } else {
@@ -94,7 +101,12 @@ if(educationSlider) {
             newItems.push(cache);
             sliderItemsContainer.innerHTML = '';
             newItems.forEach((item, ind) => {
-                if(ind === 3) item.classList.add('education__slider_item_active');
+                if(ind === 3){
+                    item.classList.add('education__slider_item_active');
+                };
+                if(ind === 3 || ind === 4 || ind === 2){
+                    item.classList.remove('slider__none');
+                }
                 sliderText.textContent = messages[item.id];
                 sliderItemsContainer.appendChild(item);
             })
