@@ -172,3 +172,129 @@
     font-size: 24px;
     text-transform: uppercase;
 }
+
+.experts__mobile{
+    display: none;
+}
+
+@media(max-width: 968px){
+    .free__bg{
+        display: none;
+    }
+    .experts .row{
+        width: 100%;
+    }
+    .experts__block{
+        width: 48%;
+    }
+    .expert__block-num{
+        margin-bottom: 20px;
+    }
+    .experts__block-text{
+        width: 90%;
+    }
+    .education__slider{
+        padding-bottom: 40px;
+    }
+}
+@media(max-width: 768px){
+    .free__wrapper{
+        width: 100%;
+    }
+    .free__subtitle{
+        font-size: 24px;
+    }
+    .free__title{
+        width: 390px;
+        font-size: 22px;
+        height: 40px;
+    }
+    .free__block{
+        margin-top: 30px;
+    }
+    .free__subtitle br{
+        display: none;
+    }
+    .experts{
+        display: none;
+    }
+    .experts__mobile{
+        display: block;
+    }
+    .experts__block{
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: auto;
+        margin-top: 30px;
+    }
+    .expert__block-num{
+        margin: 0;
+        background-color: #191A1F;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 576px){
+    .free__title{
+        width: 270px;
+        font-size: 16px;
+        justify-content: start;
+    }
+    .free__subtitle{
+        font-size: 14px;
+    }
+    .free__wrapper{
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    .free__text{
+        font-size: 13px;
+    }
+    .free__block-logo{
+        width: 118px;
+    }
+    .free__block-text{
+        font-size: 10px;
+    }
+    .lesson{
+        padding: 15px;
+    }
+    .lesson ul{
+        font-size: 13px;
+        margin-left: 20px;
+    }
+    .lesson__btn{
+        width: 100%;
+        font-size: 16px;
+        padding: 4px;
+        height: auto;
+    }
+    .lesson__btn img{
+        width: 20px;
+        right: -6px;
+        bottom: 15px;
+    }
+    .lesson{
+        min-height: auto;
+    }
+    .experts__mobile{
+        padding: 10px;
+    }
+    .experts__block-text{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .lesson__descr{
+        font-size: 14px;
+    }
+    .lesson__text span{
+        font-size: 14px;
+    }
+    .lesson__text{
+        font-size: 14px;
+    }
+}

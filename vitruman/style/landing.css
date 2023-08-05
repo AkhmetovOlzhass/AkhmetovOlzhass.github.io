@@ -266,13 +266,17 @@
 }
 
 .how__wrapper{
-    height: 1000px;
+    min-height: 1000px;
     width: 100%;
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(15px);
     margin-top: 130px;
     padding-top: 60px;
+}
+.how__wrapper img{
+    width: 547px;
+    height: 368px;
 }
 .how__wrapper .row{
     padding: 0;
@@ -546,4 +550,396 @@
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
     margin-top: 53px;
+}
+
+@media(max-width: 1811px){
+    .how__wrapper-block:last-child{
+        margin-left: 0;
+    }
+    .how__wrapper{
+        padding-bottom: 20px;
+    }
+    .advantages__wrapper{
+        padding: 0;
+    }
+    .advantages__line{
+        top: 30%;
+    }
+    .markets__wrapper-el{
+        width: 130px;
+        height: 130px;
+    }
+    .education__slider{
+        width: 100%;
+    }
+    .reviews__graphic{
+        width: 50%;
+    }
+    .education__slider_text{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1440px){
+    .container__landing {
+        padding: 0;
+        max-width: 1025px;
+        margin: 0 auto;
+    }
+    .advantages__line{
+        display: none;
+    }
+    .business__block{
+        width: 35%;
+    }
+    .how__line{
+        display: none;
+    }
+    .advantages__block-title{
+        font-size: 24px;
+    }
+    .advantages__block-text{
+        font-size: 22px;
+    }
+    .how__wrapper{
+        margin-top: 20px;
+    }
+    .how{
+        height: auto;
+        min-height: 2269px;
+    }
+    .robot__wrapper{
+        height: auto;
+    }
+    .robot__wrapper-descr-text{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1200px){
+    .income__block-img{
+        width: 100%;
+    }
+    .income__block-img img{
+        width: 100%;
+    }
+    .reviews__graphic{
+        display: none;
+    }
+    .education__slider_content{
+        width: 100%;
+        margin-bottom: 0;
+        height: 200px;
+    }
+    .education__slider{
+        margin-top: 30px;
+    }
+    .business{
+        height: auto;
+        min-height: 600px;
+    }
+    .business__play{
+        width: 100px;
+    }
+    .get__wrapper{
+        padding: 70px 65px;
+    }
+    .how__wrapper-block{
+        margin: 0;
+    }
+    .how__wrapper-block:last-child{
+        margin: 0;
+    }
+    .time{
+        height: auto;
+        min-height: 650px;
+    }
+}
+@media(max-width: 968px){
+    .tarif__table tr:first-child th{
+        font-size: 13px;
+    }
+    .tarif__table tr th:first-child{
+        font-size: 10px;
+    }
+    .tarif__table th{
+        font-size: 10px;
+    }
+    .education__slider_item > img{
+        width: 60px;
+        height: 60px;
+    }
+    .special__block{
+        width: 70%;
+        height: auto;
+        padding-left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .special__block-title{
+        font-size: 28px;
+    }
+    .special__block_text{
+        width: 90%;
+    }
+    .special__block_btn{
+        margin-top: 10px;
+    }
+    .how__wrapper img{
+        display: none;
+    }
+    .how__wrapper-block{
+        width: 100%;
+    }
+    .income__block{
+        width: 24%;
+    }
+    .trade__title{
+        font-size: 32px;
+    }
+    .trade__wrapper{
+        width: 70%;
+    }
+    .trade{
+        min-height: 500px;
+    }
+    .advantages{
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .business__block{
+        padding-left: 20px;
+    }
+    .get__wrapper{
+        margin-top: 50px;
+    }
+    .get{
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .get__wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .how__wrapper{
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    .how{
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+    .time .trade__wrapper{
+        width: 100%;
+    }
+    .robot__wrapper{
+        padding: 20px 0;
+    }
+    .robot__wrapper-img{
+        margin-right: 40px;
+    }
+    .robot{
+        padding-bottom: 50px;
+    }
+    .markets__wrapper-el{
+        width: 100px;
+        height: 100px;
+    }
+    .special{
+        padding-top: 0px;
+    }
+    .questions{
+        height: auto;
+    }
+    .special .trade__subtitle{
+        width: 100%;
+    }
+    .special__block{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 768px){
+    .get__wrapper{
+        display: block;
+        padding-top: 40px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .get__block{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .get__block-img{
+        display: block;
+        margin: 0 auto;
+    }
+    .get__block-title{
+        text-align: center;
+    }
+    .get__block-subtitle{
+        text-align: center;
+    }
+    .income .row{
+        display: block;
+    }
+    .income__block{
+        width: 100%;
+    }
+    .income__block-img{
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .education__slider_item > img{
+        width: inherit;
+        height: inherit;
+    }
+    .education__slider_item{
+        width: 50px;
+        height: 50px;
+    }
+    .business__block{
+        padding: 0;
+    }
+    .business__wrapper{
+        width: 100%;
+    }
+    .business__block-btn{
+        width: 100%;
+    }
+    .business__block-title{
+        font-size: 22px;
+    }
+    .business__block-text{
+        font-size: 18px;
+    }
+    .how .row{
+        display: block;
+    }
+    .how__block{
+        width: 100%;
+        display: block;
+    }
+    .robot__wrapper-img{
+        display: none;
+    }
+    .robot__wrapper{
+        padding: 40px;
+    }
+    .trade__title{
+        font-size: 26px;
+    }
+    .markets__wrapper-el{
+        width: 70px;
+        height: 70px;
+    }
+    .reviews{
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 576px){
+    .trade__wrapper{
+        width: 100%;
+    }
+    .trade__title{
+        font-size: 22px;
+    }
+    .trade__subtitle{
+        width: 100%;
+        font-size: 18px;
+    }
+    .trade__wrapper-btn{
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .advantages__wrapper .row{
+        display: block;
+    }
+    .advantages__block{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .advantages__block-title{
+        width: 100%;
+    }
+    .business__block{
+        display: none;
+    }
+    .business{
+        min-height: 400px;
+    }
+    .how .row{
+        padding: 0;
+        margin-top: 40px;
+    }
+    .how__wrapper{
+        padding-top: 40px;
+        margin-top: 80px;
+        padding-left: 20px;
+    }
+    .how__wrapper-title{
+        font-size: 22px;
+    }
+    .how__wrapper-block span{
+        font-size: 20px;
+    }
+    .how__wrapper-block{
+        font-size: 18px;
+    }
+    .time .trade__subtitle{
+        font-size: 18px;
+    }
+    .time .trade__wrapper{
+        padding-left: 20px;
+    }
+    .income__title{
+        font-size: 22px;
+    }
+    .robot__wrapper{
+        padding-left: 20px;
+    }
+    .markets__wrapper-el{
+        width: 45px;
+        height: 45px;
+    }
+    .tarif__table tr:first-child th{
+        font-size: 9px;
+    }
+    .how__btn{
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .education__slider_item{
+        width: 35px;
+        height: 35px;
+    }
+    .education__slider_text{
+        font-size: 17px;
+    }
+    .questions__block-text-title{
+        font-size: 22px;
+    }
+    .questions__block-text-descr{
+        font-size: 14px;
+    }
+    .special__block{
+        width: 100%;
+    }
+    .special__block-title{
+        font-size: 22px;
+    }
+    .special__block_text{
+        width: 100%;
+        font-size: 18px;
+    }
+    .special__block_btn{
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
 }

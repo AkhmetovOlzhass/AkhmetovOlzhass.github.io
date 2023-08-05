@@ -117,9 +117,6 @@ padding: 38px 38px 0;
 .education__slider_text{
     font-size: 24px;
 }
-.education__slider_content{
-    width: 50%;
-}
 .reviews__graphic{
     width: 50%;
 }
@@ -151,4 +148,116 @@ padding: 38px 38px 0;
     border-bottom: 1px #373C45 solid;
     padding-bottom: 20px;
     margin-top: 20px;
+}
+
+.arrow__mini{
+    display: none;
+}
+
+@media(max-width: 968px){
+    .primary{
+        padding-bottom: 150px;
+    }
+    .proportions__block-img{
+        margin-top: 20px;
+        width: 80px;
+    }
+    .proportions__block-text{
+        font-size: 14px;
+    }
+    .proportions__block{
+        width: 48%;
+    }
+}
+
+@media(max-width: 768px){
+    .primary{
+        padding-left: 40px;
+    }
+    .proportions .row{
+        display: block;
+    }
+    .proportions__block{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+    }
+    .work .row{
+        display: block;
+    }
+    .work__block{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .arrow__mini{
+        display: block;
+        margin: 25px auto;
+        width: 40px;
+    }
+    .arrow__work{
+        display: none;
+    }
+}
+
+@media(max-width: 576px){
+    .free__text br{
+        display: none;
+    }
+    .primary_btn{
+        width: 90%;
+        height: 40px;
+    }
+    
+    .primary{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    .proportions{
+        padding: 20px 10px 0;
+    }
+    .proportions__block{
+        border-radius: 10px;
+        padding: 14px;
+    }
+    .proportions__block-title{
+        font-size: 16px;
+    }
+    .proportions__block-img{
+        width: 60px;
+    }
+    .work{
+         padding: 0 10px 30px;
+    }
+    .work__block-title{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .work__block-text{
+        font-size: 13px;
+    }
+    .work__block-img img{
+        width: 45px;
+    }
+    .tarif__title{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .tarif__title br{
+        display: none;
+    }
+    .tarif__table{
+        margin-top: 20px;
+    }
+    .trade__title{
+        margin-bottom: 10px;
+    }
+    .education__slider_text{
+        font-size: 16px;
+    }
+    .education__about_title{
+        font-size: 16px;
+    }
 }
