@@ -29,7 +29,12 @@
     font-family: RobotoBold;
     src: url(../fonts/Roboto-Bold.ttf);
 }
-
+body {
+    color: var(--text);
+    font-family: RobotoRegular;
+    font-weight: 400;
+    line-height: 135%;
+}
 * {
     margin: 0;
     padding: 0;
@@ -333,7 +338,7 @@ button {
     position: relative;
     margin: 0 20px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-family: RobotoRegular, sans-serif;
     font-size: 20px;
     color: var(--text);
