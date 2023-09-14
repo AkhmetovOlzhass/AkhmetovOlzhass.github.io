@@ -74,11 +74,13 @@ padding: 38px 38px 0;
 .work__block-img{
     display: block;
     margin: 0 auto;
+    height: 100px;
 }
 
 .work__block-img img{
     display: block;
     margin: 0 auto;
+    height: 100%;
 }
 
 .work__block{

@@ -53,8 +53,8 @@ partnersLine.forEach((line, i) => {
 
 try{
     copyBtn.addEventListener('click', function() {
-        textLinc.select()
-        textLinc.setSelectionRange(0, 99999)
+        textLinc.querySelector('input').select()
+        textLinc.querySelector('input').setSelectionRange(0, 99999)
         document.execCommand('copy')
         successReferral.classList.add('copy-confirmation-referral_active')
         setTimeout(function(){
@@ -78,8 +78,8 @@ try{
 
 try{
     textLinc.addEventListener('click', function() {
-        textLinc.select()
-        textLinc.setSelectionRange(0, 99999)
+        textLinc.querySelector('input').select()
+        textLinc.querySelector('input').setSelectionRange(0, 99999)
         document.execCommand('copy')
         successReferral.classList.add('copy-confirmation-referral_active')
         setTimeout(function(){
@@ -89,8 +89,8 @@ try{
         console.log('copy successful')
     })
     copyDeposits.addEventListener('click', function() {
-        copyDeposits.select()
-        copyDeposits.setSelectionRange(0, 99999)
+        copyDeposits.querySelector('input').select()
+        copyDeposits.querySelector('input').setSelectionRange(0, 99999)
         document.execCommand('copy')
         success.classList.add('copy-confirmation-referral_active')
         setTimeout(function(){

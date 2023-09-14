@@ -182,12 +182,21 @@ color: #fff;
 }
 
 .statistic__period {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
     display: flex;
     align-items: center;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
+}
+
+.statistic__period-block{
+    display: flex;
+}
+.statistic__period-block-mobile{
+    display: none;
 }
 
 .statistic__total {
@@ -226,7 +235,9 @@ color: #fff;
     flex-direction: column;
     align-items: center;
 }
-
+.statistic__table_column:first-child{
+    width: 60%;
+}
 .statistic__table_header {
     padding: 15px 0;
     width: 100%;
@@ -247,12 +258,21 @@ color: #fff;
 
 .statistic__table_value {
     width: 100%;
-    padding: 20px 0;
-    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
     font-family: RobotoRegular, sans-serif;
     font-size: 14px;
     color: var(--text);
     border-bottom: 1px solid #373C45;
+}
+
+.statistic__table_value img{
+    width: 30px;
+}
+.statistic__table_value span{
+    display: block;
+    width: 100%;
 }
 
 .green { 
@@ -376,16 +396,34 @@ color: #fff;
         display: block;
         font-size: 12px;
     }
+    .statistic__period-block{
+        display: none;
+    }
+    .statistic__period-block-mobile{
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
     .date{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0;
         margin-bottom: 10px;
         font-size: 12px;
+        height: 25px;
         width: 80px;
+        margin-right: 10px;
     }
     .dropdown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-left: 0;
         width: 120px;
+        height: 25px;
         font-size: 12px;
     }
 
@@ -418,6 +456,6 @@ color: #fff;
         display: none;
     }
     .statistic__table_header_first{
-        border-radius: 0
+        border-radius: 0;
     }
 }

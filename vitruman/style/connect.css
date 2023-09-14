@@ -473,6 +473,7 @@
     .referral__link{
         padding: 3px 20px;
         margin-top: 10px;
+
     }
 
     .referral__box > span, .referral__box > p{
@@ -509,10 +510,11 @@
         display: block;
         text-align: center;
         padding: 5px 0;
+        font-size: 12px;
     }
     .referral__btn_mobile{
         font-family: RobotoRegular, sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         cursor: pointer;
         display: block;
         margin: 0 auto;

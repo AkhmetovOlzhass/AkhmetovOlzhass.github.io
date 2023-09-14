@@ -596,13 +596,15 @@ if(statisticBtn && statisticBtn.length > 0) {
             e.currentTarget.parentNode.classList.toggle('presents__box_active');
             e.currentTarget.parentNode.parentNode.querySelector('.presents__button').classList.toggle('presents__button_hide');
         })
+
     })
 
     statisticBtn.forEach(btn => {
         btn.addEventListener('click', e => {
-            e.currentTarget.querySelector('.presents__button').classList.toggle('presents__button_hide');
-            e.currentTarget.parentNode.querySelector('.presents__box').classList.toggle('presents__box_active');
-            console.log(e.currentTarget.parentNode.querySelector('.presents__box'))
+            if(!e.target.classList.contains('presents__input')){
+                e.currentTarget.querySelector('.presents__button').classList.toggle('presents__button_hide');
+                e.currentTarget.parentNode.querySelector('.presents__box').classList.toggle('presents__box_active');
+            }
         })
     })
 }
@@ -905,5 +907,57 @@ if(questionBtns){
                 btn.innerHTML = '&#8722;';
             }
         })
+    })
+}
+
+const varAct = document.querySelectorAll('.active__var-block');
+
+if(varAct){
+    let k = document.createElement('img');
+    k.src = "../img/Check.png";
+    varAct.forEach((el, i) => {
+        el.addEventListener('click', () => {
+            if(i == 0){
+                varAct[i].classList.add('act');
+                varAct[1].classList.remove('act');
+                if(!varAct[i].querySelector('img')){
+                    varAct[i].querySelector('.active__var-block-img-i').appendChild(k);
+                    varAct[1].querySelector('img').remove();
+                }
+            } else{
+                varAct[i].classList.add('act');
+                varAct[0].classList.remove('act');
+                if(!varAct[i].querySelector('img')){
+                    varAct[i].querySelector('.active__var-block-img-i').appendChild(k);
+                    varAct[0].querySelector('img').remove();
+                }
+            }
+        })
+    })
+}
+
+const edMob = document.querySelectorAll('.education-mobile__wrapper-block');
+const edMobBtn = document.querySelector('.education-mobile__wrapper-btn');
+
+if(edMob){
+    edMobBtn.addEventListener('click', () => {
+        edMob.forEach((el, i) => {
+            if(i >=2){
+                el.classList.toggle('active');
+            }
+            if(i>2 && el.classList.contains("active")){
+                const k = document.createElement("img");
+                k.src = "../img/partners/arrow_up.svg";
+                edMobBtn.innerHTML = "Свернуть все";
+                edMobBtn.appendChild(k);
+            }else{
+                const k = document.createElement("img");
+                k.src = "../img/partners/arrow_bottom.svg";
+                edMobBtn.innerHTML = "Показать все";
+                edMobBtn.appendChild(k);
+            }
+            
+        });
+
     })
 }

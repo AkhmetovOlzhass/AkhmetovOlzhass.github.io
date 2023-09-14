@@ -31,7 +31,7 @@
     width: 65%;
     margin: 40px 0;
     font-family: RobotoRegular, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text);
 }
 
@@ -370,12 +370,13 @@
     }
     .profile__advertising_title{
         font-size: 16px;
-        line-height: 20px;
+        line-height: 18px;
     }
     .profile__advertising_text > p{
         width: 100%;
         margin-top: 10px;
         font-size: 12px;
+        line-height: 16px;
         margin-bottom: 10px;
     }
     .profile__advertising_text > a{
@@ -483,6 +484,10 @@
 
 
 @media (max-width: 576px){
+    .profile__stats_value{
+        font-size: 22px;
+        margin-top: 5px;
+    }
     .profile__advertising_img{
         width: 56px;
         height: auto;

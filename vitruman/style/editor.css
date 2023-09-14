@@ -250,6 +250,7 @@
     font-size: 11px;
     margin-top: 10px;
     display: flex;
+    line-height: 14px;
 }
 
 .editor__auto_info > img {
@@ -677,6 +678,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     margin-top: 10px;
     width: 25%;
     display: flex;
+    line-height: 14px;
 }
 
 .editor__stop_info > p {

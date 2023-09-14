@@ -29,12 +29,6 @@
     font-family: RobotoBold;
     src: url(../fonts/Roboto-Bold.ttf);
 }
-body {
-    color: var(--text);
-    font-family: RobotoRegular;
-    font-weight: 400;
-    line-height: 135%;
-}
 * {
     margin: 0;
     padding: 0;
@@ -65,15 +59,23 @@ button {
 }
 
 .date {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
     width: 100px;
     padding: 5px 10px;
     margin: 0 10px;
-    background-color: var(--text);
-    border-radius: 5px;
+    background-color: #000;
     border: none;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.date-white{
+    background-color: #fff;
     color: #000;
 }
 
@@ -82,13 +84,12 @@ button {
 }
 
 .dropdown {
-    width: 110px;
     padding: 5px 10px;
     margin: 0 10px;
     display: flex;
     justify-content: space-between;
-    background-color: var(--text);
-    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: #000;
@@ -96,14 +97,11 @@ button {
     position: relative;
 }
 
-.dropdown__period {
-    width: 180px;
-}
-
 .dropdown__value {
     width: 90%;
     white-space: nowrap;
     overflow: hidden;
+    margin-right: 10px;
     text-overflow: ellipsis;
 }
 
@@ -125,7 +123,8 @@ button {
     left: 0;
     right: 0;
     top: 26px;
-    background-color: #FFF;
+    background-color: #fff;
+    color: #000;
     border-radius: 0 0 10px 10px;
     font-family: RobotoRegular, sans-serif;
     overflow: hidden;
@@ -1004,13 +1003,13 @@ button {
     z-index: 99999999999999999;
     visibility: hidden;
     overflow: auto;
-    padding-top: 42%;
     display: flex;
     justify-content: center;
     opacity: 0;
     transition: all 1s;
 }
 .menu__line{
+    display: none;
     position: absolute;
     top: auto;
     width: 30%;

@@ -160,6 +160,10 @@
     color: var(--text);
 }
 
+.rate__title span{
+    color: #adadad;
+}
+
 .rate__title_commission {
     margin-left: 40px;
 }
@@ -191,11 +195,13 @@
 .rate__row_text > span {
     color: #A4A4A6;
 }
-
 .rate__row_link {
-    margin-top: 30px;
     color: var(--text);
     text-decoration: none;
+}
+
+.rate .rate__row:last-child{
+    margin-top: 30px;
 }
 
 .rate__row_link:visited {
@@ -259,7 +265,7 @@
     display: inline-block;
     width: 30%;
     margin-top: 20px;
-    padding: 30px 30px 20px 20px;
+    padding: 20px 10px 20px 30px;
     background-color: var(--bcg-block);
     border: #25282F 1px solid;
     border-radius: 15px;
@@ -280,7 +286,7 @@
 }
 .accounts__item_stats {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -305,6 +311,7 @@
     font-size: 16px;
     color: var(--text);
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .accounts__item_stats_name > img {
@@ -372,9 +379,6 @@
 }
 
 @media(max-width: 576px){
-    .accounts__item_stats a{
-        top: 20%;
-    }
     .accounts__item{
         padding-right: 5px;
     }
@@ -408,6 +412,8 @@
     }
     .presents__title > p{
         font-size: 11px;
+        line-height: 14px;
+        margin-top: 10px;
     }
     .accounts__title{
         padding-bottom: 0;
@@ -431,28 +437,58 @@
     .rate__title{
         display: block;
     }
+    .rate__title br{
+        display: none;
+    }
     .rate__title_commission{
         margin-left: 0;
+        font-size: 16px;
     }
     .rate__row{
         display: block;
     }
     .rate{
-        padding: 10px;
+        padding: 20px;
         position: relative;
     }
+    .rate__title span{
+        color: #fff;
+    }
     .rate__row_text{
-        width: 49%;
+        width: auto;
         display: inline-block;
         font-size: 12px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     .rate__row:last-child .rate__row_text{
-        width: 75%;
+        width: auto;
     }
     .rate__row_link{
         position: absolute;
         right: 20px;
+    }
+    .rate__title_name{
+        margin-bottom: 10px;
+    }
+
+    .rate .rate__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rate .rate__row:last-child .rate__row_text{
         font-size: 14px;
+    }
+    .rate .rate__row:last-child .rate__row_link{
+        font-size: 14px;
+    }
+    .rate__title_name br{
+        display: none;
+    }
+    .rate__title_name{
+        font-size: 16px;
+    }
+    .rate .rate__row:last-child{
+        margin-top: 20px;
     }
 }

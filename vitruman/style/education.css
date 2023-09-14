@@ -672,6 +672,10 @@
     margin: 80px 0;
 }
 
+.education-mobile{
+    display: none;
+}
+
 @media (max-width: 1200px){
     .education__progress_profile{
         display: block;
@@ -817,7 +821,50 @@
         justify-content: start;
     }
     .education__progress_link-second{
+        font-size: 12px;
         display: block;
+    }
+    .education__lesson{
+        display: none;
+    }
+    .education-mobile{
+        display: block;
+    }
+    .education-mobile__wrapper-block{
+        display: none;
+        align-items: center;
+        border-bottom: 1px solid #3B4046;
+        padding-bottom: 14px;
+        padding-top: 14px;
+    }
+    .education-mobile__wrapper-block.active{
+        display: flex;
+    }
+    .education-mobile__wrapper-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .education-mobile__wrapper-btn img{
+        margin-left: 10px;
+    }
+    .education-mobile__wrapper-block p.active{
+        color: #fff;
+    }
+    .education-mobile__wrapper-block img{
+        margin-right: 10px;
+    }
+    .education-mobile__wrapper-block p{
+        font-size: 13px;
+        line-height: 16px;
+        color: #A4A4A6;
+        width: 200px;
+    }
+    .education-mobile__wrapper{
+        margin-top: 17px;
+        height: 50%;
+        overflow: hidden;
     }
     .education__progress_info_block{
         font-size: 14px;

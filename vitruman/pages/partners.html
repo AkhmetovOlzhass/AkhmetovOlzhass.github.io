@@ -9,8 +9,8 @@
     <title>Vitruman Trade</title>
 </head>
 <body>
-<div class="menu">
-<div class="menu__overlay"></div>
+    <div class="menu">
+        <div class="menu__overlay"></div>
         <div class="menu__line"></div>
         <div class="menu__block">
             <div class="menu__close">&#10006;</div>
@@ -122,6 +122,9 @@
                     </li>
                     <li class="menu__link">
                         <a href="../pages/education_payment.html">Оплата обучения</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="../pages/active.html">Активация</a>
                     </li>
                 </ul>
             </nav>
@@ -275,7 +278,6 @@
                         </div>
                     </div>
                 </button>
-                
                 <button class="header__support"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
                     <path d="M12 0.792969C5.4 0.792969 0 6.06673 0 12.6341V16.1167C0 16.2162 0 16.2162 0 16.3157C0 16.4152 0 16.6143 0 16.7138C0 19.4999 2.2 21.689 5 21.689C5.6 21.689 6 21.291 6 20.694V12.7336C6 12.1365 5.6 11.7385 5 11.7385C3.9 11.7385 2.8 12.1365 2 12.7336V12.5346C2 7.16129 6.5 2.78307 12 2.78307C17.5 2.78307 22 7.16128 22 12.6341V12.7336C21.2 12.1365 20.1 11.7385 19 11.7385C18.4 11.7385 18 12.1365 18 12.7336V20.694C18 21.291 18.4 21.689 19 21.689C19.7 21.689 20.4 21.49 21 21.291C20 23.3806 18.2 24.9727 16 25.8682C16 25.7687 16 25.7687 16 25.6692C16 25.0722 15.6 24.6742 15 24.6742H12C11.4 24.6742 11 25.0722 11 25.6692V27.6593C11 28.2563 11.4 28.6544 12 28.6544C18.6 28.6544 24 23.4801 24 17.1118V16.1167V13.7286V12.6341C24 6.06673 18.6 0.792969 12 0.792969Z" fill="#A4A4A6"/>
                 </svg></button>
@@ -391,8 +393,10 @@
                             <li class="nav__sub_menu_item">
                                 <a href="../pages/education_payment.html" class="nav__sub_menu_link">Оплата обучения</a>
                             </li>
+                            <li class="nav__sub_menu_item">
+                                <a href="../pages/active.html" class="nav__sub_menu_link">Активация</a>
+                            </li>
                         </ul>
-                        
                     </div>
                 </li>
                 <li class="nav__item">
@@ -425,13 +429,13 @@
             <section class="referral">
                 <h2>РЕФЕРАЛЬНАЯ ПРОГРАММА</h2>
                 <div class="referral__scheme">
-                    <div class="referral__first_step">
+                    <div class="referral__first_step" id="referral__link">
                         <img src="../img/partners/logo.svg" alt="logo">
                         <h3 class="referral__title">Ваша ссылка</h3>
                         <p class="referral__description">
                             Скопируйте свою личную ссылку
                         </p>
-                        <input type="text" spellcheck="false" value="https://www.vitruviamtrade.com" id="referral__link">
+                        <input type="text" spellcheck="false" value="https://www.vitruviamtrade.com" >
                         <button id="referral__copy_link">СКОПИРОВАТЬ</button>
                         <div class="copy-confirmation-referral">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -874,9 +878,11 @@
                            </li>
                            <li class="statistics__accurate_filter_item">
                                 <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                                <img src="../img/calendar.svg" alt="">
                            </li>
                            <li class="statistics__accurate_filter_item">
                                 <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                                <img src="../img/calendar.svg" alt="">
                            </li>
                            <li class="statistics__accurate_filter_item statistics__accurate_filter_item_offers-btn_type">
                             <button class="statistics__accurate_filter_item_offers-btn">

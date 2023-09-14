@@ -70,25 +70,8 @@ h5 {
     line-height: 135%;
 }
 
-#referral__link {
-    display: block;
-    width: 100%;
-    margin: 16px 0;
-    font-size: 14px;
-    color: var(--text);
-    background-color: var(--bcg-block);
-    border: none;
-    outline: none;
-    
-}
 
-#referral__link::selection {
-    background: var(--bcg-block);
-}
 
-#referral__link::-moz-selection {
-    background: var(--bcg-block);
-}
 
 #referral__copy_link {
     font-size: 16px;
@@ -133,6 +116,12 @@ h5 {
     padding-left: 130px;
     position: relative;
     margin-bottom: 65px;
+}
+
+.referral__first_step input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
 }
 
 .referral__first_step img {
@@ -734,6 +723,17 @@ h5 {
     line-height: 135%;
     position: relative;
     cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.statistics__accurate_filter_item img{
+    position: absolute;
+    right: 10px;
+    width: 18px;
+    height: 18px;
 }
 
 .statistics__accurate_filter_item:hover {
@@ -769,9 +769,31 @@ h5 {
     position: absolute;
     left: 4px;
     top: 0;
-    filter: invert(1) hue-rotate(240deg);
     background: rgba(0, 0, 0, 0);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
+
+::-webkit-datetime-edit-fields-wrapper{
+    color: #fff;
+}
+
+::-webkit-calendar-picker-indicator{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
 
 .statistics__accurate_table {
     max-width: 949px;
@@ -1983,7 +2005,7 @@ h5 {
 }
 
 .market__active_type{
-    left: 0;
+    left: 50%;
 }
 
 .market__active_visible{
@@ -2113,10 +2135,6 @@ h5 {
     .referral__step_block{
         margin-left: 20px;
     }
-    #referral__link{
-        margin: 0;
-        margin-top: 5px;
-    }
     #referral__copy_link{
         margin-top: 10px;
     }
@@ -2145,9 +2163,11 @@ h5 {
 @media(max-width: 769px){
     .statistics__accurate_table-head{
         font-size: 12px;
+        line-height: 14px;
     }
     .statistics__accurate_table-district{
         font-size: 10px;
+        line-height: 14px;
     }
     .statistics__accurate_filter_item{
         width: 25%;
@@ -2445,7 +2465,7 @@ h5 {
         height: 0;
   }
     .statistics__accurate{
-        padding: 30px 0px 42px 0px;
+        padding: 30px 10px 42px 10px;
     }
     .statistics__accurate_filter{
         display: block;
@@ -2476,9 +2496,6 @@ h5 {
     }
     .referral__step_block{
         margin-left: 5px;
-    }
-    .referral__title, .referral__description, #referral__link{
-        font-size: 12px;
     }
     .referal__btn{
         display: none;

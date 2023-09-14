@@ -11,8 +11,8 @@
     <title>Vitruman Trade</title>
 </head>
 <body>
-<div class="menu">
-<div class="menu__overlay"></div>
+    <div class="menu">
+        <div class="menu__overlay"></div>
         <div class="menu__line"></div>
         <div class="menu__block">
             <div class="menu__close">&#10006;</div>
@@ -124,6 +124,9 @@
                     </li>
                     <li class="menu__link">
                         <a href="../pages/education_payment.html">Оплата обучения</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="../pages/active.html">Активация</a>
                     </li>
                 </ul>
             </nav>
@@ -392,6 +395,9 @@
                             <li class="nav__sub_menu_item">
                                 <a href="../pages/education_payment.html" class="nav__sub_menu_link">Оплата обучения</a>
                             </li>
+                            <li class="nav__sub_menu_item">
+                                <a href="../pages/active.html" class="nav__sub_menu_link">Активация</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -496,71 +502,76 @@
                     <div class="statistic">
                         <h2 class="title statistic__title">СТАТИСТИКА БАЛАНСА</h2>
                         <div class="statistic__period">
-                            Период: от <input type="text" class="date" value="29.06.2023"/> до <input type="text" class="date" value="29.06.2023"/>
-                            <div class="dropdown dropdown__period"><span class="dropdown__value">на этой неделе</span> &#9660;
-                                <div class="dropdown__box">
-                                    <div class="dropdown__item">на этой неделе</div>
-                                    <div class="dropdown__item">в этом месяце</div>
-                                    <div class="dropdown__item">в этом году</div>
+                            <div class="statistic__period-block">
+                                <div class="dropdown dropdown__period"><span class="dropdown__value">период</span> &#9660;
+                                    <div class="dropdown__box">
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown__period"><span class="dropdown__value">тип операции</span> &#9660;
+                                    <div class="dropdown__box">
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown__period"><span class="dropdown__value">валюта</span> &#9660;
+                                    <div class="dropdown__box">
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="statistic__total">
-                            <div class="statistic__total_item">
-                                <p class="statistic__total_name">Совокупный PnL</p>
-                                <span class="statistic__total_value">3 000$</span>
+
+                            <div class="statistic__period-block">
+                                <div class="date date-white">сброс</div>
+                                <div class="date">поиск</div>
                             </div>
-                            <div class="statistic__total_item">
-                                <p class="statistic__total_name">Совокупный PnL, %</p>
-                                <span class="statistic__total_value">10%</span>
-                            </div>
-                            <div class="statistic__total_item">
-                                <p class="statistic__total_name">Сопоставленная прибыль</p>
-                                <span class="statistic__total_value">10%</span>
+
+                            <div class="statistic__period-block-mobile">
+                                <div class="dropdown dropdown__period"><span class="dropdown__value">период</span> &#9660;
+                                    <div class="dropdown__box">
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown__period"><span class="dropdown__value">тип операции</span> &#9660;
+                                    <div class="dropdown__box">
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown__period"><span class="dropdown__value">валюта</span> &#9660;
+                                    <div class="dropdown__box">
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                        <div class="dropdown__item">----------</div>
+                                    </div>
+                                </div>
+                                <div class="date date-white">сброс</div>
+                                <div class="date">поиск</div>
                             </div>
                         </div>
                         <div class="statistic__table">
                             <div class="statistic__table_column">
-                                <div class="statistic__table_header statistic__table_header_first">Дата</div>
-                                <div class="statistic__table_value">21.08.2091</div>
-                                <div class="statistic__table_value">21.08.2091</div>
-                                <div class="statistic__table_value">21.08.2091</div>
-                                <div class="statistic__table_value">21.08.2091</div>
+                                <div class="statistic__table_value">USDT <br> Перевод</div>
+                                <div class="statistic__table_value">USDT <br> Перевод</div>
+                                <div class="statistic__table_value">USDT <br> Перевод</div>
                             </div>
                             <div class="statistic__table_column">
-                                <div class="statistic__table_header">Баланс</div>
-                                <div class="statistic__table_value">212091</div>
-                                <div class="statistic__table_value">212091</div>
-                                <div class="statistic__table_value">212091</div>
-                                <div class="statistic__table_value">212091</div>
+                                <div class="statistic__table_value"><p>212091 <br> <span>2023-08-12 09:33:02</span></p></div>
+                                <div class="statistic__table_value"><p>212091 <br> <span>2023-08-12 09:33:02</span></p></div>
+                                <div class="statistic__table_value"><p>212091 <br> <span>2023-08-12 09:33:02</span></p></div>
                             </div>
                             <div class="statistic__table_column">
-                                <div class="statistic__table_header">Ввод/вывод</div>
-                                <div class="statistic__table_value">212091</div>
-                                <div class="statistic__table_value">212091</div>
-                                <div class="statistic__table_value">212091</div>
-                                <div class="statistic__table_value">212091</div>
-                            </div>
-                            <div class="statistic__table_column">
-                                <div class="statistic__table_header">Сопоставленная прибыль</div>
-                                <div class="statistic__table_value">212211091</div>
-                                <div class="statistic__table_value">212211091</div>
-                                <div class="statistic__table_value">212211091</div>
-                                <div class="statistic__table_value">212211091</div>
-                            </div>
-                            <div class="statistic__table_column">
-                                <div class="statistic__table_header">PnL за день</div>
-                                <div class="statistic__table_value green">212211091</div>
-                                <div class="statistic__table_value green">212211091</div>
-                                <div class="statistic__table_value green">212211091</div>
-                                <div class="statistic__table_value green">212211091</div>
-                            </div>
-                            <div class="statistic__table_column">
-                                <div class="statistic__table_header statistic__table_header_last">Совокупный PnL, %</div>
-                                <div class="statistic__table_value red">212211091</div>
-                                <div class="statistic__table_value red">212211091</div>
-                                <div class="statistic__table_value red">212211091</div>
-                                <div class="statistic__table_value red">212211091</div>
+                                <div class="statistic__table_value"><img src="../img/partners/arrow_right.svg" alt="arrow"></div>
+                                <div class="statistic__table_value"><img src="../img/partners/arrow_right.svg" alt="arrow"></div>
+                                <div class="statistic__table_value"><img src="../img/partners/arrow_right.svg" alt="arrow"></div>
                             </div>
                         </div>
                         <div class="pages">
@@ -603,9 +614,11 @@
                     <ul class="statistics__accurate_filter">
                            <li class="statistics__accurate_filter_item">
                                 <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                                <img src="../img/calendar.svg" alt="">
                            </li>
                            <li class="statistics__accurate_filter_item">
                                 <input class="statistics__accurate_filter_item_date-btn" type="date" id="start" name="trip-start" value="2023-02-28">
+                                <img src="../img/calendar.svg" alt="">
                            </li>
                            <li class="statistics__accurate_filter_item statistics__accurate_filter_item_offers-btn_buy">
                             <button class="statistics__accurate_filter_item_offers-btn">
