@@ -85,7 +85,7 @@ button {
 
 .dropdown {
     padding: 5px 10px;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -1003,17 +1003,18 @@ button {
     z-index: 99999999999999999;
     visibility: hidden;
     overflow: auto;
+    padding-top: 42%;
     display: flex;
     justify-content: center;
     opacity: 0;
     transition: all 1s;
 }
 .menu__line{
-    display: none;
     position: absolute;
     top: auto;
-    width: 30%;
-    height: 2px;
+    width: 45%;
+    height: 3px;
+    opacity: .9;
     background-color: #fff;
     z-index: 999999999999999999999999999999999999999999999;
     border-radius: 5px 5px 5px 5px;
@@ -1026,6 +1027,7 @@ button {
 }
 .menu__block {
     position: relative;
+    border-radius: 10px 10px 0 0;
     width: 100%;
     background-color: #000;
     font-family: RobotoRegular, sans-serif;
@@ -1065,8 +1067,8 @@ button {
 }
 .menu__close {
     position: absolute;
-    top: 0px;
-    right: 20px;
+    top: 20px;
+    right: 15px;
     cursor: pointer;
     color: #fff;
     font-size: 24px;
@@ -1382,5 +1384,13 @@ button {
         right: 20px;
         top: -2px;
     }
+    .dropdown__item {
+        padding: 0px 10px;
+        line-height: 18px;
+    }
+    .dropdown__box {
+        top: 18px;
+    }
+
 }
 

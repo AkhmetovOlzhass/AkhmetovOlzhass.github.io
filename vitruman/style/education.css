@@ -586,7 +586,6 @@
 .education__slider_item > img {
     width: 75px;
     height: 75px;
-    user-select: none;
     border: 5px solid #A4A4A6;
     border-radius: 100%;
 }
@@ -839,6 +838,7 @@
     }
     .education-mobile__wrapper-block.active{
         display: flex;
+        justify-content: space-between;
     }
     .education-mobile__wrapper-btn{
         display: flex;
@@ -849,7 +849,7 @@
     .education-mobile__wrapper-btn img{
         margin-left: 10px;
     }
-    .education-mobile__wrapper-block p.active{
+    .education-mobile__wrapper-block.tactive p{
         color: #fff;
     }
     .education-mobile__wrapper-block img{

@@ -273,6 +273,8 @@ color: #fff;
 .statistic__table_value span{
     display: block;
     width: 100%;
+    color: #A4A4A6;
+
 }
 
 .green { 
@@ -404,7 +406,15 @@ color: #fff;
         overflow: auto;
         white-space: nowrap;
         font-size: 12px;
+        height: 90px;
     }
+    .statistic__table{
+        margin-top: 0;
+    }
+
+    .statistic__period-block-mobile::-webkit-scrollbar {
+        width: 0;
+      }
 
     .date{
         display: flex;

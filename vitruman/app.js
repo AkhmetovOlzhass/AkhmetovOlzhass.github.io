@@ -940,24 +940,28 @@ const edMob = document.querySelectorAll('.education-mobile__wrapper-block');
 const edMobBtn = document.querySelector('.education-mobile__wrapper-btn');
 
 if(edMob){
+    let l = 0;
     edMobBtn.addEventListener('click', () => {
-        edMob.forEach((el, i) => {
-            if(i >=2){
-                el.classList.toggle('active');
-            }
-            if(i>2 && el.classList.contains("active")){
-                const k = document.createElement("img");
-                k.src = "../img/partners/arrow_up.svg";
-                edMobBtn.innerHTML = "Свернуть все";
-                edMobBtn.appendChild(k);
-            }else{
-                const k = document.createElement("img");
-                k.src = "../img/partners/arrow_bottom.svg";
-                edMobBtn.innerHTML = "Показать все";
-                edMobBtn.appendChild(k);
-            }
-            
-        });
-
+        if(l == 0){
+            edMob.forEach((el) => {
+                el.classList.add('active');
+            });
+            const k = document.createElement("img");
+            k.src = "../img/partners/arrow_up.svg";
+            edMobBtn.innerHTML = "Свернуть все";
+            edMobBtn.appendChild(k);
+            l = 1
+        }else if (l==1){
+            edMob.forEach((el) => {
+                if(!el.classList.contains("tactive")){
+                    el.classList.remove('active');
+                }
+            });
+            const k = document.createElement("img");
+            k.src = "../img/partners/arrow_bottom.svg";
+            edMobBtn.innerHTML = "Показать все";
+            edMobBtn.appendChild(k);
+            l = 0;
+        }
     })
 }
