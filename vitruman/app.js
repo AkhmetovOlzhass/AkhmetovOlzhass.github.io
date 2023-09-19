@@ -404,8 +404,17 @@ if(referralButtonsMobile && referralButtonsMobile.length > 0) {
 }
 
 if(showPassword && showPassword.length > 0) {
+    let h = 0;
+    const im = document.querySelector(".auth__input_show img");
     showPassword.forEach(btn => {
         btn.addEventListener('click', () => {
+            if(h==0){
+                im.src = "../../img/auth/show-1.svg";
+                h++;
+            } else if(h>=1){
+                im.src = "../../img/auth/show.svg";
+                h=0;
+            }
             const inputPass = btn.parentNode.querySelector('.auth__input_pass');
             if(inputPass.getAttribute('type') === 'text') inputPass.setAttribute('type', 'password');
             else inputPass.setAttribute('type', 'text');
