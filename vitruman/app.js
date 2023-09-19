@@ -803,7 +803,7 @@ menuLangBtns.forEach((menuLangBtn, index) => {
     })
 })
 
-const tokenBtns = document.querySelectorAll('.tokens__table_action_item-img');
+const tokenBtns = document.querySelectorAll('.dropdown__period-mobile');
 const tokenTitle = document.querySelectorAll('.tokens__table_name_box');
 const tokenOverflow = document.querySelector('.token__overflow');
 
@@ -847,7 +847,7 @@ if(tokenBtns && tokenOverflow){
 
 }
 
-const balanceTokenBtns = document.querySelectorAll(".data");
+const balanceTokenBtns = document.querySelectorAll(".statistic__table");
 
 if(balanceTokenBtns){
     const tokenBlock = document.querySelectorAll('.token__block-detals');
