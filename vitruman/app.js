@@ -808,22 +808,78 @@ const tokenTitle = document.querySelectorAll('.tokens__table_name_box');
 const tokenOverflow = document.querySelector('.token__overflow');
 
 if(tokenBtns && tokenOverflow){
-    const tokenBlock = document.querySelector('.token__block');
+    const tokenBlock = document.querySelectorAll('.token__block');
     const tokenClose = document.querySelectorAll('.token__close');
+
     tokenBtns.forEach((btn, index) => {
         btn.addEventListener('click', () => {
-            tokenBlock.querySelector('.token__title').innerHTML = tokenTitle[index].querySelector('span').innerHTML;
-            tokenBlock.querySelector('.token__subtitle').innerHTML = tokenTitle[index].querySelector('p').innerHTML;
+            if(tokenBlock[index].querySelector('.token__title')){
+                tokenBlock[index].querySelector('.token__title').innerHTML = tokenTitle[index].querySelector('span').innerHTML;
+                tokenBlock[index].querySelector('.token__subtitle').innerHTML = tokenTitle[index].querySelector('p').innerHTML;
+                tokenBlock[index].style.bottom = 0 + "%";
+                tokenOverflow.classList.add('active');
+                document.querySelector('body').style.overflow = 'hidden';
+            }else{
+                tokenBlock[index].style.bottom = 0 + "%";
+                tokenOverflow.classList.add('active');
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+
         })
     })
-
-    drag(tokenBlock, tokenClose, tokenBtns, tokenOverflow);
-    tokenClose.forEach((btn) => {
+    
+    tokenOverflow.addEventListener('click', () => {
+        tokenBlock.forEach(el =>{
+            el.style.bottom = -100 + "%";
+        })
+        tokenOverflow.classList.remove('active');
+        document.querySelector('body').style.overflow = 'auto';
+    })
+    
+    tokenClose.forEach((btn, index) => {
         btn.addEventListener('click', () => {
-            tokenBlock.style.bottom = -100 + "%";
+            tokenBlock[index].style.bottom = -100 + "%";
             tokenOverflow.classList.remove('active');
             document.querySelector('body').style.overflow = 'auto';
         })
+        
+    })
+
+}
+
+const balanceTokenBtns = document.querySelectorAll(".data");
+
+if(balanceTokenBtns){
+    const tokenBlock = document.querySelectorAll('.token__block-detals');
+    const tokenClose = document.querySelectorAll('.token__close-detals');
+
+    balanceTokenBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            tokenBlock[index].style.opacity = 1;
+            tokenBlock[index].style.zIndex = 99999999999999;
+            tokenOverflow.classList.add('active');
+            document.querySelector('body').style.overflow = 'hidden';
+
+        })
+    })
+    
+    tokenOverflow.addEventListener('click', () => {
+        tokenOverflow.classList.remove('active');
+        tokenBlock.forEach(el=>{
+            el.style.opacity = 0;
+            el.style.zIndex = -1;
+        })
+        document.querySelector('body').style.overflow = 'auto';
+    })
+    
+    tokenClose.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            tokenBlock[index].style.opacity = 0;
+            tokenBlock[index].style.zIndex = -1;
+            tokenOverflow.classList.remove('active');
+            document.querySelector('body').style.overflow = 'auto';
+        })
+        
     })
 }
 

@@ -292,6 +292,48 @@ color: #fff;
     display: none;
 }
 
+.token__block p{
+    border-bottom: 1px solid #3c4651;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.token__block{
+    height: 220px;
+}
+.token__block-detals{
+    opacity: 0;
+    height: 220px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    background-color: #20252B;
+    transition: all .5s;
+    padding: 20px;
+    z-index: -1;
+}
+
+.token__close-detals{
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.token__title-detals{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 1200px){
     .statistic__total_value{
         font-size: 20px;
@@ -403,17 +445,20 @@ color: #fff;
     }
     .statistic__period-block-mobile{
         display: flex;
-        overflow: auto;
         white-space: nowrap;
         font-size: 12px;
         height: 90px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: auto;
     }
     .statistic__table{
         margin-top: 0;
     }
 
     .statistic__period-block-mobile::-webkit-scrollbar {
-        width: 0;
+        display: none;
+        
       }
 
     .date{
@@ -433,7 +478,7 @@ color: #fff;
         align-items: center;
         margin-left: 0;
         width: 120px;
-        height: 25px;
+        height: 30px;
         font-size: 12px;
     }
 
