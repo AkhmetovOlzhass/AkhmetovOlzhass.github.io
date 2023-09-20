@@ -157,6 +157,9 @@
 
 .education__content_title {
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .education__content_title_description {
@@ -841,10 +844,10 @@
         justify-content: space-between;
     }
     .education-mobile__wrapper-btn{
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-top: 12px;
+        margin-top: 0;
     }
     .education-mobile__wrapper-btn img{
         margin-left: 10px;

@@ -218,10 +218,14 @@ if(dropDown && dropDown.length > 0) {
         btn.addEventListener('click', e => {
             dropDown.forEach(item => {
                 if(item !== e.currentTarget) {
-                    item.querySelector('.dropdown__box').classList.remove('dropdown__box_active');
+                    try{
+                        item.querySelector('.dropdown__box').classList.remove('dropdown__box_active');
+                    }catch{}
                 }
             });
-            e.currentTarget.querySelector('.dropdown__box').classList.toggle('dropdown__box_active');
+            try{
+                e.currentTarget.querySelector('.dropdown__box').classList.toggle('dropdown__box_active');
+            } catch{}
         })
     })
 
@@ -231,6 +235,7 @@ if(dropDown && dropDown.length > 0) {
         })
     })
 }
+
 
 if (leftPaneBtn) leftPaneBtn.addEventListener('click', () => {
     if(leftPane.classList.contains('main__nav_active')) {
@@ -1007,11 +1012,57 @@ if(varAct){
 const periodBtns = document.querySelectorAll(".period-btn");
 
 
-if(periodBtns){
+if(periodBtns.length>0){
     const periodWrapper = document.querySelector(".statistic__period-block-mobile");
     const tokenClose = document.querySelector('.token__close');
+    const tokenClose2 = document.querySelector('.token__overflow');
     let counter = 0;
     tokenClose.addEventListener('click', () => {
+        periodBtns.forEach((el, i) => {
+            if(el.value != "" && counter<=1){
+                if(counter ==0){
+                    let d = document.createElement("div");
+                    d.classList.add("dropdown");
+                    d.classList.add("black");
+                    d.innerHTML = el.value;
+                   periodWrapper.prepend(d);
+
+                   let p1 = document.createElement("p");
+                   p1.innerHTML = "По";
+                   p1.classList.add("dropdown");
+                   p1.classList.add("dropdown-p");
+                   periodWrapper.prepend(p1);
+                } else if(counter ==1){
+
+                    
+                    let d = document.createElement("div");
+                    d.classList.add("dropdown");
+                    d.classList.add("black");
+                    d.innerHTML = el.value;
+                    periodWrapper.prepend(d);
+
+                    let p2 = document.createElement("p");
+                    p2.innerHTML = "С";
+                    p2.classList.add("dropdown");
+                    p2.classList.add("dropdown-p");
+                    periodWrapper.prepend(p2);
+
+                }
+                counter++;
+
+            }
+
+            if(counter>=2){
+                const bl = document.querySelectorAll(".dropdown.black");
+                bl.forEach((btn, j) => {
+                    btn.innerHTML = periodBtns[j].value;
+                })
+            }
+        })
+
+    })
+
+    tokenClose2.addEventListener('click', () => {
         periodBtns.forEach((el, i) => {
             if(el.value != "" && counter<=1){
                 if(counter ==0){
@@ -1062,7 +1113,8 @@ if(periodBtns){
 const edMob = document.querySelectorAll('.education-mobile__wrapper-block');
 const edMobBtn = document.querySelector('.education-mobile__wrapper-btn');
 
-if(edMob){
+if(edMob.length>0){
+    const tactiveImg = document.querySelectorAll('.tactive-img');
     let l = 0;
     edMobBtn.addEventListener('click', () => {
         if(l == 0){
@@ -1073,7 +1125,7 @@ if(edMob){
             k.src = "../img/partners/arrow_up.svg";
             edMobBtn.innerHTML = "Свернуть все";
             edMobBtn.appendChild(k);
-            l = 1
+            l = 1;
         }else if (l==1){
             edMob.forEach((el) => {
                 if(!el.classList.contains("tactive")){
@@ -1086,6 +1138,17 @@ if(edMob){
             edMobBtn.appendChild(k);
             l = 0;
         }
+    })
+
+    edMob.forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+            edMob.forEach((el,j) => {
+                el.classList.remove('tactive');
+                tactiveImg[j].src = "../img/education-mob3.svg";
+            })
+            btn.classList.add('tactive');
+            tactiveImg[i].src = "../img/education-mob2.svg";
+        })
     })
 }
 
