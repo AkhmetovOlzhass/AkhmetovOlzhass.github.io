@@ -1111,12 +1111,13 @@ if(periodBtns.length>0){
 }
 
 const edMob = document.querySelectorAll('.education-mobile__wrapper-block');
+const edMobBtnMain = document.querySelector('.education__content_title');
 const edMobBtn = document.querySelector('.education-mobile__wrapper-btn');
 
 if(edMob.length>0){
     const tactiveImg = document.querySelectorAll('.tactive-img');
     let l = 0;
-    edMobBtn.addEventListener('click', () => {
+    edMobBtnMain.addEventListener('click', () => {
         if(l == 0){
             edMob.forEach((el) => {
                 el.classList.add('active');
@@ -1145,6 +1146,9 @@ if(edMob.length>0){
             edMob.forEach((el,j) => {
                 el.classList.remove('tactive');
                 tactiveImg[j].src = "../img/education-mob3.svg";
+                if(j<i){
+                    tactiveImg[j].src = "../img/education-mob1.svg";
+                }
             })
             btn.classList.add('tactive');
             tactiveImg[i].src = "../img/education-mob2.svg";
