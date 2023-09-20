@@ -303,7 +303,14 @@ color: #fff;
 }
 
 .token__block{
-    height: 350px;
+    height: 380px;
+}
+.dropdown-p{
+    background-color: transparent;
+    color: #fff;
+    margin-right: 0;
+    padding-right: 10px;
+    padding-left: 0;
 }
 .token__block-detals{
     opacity: 0;
@@ -337,6 +344,25 @@ color: #fff;
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+.statistics__accurate_filter_item_date-btn{
+    height: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3c4651;
+    padding-top: 20px;
+    font-size: 16px;
+    position: relative;
+}
+
+.dropdown.black{
+    background-color: #000;
+    color: #fff;
+}
+
+.statistics__accurate_filter_item_date-btn::-webkit-input-placeholder {
+    color:    #fff;
+    font-size: 16px;
+ }
 
 @media (max-width: 1200px){
     .statistic__total_value{
@@ -472,7 +498,7 @@ color: #fff;
         margin: 0;
         margin-bottom: 10px;
         font-size: 12px;
-        height: 25px;
+        height: 30px;
         width: 80px;
         margin-right: 10px;
     }

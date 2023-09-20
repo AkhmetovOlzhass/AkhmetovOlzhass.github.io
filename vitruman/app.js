@@ -853,34 +853,36 @@ if(balanceTokenBtns){
     const tokenBlock = document.querySelectorAll('.token__block-detals');
     const tokenClose = document.querySelectorAll('.token__close-detals');
 
-    balanceTokenBtns.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-            tokenBlock[index].style.opacity = 1;
-            tokenBlock[index].style.zIndex = 99999999999999;
-            tokenOverflow.classList.add('active');
-            document.querySelector('body').style.overflow = 'hidden';
-
-        })
-    })
+    try{
+        balanceTokenBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                tokenBlock[index].style.opacity = 1;
+                tokenBlock[index].style.zIndex = 99999999999999;
+                tokenOverflow.classList.add('active');
+                document.querySelector('body').style.overflow = 'hidden';
     
-    tokenOverflow.addEventListener('click', () => {
-        tokenOverflow.classList.remove('active');
-        tokenBlock.forEach(el=>{
-            el.style.opacity = 0;
-            el.style.zIndex = -1;
+            })
         })
-        document.querySelector('body').style.overflow = 'auto';
-    })
-    
-    tokenClose.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-            tokenBlock[index].style.opacity = 0;
-            tokenBlock[index].style.zIndex = -1;
+        
+        tokenOverflow.addEventListener('click', () => {
             tokenOverflow.classList.remove('active');
+            tokenBlock.forEach(el=>{
+                el.style.opacity = 0;
+                el.style.zIndex = -1;
+            })
             document.querySelector('body').style.overflow = 'auto';
         })
         
-    })
+        tokenClose.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                tokenBlock[index].style.opacity = 0;
+                tokenBlock[index].style.zIndex = -1;
+                tokenOverflow.classList.remove('active');
+                document.querySelector('body').style.overflow = 'auto';
+            })
+            
+        })
+    }catch{};
 }
 
 function drag(block, close, btns, overflow){
@@ -1001,6 +1003,62 @@ if(varAct){
     })
 }
 
+
+const periodBtns = document.querySelectorAll(".period-btn");
+
+
+if(periodBtns){
+    const periodWrapper = document.querySelector(".statistic__period-block-mobile");
+    const tokenClose = document.querySelector('.token__close');
+    let counter = 0;
+    tokenClose.addEventListener('click', () => {
+        periodBtns.forEach((el, i) => {
+            if(el.value != "" && counter<=1){
+                if(counter ==0){
+                    let d = document.createElement("div");
+                    d.classList.add("dropdown");
+                    d.classList.add("black");
+                    d.innerHTML = el.value;
+                   periodWrapper.prepend(d);
+
+                   let p1 = document.createElement("p");
+                   p1.innerHTML = "По";
+                   p1.classList.add("dropdown");
+                   p1.classList.add("dropdown-p");
+                   periodWrapper.prepend(p1);
+                } else if(counter ==1){
+
+                    
+                    let d = document.createElement("div");
+                    d.classList.add("dropdown");
+                    d.classList.add("black");
+                    d.innerHTML = el.value;
+                    periodWrapper.prepend(d);
+
+                    let p2 = document.createElement("p");
+                    p2.innerHTML = "С";
+                    p2.classList.add("dropdown");
+                    p2.classList.add("dropdown-p");
+                    periodWrapper.prepend(p2);
+
+                }
+                counter++;
+
+            }
+
+            if(counter>=2){
+                const bl = document.querySelectorAll(".dropdown.black");
+                bl.forEach((btn, j) => {
+                    btn.innerHTML = periodBtns[j].value;
+                })
+            }
+        })
+
+    })
+
+
+}
+
 const edMob = document.querySelectorAll('.education-mobile__wrapper-block');
 const edMobBtn = document.querySelector('.education-mobile__wrapper-btn');
 
@@ -1030,3 +1088,15 @@ if(edMob){
         }
     })
 }
+
+
+
+// const tokenPeriod = document.querySelectorAll('.token__block-period');
+
+// if(tokenPeriod){
+//     tokenPeriod.forEach((btn, index) => {
+//         btn.addEventListener('click', () => {
+
+//         })
+//     })
+// }
