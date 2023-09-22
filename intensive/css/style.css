@@ -1,0 +1,691 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.btn{
+    font-family: "gothampromedium";
+    font-size: 23px;
+    color: #64583e;
+    font-weight: 700;
+    text-decoration: none;
+    width: 589px;
+    background-image: url('../img/promo-btn.png');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.65px;
+    text-transform: uppercase;
+    height: 244px;
+}
+
+.promo{
+    padding: 60px 0;
+    background: url(../img/bg-1.jpg) no-repeat 50%/cover;
+    position: relative;
+}
+
+.promo__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.promo__content-date{
+    display: flex;
+    align-items: center;
+    font-family: "goudytrajanbold";
+    margin: 0 auto;
+}
+
+.promo__content-date-num{
+    color: #ffd48a;
+    font-size: 57px;
+}
+
+.promo__content-date-str{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: "gothampro";
+}
+
+.promo__content-date-str span{
+    color: #ffd48a;
+    font-family: "goudytrajanbold";
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.promo__title{
+    color: #fff;
+    font-family: "gothampromedium";
+    font-weight: 300;
+    margin-top: 60px;
+    letter-spacing: 4.15px;
+}
+
+.promo__title-big{
+    font-family: 'goudytrajanbold';
+    font-size: 70px;
+    color: #ffd48a;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.promo__descr{
+    font-family: "gothampro";
+    line-height: 32px;
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.promo__descr span{
+    font-weight: 700;
+}
+.red{
+    color: rgb(209, 32, 38);
+    font-weight: 400;
+}
+
+.promo__btn{
+    margin: 0 auto;
+}
+
+.promo__subtitle{
+    color: #fff;
+    font-family: "gothampro";
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.promo__subtitle span{
+    font-family: "gothampromedium";
+}
+
+.promo__img{
+    position: absolute;
+    bottom: 0;
+    height: 110%;
+    z-index: 0;
+}
+
+.light{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #141313;
+}
+
+.light__content{
+    background: url(../img/light-bg.png) no-repeat 50%/cover;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px 0;
+    min-height: 780px;
+    position: relative;
+}
+
+.light__content-title{
+    background: linear-gradient(180deg, #C8263D 0%, #7E0617 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-family: 'goudytrajanbold';
+}
+
+.light__content-dark{
+    text-align: right;
+    color: #fff;
+}
+
+.light__content-light{
+    color: #1e1d1d;
+}
+
+.light__content-dark p{
+    margin-left: auto;
+}
+
+.light__content-descr{
+    width: 40%;
+    font-size: 22px;
+    font-family: "gothampro";
+}
+
+.light__content-descr span{
+    font-family: "gothampromedium";
+}
+
+.light__content-circle{
+    width: 80px;
+    position: absolute;
+    bottom: -80px;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.light__content-circle img{
+    width: 100%;
+}
+
+.light__wrapper{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.light__wrapper-descr{
+    font-family: "gothampro";
+    color: #fff;
+    display: block;
+    width: 20%;
+}
+
+.light__wrapper-descr span{
+    font-family: "gothampromedium";
+}
+
+.title{
+    color: #ffd48a;
+    font-family: 'goudytrajanbold';
+    text-align: center;
+    font-size: 60px;
+}
+
+.for{
+    background-color: #141313;
+    padding-bottom: 100px;
+}
+
+.for__block{
+    position: relative;
+    border-radius: 13px;
+    background: linear-gradient(180deg, #1E1E1E 0%, rgba(40, 40, 40, 0.00) 100%);
+    padding: 80px 50px;
+    width: auto;
+    color: #fff;
+    font-family: "gothampro";
+    font-size: 24px;
+    margin-top: 100px;
+}
+
+.for__block-red{
+    font-family: "gothampro";
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.for__block-red .red{
+    font-family: "gothampromedium";
+}
+
+.for__block-title{
+    font-family: "gothampromedium";
+}
+
+.for__block-descr{
+    margin-top: 30px;
+}
+
+.for__block-img{
+    position: absolute;
+    width: 120px;
+    top: -60px;
+    left: 60px;
+}
+
+.for__block-img img{
+    width: 100%;
+}
+
+.way{
+    background: url(../img/way.svg) no-repeat 50%/cover;
+    background-color: #141313;
+    height: 1040px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 200px;
+}
+
+.sun{
+    position: absolute;
+    right: -48%;
+    height: 100%;
+    top: 0;
+}
+
+.way__img{
+    position: absolute;
+    width: 500px;
+    top: 100px;
+    right: 18%;
+    z-index: 1;
+}
+
+.way__title{
+    text-align: left;
+    margin-left: 60px;
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.way__descr{
+    width: 50%;
+    text-transform: uppercase;
+    background: linear-gradient(86deg, #FFF 0%, rgba(255, 255, 255, 0.27) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+    margin-left: 100px;
+    color: #ffffff;
+    font-family: "gothampromedium";
+    font-size: 22px;
+    line-height: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.way__wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.way__wrapper .light__wrapper-descr{
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.subtitle{
+    color: #ffffff;
+    font-family: "gothampro";
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.info{
+    background-color: #100e0e;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.info__block{
+    display: block;
+    width: 400px;
+    padding: 30px 20px;
+    color: #fff;
+    font-family: "gothampro";
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    font-size: 18px;
+    background: linear-gradient(180deg, #1E1E1E 0%, rgba(40, 40, 40, 0.00) 100%);
+    margin-top: 50px;
+}
+
+.info__block li{
+    margin-bottom: 15px;
+    
+    font-family: "gothampromedium";
+}
+.info__block ol{
+    padding-left: 20px;
+}
+
+.info__line{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.info__btn{
+    margin: 0 auto;
+    background-image: url('../img/btn-red.png');
+    width: 418px;
+    height: 135px;
+    color: #fff;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.info__btn-text{
+    color: #939393;
+    font-size: 16px;
+    font-family: "gothampro";
+    text-align: center;
+}
+
+.sun2{
+    position: absolute;
+    left: -50%;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.light__content-dark-mobile{
+    display: none;
+}
+
+.light__btn-mobile{
+    display: none;
+}
+
+@media(max-width: 1300px){
+    .promo__img{
+        left: 0;
+    }
+    .promo__title-big{
+        font-size: 50px;
+    }
+    .promo__btn{
+        width: 100%;
+    }
+    .light__content-descr{
+        width: 50%;
+    }
+    .way__img{
+        right: 4%;
+    }
+    .sun{
+        right: -70%;
+    }
+
+}
+
+@media(max-width: 992px){
+
+    .promo__img{
+        height: 100%;
+        left: -20%;
+    }
+    .promo__title-big{
+        font-size: 40px;
+        
+    }
+    .promo__btn{
+        height: 200px;
+    }
+    .light__content-descr{
+        width: 100%;
+    }
+    .light__btn{
+        width: 50%;
+        height: 160px;
+        font-size: 18px;
+        background-size: contain;
+    }
+    .way__title{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .way__descr{
+        font-size: 11px;
+        line-height: 18px;
+        margin-left: 50px;
+    }
+
+    .way__btn{
+        width: 232px;
+        background-size: contain;
+        height: 100px;
+        font-size: 10px;
+    }
+    .way__wrapper .light__wrapper-descr{
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .way{
+        height: 400px;
+    }
+    .way__img{
+        width: 300px;
+        right: 20%;
+    }
+    .sun{
+        right: -50%;
+    }
+}
+
+@media(max-width: 768px){
+    .promo{
+        height: 1200px;
+        overflow-x: hidden;
+    }
+    .promo__img{
+        bottom: 0;
+        height: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .promo__title-big{
+        font-size: 50px;
+    }
+    .promo__content-date-num{
+        margin-right: 10px;
+    }
+    .light__content-dark-mobile{
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .light__content-descr{
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .light__content .container{
+        display: none;
+    }
+    .light__content{
+        width: 100%;
+        min-height: 360px;
+    }
+    .light__content-circle{
+        display: none;
+    }
+    .light__wrapper{
+        width: 100%;
+    }
+    .light__wrapper-descr{
+        width: 60%;
+    }
+    .light__btn{
+        width: 40%;
+        font-size: 10px;
+        height: 100px;
+    }
+    .for__block-img{
+        right: 0;
+        left: auto;
+        width: 140px;
+    }
+    .way{
+        background: #141313;
+        padding-top: 300px;
+    }
+    .sun{
+        display: none;
+    }
+    .way__img{
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .way__title{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .way__descr{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .way__wrapper{
+        display: block;
+        margin: 0 auto;
+    }
+    .way__btn{
+        margin: 0 auto;
+        width: 332px;
+        height: 160px;
+        font-size: 14px;
+    }
+    .way__wrapper .light__wrapper-descr{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .promo{
+        height: 1100px;
+        width: 100%;
+    }
+    .promo__title-big{
+        font-size: 34px;
+    }
+    .promo__title{
+        font-size: 20px;
+    }
+    .promo__descr{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .promo__btn{
+        height: 160px;
+        font-size: 16px;
+    }
+    .light__content{
+        min-height: 200px;
+    }
+    .light__content-title{
+        font-size: 36px;
+    }
+    .light__content-descr{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .light__wrapper-descr{
+        font-size: 12px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .light__btn{
+        display: none;
+    }
+    .light__btn-mobile{
+        display: flex;
+        width: 100%;
+        height: 160px;
+    }
+    .light__wrapper{
+        display: block;
+    }
+    .light__block{
+        display: flex;
+    }
+    .light__content-dark-mobile{
+        width: 50%;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .for__block{
+        padding: 30px 30px;
+        margin-top: 20px;
+    }
+    .for__block-red .for__block-descr{
+        margin-left: 30px;
+    }
+    .red{
+        margin-left: 30px;
+    }
+    .for__block-img{
+        width: 80px;
+        top: -40px;
+    }
+    .for .row{
+        width: 100%;
+        margin: 0;
+    }
+    .for .col-md-6{
+        padding: 0;
+    }
+    .for__block-descr{
+        font-size: 14px;
+    }
+    .for__block-title{
+        font-size: 14px;
+    }
+    .for__block-red{
+        font-size: 14px;
+    }
+    .way__title{
+        font-size: 30px;
+    }
+    .way__descr{
+        width: 100%;
+    }
+    .way__btn{
+        width: 100%;
+    }
+    .way__wrapper .light__wrapper-descr{
+        width: 100%;
+    }
+    .info{
+        padding-top: 30px;
+    }
+    .info__block{
+        width: 90%;
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    .info__btn{
+        background-size: contain;
+        width: 100%;
+        height: 100px;
+        font-size: 18px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .info__line{
+        width: 100%;
+    }
+}
