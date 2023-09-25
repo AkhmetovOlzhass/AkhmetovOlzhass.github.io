@@ -1095,7 +1095,14 @@ button {
 }
 
 .footer__box_mobile{
-    display: none
+    display: none;
+}
+
+.header__replenish-desk-second{
+    background-color: transparent;
+}
+.header__replenish-desk-second:hover{
+    background-color: transparent;
 }
 @media (max-width: 1200px){
     .main {
