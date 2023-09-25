@@ -74,6 +74,8 @@ button {
     cursor: pointer;
 }
 
+
+
 .date-white{
     background-color: #fff;
     color: #000;
@@ -417,6 +419,10 @@ button {
 
 .header__replenish:visited {
     color: var(--text);
+}
+
+.header__replenish-mobile{
+    display: none;
 }
 
 .header__profile {
@@ -1131,6 +1137,9 @@ button {
         min-width: 200px;
         max-width: 200px;
     }
+    .header__replenish-desk{
+        margin-right: 30px;
+    }
 }
 
 @media (max-width: 769px){
@@ -1294,6 +1303,12 @@ button {
     }
     .footer__box{
         padding: 10px;
+    }
+    .header__replenish-desk{
+        display: none;
+    }
+    .header__replenish-mobile{
+        display: block;
     }
 }
 
