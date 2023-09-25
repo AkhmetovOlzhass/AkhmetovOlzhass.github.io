@@ -5,6 +5,10 @@
  border-radius: 15px;   
 }
 
+body{
+    position: relative;
+}
+
 .account__box {
     width: 100%;
     display: flex;
@@ -321,11 +325,21 @@ color: #fff;
     left: 0;
     right: 0;
     margin: auto;
-    width: 95%;
+    width: 320px;
     background-color: #20252B;
     transition: all .5s;
     padding: 20px;
     z-index: -1;
+}
+
+.token__overflow.active{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .token__close-detals{
@@ -333,6 +347,7 @@ color: #fff;
     font-size: 24px;
     position: absolute;
     top: 20px;
+    cursor: pointer;
     right: 20px;
 }
 .row{
@@ -373,7 +388,12 @@ color: #fff;
     color:    #fff;
     font-size: 16px;
  }
-
+.token__block p:hover{
+    color: #a3a3a3;
+}
+.transfer__input_dropdown_value{
+    height: 33px;
+}
 @media (max-width: 1200px){
     .statistic__total_value{
         font-size: 20px;
@@ -488,8 +508,8 @@ color: #fff;
         white-space: nowrap;
         font-size: 12px;
         height: 90px;
-        overflow-y: hidden;
-        overflow-x: auto;
+
+        overflow: auto;
         -webkit-overflow-scrolling: auto;
     }
     .statistic__table{
@@ -517,7 +537,7 @@ color: #fff;
         justify-content: center;
         align-items: center;
         margin-left: 0;
-        width: 120px;
+        width: auto;
         height: 30px;
         font-size: 12px;
     }
@@ -552,5 +572,17 @@ color: #fff;
     }
     .statistic__table_header_first{
         border-radius: 0;
+    }
+    .transfer__input_dropdown_value {
+        height: 30px;
+    }
+    .transfer__input_dropdown_value_box > img{
+        margin-right: 5px;
+    }
+    .transfer__input_dropdown_value_box p{
+        margin-right: 5px;
+    }
+    .transfer__input_dropdown{
+        margin-right: 10px;
     }
 }

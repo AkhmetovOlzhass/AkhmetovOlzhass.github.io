@@ -87,6 +87,7 @@ button {
 
 .dropdown {
     padding: 5px 10px;
+    height: 31px;
     margin: 0 10px 0 0;
     display: flex;
     justify-content: space-between;
@@ -319,7 +320,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 50%;
+    min-width: 57%;
 }
 
 .header__currency {
@@ -1103,6 +1104,13 @@ button {
 }
 .header__replenish-desk-second:hover{
     background-color: transparent;
+}
+
+.header__settings{
+    display: none;
+}
+.header__exit{
+    display: none;
 }
 @media (max-width: 1200px){
     .main {

@@ -852,6 +852,42 @@ if(tokenBtns && tokenOverflow){
 
 }
 
+const tokenBtns2 = document.querySelectorAll('.tokens__table_row');
+
+
+if(tokenBtns2 && tokenOverflow){
+    const tokenBlock = document.querySelectorAll('.token__block');
+    const tokenClose = document.querySelectorAll('.token__close');
+
+    tokenBtns2.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            tokenBlock[index-1].querySelector('.token__title').innerHTML = tokenTitle[index-1].querySelector('span').innerHTML;
+            tokenBlock[index-1].querySelector('.token__subtitle').innerHTML = tokenTitle[index-1].querySelector('p').innerHTML;
+            tokenBlock[index-1].style.bottom = 0 + "%";
+            tokenOverflow.classList.add('active');
+
+        })
+    })
+    
+    tokenOverflow.addEventListener('click', () => {
+        tokenBlock.forEach(el =>{
+            el.style.bottom = -100 + "%";
+        })
+        tokenOverflow.classList.remove('active');
+        document.querySelector('body').style.overflow = 'auto';
+    })
+    
+    tokenClose.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            tokenBlock[index].style.bottom = -100 + "%";
+            tokenOverflow.classList.remove('active');
+        })
+        
+    })
+
+}
+
+
 const balanceTokenBtns = document.querySelectorAll(".statistic__table");
 
 if(balanceTokenBtns){
@@ -1015,97 +1051,31 @@ const periodBtns = document.querySelectorAll(".period-btn");
 if(periodBtns.length>0){
     const periodWrapper = document.querySelector(".statistic__period-block-mobile");
     const tokenClose = document.querySelector('.token__close');
-    const tokenClose2 = document.querySelector('.token__overflow');
     let counter = 0;
+
+    let d = document.createElement("div");
+    d.classList.add("dropdown");
+    d.classList.add("black");
+    let str;
     tokenClose.addEventListener('click', () => {
         periodBtns.forEach((el, i) => {
             if(el.value != "" && counter<=1){
                 if(counter ==0){
-                    let d = document.createElement("div");
-                    d.classList.add("dropdown");
-                    d.classList.add("black");
-                    d.innerHTML = el.value;
-                   periodWrapper.prepend(d);
-
-                   let p1 = document.createElement("p");
-                   p1.innerHTML = "По";
-                   p1.classList.add("dropdown");
-                   p1.classList.add("dropdown-p");
-                   periodWrapper.prepend(p1);
+                    str = el.value;
+                    str = str.replace(/-/g,".");
+                    str = str + " — ";
                 } else if(counter ==1){
-
-                    
-                    let d = document.createElement("div");
-                    d.classList.add("dropdown");
-                    d.classList.add("black");
-                    d.innerHTML = el.value;
-                    periodWrapper.prepend(d);
-
-                    let p2 = document.createElement("p");
-                    p2.innerHTML = "С";
-                    p2.classList.add("dropdown");
-                    p2.classList.add("dropdown-p");
-                    periodWrapper.prepend(p2);
-
+                    let temp = el.value.replace(/-/g,".");;
+                   str = str+temp;
                 }
                 counter++;
-
-            }
-
-            if(counter>=2){
-                const bl = document.querySelectorAll(".dropdown.black");
-                bl.forEach((btn, j) => {
-                    btn.innerHTML = periodBtns[j].value;
-                })
             }
         })
-
+        d.innerHTML = str;
+        periodWrapper.prepend(d);
+        document.querySelector('.dropdown__period-mobile').style.display = 'none';
     })
 
-    tokenClose2.addEventListener('click', () => {
-        periodBtns.forEach((el, i) => {
-            if(el.value != "" && counter<=1){
-                if(counter ==0){
-                    let d = document.createElement("div");
-                    d.classList.add("dropdown");
-                    d.classList.add("black");
-                    d.innerHTML = el.value;
-                   periodWrapper.prepend(d);
-
-                   let p1 = document.createElement("p");
-                   p1.innerHTML = "По";
-                   p1.classList.add("dropdown");
-                   p1.classList.add("dropdown-p");
-                   periodWrapper.prepend(p1);
-                } else if(counter ==1){
-
-                    
-                    let d = document.createElement("div");
-                    d.classList.add("dropdown");
-                    d.classList.add("black");
-                    d.innerHTML = el.value;
-                    periodWrapper.prepend(d);
-
-                    let p2 = document.createElement("p");
-                    p2.innerHTML = "С";
-                    p2.classList.add("dropdown");
-                    p2.classList.add("dropdown-p");
-                    periodWrapper.prepend(p2);
-
-                }
-                counter++;
-
-            }
-
-            if(counter>=2){
-                const bl = document.querySelectorAll(".dropdown.black");
-                bl.forEach((btn, j) => {
-                    btn.innerHTML = periodBtns[j].value;
-                })
-            }
-        })
-
-    })
 
 
 }

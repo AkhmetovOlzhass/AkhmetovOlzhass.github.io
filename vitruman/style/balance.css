@@ -370,6 +370,7 @@
     transition: all .5s;
     padding: 20px;
     z-index: 99999999;
+    display: none;
 }
 
 .token__overflow{
@@ -395,6 +396,9 @@
 }
 
 @media (max-width: 576px){
+    .token__block{
+        display: block;
+    }
 
     .token__title{
         font-size: 24px;
