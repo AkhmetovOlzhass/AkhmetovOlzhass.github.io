@@ -1142,13 +1142,27 @@ if(edMob.length>0){
 }
 
 
+const currItems = document.querySelectorAll('.currency__item');
+if(currItems.length >0){
+    const currBtn = document.querySelector('.dropdown__period-currency');
+    const currContent = document.querySelector('.currency');
+    currBtn.addEventListener('click', () => {
+        currContent.classList.add('active');
+        tokenOverflow.classList.add('active');
+        document.querySelector('body').style.overflow = "hidden";
+    })
+    const checkItems = document.querySelectorAll('.check');
+    currItems.forEach((item, i) => {
+        item.addEventListener('click', () => {
+            checkItems.forEach(el => {
+                el.classList.remove('active');
+            })
+            checkItems[i].classList.add('active');
+        })
+    })
 
-// const tokenPeriod = document.querySelectorAll('.token__block-period');
-
-// if(tokenPeriod){
-//     tokenPeriod.forEach((btn, index) => {
-//         btn.addEventListener('click', () => {
-
-//         })
-//     })
-// }
+    tokenOverflow.addEventListener('click', () => {
+        currContent.classList.remove('active');
+        document.querySelector('body').style.overflow = "auto";
+    })
+}

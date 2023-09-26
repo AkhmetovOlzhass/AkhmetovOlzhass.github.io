@@ -394,6 +394,16 @@ color: #fff;
 .transfer__input_dropdown_value{
     height: 33px;
 }
+
+.currency{
+    position: fixed;
+    width: 100%;
+    background-color: #373C45;
+    border-radius: 10px 10px 0 0;
+    bottom: -100%;
+    transition: all .5s;
+    z-index: 999999999999999;
+}
 @media (max-width: 1200px){
     .statistic__total_value{
         font-size: 20px;
@@ -432,6 +442,53 @@ color: #fff;
 }
 
 @media (max-width: 576px){
+    .token__block-detals{
+        width: 100%;
+    }
+    .currency.active{
+        bottom: 0;
+    }
+    .currency input{
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+        padding: 5px 30px;
+        background-image: url(../img/transfer/search.svg);
+        background-repeat: no-repeat;
+        background-position: 10px;
+        font-family: RobotoRegular, sans-serif;
+        font-size: 16px;
+        color: #8F8F91;
+        border: none;
+        border-bottom: 1px solid #8F8F91;
+        outline: none;
+        background-color: #373C45;
+    }
+    .currency__item{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .currency__item:hover{
+        background-color: #191D23;
+    }    
+    .currency__item-content{
+        display: flex;
+        align-items: center;
+        
+    }
+    .currency__item-content img{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+    .check{
+        display: none;
+    }
+    .check.active{
+        display: block;
+    }
     .positions__title{
         font-size: 14px;
     }
