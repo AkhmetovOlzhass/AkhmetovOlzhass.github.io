@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/style.css">
-    <link rel="stylesheet" href="../../style/auth/regist_step2.css">
+    <link rel="stylesheet" href="../../style/auth/auth_step2.css">
     <title>Vitruman Trade</title>
 </head>
 <body>
@@ -230,22 +230,67 @@
         <div class="container">
             <div class="auth">
                 <div class="auth__form">
-                    <h2 class="auth__title title">ПОДТВЕРЖДЕНИЕ АККАУНТА</h2>
+                    <h2 class="auth__title title">СОЗДАЙТЕ ПАРОЛЬ</h2>
                     <p class="auth__text">У вас уже есть аккаунт? <a href="auth.html" class="auth__login">Авторизоваться</a></p>
-                    <span class="auth__span">Введите номер телефона</span>
-                    <div class="input__select_box">
-                        <div class="input__select">
-                            <div class="input__select_value"><img src="../../img/auth/ru.svg" alt="ru"> <span class="input__select_num">+7</span> <span class="input__select_arrow">&rang;</span></div>
-                            <div class="input__select_list input__select_list_hidden">
-                                <div class="input__select_item"><img src="../../img/auth/ru.svg" alt="ru"> +8</div>
-                                <div class="input__select_item"><img src="../../img/auth/ru.svg" alt="ru"> +9</div>
-                                <div class="input__select_item"><img src="../../img/auth/ru.svg" alt="ru"> +10</div>
+
+                    <div class="auth__block">
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
                             </div>
+                            <p>от 8 до 30 символов</p>
                         </div>
-                        <input type="text" class="auth__input">
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>только латинские буквы</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>минимум 1 цифра и 2 буквы в разных регистрах</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>минимум 1 спецсимвол: -!@#$%^&*()_-+^;.,</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>не более 3 одинаковых символов подряд</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
+                            </div>
+                            <p>не более 3 соседних символов подряд</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
+                            </div>
+                            <p>не более 3 символов из алфавитной последовательности</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
+                            </div>
+                            <p>пароль и логин не должны совпадать</p>
+                        </div>
                     </div>
-                    <span class="error">Такого номера не существует</span>
-                    <a href="./regist_step3.html" class="auth__next">Далее</a>
+
+                    <label for="">Пароль<div class="auth__input_box">
+                        <input type="password" class="auth__input_pass">
+                        <div class="auth__input_show">
+                            <img src="../../img/auth/show.svg" alt="show password">
+                        </div>
+                    </div></label>
+                    <a href="../profile.html" class="auth__next">Далее</a>
                 </div>
             </div>
         </div>

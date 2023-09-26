@@ -25,6 +25,7 @@ body {
 
 .auth {
     padding: 65px 50px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
     background-color: var(--bcg-block);
@@ -32,7 +33,6 @@ body {
 }
 
 .auth__form {
-    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -82,13 +82,13 @@ body {
 }
 
 .auth__input {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 100%;
     padding: 10px;
     outline: none;
-    background-color: #2E3337;
-    border: none;
-    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #5b5b5b;
+    border-radius: 5px;
     font-size: 20px;
     color: #D9D9D9;
 }
@@ -155,24 +155,18 @@ body {
 
 .auth__next {
     margin-top: 15px;
-    padding: 10px 0;
+    padding: 15px 0;
     width: 100%;
-    background-color: #C1A875;
-    border-radius: 10px;
+    background-color: #FCD434;
+    border-radius: 5px;
     font-family: RobotoRegular, sans-serif;
     font-size: 18px;
-    color: var(--text);
+    color: #000;
     text-align: center;
     text-decoration: none;
 }
 
-.auth__next:visited {
-    color: var(--text);
-}
 
-.auth__next:hover {
-    background-color: var(--bcg-button-hov);
-}
 
 .auth__reset_pass {
     margin-top: 15px;
@@ -189,16 +183,29 @@ body {
 .checkbox__container {
     margin-top: 20px;
     width: 100%;
-    display: flex;
-    align-items: center;
+    color: #838383;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
 }
 
+.checkbox__container a{
+    color: #fff;
+    cursor: pointer;
+}
 
 .auth__text_checkbox {
     margin-left: 20px;
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color: var(--text);
+}
+
+label{
+    color: #fff;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 @media(max-width: 1200px){
@@ -223,6 +230,10 @@ body {
 }
 
 @media(max-width: 576px){
+    .checkbox__container{
+        font-size: 14px;
+        line-height: 18px;
+    }
     .auth__input, .auth__input_pass{
         font-size: 16px;
     }
