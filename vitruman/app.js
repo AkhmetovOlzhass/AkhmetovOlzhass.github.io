@@ -847,9 +847,18 @@ if(tokenBtns && tokenOverflow){
             tokenOverflow.classList.remove('active');
             document.querySelector('body').style.overflow = 'auto';
         })
-        
     })
 
+    const tokenTemp = document.querySelectorAll(".token-temp");
+    tokenTemp.forEach((el) => {
+        el.addEventListener('click', () => {
+            tokenBlock.forEach(el =>{
+                el.style.bottom = -100 + "%";
+            })
+            tokenOverflow.classList.remove('active');
+            document.querySelector('body').style.overflow = 'auto';
+        })
+    })
 }
 
 const tokenBtns2 = document.querySelectorAll('.tokens__table_row');
@@ -884,6 +893,7 @@ if(tokenBtns2 && tokenOverflow){
         })
         
     })
+    
 
 }
 
@@ -1049,14 +1059,19 @@ const periodBtns = document.querySelectorAll(".period-btn");
 
 
 if(periodBtns.length>0){
+    
     const periodWrapper = document.querySelector(".statistic__period-block-mobile");
     const tokenClose = document.querySelector('.token__close');
+
     let counter = 0;
 
     let d = document.createElement("div");
     d.classList.add("dropdown");
     d.classList.add("black");
     let str;
+
+
+
     tokenClose.addEventListener('click', () => {
         periodBtns.forEach((el, i) => {
             if(el.value != "" && counter<=1){
