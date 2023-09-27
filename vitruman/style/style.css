@@ -125,10 +125,10 @@ button {
     position: absolute;
     left: 0;
     right: 0;
-    top: 26px;
+    top: 40px;
     background-color: #fff;
     color: #000;
-    border-radius: 0 0 10px 10px;
+    border-radius: 3px;
     font-family: RobotoRegular, sans-serif;
     overflow: hidden;
     display: none;
@@ -136,6 +136,18 @@ button {
 
 .dropdown__box_active {
     display: block;
+    z-index: 99999999999999;
+}
+
+.dropdown__overflow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+
+    z-index: 9;
 }
 
 .dropdown__item {

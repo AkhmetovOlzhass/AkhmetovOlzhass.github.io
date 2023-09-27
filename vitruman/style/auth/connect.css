@@ -151,6 +151,21 @@ body {
     background-color: var(--bcg-button-hov);
 }
 
+.auth__form-block{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.auth__form-block .auth__input{
+    width: 49%;
+    margin: 0;
+}
+
 @media(max-width: 1200px){
     body{
         overflow: auto;
@@ -173,6 +188,9 @@ body {
 }
 
 @media(max-width: 576px){
+    .auth__form-block{
+        width: 100%;
+    }
     .input__select_arrow{
         display: none;
     }

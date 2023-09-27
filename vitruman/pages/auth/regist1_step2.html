@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/style.css">
-    <link rel="stylesheet" href="../../style/auth/grettings.css">
+    <link rel="stylesheet" href="../../style/auth/auth1_step2.css">
     <title>Vitruman Trade</title>
 </head>
 <body>
@@ -233,17 +233,67 @@
         <div class="container">
             <div class="auth">
                 <div class="auth__form">
-                    <h2 class="auth__title title">ДОБРО ПОЖАЛОВАТЬ НА VITRUVIAN TRADE</h2>
-                    <a href="regist.html" class="auth__next">Регистрация с помощью телефона/эл.почты</a>
-                    <span class="auth__span">или</span>
-                    <a href="#" class="auth__service"><img src="../../img/auth/google.svg" alt="google"> Продолжить с Google</a>
-                    <a href="#" class="auth__service"><img src="../../img/auth/apple.svg" alt="apple"> Продолжить с Apple</a>
+                    <h2 class="auth__title title">СОЗДАЙТЕ ПАРОЛЬ</h2>
                     <p class="auth__text">У вас уже есть аккаунт? <a href="auth.html" class="auth__login">Авторизоваться</a></p>
-                </div>
-                <div class="auth__content">
-                    <img class="auth__img" src="../../img/auth/robot.svg" alt="robot">
-                    <h3 class="auth__content_title">Зарегистрируйтесь для скидки в 100 USDT!</h3>
-                    <p class="auth__content_text">При оформлении заказа, должно быть поле: "У меня день Рождение" (тогда скидка 15% от заказа 1500руб) и самовывоз</p>
+
+                    <div class="auth__block">
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
+                            </div>
+                            <p>от 8 до 30 символов</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>только латинские буквы</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>минимум 1 цифра и 2 буквы в разных регистрах</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>минимум 1 спецсимвол: -!@#$%^&*()_-+^;.,</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+
+                            </div>
+                            <p>не более 3 одинаковых символов подряд</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
+                            </div>
+                            <p>не более 3 соседних символов подряд</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
+                            </div>
+                            <p>не более 3 символов из алфавитной последовательности</p>
+                        </div>
+                        <div class="auth__block-item">
+                            <div class="auth__block-check">
+                                <img src="../../img/education/check.svg" alt="check">
+                            </div>
+                            <p>пароль и логин не должны совпадать</p>
+                        </div>
+                    </div>
+
+                    <label for="">Пароль<div class="auth__input_box">
+                        <input type="password" class="auth__input_pass">
+                        <div class="auth__input_show">
+                            <img src="../../img/auth/show.svg" alt="show password">
+                        </div>
+                    </div></label>
+                    <a href="../auth/regist_step2.html" class="auth__next">Далее</a>
                 </div>
             </div>
         </div>

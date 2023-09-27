@@ -216,19 +216,27 @@ if(dropDown && dropDown.length > 0) {
 
     dropDown.forEach(btn => {
         btn.addEventListener('click', e => {
-            dropDown.forEach(item => {
-                if(item !== e.currentTarget) {
-                    try{
-                        item.querySelector('.dropdown__box').classList.remove('dropdown__box_active');
-                    }catch{}
-                }
-            });
-            try{
-                e.currentTarget.querySelector('.dropdown__box').classList.toggle('dropdown__box_active');
-            } catch{}
+            if(e.currentTarget.querySelector('.dropdown__box').classList.contains('dropdown__box_active')){
+                e.currentTarget.querySelector('.dropdown__box').classList.remove('dropdown__box_active');
+            } else{
+                e.currentTarget.querySelector('.dropdown__box').classList.add('dropdown__box_active');
+                let dropOverflow = document.createElement('div');
+                dropOverflow.classList.add('dropdown__overflow');
+                document.querySelector('body').prepend(dropOverflow);
+            }
         })
     })
+    document.querySelector('html').addEventListener('click', (e) => {
+        if(e.target.classList.contains("dropdown__overflow")){
+            document.querySelectorAll('.dropdown__box').forEach(el=>{
+                el.classList.remove('dropdown__box_active');
+            });
+            document.querySelector('.dropdown__overflow').remove();
+        }
+    })
+            
 
+    
     dropdownItems.forEach(btn => {
         btn.addEventListener('click', e => {
             e.currentTarget.parentNode.parentNode.querySelector('.dropdown__value').textContent = e.currentTarget.textContent;

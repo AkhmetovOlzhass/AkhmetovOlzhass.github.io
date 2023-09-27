@@ -30,17 +30,10 @@ body {
     justify-content: space-between;
     background-color: var(--bcg-block);
     border-radius: 15px;
-    width: 500px;
-}
-
-.auth__text{
-    margin: 20px auto 0;
-    font-family: RobotoRegular, sans-serif;
-    font-size: 16px;
-    color: var(--text);
 }
 
 .auth__form {
+    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -56,27 +49,20 @@ body {
 
 .auth__title {
     font-size: 32px;
-    text-align: center;
 }
 
 .auth__input_box {
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
     position: relative;
-}
-label{
-    font-family: RobotoRegular, sans-serif;
-    font-size: 16px;
-    color: var(--text);
-    margin-top: 20px;
 }
 
 .auth__input_pass {
     width: 100%;
     padding: 10px;
     outline: none;
-    background-color: transparent;
-    border: 1px solid #5b5b5b;
+    background-color: #2E3337;
+    border: none;
     border-radius: 10px;
     font-size: 20px;
     color: #D9D9D9;
@@ -89,31 +75,6 @@ label{
     cursor: pointer;
 }
 
-.auth__block-item{
-    display: inline-flex;
-    align-items: center;
-    width: 49%;
-    margin-top: 20px;
-}
-
-.auth__block-item p{
-    font-family: RobotoRegular, sans-serif;
-    font-size: 13px;
-    color: var(--text);
-}
-
-.auth__block-check{
-    min-width: 18px;
-    max-width: 18px;
-    height: 18px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}
-
 .error {
     margin-top: 10px;
     max-width: 400px;
@@ -123,28 +84,24 @@ label{
 }
 
 .auth__next {
-    margin-top: 15px;
-    padding: 15px 0;
+    margin-top: 25px;
+    padding: 10px 0;
     width: 100%;
-    background-color: #FCD434;
-    border-radius: 5px;
+    background-color: #C1A875;
+    border-radius: 10px;
     font-family: RobotoRegular, sans-serif;
     font-size: 18px;
-    color: #000;
+    color: var(--text);
     text-align: center;
     text-decoration: none;
 }
 
-.auth__login {
-    margin-top: 15px;
-    font-family: RobotoRegular, sans-serif;
-    font-size: 16px;
-    color: var(--bcg-button);
-    text-decoration: none;
+.auth__next:visited {
+    color: var(--text);
 }
 
-.auth__login:hover {
-    color: #C2B290;
+.auth__next:hover {
+    background-color: var(--bcg-button-hov);
 }
 
 .auth__reset_pass {
@@ -181,10 +138,6 @@ label{
 }
 
 @media(max-width: 576px){
-    .auth__block-item{
-        display: flex;
-        width: 100%;
-    }
     .input__select_arrow{
         display: none;
     }

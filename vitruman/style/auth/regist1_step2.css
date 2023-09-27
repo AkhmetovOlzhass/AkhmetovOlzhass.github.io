@@ -48,6 +48,7 @@ body {
 
 .auth__title {
     font-size: 32px;
+    text-align: center;
 }
 
 .auth__text {
