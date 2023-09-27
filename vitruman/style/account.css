@@ -451,13 +451,14 @@ color: #fff;
     .currency input{
         display: block;
         width: 100%;
+        height: 50px;
         border-radius: 10px 10px 0 0 ;
-        padding: 5px 30px;
+        padding: 5px 40px;
         background-image: url(../img/transfer/search.svg);
         background-repeat: no-repeat;
         background-position: 10px;
         font-family: RobotoRegular, sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         color: #8F8F91;
         border: none;
         border-bottom: 1px solid #8F8F91;
@@ -467,7 +468,7 @@ color: #fff;
     .currency__item{
         display: flex;
         align-items: center;
-        padding: 15px;
+        padding: 25px 15px;
         justify-content: space-between;
     }
     .currency__item:hover{
@@ -485,6 +486,8 @@ color: #fff;
     }
     .check{
         display: none;
+        width: 20px;
+        height: 20px;
     }
     .check.active{
         display: block;
