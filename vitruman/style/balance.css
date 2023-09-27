@@ -436,7 +436,7 @@
         right: 20px;
     }
     .tokens__table_action_item-img{
-        display: block;
+        display: flex;
         width: 30px;
     }
     .tokens__table_action_item-img img{

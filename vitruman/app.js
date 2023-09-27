@@ -543,13 +543,23 @@ if(transferDropDownBtns && transferDropDownBtns.length > 0) {
 
         }
     })
-    if(transferTrigger.length >1 && transferList.length >1){
+    if(transferTrigger.length > 1 && transferList.length >1){
         document.querySelector('body').addEventListener('click', (e) => {
             if(e.target != transferTrigger[1]){
                 transferList[1].classList.remove('transfer__input_dropdown_list_active');
             }
         })
     }
+
+
+    if(transferTrigger.length > 2&& transferList.length >2){
+        document.querySelector('body').addEventListener('click', (e) => {
+            if(e.target != transferTrigger[2]){
+                transferList[2].classList.remove('transfer__input_dropdown_list_active');
+            }
+        })
+    }
+
 
 
     transferDropDownBtns.forEach(btn => {
@@ -684,11 +694,6 @@ const typeBlock = document.querySelectorAll('.market__active_type');
 
 if(buyBtn){
     document.querySelector('body').addEventListener('click', (e) => {
-        // if((e.target == buyBtn || e.target.parentNode.parentNode == buyBtn  || e.target.parentNode.parentNode.parentNode == buyBtn)){
-        //     buyBlock.classList.toggle('market__active_visible');
-        // } else if(!(e.target == buyBlock || e.target.parentNode == buyBlock  || e.target.parentNode.parentNode == buyBlock)){
-        //     buyBlock.classList.remove('market__active_visible');
-        // }
         buyBtn.forEach((item, i) => {
             if((e.target == item || e.target.parentNode == item  || e.target.parentNode.parentNode == item || e.target.parentNode.parentNode.parentNode == item)){
                 buyBlock[i].classList.toggle('market__active_visible');
@@ -816,12 +821,56 @@ menuLangBtns.forEach((menuLangBtn, index) => {
     })
 })
 
+
+const periodBtns = document.querySelectorAll(".period-btn");
+
+
+if(periodBtns.length>0){
+    
+    const periodWrapper = document.querySelectorAll(".statistic__period-block-mobile");
+    const tokenClose = document.querySelectorAll('.token__block-period .token__close');
+
+    let counter = 0;
+
+    let d = document.createElement("div");
+    d.classList.add("dropdown");
+    d.classList.add("black");
+    let str;
+
+    
+
+    tokenClose.forEach((el,j)=>{
+        el.addEventListener('click', () => {
+            periodBtns.forEach((el, i) => {
+                if(el.value != "" && counter<=1){
+                    if(counter ==0){
+                        str = el.value;
+                        str = str.replace(/-/g,".");
+                        str = str + " — ";
+                    } else if(counter ==1){
+                        let temp = el.value.replace(/-/g,".");;
+                    str = str+temp;
+                    }
+                    counter++;
+                }
+            })
+            d.innerHTML = str;
+            periodWrapper[j].prepend(d);
+            document.querySelectorAll('.dropdown__period-mobile')[j].style.display = 'none';
+        })
+    })
+
+
+
+}
+
 const tokenBtns = document.querySelectorAll('.dropdown__period-mobile');
 const tokenTitle = document.querySelectorAll('.tokens__table_name_box');
 const tokenOverflow = document.querySelector('.token__overflow');
 
 if(tokenBtns && tokenOverflow){
-    const tokenBlock = document.querySelectorAll('.token__block');
+    const tokenBlock = document.querySelectorAll('.token__block-period');
+
     const tokenClose = document.querySelectorAll('.token__close');
 
     tokenBtns.forEach((btn, index) => {
@@ -849,9 +898,11 @@ if(tokenBtns && tokenOverflow){
         document.querySelector('body').style.overflow = 'auto';
     })
     
-    tokenClose.forEach((btn, index) => {
+    tokenClose.forEach((btn) => {
         btn.addEventListener('click', () => {
-            tokenBlock[index].style.bottom = -100 + "%";
+            tokenBlock.forEach(el=>{
+                el.style.bottom = -100 + "%";
+            })
             tokenOverflow.classList.remove('active');
             document.querySelector('body').style.overflow = 'auto';
         })
@@ -896,7 +947,9 @@ if(tokenBtns2 && tokenOverflow){
     
     tokenClose.forEach((btn, index) => {
         btn.addEventListener('click', () => {
-            tokenBlock[index].style.bottom = -100 + "%";
+            tokenBlock.forEach(el => {
+                el.style.bottom = -100 + "%";
+            })
             tokenOverflow.classList.remove('active');
         })
         
@@ -1063,45 +1116,7 @@ if(varAct){
 }
 
 
-const periodBtns = document.querySelectorAll(".period-btn");
 
-
-if(periodBtns.length>0){
-    
-    const periodWrapper = document.querySelector(".statistic__period-block-mobile");
-    const tokenClose = document.querySelector('.token__close');
-
-    let counter = 0;
-
-    let d = document.createElement("div");
-    d.classList.add("dropdown");
-    d.classList.add("black");
-    let str;
-
-
-
-    tokenClose.addEventListener('click', () => {
-        periodBtns.forEach((el, i) => {
-            if(el.value != "" && counter<=1){
-                if(counter ==0){
-                    str = el.value;
-                    str = str.replace(/-/g,".");
-                    str = str + " — ";
-                } else if(counter ==1){
-                    let temp = el.value.replace(/-/g,".");;
-                   str = str+temp;
-                }
-                counter++;
-            }
-        })
-        d.innerHTML = str;
-        periodWrapper.prepend(d);
-        document.querySelector('.dropdown__period-mobile').style.display = 'none';
-    })
-
-
-
-}
 
 const edMob = document.querySelectorAll('.education-mobile__wrapper-block');
 const edMobBtnMain = document.querySelector('.education__content_title');
@@ -1152,12 +1167,14 @@ if(edMob.length>0){
 
 const currItems = document.querySelectorAll('.currency__item');
 if(currItems.length >0){
-    const currBtn = document.querySelector('.dropdown__period-currency');
-    const currContent = document.querySelector('.currency');
-    currBtn.addEventListener('click', () => {
-        currContent.classList.add('active');
-        tokenOverflow.classList.add('active');
-        document.querySelector('body').style.overflow = "hidden";
+    const currBtn = document.querySelectorAll('.dropdown__period-currency');
+    const currContent = document.querySelectorAll('.currency');
+    currBtn.forEach((el, i)=>{
+        el.addEventListener('click', () => {
+            currContent[i].classList.add('active');
+            tokenOverflow.classList.add('active');
+            document.querySelector('body').style.overflow = "hidden";
+        })
     })
     const checkItems = document.querySelectorAll('.check');
     currItems.forEach((item, i) => {
@@ -1170,7 +1187,9 @@ if(currItems.length >0){
     })
 
     tokenOverflow.addEventListener('click', () => {
-        currContent.classList.remove('active');
-        document.querySelector('body').style.overflow = "auto";
+        currContent.forEach(el=>{
+            el.classList.remove('active');
+            document.querySelector('body').style.overflow = "auto";
+        })
     })
 }
