@@ -211,6 +211,18 @@ label{
     margin-top: 20px;
 }
 
+.checkbox__container-check{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__container-check p{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
 @media(max-width: 1200px){
     body{
         overflow: auto;
