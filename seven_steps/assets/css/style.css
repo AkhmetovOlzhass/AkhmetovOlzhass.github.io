@@ -57,6 +57,7 @@ body {
     display: none;
 }
 
+
 .button{
     display: flex;
     align-items: center;
@@ -168,6 +169,7 @@ footer{
     display: none;
 }
 
+
 @media (max-width: 1200px) {
     .promo{
         height: 900px;
@@ -179,6 +181,9 @@ footer{
     }
     .footer__button{
         font-size: 14px;
+    }
+    .promo .promo__button-mobile{
+        display: none;
     }
 }
 @media (max-width: 992px) {
@@ -294,20 +299,31 @@ footer{
 }
 
 @media (max-width: 576px) {
+    .video{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 120px;
+        height: 200px;
+    }
     .promo__academy{
-        margin-left: 0;
+        margin-left: 10px;
     }
     .title{
-        margin-left: 0;
+        margin-left: 20px;
         font-size: 30px;
         line-height: 36px;
     }
     .subtitle{
-        margin-left: 0;
+        margin-left: 20px;
         font-size: 14px;
     }
     .promo .promo__button{
-        margin-left: 0;
+        display: none;
+    }
+    .promo .promo__button-mobile{
+        display: flex;
+        margin-left: 20px;
         height: 40px;
         width: 140px;
         font-size: 14px;
@@ -315,6 +331,7 @@ footer{
     .author{
         left: 0;
         top: 130%;
+        display: none;
     }
     .author__block{
         padding: 15px;
@@ -327,7 +344,7 @@ footer{
     }
     .promo__block-mobile{
         width: 90%;
-        margin-top: 440px;
+        margin-top: 100px;
     }
     .promo__block-mobile-item{
         padding: 0;
@@ -338,7 +355,7 @@ footer{
         height: auto;
     }
     .footer__text{
-        font-size: 14px;
-        line-height: 30px;
+        font-size: 12px;
+        line-height: 18px;
     }
 }
