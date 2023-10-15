@@ -11,7 +11,7 @@ body {
 }
 .promo{
     background: url(../img/promo1.png) no-repeat 50%/cover;
-    height: 707px;
+    height: 807px;
     width: 100%;   
     padding: 50px 0 187px;
 }
@@ -54,6 +54,11 @@ body {
 }
 
 .promo .promo__button{
+    width: 240px;
+    margin-top: 20px;
+}
+
+.promo .promo__button-mobile{
     display: none;
 }
 
