@@ -174,6 +174,14 @@ footer{
     display: none;
 }
 
+.video__title{
+    font-size: 24.5px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
 
 @media (max-width: 1200px) {
     .promo{
@@ -241,9 +249,9 @@ footer{
     .subtitle br{
         display: none;
     }
-    .video{
+    /* .video{
         display: none;
-    }
+    } */
     .promo .promo__button{
         margin-left: 30px;
         height: 60px;
@@ -252,7 +260,7 @@ footer{
         margin-top: 40px;
     }
     .author{
-        display: block;
+        display: none;
         left: 40px;
         right: auto;
         top: 110%;
@@ -290,7 +298,7 @@ footer{
         padding: 10px 0;
         color: #fff;
         width: 80%;
-        margin-top: 380px;
+        margin-top: 80px;
     }
     .promo__block-mobile-item{
         padding-left: 20px;
@@ -304,11 +312,14 @@ footer{
 }
 
 @media (max-width: 576px) {
+    .video__title{
+        margin-top: 120px;
+        margin-left: 20px;
+    }
     .video{
         display: block;
         width: 90%;
         margin: 0 auto;
-        margin-top: 120px;
         height: 200px;
     }
     .promo__academy{
