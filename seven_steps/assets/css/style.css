@@ -317,8 +317,8 @@ footer{
     }
     .video{
         display: block;
-        width: 60%;
-        height: 120px;
+        width: 240px;
+        height: 140px;
         margin-left: 20px;
     }
     .promo__academy{
@@ -358,7 +358,7 @@ footer{
     }
     .promo__block-mobile{
         width: 90%;
-        margin-top: 100px;
+        margin-top: 40px;
     }
     .promo__block-mobile-item{
         padding: 0;
