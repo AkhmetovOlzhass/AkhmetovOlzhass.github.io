@@ -312,7 +312,7 @@ footer{
 
 @media (max-width: 576px) {
     .video__title{
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 20px;
     }
     .video{
@@ -327,6 +327,7 @@ footer{
     .title{
         margin-left: 20px;
         font-size: 30px;
+        margin-top: 20px;
         line-height: 36px;
     }
     .subtitle{
@@ -341,7 +342,7 @@ footer{
         font-size: 14px;
     }
     .author{
-        margin-top: 100px;
+        margin-top: 140px;
         margin-left: 20px;
         right: 0;
         width: 270px;
