@@ -58,10 +58,6 @@ body {
     margin-top: 20px;
 }
 
-.promo .promo__button-mobile{
-    display: none;
-}
-
 
 .button{
     display: flex;
@@ -221,8 +217,8 @@ footer{
         background-repeat: no-repeat;
         background-position: center center;
         width: 100%;
-        padding-top: 70px;
-        height: 765px;
+        padding-top: 20px;
+        height: 955px;
         position: relative;
     }
     .promo__academy{
@@ -249,9 +245,12 @@ footer{
     .subtitle br{
         display: none;
     }
-    /* .video{
-        display: none;
-    } */
+    .video{
+        margin-left: 30px;
+    }
+    .video__title{
+        margin-left: 30px;
+    }
     .promo .promo__button{
         margin-left: 30px;
         height: 60px;
@@ -260,10 +259,10 @@ footer{
         margin-top: 40px;
     }
     .author{
-        display: none;
-        left: 40px;
-        right: auto;
-        top: 110%;
+        display: block;
+        margin-left: 60px;
+        width: 300px;
+        position: relative;
     }
     .line{
         display: none;
@@ -313,14 +312,14 @@ footer{
 
 @media (max-width: 576px) {
     .video__title{
-        margin-top: 120px;
+        margin-top: 40px;
         margin-left: 20px;
     }
     .video{
         display: block;
-        width: 90%;
-        margin: 0 auto;
-        height: 200px;
+        width: 60%;
+        height: 120px;
+        margin-left: 20px;
     }
     .promo__academy{
         margin-left: 10px;
@@ -335,19 +334,17 @@ footer{
         font-size: 14px;
     }
     .promo .promo__button{
-        display: none;
-    }
-    .promo .promo__button-mobile{
         display: flex;
         margin-left: 20px;
-        height: 40px;
-        width: 140px;
+        height: 50px;
+        width: 160px;
         font-size: 14px;
     }
     .author{
-        left: 0;
-        top: 130%;
-        display: none;
+        margin-top: 100px;
+        margin-left: 20px;
+        right: 0;
+        width: 270px;
     }
     .author__block{
         padding: 15px;
