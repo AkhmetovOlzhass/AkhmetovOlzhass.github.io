@@ -313,37 +313,37 @@ footer{
 @media (max-width: 576px) {
     .video__title{
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 5px;
     }
     .video{
         display: block;
-        width: 240px;
-        height: 140px;
-        margin-left: 20px;
+        width: 200px;
+        height: 110px;
+        margin-left: 5px;
     }
     .promo__academy{
-        margin-left: 10px;
+        margin-left: 0;
     }
     .title{
-        margin-left: 20px;
+        margin-left: 5px;
         font-size: 30px;
         margin-top: 20px;
         line-height: 36px;
     }
     .subtitle{
-        margin-left: 20px;
+        margin-left: 5px;
         font-size: 14px;
     }
     .promo .promo__button{
         display: flex;
-        margin-left: 20px;
+        margin-left: 5px;
         height: 50px;
         width: 160px;
         font-size: 14px;
     }
     .author{
         margin-top: 140px;
-        margin-left: 20px;
+        margin-left: 5px;
         right: 0;
         width: 270px;
     }
