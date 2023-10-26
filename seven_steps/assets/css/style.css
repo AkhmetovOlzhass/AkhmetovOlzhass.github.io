@@ -72,6 +72,8 @@ body {
     height: 72px;
     background-image: linear-gradient(-30.0deg, #ff9c00 -38%, #ffc85f 139%);
     border-radius: 15px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .line{
@@ -178,6 +180,26 @@ footer{
     margin-top: 20px;
 }
 
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+.flare{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg);
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    animation: flareAnimation 2s infinite linear;
+}
 
 @media (max-width: 1200px) {
     .promo{
