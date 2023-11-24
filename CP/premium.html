@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>CP</title>
 </head>
@@ -48,7 +47,7 @@
             </div>
         </div>
     </div>
-    <header>
+    <header class="premium-header">
         <div class="container">
             <div class="wrapper">
                 <div class="searching">
@@ -110,236 +109,95 @@
         </div>
     </header>
     <main>
-        <div class="splide" id="promo-slider">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide" data-splide-interval="10000"><img src="img/promo/promo-img1.png" alt="promo img"></li>
-                    <li class="splide__slide" data-splide-interval="10000"><img src="img/promo/promo-img1.png" alt="promo img"></li>
-                    <li class="splide__slide" data-splide-interval="10000"><img src="img/promo/promo-img1.png" alt="promo img"></li>
-                    <li class="splide__slide" data-splide-interval="10000"><img src="img/promo/promo-img1.png" alt="promo img"></li>
-                    <li class="splide__slide" data-splide-interval="10000"><img src="img/promo/promo-img1.png" alt="promo img"></li>
-                </ul>
-          </div>
-        </div>
-
-        <section class="products">
-            <div class="container">
-                <h2 class="title">Популярные товары</h2>
-                <div class="row">
-                    <div class="col-md-3 products__wrapper">
-                        <div class="splide splide-products">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="./single-product.html">
-                            <p>Артикул товара ХХХХХХХ</p>
-                            <p class="products__wrapper-title">Horizon 50 <span>$2,920.00</span></p>
-                            <p>
-                                Заказать
-                                <img src="img/icons/arrow-r.svg" alt="arrow">
-                            </p>
-                        </a>
-                    </div>
-                    <div class="col-md-3 products__wrapper">
-                        <div class="splide splide-products">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="./single-product.html">
-                            <p>Артикул товара ХХХХХХХ</p>
-                            <p class="products__wrapper-title">Horizon 50 <span>$2,920.00</span></p>
-                            <p>
-                                Заказать
-                                <img src="img/icons/arrow-r.svg" alt="arrow">
-                            </p>
-                        </a>
-                    </div>
-                    <div class="col-md-3 products__wrapper">
-                        <div class="splide splide-products">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="./single-product.html">
-                            <p>Артикул товара ХХХХХХХ</p>
-                            <p class="products__wrapper-title">Horizon 50 <span>$2,920.00</span></p>
-                            <p>
-                                Заказать
-                                <img src="img/icons/arrow-r.svg" alt="arrow">
-                            </p>
-                        </a>
-                    </div>
-                    <div class="col-md-3 products__wrapper">
-                        <div class="splide splide-products">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                    <li class="splide__slide"><img src="img/products/products-img1.png" alt="promo img"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="./single-product.html">
-                            <p>Артикул товара ХХХХХХХ</p>
-                            <p class="products__wrapper-title">Horizon 50 <span>$2,920.00</span></p>
-                            <p>
-                                Заказать
-                                <img src="img/icons/arrow-r.svg" alt="arrow">
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <section class="premium-line">
+            <img src="img/premium/premium-gray.png" alt="gray">
+            <h2 class="premium-line__title title">Ваш Premium не активен</h2>
         </section>
 
-        <section class="categories">
+        <section class="premium">
             <div class="container">
-                <h2 class="title">Популярные категории</h2>
-                <div class="row">
-                    <div class="col-md-3 categories__wrapper">
-                        <a href="#">
-                            <img src="img/categories/categories-img1.png" alt="categories img">
-                            <p class="categories__wrapper-title">Осенняя подборка одежды</p>
-                        </a>
-                    </div>
-                    <div class="col-md-3 categories__wrapper">
-                        <a href="#">
-                            <img src="img/categories/categories-img2.png" alt="categories img">
-                            <p class="categories__wrapper-title">Аксессуары</p>
-                        </a>
-                    </div>
-                    <div class="col-md-3 categories__wrapper">
-                        <a href="#">
-                            <img src="img/categories/categories-img2.png" alt="categories img">
-                            <p class="categories__wrapper-title">Аксессуары</p>
-                        </a>
-                    </div>
-                    <div class="col-md-3 categories__wrapper">
-                        <a href="#">
-                            <img src="img/categories/categories-img2.png" alt="categories img">
-                            <p class="categories__wrapper-title">Аксессуары</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="most-popular">
-            <div class="container">
+                <h2 class="title">Премиум</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="splide" id="most-popular-slider">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide" data-splide-interval="10000"><img src="img/most-popular/most-popular1.png" alt="promo img"></li>
-                                    <li class="splide__slide" data-splide-interval="10000"><img src="img/most-popular/most-popular1.png" alt="promo img"></li>
-                                    <li class="splide__slide" data-splide-interval="10000"><img src="img/most-popular/most-popular1.png" alt="promo img"></li>
-                                </ul>
-                          </div>
+                        <div class="premium-money">
+                            <div class="premium-money__line premium-red">
+                                <div class="premium-red-active premium-active" style="width: 70%;"></div>
+                                <span>300$ / 500$</span>
+                            </div>
+                            <div class="premium-money__line premium-orange">
+                                <div class="premium-orange-active premium-active" style="width: 60%;"></div>
+                                <span>300$ / 1000$</span>
+                            </div>
+                            <div class="premium-money__line premium-yellow">
+                                <div class="premium-yellow-active premium-active" style="width: 50%;"></div>
+                                <span>300$ / 1500$</span>
+                            </div>
+                            <div class="premium-money__line premium-green">
+                                <div class="premium-green-active premium-active" style="width: 40%;"></div>
+                                <span>300$ / 2000$</span>
+                            </div>
+                            <div class="premium-money__line premium-cyan">
+                                <div class="premium-cyan-active premium-active" style="width: 30%;"></div>
+                                <span>300$ / 3000$</span>
+                            </div>
+                            <div class="premium-money__line premium-blue">
+                                <div class="premium-blue-active premium-active" style="width: 20%;"></div>
+                                <span>300$ / 4000$</span>
+                            </div>
+                            <div class="premium-money__line premium-purple">
+                                <div class="premium-purple-active premium-active" style="width: 10%;"></div>
+                                <span>300$ / 5000$</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="most-popular__content">
-                            <p class="purple">Самый популярный товар недели</p>
-                            <h2 class="most-popular__content-title">Horizon 50<span>$2,920.00</span></h2>
-                            <p class="most-popular__content-descr">The Horizon 50 trolley case exudes understated elegance in Monogram Eclipse canvas with black-leather corners. Equipped with four double-wheels and a wide external cane, it’s remarkably comfortable to roll. Ultra-light, it’s the perfect size for carry-on luggage. The well-designed interior includes elastic straps and divider with pocket to keep things organized.</p>
+                        <div class="summary">
+                            <h3 class="summary__title title">Сводка</h3>
+                            <p class="summary__subtitle red">Как работает Premium?</p>
+                            <p class="summary__descr">The Horizon 50 trolley case exudes understated elegance in Monogram Eclipse canvas with black-leather corners. Equipped with four double-wheels and a wide external cane, it’s remarkably comfortable to roll. Ultra-light, it’s the perfect size for carry-on luggage. The well-designed interior includes elastic straps and divider with pocket to keep things organized.</p>
+                            <p class="summary__subtitle yellow">Уровни Premium</p>
                             <ul>
-                                <li>Monogram Eclipse coated canvas</li>
-                                <li>Cowhide-leather trim</li>
-                                <li>Textile lining</li>
-                                <li>Aluminum hardware</li>
-                                <li>Cabin size</li>
-                                <li>Large external cane</li>
-                                <li>Flat-bottomed interior</li>
+                                <li>1 Уровень - 500$</li>
+                                <li>2 Уровень - 1000$</li>
+                                <li>3 Уровень - 1500$</li>
+                                <li>4 Уровень - 2000$</li>
+                                <li>5 Уровень - 3000$</li>
+                                <li>6 Уровень - 4000$</li>
+                                <li>7 Уровень - 5000$</li>
                             </ul>
-                            <a href="#" class="most-popular__content-btn">
-                                Заказать
-                                <img src="img/icons/arrow-r-w.svg" alt="arrow">
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="examples">
             <div class="container">
-                <h2 class="title">Популярные категории</h2>
+                <h2 class="title">Примеры фирменного значка</h2>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="reviews__wrapper">
-                            <p class="reviews__wrapper-title">Ник нейм пользователя</p>
-                            <div class="reviews__wrapper-stars">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-empty.svg" alt="star">
-                            </div>
-                            <p class="reviews__wrapper-descr">The Horizon 50 trolley case exudes understated elegance in Monogram Eclipse canvas with black-leather corners. Equipped with four double-wheels and a wide external cane, it’s remarkably comfortable to roll. Ultra-light, it’s the perfect size for carry-on luggage.</p>
+                        <div class="examples__img">
+                            <img src="img/examples/examples-img3.png" alt="example img">
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="reviews__wrapper">
-                            <p class="reviews__wrapper-title">Ник нейм пользователя</p>
-                            <div class="reviews__wrapper-stars">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-empty.svg" alt="star">
-                            </div>
-                            <p class="reviews__wrapper-descr">The Horizon 50 trolley case exudes understated elegance in Monogram Eclipse canvas with black-leather corners. Equipped with four double-wheels and a wide external cane, it’s remarkably comfortable to roll. Ultra-light, it’s the perfect size for carry-on luggage.</p>
+                        <div class="examples__img">
+                            <img src="img/examples/examples-img1.png" alt="example img">
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="reviews__wrapper">
-                            <p class="reviews__wrapper-title">Ник нейм пользователя</p>
-                            <div class="reviews__wrapper-stars">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-empty.svg" alt="star">
-                            </div>
-                            <p class="reviews__wrapper-descr">The Horizon 50 trolley case exudes understated elegance in Monogram Eclipse canvas with black-leather corners. Equipped with four double-wheels and a wide external cane, it’s remarkably comfortable to roll. Ultra-light, it’s the perfect size for carry-on luggage.</p>
+                        <div class="examples__img">
+                            <img src="img/examples/examples-img2.png" alt="example img">
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="reviews__wrapper">
-                            <p class="reviews__wrapper-title">Ник нейм пользователя</p>
-                            <div class="reviews__wrapper-stars">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-full.svg" alt="star">
-                                <img src="img/icons/star-empty.svg" alt="star">
-                            </div>
-                            <p class="reviews__wrapper-descr">The Horizon 50 trolley case exudes understated elegance in Monogram Eclipse canvas with black-leather corners. Equipped with four double-wheels and a wide external cane, it’s remarkably comfortable to roll. Ultra-light, it’s the perfect size for carry-on luggage.</p>
+                        <div class="examples__img">
+                            <img src="img/most-popular/most-popular1.png" alt="example img">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="discount">
-            <h2 class="discount__title">Участвуйте в нашей системе лояльности & получайте персональные скидки</h2>
-        </section>
-
     </main>
     <footer>
         <div class="footer__wrapper">
@@ -405,8 +263,6 @@
         </div>
     </footer>
 
-
-    <script src="js/splide.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
