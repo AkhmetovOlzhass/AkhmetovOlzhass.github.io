@@ -138,6 +138,11 @@ nav li a:hover{
     fill: var(--font-color);
 }
 
+#promo-slider .splide__slide img{
+    width: 100%;
+    height: 550px;
+}
+
 .splide__slide img{
     width: 100%;
 }
