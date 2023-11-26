@@ -928,6 +928,10 @@ footer{
         width: 24px;
         height: 24px;
     }
+    .menu__mobile-wrapper p{
+        width: 24px;
+        height: 24px;
+    }
     .menu__mobile-wrapper svg{
         width: 100%;
         height: 100%;
