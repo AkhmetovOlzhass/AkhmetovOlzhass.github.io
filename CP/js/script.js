@@ -37,14 +37,39 @@ const menuOverlay = document.querySelector('.overlay');
 
 menuTrigger.addEventListener('click', () => {
     menuBlock.classList.add('active');
+    document.querySelector('body').style.overflow = "hidden";
 })
 
 menuClose.addEventListener('click', () => {
     menuBlock.classList.remove('active');
+    document.querySelector('body').style.overflow = "auto";
 })
 
 menuOverlay.addEventListener('click', () => {
     menuBlock.classList.remove('active');
+    document.querySelector('body').style.overflow = "auto";
+})
+
+//menu mobile
+
+const menuCatalogBtn = document.querySelector('.menu-catalog');
+const menuCatalogBlock = document.querySelector('.catalog__mobile');
+const menuCatalogClose = document.querySelector('.catalog__mobile .menu__close');
+const menuCatalogOverlay = document.querySelector('.catalog__mobile .overlay');
+
+menuCatalogBtn.addEventListener('click', () => {
+    menuCatalogBlock.classList.add('active');
+    document.querySelector('body').style.overflow = "hidden";
+})
+
+menuCatalogClose.addEventListener('click', () => {
+    menuCatalogBlock.classList.remove('active');
+    document.querySelector('body').style.overflow = "auto";
+})
+
+menuCatalogOverlay.addEventListener('click', () => {
+    menuCatalogBlock.classList.remove('active');
+    document.querySelector('body').style.overflow = "auto";
 })
 
 //cart add
