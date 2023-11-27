@@ -264,3 +264,24 @@ if(premiumLines.length > 0){
         premiumLineText.innerHTML = `Ваш Premium ${level} уровня`;
     }
 }
+
+//search
+
+const searchForm = document.querySelector('.search-btn-pc');
+const searchInput = document.querySelector('.search-text-pc');
+
+const searchFormMobile = document.querySelector('.search-btn-mobile');
+const searchInputMobile = document.querySelector('.search-text-mobile');
+
+function searchActive(input, form){
+    input.onfocus = function(){
+        form.classList.add('active');
+    }
+    
+    input.onblur = function(){
+        form.classList.remove('active');
+    }
+}
+
+searchActive(searchInput, searchForm);
+searchActive(searchInputMobile, searchFormMobile);
