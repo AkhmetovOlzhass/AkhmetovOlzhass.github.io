@@ -1,0 +1,18 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 16">
+<rect id="Rectangle 27" y="0.0644531" width="20" height="20" rx="8" fill="#0066FF" fill-opacity="0.1"/>
+<g id="Group 17">
+<rect id="Rectangle 31" x="2" y="4.06445" width="7.5" height="12" rx="2.4" fill="#CCE0FF"/>
+<rect id="Rectangle 32" x="10.5" y="4.06445" width="8" height="12" rx="2.4" fill="#CCE0FF"/>
+<circle id="Ellipse 135" cx="5.625" cy="8.18945" r="2.5" fill="#0066FF" fill-opacity="0.24"/>
+<circle id="Ellipse 136" cx="14.375" cy="8.18945" r="2.5" fill="#0066FF" fill-opacity="0.24"/>
+<rect id="Rectangle 37" width="5" height="0.5" rx="0.25" transform="matrix(1 0 0 -1 10.5 12.5645)" fill="#0066FF" fill-opacity="0.31"/>
+<rect id="Rectangle 38" x="4" y="12.0645" width="5" height="0.5" rx="0.25" fill="#0066FF" fill-opacity="0.31"/>
+<rect id="Rectangle 34" x="5.5" y="3.06445" width="9" height="14" rx="2.4" fill="#0066FF"/>
+<circle id="Ellipse 134" cx="10" cy="6.93945" r="2.5" fill="#CCE0FF" fill-opacity="0.53"/>
+<rect id="Rectangle 35" x="7.5" y="10.0645" width="5" height="0.5" rx="0.25" fill="#CCE0FF"/>
+<rect id="Rectangle 36" x="7.5" y="11.0645" width="5" height="0.5" rx="0.25" fill="#CCE0FF"/>
+<path id="Star 1" d="M10 5.06445L10.551 6.181L11.7832 6.36005L10.8916 7.22916L11.1021 8.45636L10 7.87695L8.8979 8.45636L9.10838 7.22916L8.21677 6.36005L9.44895 6.181L10 5.06445Z" fill="#CCE0FF"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper__logo">
+                    <img src="../../img/icons/internet.svg" alt="internet">
+                </div>
+                <h2 class="wrapper__title">
+                    Create an Account
+                </h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="wrapper__block">
+                                <div class="wrapper__block-text">
+                                    <p class="wrapper__block-title">Choose Your Invoicing Choise</p>
+                                    <p class="wrapper__block-subtitle">Select Individual Plans or Opt for Our Bundle Offers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapper__block">
+                                <label class="wrapper__block-switch">
+                                    <input id='fluency' type="checkbox" onclick="checkSwitch()">
+                                    <span class="wrapper__block-switch-round"></span>
+                                  </label>
+                                <div class="wrapper__block-text">
+                                    <p class="wrapper__block-title">Individual Invoicing</p>
+                                    <p class="wrapper__block-subtitle">Turn on to buy Business Invoicing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 switch-on">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="name">Full Name<span>*</span></label>
+                                            <input id="name" placeholder="Full Name" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="vat">VAT Number<span>*</span></label>
+                                            <input id="vat" placeholder="VAT Number" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="company">Company name<span>*</span></label>
+                                            <input id="company" placeholder="Company name" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="address">Address<span>*</span></label>
+                                            <input id="address" placeholder="Address" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="town">Town/City<span>*</span></label>
+                                            <input id="town" placeholder="Town/City" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="state">State/County<span>*</span></label>
+                                            <input id="state" placeholder="State/County" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="postcode">Postcode<span>*</span></label>
+                                            <input id="postcode" placeholder="Postcode" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input wrapper__block-select">
+                                            <label for="country">Country<span>*</span></label>
+                                            <select id="country" name="country">
+                                                <option disabled selected>Country enter</option>
+                                                <option value="USA">USA</option>
+                                                <option value="France">France</option>
+                                                <option value="Italy">Italy</option>
+                                                <option value="Canada">Canada</option>
+                                                <option value="Mexico">Mexico</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 switch-off">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="firstName">First Name<span>*</span></label>
+                                            <input id="firstName" placeholder="First Name" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="lastName">Last Name<span>*</span></label>
+                                            <input id="lastName" placeholder="Last Name" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="username">Username<span>*</span></label>
+                                            <input id="username" placeholder="Username" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="email">Email<span>*</span></label>
+                                            <input id="email" placeholder="Email" type="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="phone">Phone Number<span>*</span></label>
+                                            <input id="phone" placeholder="Phone Number" type="tel">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wrapper__block">
+                                        <div class="wrapper__block-input">
+                                            <label for="password">Password<span>*</span></label>
+                                            <input id="password" class="password" placeholder="Password" type="password">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                                <g clip-path="url(#clip0_23_2449)">
+                                                <path d="M5.99981 4.12402C4.68985 4.12402 3.62402 5.18985 3.62402 6.49981C3.62402 7.80978 4.68985 8.8756 5.99981 8.8756C7.30978 8.8756 8.3756 7.80978 8.3756 6.49981C8.3756 5.18985 7.30978 4.12402 5.99981 4.12402ZM5.99981 8.0756C5.13086 8.0756 4.42403 7.36876 4.42403 6.49981C4.42403 5.63086 5.13086 4.92403 5.99981 4.92403C6.86876 4.92403 7.5756 5.63086 7.5756 6.49981C7.5756 7.36876 6.86876 8.0756 5.99981 8.0756Z" fill="#131313"></path>
+                                                <path d="M6 2.5625C3.46503 2.5625 1.12498 4.04161 0.0386475 6.33087C-0.012915 6.43967 -0.012915 6.56584 0.0388425 6.67443C1.12869 8.96077 3.46854 10.4379 6 10.4379C8.53146 10.4379 10.8713 8.96076 11.9612 6.67443C12.0129 6.56583 12.0129 6.43966 11.9614 6.33087C10.875 4.0416 8.53497 2.5625 6 2.5625ZM6 9.63792C3.83945 9.63792 1.83748 8.41311 0.846465 6.50197C1.83455 4.58848 3.83632 3.3625 6 3.3625C8.16368 3.3625 10.1654 4.58848 11.1535 6.50197C10.1625 8.41311 8.16055 9.63792 6 9.63792Z" fill="#131313"></path>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_23_2449">
+                                                <rect width="12" height="12" fill="white" transform="translate(0 0.5)"></rect>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="wrapper__block-drop">
+                                <p class="wrapper__block-title">Summary Order</p>
+                                <img src="../../img/icons/arrow.svg" class="arrow" alt="arrow">
+                            </div>
+                            <div class="wrapper__block-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="wrapper__block-content-title">
+                                            <img src="../../img/icons/plan.svg" alt="plan">
+                                            <p>Bundledseo’s Advance Plan</p>
+                                        </div>
+                                        <div class="wrapper__block-content-value">
+                                            <p>$<span class="result">30</span></p>
+                                            <div class="wrapper__block-content-counter">
+                                                <span class="value">1</span>
+                                                <div class="wrapper__block-content-btns">
+                                                    <div class="plus">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                            <path d="M12.5 8.3999L6.5 3.5999L0.5 8.3999" stroke="#131313" stroke-linecap="round"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="minus">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                            <path d="M0.5 3.6001L6.5 8.4001L12.5 3.6001" stroke="#131313" stroke-linecap="round"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="wrapper__block-content-title">
+                                            <img src="../../img/icons/gramm.svg" alt="plan">
+                                            <p>Grammarly Individual Plan</p>
+                                        </div>
+                                        <div class="wrapper__block-content-value">
+                                            <p>$<span class="result">3</span></p>
+                                            <div class="wrapper__block-content-counter">
+                                                <span class="value">1</span>
+                                                <div class="wrapper__block-content-btns">
+                                                    <div class="plus">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                            <path d="M12.5 8.3999L6.5 3.5999L0.5 8.3999" stroke="#131313" stroke-linecap="round"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="minus">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                            <path d="M0.5 3.6001L6.5 8.4001L12.5 3.6001" stroke="#131313" stroke-linecap="round"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-block">
+                        <input id="highload0" class="checkbox-custom" name="highload0" type="checkbox">
+                        <label for="highload0" class="checkbox-custom-label">I have read and agree to Bundledseo's Terms and Conditions.</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="../create-account/member-login.html" class="form-btn full">
+                                Save
+                            </a>
+                        </div>
+                    </div>
+                    <p class="login">
+                        Already have an account?
+                        <a href="../create-account/member-login.html">Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
