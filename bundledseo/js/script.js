@@ -2,22 +2,32 @@ function activate(elements, trigger){
     trigger.forEach((elem, i) => {
         elem.addEventListener('click', ()=>{
             elements[i].classList.toggle('active');
+
         })
     })
 }
 
 function activateDrop(elements, trigger){
+    
     activate(elements, trigger);
-    let count = 1;
     trigger.forEach((el, i) => {
         el.addEventListener('click', () => {
-            el.querySelector('.arrow').style.transform = `rotate(${180 * count}deg)`;
-            count++;
-            if(count >2){
-                count = 1;
+            let counter = el.querySelector('.arrow').style.transform.substring(7, 10);
+            if(counter == '180'){
+                el.querySelector('.arrow').style.transform = `rotate(${0}deg)`;
+            } else{
+                el.querySelector('.arrow').style.transform = `rotate(${180}deg)`;
+            }
+           
+
+            if(elements[i].style.maxHeight){
+                elements[i].style.maxHeight = null;
+            } else{
+                elements[i].style.maxHeight = elements[i].scrollHeight + 'px';
             }
         })
     })
+
 }
 
 function counter(values, plus, minus, results){
@@ -62,11 +72,19 @@ function checkSwitch(){
 
 //dropdown
 
+//register
 const dropBtn = document.querySelectorAll('.wrapper__block-drop');
 const dropContent = document.querySelectorAll('.wrapper__block-content');
+//main page
+const dropDashboardBtn = document.querySelectorAll('.content__block.active .content__block-wrapper');
+const dropDashboardContent = document.querySelectorAll('.content__block.active .content__block-plans');
 
-const dropDashboardBtn = document.querySelectorAll('.content__block-wrapper');
-const dropDashboardContent = document.querySelectorAll('.content__block-plans');
+const dropInvoicesBtn = document.querySelectorAll('.invoices .content__block-wrapper');
+const dropInvoicesContent = document.querySelectorAll('.invoices .content__block-plans');
+
+//support
+const dropSupportBtn = document.querySelectorAll('.question__title');
+const dropSupportContent = document.querySelectorAll('.question__descr');
 
 //counter
 
@@ -90,5 +108,19 @@ try{
 
 activateDrop(dropContent, dropBtn);
 activateDrop(dropDashboardContent, dropDashboardBtn);
+activateDrop(dropInvoicesContent, dropInvoicesBtn);
+activateDrop(dropSupportContent, dropSupportBtn);
 counter(counterValues,counterPlus, counterMinus, counterResults);
 
+const packageBlock = document.querySelector('.package');
+
+if(packageBlock){
+    dropBtn.forEach(el => {
+        el.addEventListener('click', () => {
+            if(packageBlock.classList.contains('active')){
+                packageBlock.style.maxHeight = packageBlock.scrollHeight + 50 + 'px';
+            }
+        })
+    })
+    
+}

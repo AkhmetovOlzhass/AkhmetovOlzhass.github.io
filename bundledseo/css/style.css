@@ -148,6 +148,13 @@ border: 1px solid #0066FF;
     color: #FFF;
 }
 
+#country{
+    background: url(../img/icons/arrow.svg) no-repeat right;
+    background-color: #fff;
+    background-position-x: calc(100% - 8px);
+    appearance: none;
+}
+
 
 .login{
     color: #131313;
@@ -240,17 +247,20 @@ input:checked + .wrapper__block-switch-round:before {
 }
 
 .wrapper__block-content{
-    height: 0;
-    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
     position: relative;
-    z-index: -1;
     transition: all .6s;
+    margin-bottom: 20px;
 }
 
 .wrapper__block-content.active{
-    height: 100px;
-    opacity: 1;
-    z-index: 1;
+    visibility: visible;
+}
+
+.plan-content.active{
+    margin-bottom: 45px;
 }
 
 .wrapper__block-content.active .wrapper__block-plan{
@@ -340,9 +350,6 @@ input:checked + .wrapper__block-switch-round:before {
     opacity: 1;
 }
 
-.plan-content.active{
-    height: 280px;
-}
 
 .plan-content .col-md-12{
     display: flex;
@@ -399,6 +406,7 @@ input:checked + .wrapper__block-switch-round:before {
 
 .individual-content.active{
     height: 400px;
+    margin-bottom: 20px;
 }
 
 .individual-content .wrapper__block-plan-subtitle{
@@ -413,6 +421,7 @@ input:checked + .wrapper__block-switch-round:before {
 
 .payment-content.active{
     height: 100px;
+    margin-bottom: 0;
 }
 
 .payment-content .wrapper__block-plan{
@@ -543,11 +552,13 @@ input:checked + .wrapper__block-switch-round:before {
     padding: 20px;
 }
 
+
 .content__block-inforamtion{
     display: flex;
+    justify-content: space-between;
+    padding-right: 110px;
 }
 .content__block-info{
-    margin-right: 10%;
     font-size: 12px;
     color: #BBC0C8;
     font-weight: 400;
@@ -604,6 +615,8 @@ input:checked + .wrapper__block-switch-round:before {
 .content__block-plan-wrapper{
     display: flex;
 }
+
+
 .content__block-plan-btn{
     border-radius: 60px;
     border: 1px solid #06F;
@@ -614,6 +627,12 @@ input:checked + .wrapper__block-switch-round:before {
     font-size: 8px;
     font-weight: 600;
     margin-right: 12px;
+    color: #06F;
+}
+
+.content__block-plan-btn.black{
+    border: 1px solid #131313;
+    color: #131313;
 }
 
 .content__block-plan-btn.full{
@@ -639,15 +658,123 @@ input:checked + .wrapper__block-switch-round:before {
 }
 
 .content__block-plans{
-    height: 0;
-    display: none;
+    max-height: 0;
+    transition: all .6s;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .content__block-plans.active{
-    height: auto;
-    display: block;
+    visibility: visible;
+    margin-bottom: 20px;
 }
 
 .arrow{
     transition: all .3s;
+}
+
+.content__block .content__block-inforamtion, .content__block.active .content__block-inforamtion.block{
+    display: none;
+}
+
+.content__block .content__block-inforamtion.block, .content__block.active .content__block-inforamtion{
+    display: flex;
+}
+
+.content__block .arrow, .content__block.active .block{
+    display: none;
+}
+
+.content__block.active .arrow, .content__block .block{
+    display: flex;
+}
+
+.invoices{
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+
+.invoices table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; 
+}
+
+.invoices table tr:first-child{
+    border-bottom: 1px solid #BBC0C8;
+
+}
+
+.invoices table th{
+    text-align: left;
+    color: #BBC0C8;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+
+.invoices table td{
+    text-align: left;
+    color: #131313;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 12px;
+}
+
+/* support */
+
+.support__block{
+    margin-right: 38px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #BBC0C8;
+    background: #FFF;
+    padding: 10px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.support__block-title{
+    color: #131313;
+    font-weight: 600;
+    font-size: 20px;
+}
+.support__block-subtitle{
+    color: #BBC0C8;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.questions{
+    margin-top: 40px;
+}
+
+.question{
+    margin-top: 20px;
+}
+
+.question__title{
+    color: #BBC0C8;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question__descr{
+    color: #131313;
+    font-size: 16px;
+    margin-top: 12px;
+    max-height: 0;
+    visibility: hidden;
+    transition: all .6s;
+    overflow: hidden;
+}
+
+.question__descr.active{
+    visibility: visible;
 }
