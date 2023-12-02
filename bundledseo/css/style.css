@@ -531,6 +531,7 @@ input:checked + .wrapper__block-switch-round:before {
 
 .content{
     padding-top: 50px;
+    padding-bottom: 125px;
 }
 
 .content__title{
@@ -542,6 +543,12 @@ input:checked + .wrapper__block-switch-round:before {
     font-size: 16px;
     color: #131313;
     font-weight: 400;
+}
+
+.content__subtitle span{
+    color: #06F;
+    font-weight: 600;
+
 }
 
 .content__block{
@@ -691,7 +698,6 @@ input:checked + .wrapper__block-switch-round:before {
 
 .invoices{
     margin-top: 80px;
-    padding-bottom: 40px;
 }
 
 .invoices table{
@@ -777,4 +783,238 @@ input:checked + .wrapper__block-switch-round:before {
 
 .question__descr.active{
     visibility: visible;
+}
+
+/* plans */
+
+.plans__block{
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #BBC0C8;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.plans__block-title{
+    color: #06F;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.plans__block-price{
+    color: #BBC0C8;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.plans__block-price span{
+    color: #06F;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.plans__block-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    border: 1px solid #06F;
+    padding: 12px 0;
+    color: #06F;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.plans__block ul{
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.plans__block li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #131313;
+    font-size: 16px;
+}
+
+.plans__block li img{
+    margin-right: 5px;
+}
+
+.plans__block-view{
+    color: #BBC0C8;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plans .row{
+    width: auto;
+    margin: 0;
+}
+
+.plans .col-md-3{
+    padding-right: 12px;
+    padding-left: 0;
+}
+
+.plans__block-img{
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+.plans__block-img img{
+    height: 100%;
+}
+
+/* summary */
+
+.summary__block{
+    border-radius: 12px;
+    border: 1px solid #BBC0C8;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.summary__block-title{
+    color: #131313;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.summary__block-title img{
+    cursor: pointer;
+}
+
+.summary__block-value{
+    color: #131313;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.summary__block-value-gray{
+    color: #BBC0C8;
+    font-size: 12px;
+
+}
+
+.summery__block-wrapper{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summery__block-counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    color: #131313;
+    font-size: 24px;
+}
+.summary__block-counter-btn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.summery__block-result{
+    color: #131313;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.summary hr{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #BBC0C8;
+}
+
+.summary__values{
+    color: #BBC0C8;
+    font-size: 16px;
+}
+
+.summary__values span{
+    color: #131313;
+}
+
+.summary__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background: #06F;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 0;
+    width: 224px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+/* blog */
+
+.blog__block{
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #BBC0C8;
+    margin-top: 40px;
+}
+
+.blog__block-title{
+    color: #131313;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.blog__block-title span{
+    color: #FFF;
+    font-size: 8px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #06F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+}
+
+.blog__block-descr{
+    color: #131313;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.blog__block-hashtags{
+    color: #BBC0C8;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.blog__block-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.blog__block-link svg{
+    margin-left: 8px;
 }

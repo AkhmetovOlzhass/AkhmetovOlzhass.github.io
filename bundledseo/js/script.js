@@ -33,6 +33,8 @@ function activateDrop(elements, trigger){
 function counter(values, plus, minus, results){
     plus.forEach((el, i) => {
         let res = results[i].innerHTML;
+        values[i].innerHTML = values[i].innerHTML - 0;
+        results[i].innerHTML = values[i].innerHTML * res;
         el.addEventListener('click', () => {
             values[i].innerHTML = values[i].innerHTML - 0 + 1;
             results[i].innerHTML = values[i].innerHTML * res;
@@ -40,6 +42,11 @@ function counter(values, plus, minus, results){
     });
     minus.forEach((el, i) => {
         let res = results[i].innerHTML;
+        
+        if(values[i].innerHTML > 1){
+            values[i].innerHTML -= 1;
+            results[i].innerHTML -= res;
+        }
         el.addEventListener('click', () => {
             if(values[i].innerHTML > 1){
                 values[i].innerHTML -= 1;
@@ -47,6 +54,57 @@ function counter(values, plus, minus, results){
             }
         });
     });
+}
+
+function counterSummary(values, plus, minus, results){
+    counter(values, plus, minus, results);
+    let totalItems = 0;
+    values.forEach(el => {
+        totalItems += el.innerHTML-0;
+    });
+
+    let subTotal = 0;
+    results.forEach(el => {
+        subTotal += el.innerHTML-0;
+    });
+
+    minus.forEach((el, i) => {
+        minus[i].querySelector('svg path').style.stroke = "#BBC0C8";
+        minus[i].querySelector('svg rect').style.stroke = "#BBC0C8";
+        el.addEventListener('click', () => {
+            if(values[i].innerHTML == 1){
+                minus[i].querySelector('svg path').style.stroke = "#BBC0C8";
+                minus[i].querySelector('svg rect').style.stroke = "#BBC0C8";
+            }
+            totalItems -= 1;
+
+            let subTotal = 0;
+            results.forEach(el => {
+                subTotal += el.innerHTML-0;
+            });     
+            document.querySelector('.total span').innerHTML = totalItems;
+            document.querySelector('.subtotal span').innerHTML = subTotal;
+            document.querySelector('.order-total span').innerHTML = subTotal;    
+        })
+    });
+    plus.forEach((el, i) => {
+        el.addEventListener('click', () => {
+            minus[i].querySelector('svg path').style.stroke = "#131313";
+            minus[i].querySelector('svg rect').style.stroke = "#131313";
+            totalItems += 1;
+
+            let subTotal = 0;
+            results.forEach(el => {
+                subTotal += el.innerHTML-0;
+            });   
+            document.querySelector('.total span').innerHTML = totalItems;  
+            document.querySelector('.subtotal span').innerHTML = subTotal;  
+            document.querySelector('.order-total span').innerHTML = subTotal;  
+        })
+    });
+    document.querySelector('.total span').innerHTML = totalItems;  
+    document.querySelector('.subtotal span').innerHTML = subTotal;  
+    document.querySelector('.order-total span').innerHTML = subTotal;  
 }
 
 function passwordVisible(input) {
@@ -93,6 +151,13 @@ const counterMinus = document.querySelectorAll('.minus');
 const counterPlus = document.querySelectorAll('.plus');
 const counterResults = document.querySelectorAll('.result');
 
+//sumamry counter
+
+const summaryCounterValues = document.querySelectorAll('.summery__block-counter span');
+const summaryCounterMinus = document.querySelectorAll('.summary-minus');
+const summaryCounterPlus = document.querySelectorAll('.summary-plus');
+const summaryCounterResults = document.querySelectorAll('.summery__block-result span');
+
 //passwordVisible
 const passwordInput = document.querySelectorAll('.password');
 const passwordTrigger = document.querySelectorAll('.wrapper__block-input svg');
@@ -111,6 +176,7 @@ activateDrop(dropDashboardContent, dropDashboardBtn);
 activateDrop(dropInvoicesContent, dropInvoicesBtn);
 activateDrop(dropSupportContent, dropSupportBtn);
 counter(counterValues,counterPlus, counterMinus, counterResults);
+counterSummary(summaryCounterValues,summaryCounterPlus, summaryCounterMinus, summaryCounterResults);
 
 const packageBlock = document.querySelector('.package');
 
