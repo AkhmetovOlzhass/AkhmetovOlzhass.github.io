@@ -102,9 +102,13 @@ function counterSummary(values, plus, minus, results){
             document.querySelector('.order-total span').innerHTML = subTotal;  
         })
     });
-    document.querySelector('.total span').innerHTML = totalItems;  
-    document.querySelector('.subtotal span').innerHTML = subTotal;  
-    document.querySelector('.order-total span').innerHTML = subTotal;  
+    if(values.length != 0){
+        document.querySelector('.total span').innerHTML = totalItems;  
+        document.querySelector('.subtotal span').innerHTML = subTotal;  
+        document.querySelector('.order-total span').innerHTML = subTotal;  
+    }
+
+
 }
 
 function passwordVisible(input) {
