@@ -57,7 +57,6 @@ function counter(values, plus, minus, results){
 }
 
 function counterSummary(values, plus, minus, results){
-    counter(values, plus, minus, results);
     let totalItems = 0;
     values.forEach(el => {
         totalItems += el.innerHTML-0;
@@ -68,27 +67,54 @@ function counterSummary(values, plus, minus, results){
         subTotal += el.innerHTML-0;
     });
 
+    if(values.length != 0){
+        document.querySelector('.total span').innerHTML = totalItems;  
+        document.querySelector('.subtotal span').innerHTML = subTotal;  
+        document.querySelector('.order-total span').innerHTML = subTotal;  
+    }
+
     minus.forEach((el, i) => {
         minus[i].querySelector('svg path').style.stroke = "#BBC0C8";
         minus[i].querySelector('svg rect').style.stroke = "#BBC0C8";
+
+        let res = results[i].innerHTML;
+        
+        if(values[i].innerHTML > 1){
+            values[i].innerHTML -= 1;
+            results[i].innerHTML -= res;
+        }
         el.addEventListener('click', () => {
+            if(values[i].innerHTML > 1){
+                values[i].innerHTML -= 1;
+                results[i].innerHTML -= res;
+                
+                totalItems -= 1;
+
+                let subTotal = 0;
+                results.forEach(el => {
+                    subTotal += el.innerHTML-0;
+                });     
+                document.querySelector('.total span').innerHTML = totalItems;
+                document.querySelector('.subtotal span').innerHTML = subTotal;
+                document.querySelector('.order-total span').innerHTML = subTotal;    
+            }
+
             if(values[i].innerHTML == 1){
                 minus[i].querySelector('svg path').style.stroke = "#BBC0C8";
                 minus[i].querySelector('svg rect').style.stroke = "#BBC0C8";
-            }
-            totalItems -= 1;
+            } 
 
-            let subTotal = 0;
-            results.forEach(el => {
-                subTotal += el.innerHTML-0;
-            });     
-            document.querySelector('.total span').innerHTML = totalItems;
-            document.querySelector('.subtotal span').innerHTML = subTotal;
-            document.querySelector('.order-total span').innerHTML = subTotal;    
         })
     });
     plus.forEach((el, i) => {
+        let res = results[i].innerHTML;
+        values[i].innerHTML = values[i].innerHTML - 0;
+        results[i].innerHTML = values[i].innerHTML * res;
+
         el.addEventListener('click', () => {
+            values[i].innerHTML = values[i].innerHTML - 0 + 1;
+            results[i].innerHTML = values[i].innerHTML * res;
+
             minus[i].querySelector('svg path').style.stroke = "#131313";
             minus[i].querySelector('svg rect').style.stroke = "#131313";
             totalItems += 1;
@@ -102,11 +128,6 @@ function counterSummary(values, plus, minus, results){
             document.querySelector('.order-total span').innerHTML = subTotal;  
         })
     });
-    if(values.length != 0){
-        document.querySelector('.total span').innerHTML = totalItems;  
-        document.querySelector('.subtotal span').innerHTML = subTotal;  
-        document.querySelector('.order-total span').innerHTML = subTotal;  
-    }
 
 
 }
@@ -132,6 +153,26 @@ function checkSwitch(){
     }
 }
 
+function modalSwitch(modal, trigger, close, overlay){
+    trigger.forEach((el, i) => {
+        el.addEventListener('click', () => {
+            modal[i].classList.add('active');
+            overlay.classList.add('active');
+        });
+        overlay.addEventListener('click', () => {
+            modal[i].classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+    close.forEach((el, i) => {
+        el.addEventListener('click', () => {
+            modal[i].classList.remove('active');
+            overlay.classList.remove('active');
+        })
+    });
+
+}
+
 //dropdown
 
 //register
@@ -148,6 +189,10 @@ const dropInvoicesContent = document.querySelectorAll('.invoices .content__block
 const dropSupportBtn = document.querySelectorAll('.question__title');
 const dropSupportContent = document.querySelectorAll('.question__descr');
 
+//archive
+const dropArchiveBtn = document.querySelectorAll('.archive__block-content-more');
+const dropArchiveContent = document.querySelectorAll('.archive .wrapper__block-plan-images');
+
 //counter
 
 const counterValues = document.querySelectorAll('.value');
@@ -161,6 +206,12 @@ const summaryCounterValues = document.querySelectorAll('.summery__block-counter 
 const summaryCounterMinus = document.querySelectorAll('.summary-minus');
 const summaryCounterPlus = document.querySelectorAll('.summary-plus');
 const summaryCounterResults = document.querySelectorAll('.summery__block-result span');
+
+//modal
+const modals = document.querySelectorAll('.modal');
+const overlay = document.querySelector('.modal-overlay');
+const triggers = document.querySelectorAll('.plans__block-view');
+const closeBtns = document.querySelectorAll('.modal-close');
 
 //passwordVisible
 const passwordInput = document.querySelectorAll('.password');
@@ -179,8 +230,10 @@ activateDrop(dropContent, dropBtn);
 activateDrop(dropDashboardContent, dropDashboardBtn);
 activateDrop(dropInvoicesContent, dropInvoicesBtn);
 activateDrop(dropSupportContent, dropSupportBtn);
+activateDrop(dropArchiveContent, dropArchiveBtn);
 counter(counterValues,counterPlus, counterMinus, counterResults);
 counterSummary(summaryCounterValues,summaryCounterPlus, summaryCounterMinus, summaryCounterResults);
+modalSwitch(modals, triggers, closeBtns, overlay);
 
 const packageBlock = document.querySelector('.package');
 
