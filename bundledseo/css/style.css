@@ -1364,3 +1364,238 @@ input:checked + .wrapper__block-switch-round:before {
 .archive__block-not-active .archive__block-content-title{
     cursor: auto;
 }
+
+@media(max-width: 992px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 768px){
+    .sidenav{
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 576px){
+    .wrapper{
+        width: 100%;
+        padding: 20px;
+    }
+    .wrapper__block-plan{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .plan-content .col-md-12{
+        display: block;
+        margin-top: 0;
+    }
+    .individual-content.active{
+        height: auto;
+    }
+    .sidenav{
+        margin-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .sidenav__menu a{
+        font-size: 12px;
+    }
+    .sidenav__contacts-links a{
+        margin-right: 5px;
+    }
+    .sidenav__settings-email{
+        display: block;
+        font-size: 8px;
+    }
+    .sidenav__settings-btn{
+        font-size: 10px;
+    }
+    .sidenav__settings-logout{
+        font-size: 12px;
+    }
+    .content__block-info{
+        font-size: 8px;
+        margin-right: 10px;
+    }
+    .content__block-inforamtion{
+        padding-right: 0;
+    }
+    .content__block-plan-wrapper{
+        display: block;
+    }
+    .content__block-plan-btn{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .invoices table td{
+        font-size: 8px;
+    }
+    .invoices table th{
+        font-size: 9px;
+    }
+    .support__block{
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .support__block-title{
+        font-size: 16px;
+    }
+    .support__block-subtitle{
+        font-size: 9px;
+    }
+    .content__title{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .content__subtitle{
+        font-size: 14px;
+    }
+    .question__title{
+        font-size: 12px;
+    }
+    .question__descr{
+        font-size: 9px;
+    }
+    .blog__block{
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .blog__block-title{
+        font-size: 12px;
+    }
+    .blog__block-descr{
+        font-size: 12px;
+    }
+    .blog__block-hashtags{
+        font-size: 9px;
+    }
+    .blog__block-link{
+        font-size: 12px;
+    }
+    .content{
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .content__block-title{
+        margin-top: 20px;
+    }
+    .plans__block{
+        padding: 10px;
+    }
+    .plans__block-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+    }
+    .plans__block-price{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .plans__block-price span{
+        font-size: 30px;
+    }
+    .plans__block-btn{
+        margin-bottom: 20px;
+        padding: 8px 0;
+        font-size: 12px;
+    }
+    .plans__block ul{
+        margin-bottom: 20px;
+    }
+    .plans__block li{
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    .plans__block-view{
+        font-size: 12px;
+    }
+    .plans__block-img{
+        margin-bottom: 20px;
+    }
+    .modal{
+        width: 90%;
+        overflow: scroll;
+        padding: 20px;
+    }
+    .modal__title{
+        font-size: 16px;
+    }
+    .modal__subtitle{
+        font-size: 12px;
+    }
+    .modal__descr{
+        font-size: 8px;
+    }
+    .modal th{
+        font-size: 8px;
+    }
+    .modal td{
+        font-size: 8px;
+        padding-top: 0;
+    }
+    .modal__price{
+        margin-top: 10px;
+    }
+    .modal__btn{
+        padding: 8px 0;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .modal__link{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .modal__btns{
+        margin-top: 10px;
+    }
+    .summary__block{
+        padding: 10px;
+    }
+    .summery__block-counter{
+        width: 40%;
+    }
+    .affilate__img img{
+        margin: 10px 0;
+    }
+    .plans .col-md-3{
+        padding-right: 0;
+    }
+    .archive__block-active, .archive__block-not-active{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .archive__block-img{
+        margin-right: 10px;
+    }
+    .archive__block-content-title{
+        font-size: 16px;
+    }
+    .archive__block-content-block{
+        font-size: 8px;
+    }
+    .archive__block-content-price span{
+        font-size: 12px;
+    }
+    .archive__block-content-date{
+        display: flex;
+        align-items: center;
+    }
+    .archive__block-content-more{
+        font-size: 10px;
+    }
+    .product__wrapper, .product__wrapper-btns{
+        display: block;
+        width: 90%;
+    }
+    .product__wrapper-btn{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .products.invoices{
+        margin-top: 20px;
+    }
+}
