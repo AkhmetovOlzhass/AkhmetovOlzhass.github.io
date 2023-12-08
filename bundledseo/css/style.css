@@ -1398,6 +1398,8 @@ input:checked + .wrapper__block-switch-round:before {
         margin-right: 0;
         padding-left: 5px;
         padding-right: 5px;
+        min-width: 130px;
+        max-width: 130px;
     }
     .sidenav__menu a{
         font-size: 12px;
@@ -1597,5 +1599,14 @@ input:checked + .wrapper__block-switch-round:before {
     }
     .products.invoices{
         margin-top: 20px;
+    }
+    .support__block img{
+        width: 30%;
+    }
+    .blog{
+        margin-top: 20px;
+    }
+    .summary__values{
+        margin-bottom: 10px;
     }
 }
