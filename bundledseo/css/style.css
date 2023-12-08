@@ -1418,8 +1418,11 @@ input:checked + .wrapper__block-switch-round:before {
         font-size: 12px;
     }
     .content__block-info{
-        font-size: 8px;
-        margin-right: 10px;
+        font-size: 7px;
+        margin-right: 5px;
+    }
+    .content__block{
+        padding: 10px;
     }
     .content__block-inforamtion{
         padding-right: 0;
@@ -1608,5 +1611,8 @@ input:checked + .wrapper__block-switch-round:before {
     }
     .summary__values{
         margin-bottom: 10px;
+    }
+    .invoices{
+        margin-top: 20px;
     }
 }
