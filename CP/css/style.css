@@ -18,7 +18,45 @@ header{
 body{
     background-color: #EDEDED;
 }
+.slick-dots li{
+    margin: 0 7px;
+}
+.slick-dots li button, .slick-dots li{
+    width: 20px;
+    height: 4px;
+    padding: 0;
+    transition: all .3s;
+}
+.slick-dots li button:before{
+    width: 100%;
+    height: 100%;
+    margin-left: 12px;
+    border-radius: 200px;
+    background: #EDEDED;
+    opacity: 1;
+    margin-left: 0;
+    color: transparent;
+}
+.slick-dots li.slick-active button, .slick-dots li.slick-active{
+    width: 40px;
+}
+.slick-dots li.slick-active button:before{
+    color: transparent;
+    background-color: #000;
+    width: 40px;
+}
+.slick-dots{
+    bottom: 5px;
+}
 
+#most-popular-slide{
+    width: 100%;
+}
+
+#most-popular-slide img{
+    width: 100%;
+    height: auto;
+}
 .title{
     font-size: 20px;
     font-weight: normal;
@@ -139,29 +177,33 @@ nav li a:hover{
     fill: var(--font-color);
 }
 
-.splide__slide img{
+
+.slick-prev{
+    left: 15px;
+}
+.slick-next{
+    right: 15px;
+}
+
+.slick-next,.slick-prev{
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+}
+
+.slick-next:before{
+    background: url(../img/icons/arrow-slide-r.svg) no-repeat 50%/cover;
+    color: transparent;
+    display: inline-block;
     width: 100%;
+    height: 100%;
 }
-
-#promo-slider .splide__pagination__page{
-    width: 20px;
-    height: 4px;
-    margin-left: 12px;
-    border-radius: 200px;
-    background: #EDEDED;
-    opacity: 1;
-}
-
-#promo-slider .splide__pagination__page.is-active{
-    background: var(--font-color);
-    width: 40px;
-    height: 4px;
-    transition: all .3s;
-    transform: none;
-}
-
-#most-popular-slider .splide__arrow{
-    background: transparent;
+.slick-prev:before{
+    background: url(../img/icons/arrow-slide-l.svg) no-repeat 50%/cover;
+    color: transparent;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .products{
@@ -170,17 +212,7 @@ nav li a:hover{
 
 .products__wrapper{
     transition: all .3s;
-}
-
-
-
-.products__wrapper .splide__arrow{
-    display: none;
-    background: transparent
-}
-
-.products__wrapper:hover .splide__arrow{
-    display: block;
+    cursor: pointer;
 }
 
 .products__wrapper p, .products__wrapper a{
@@ -203,6 +235,17 @@ nav li a:hover{
 
 .products__wrapper-img img{
     width: 100%;
+}
+
+.products__wrapper .slick-arrow{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.products__wrapper:hover .slick-arrow{
+    visibility: visible;
+    opacity: 1;
 }
 
 .categories{
@@ -955,9 +998,6 @@ footer{
     }
     .wrapper{
         height: 40px;
-    }
-    .splide__slide img{
-        height: 100%;
     }
     .searching, nav{
         display: none;
