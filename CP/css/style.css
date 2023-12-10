@@ -437,7 +437,7 @@ footer{
     left: -100%;
     width: 100%;
     height: 100vh;
-    z-index: 3;
+    z-index: 4;
     visibility: hidden;
     opacity: 0;
     transition: all .6s;
@@ -987,6 +987,238 @@ footer{
 .search-btn.active .search-img{
     display: none;
 }
+
+.delivery{
+    padding-top: 120px;
+}
+
+.delivery .row{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+.delivery p{
+    color: #1E1E1E;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.questions{
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.questions .title{
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    font-size: 12px;
+    color: #1E1E1E;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.question{
+    margin-bottom: 24px;
+}
+
+.question__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.question__title img{
+    transition: all .3s;
+}
+.question__descr{
+    font-size: 12px;
+    color: #1E1E1E;
+    font-weight: 400;
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.thanks{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 648px;
+    height: 191px;
+    background: #EDEDED;
+    z-index: 4;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.thanks.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.thanks__title{
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.thanks__subtitle{
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.thanks__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 auto;
+    border-radius: 100px;
+    background: #1E1E1E;
+    width: 167px;
+    padding: 4px 0;
+    color: #fff;
+}
+
+.authorization{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 648px;
+    background: #EDEDED;
+    z-index: 4;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.authorization.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.authorization__title{
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.authorization__subtitle{
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.authorization form{
+    width: 100%;
+}
+.authorization input{
+    width: 100%;
+    border-radius: 100px;
+    background: #D8D8D8;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 8px;
+}
+
+.authorization__btns{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.authorization__btns a{
+    display: inline-flex;
+    padding: 4px 40px;
+    border-radius: 100px;
+    color: #fff;
+    background: #1E1E1E;
+    text-decoration: none;
+    border: 1px solid #1E1E1E;
+}
+
+.authorization__btns a:last-child{
+    background: #EDEDED;
+    color: #1E1E1E;
+}
+
+.authorization p{
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.authorization p a{
+    color: #2196F3;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.reset{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 648px;
+    background: #EDEDED;
+    z-index: 4;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.reset.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.reset form{
+    width: 100%;
+}
+.reset input{
+    width: 100%;
+    border-radius: 100px;
+    background: #D8D8D8;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 8px;
+}
+
+.overlay-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .75;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.overlay-modal.active{
+    opacity: .75;
+    visibility: visible;
+}
 @media(max-width: 768px){
     header{
         background: none;
@@ -1121,5 +1353,14 @@ footer{
     }
     .search-btn input{
         padding-left: 36px;
+    }
+    .delivery, .questions{
+        padding-top: 0;
+    }
+    .thanks{
+        height:260px;
+    }
+    .authorization__btns{
+        width: 100%;
     }
 }
