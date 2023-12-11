@@ -170,7 +170,19 @@ function modalSwitch(modal, trigger, close, overlay){
             overlay.classList.remove('active');
         })
     });
+}
 
+function modalSwitch(modal, trigger, close){
+    trigger.forEach((el, i) => {
+        el.addEventListener('click', () => {
+            modal[i].classList.add('active');
+        });
+    });
+    close.forEach((el, i) => {
+        el.addEventListener('click', () => {
+            modal[i].classList.remove('active');
+        })
+    });
 }
 
 //dropdown
@@ -217,6 +229,12 @@ const closeBtns = document.querySelectorAll('.modal-close');
 const passwordInput = document.querySelectorAll('.password');
 const passwordTrigger = document.querySelectorAll('.wrapper__block-input svg');
 
+//burger-menu
+const burger =  document.querySelectorAll('.burger');
+const sideNav =  document.querySelectorAll('.sidenav');
+const sideNavClose =  document.querySelectorAll('.sidenav__close');
+
+
 try{
     passwordTrigger.forEach((el, i) => {
         el.addEventListener('click', () => {
@@ -224,7 +242,6 @@ try{
         });
     })
 }catch{}
-
 
 activateDrop(dropContent, dropBtn);
 activateDrop(dropDashboardContent, dropDashboardBtn);
@@ -234,6 +251,7 @@ activateDrop(dropArchiveContent, dropArchiveBtn);
 counter(counterValues,counterPlus, counterMinus, counterResults);
 counterSummary(summaryCounterValues,summaryCounterPlus, summaryCounterMinus, summaryCounterResults);
 modalSwitch(modals, triggers, closeBtns, overlay);
+modalSwitch(sideNav, burger, sideNavClose);
 
 const packageBlock = document.querySelector('.package');
 
