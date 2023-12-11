@@ -1003,6 +1003,9 @@ footer{
     font-size: 12px;
     font-weight: 400;
 }
+.delivery p span{
+    font-weight: 600;
+}
 
 .questions{
     padding-top: 120px;
@@ -1011,6 +1014,23 @@ footer{
 
 .questions .title{
     margin-bottom: 20px;
+}
+
+.questions input{
+    width: 100%;
+    border-radius: 100px;
+    background: #D8D8D8;
+    padding: 12px 20px;
+    border: none;
+    margin-bottom: 8px;
+}
+.questions form button{
+    border-radius: 100px;
+    background: #1E1E1E;
+    padding: 4px 40px;
+    color: #EDEDED;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .subtitle{
@@ -1201,6 +1221,32 @@ footer{
     margin-bottom: 8px;
 }
 
+.agreement p{
+    margin-bottom: 20px;
+}
+
+.agreement p span{
+    font-weight: 600;
+}
+
+.contacts{
+    padding: 120px 0 40px;
+}
+.contacts .subtitle{
+    margin: 20px 0;
+}
+.contacts a{
+    margin-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    color: #1E1E1E;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+.contacts a svg{
+    margin-right: 8px;
+}
 .overlay-modal{
     position: fixed;
     top: 0;
@@ -1354,7 +1400,7 @@ footer{
     .search-btn input{
         padding-left: 36px;
     }
-    .delivery, .questions{
+    .delivery, .questions, .agreement, .contacts{
         padding-top: 0;
     }
     .thanks{
