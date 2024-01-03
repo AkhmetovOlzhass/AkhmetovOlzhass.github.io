@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'sf';
+    src: url('../fonts/SF-Pro-Display-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sf';
+    src: url('../fonts/SF-Pro-Display-Bold.otf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'sf';
+    src: url('../fonts/SF-Pro-Display-Thin.otf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'batman';
+    src: url('../fonts/batmfa.ttf') format('truetype');
+}

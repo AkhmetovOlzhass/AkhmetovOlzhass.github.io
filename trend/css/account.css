@@ -1,0 +1,907 @@
+
+.main-wrapper{
+    display: flex;
+}
+
+.sidenav{
+    background: #000;
+    box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    min-height: 100vh;
+    width: 400px;
+    padding: 20px 0 0 60px;
+    position: relative;
+    margin-right: 24px;
+}
+
+.content{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+body{
+    background-color: #000;
+}
+
+.account__session{
+    color: #fff;
+    margin-top: 49px;
+
+}
+
+.account__session-title{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.account__session-circle{
+    width: 20px;
+    height: 20px;
+    background-color: #3BE7A8;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.account__session-timer{
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+.account__session-timer span{
+    font-size: 29px;
+    font-weight: 300;
+}
+
+nav{
+    margin-top: 50px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+nav a{
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    color: #595959;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+nav .active{
+    background: linear-gradient(116deg, #002399 10.49%, #512BBD 87.4%);
+    color: #fff;
+}
+nav .active svg{
+    fill: #fff;
+}
+nav svg{
+    margin-right: 10px;
+    fill: #595959;
+}
+
+
+.account-content{
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 10px -10px 10px 0px rgba(190, 190, 190, 0.25), -10px 10px 10px 0px rgba(190, 190, 190, 0.25);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    padding: 15px
+
+}
+
+.account-content__sidenav{
+    height: 100%;
+    background-color: #fff;
+    width: 25%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.account-content__main{
+    width: 75%;
+}
+
+.account-content__avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    background-color: #3BE7A8;
+    border-radius: 100%;
+    box-shadow: 0px 5px 10px 0px #3BE7A8;
+}
+
+.account-content__name{
+    margin-top: 20px;
+}
+
+.account-content__balance{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.account-content__balance span{
+    font-weight: 400;
+}
+
+.account-content-text{
+    text-align: left;
+}
+
+.account-content__button{
+    margin-top: 20px;
+    background:  #3BE7A8;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 56px;
+}
+
+.account-content__link{
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    color: #C3C3C3;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.account-content__link svg{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    fill: #C3C3C3;
+}
+
+.account-content__btns{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.account-content__active{
+    margin-top: 50px;
+}
+
+.account-content__active-card{
+    background: url(../img/account/card.png) 50%/cover no-repeat;
+    height: 151px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    margin-top: 20px;
+}
+
+.account-content__active-card img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.account-content__active-card-title{
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.batman-font{
+    font-family: "batman";
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.account-content__active-title{
+    font-size: 16px;
+}
+
+.account-content__active-title span{
+    font-weight: 600;
+}
+
+.account-content__active-graph{
+    width: 100%;
+    margin-top: 6px;
+}
+
+.account-content__active-graph img{
+    width: 100%;
+}
+
+.sidenav .button{
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    font-size: 16px;
+}
+
+.account-content__main{
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.account-content__main-title{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.account-content__main-subtitle{
+    font-size: 25px;
+    margin-top: 14px;
+}
+
+.credit-card{
+    background: url(../img/account/credit-card.png) 50%/cover no-repeat;
+    height: 280px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    box-shadow: 2px 3px 10px 0px #3BE2A4;
+    padding: 16px;
+}
+
+.credit-cards{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.account-content__main table{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.account-content__main table{
+    border-spacing: 30px;
+}
+
+.account-content__main table td{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account-content__main table td img{
+    margin-right: 15px;
+}
+
+.account-content__main th:first-child{
+    width: 50%;
+}
+.account-content__main td:first-child{
+    display: flex;
+    align-items: center;
+}
+.account-content__main th, .account-content__main td{
+    text-align: left;
+}
+
+.account-content__main .session-info{
+    height: 40px;
+    background: linear-gradient(116deg, #002399 10.49%, #512BBD 87.4%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    border: 1px solid #512BBD;
+}
+
+.warning{
+    font-size: 45px;
+    color: #C3C3C3;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 28px;
+}
+
+.accept-btn{
+    width: 300px;
+}
+
+.credit-card__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+.credit-card__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.credit-card__title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.credit-card__number{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.credit-card__date{
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.credit-card__date-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 11px;
+    gap: 10px;
+}
+
+.credit-card__wrapper-wall{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(4.099999904632568px);
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.credit-card__wrapper-close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.credit-card__content .active .credit-card__wrapper-wall{
+    visibility: visible;
+    opacity: 1;
+}
+
+.credit-cars__check{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    transition: all .5s;
+}
+
+.credit-card__wrapper-theme{
+    position: relative;
+}
+
+.credit-cars__check.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.credit-card__wrapper-line{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.account-content__main-items{
+    align-items: center;
+    margin-left: 10px;
+}
+
+.account-content__menu, .account-content__submenu{
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.account-content__submenu{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.account-content__menu-item, .account-content__submenu-item{
+    border-radius: 20px;
+    padding: 4px 8px;
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    color: #252222;
+    text-decoration: 0;
+    font-size: 20px;
+}
+
+.account-content__submenu-item{
+    font-size: 14px;
+}
+
+.account-content__menu-item.active, .account-content__submenu-item.active{
+    background: linear-gradient(116deg, #002399 10.49%, #512BBD 87.4%);
+    color: #E9E9E9;
+}
+
+.account-content__main .button__close{
+    border: 1px solid #F04D3D;
+    background: linear-gradient(116deg, #F04D3D 10.49%, #F04D3D 87.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.account-content__table-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 10px;
+    border-radius: 20px 20px 0px 0px;
+    transition: all .5s;
+    margin-top: 30px;
+}
+
+.account-content__table-row.active{
+    background:  #85FDD1;
+    border-radius: 22.5px;
+}
+
+.account-content__table-el{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 12.5%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account-content__table-el img{
+    margin-right: 15px;
+}
+
+.account-content__table{
+    width: 98%;
+    margin: 0 auto;
+    margin-left: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    
+}
+
+.account-content__table-wrapper .account-content__table{
+    overflow-y: scroll;
+}
+
+.account-content__table::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+  
+.account-content__table::-webkit-scrollbar-thumb {
+    background: #8D8D8D;
+    border-radius: 5px;
+}
+
+.account-content__table::-webkit-scrollbar-track {
+    background-color: #E6E6E6;
+    border: none;
+    border-radius: 5px;
+}
+
+.account-content__table-el:first-child{
+    width: 50%;
+}
+
+.session-info{
+    width: 100%;
+}
+
+.account-content__table-block {
+    padding: 14px 10px;
+    max-height: 0;
+    visibility: hidden;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 10px -10px 10px 0px rgba(190, 190, 190, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 10px;
+}
+
+.account-content__table-block.active{
+    visibility: visible;
+    padding: 0 10px;
+}
+
+.account-content__table-block .title{
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.account-content__table-wrapper .account-content__table-row{
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.account-content__table-wrapper{
+    display: flex;
+}
+
+.account-content__table-wrapper .account-content__table{
+    width: 60%;
+    margin-right: 0;
+}
+
+.account-content__table-wrapper .account-content__table-el{
+    width: 13.3%;
+}
+
+.account-content__table-wrapper .account-content__table-el:first-child{
+    width: 25%;
+}
+
+.account-content__table-wrapper .account-content__table-el:nth-child(2){
+    width: 35%;
+}
+
+.account-content__table-wrapper .account-content__table-deposit{
+    width: 100%;
+}
+
+.account-content__table-deposit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.account-content__table-deposit-flex{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.account-content__table-deposit-flex button{
+    width: 49%;
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.graph-btn{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.account-content__table-deposit-block{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px;
+}
+
+.account-content__table-deposit-block .button{
+    width: 100%;
+    margin-top: 30px;
+    
+    font-size: 14px;
+    font-family: 'sf';
+    font-weight: 600;
+    padding: 15px 8px;
+    height: auto;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.account-content__table-deposit-btn{
+    background: #3BE7A8;
+    color: #000;
+    -webkit-text-fill-color: #000;
+    border: none;
+}
+
+.account-content__table-deposit-title{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account-content__table-deposit-money{
+    font-size: 32px;
+    font-weight: 400;
+    color: #070707;
+    margin-top: 20px;
+}
+
+.account-content__table-deposit-money span{
+    color: #3BE7A8;
+}
+
+.account-content__table-deposit-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: rgba(238, 238, 238, 0.50);
+    box-shadow: 2px -2px 5px 0px rgba(190, 190, 190, 0.25), -2px 2px 5px 0px rgba(190, 190, 190, 0.25);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    margin-top: 40px;
+    height: 164.043px;
+}
+
+.account-content__table-deposit-wrapper-title{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.account-content__table-deposit-wrapper-number{
+    color: #2945AC;
+    font-size: 75px;
+    font-weight: 400;
+}
+
+.account-content__table-deposit-main{
+    width: 40%;
+}
+
+.account-content__table-deposit-main-img{
+    width: 98%;
+display: block;
+margin: 0 auto;
+}
+
+.account-content__table-wrapper .warning{
+    text-align: center;
+}
+
+.card-number{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-number__text{
+    display: flex;
+    align-items:center;
+    gap: 30px;
+    border-radius: 30px;
+border: 2px solid  #002399;
+padding: 3px 30px;
+background: linear-gradient(116deg, #002399 10.49%, #512BBD 87.4%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.card-number__btn{
+    padding: 15px 100px;
+}
+
+.withdraw-message{
+    position: absolute;
+    border-radius: 20px;
+    background: rgba(255, 59, 48, 0.30);
+    top: 140px;
+    width: 357px;
+    height: 114px;
+    backdrop-filter: blur(12.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: #fff;
+    padding: 0 25px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.withdraw-message.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.withdraw-message img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    cursor: pointer;
+}
+
+.news-grid{
+    display: grid;
+    grid-template: repeat(7,140px)/repeat(3,33%);
+    grid-auto-rows: 280px;
+    gap: 5px;
+}
+
+.news__menu{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.news__menu .account-content__main-items, .news__menu .account-content__submenu{
+    margin-left: 0;
+}
+
+.news__elem{
+    overflow:hidden;
+    border-radius: 20px;
+    position: relative;
+    
+}
+
+.news__elem img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.news__elem-descr{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+}
+
+.news__elem-descr p{
+    color: #FFF;
+    font-size: 16px;
+    opacity: .6;
+    text-decoration: none;
+}
+
+.news__elem-descr .news__elem-info{
+    opacity: 1;
+    margin-top: 8px;
+}
+
+
+
+.news__elem-info{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__elem-info span{
+    display: flex;
+    align-items: center;
+    border-radius: 29px;
+    justify-content: center;
+border: 1px solid  #E9E9E9;
+padding: 5px 15px;
+height: 40px;
+}
+
+.news-single__title{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.news-single__title img{
+    margin-right: 5px;
+}
+
+.news-single__elem{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 460px;
+    margin-top: 15px;
+}
+
+.news-single__elem .news__elem-info{
+    font-size: 25px;
+}
+
+.news-single__text{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.news-single{
+    padding-right: 20px;
+}
+
+.mail tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mail tr td{
+    width: 15%;
+}
+
+.mail tr td:first-child{
+    width: 40%;
+}
+
+.mail tr td:last-child{
+    width: 30%;
+}
+
+.mail__btn{
+    border-radius: 20px;
+    border: 1px solid  #002399;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "sf";
+    background: linear-gradient(116deg, #002399 10.49%, #512BBD 87.4%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.mail__btn-delete{
+    border: 1px solid #FF3B30;
+    color: #FF3B30;
+    background: transparent;
+    -webkit-text-fill-color: #FF3B30;
+}
+
+.history.account-content__main th{
+    width: 20%;
+}
+
+.history.mail tr td{
+    width: 20%;
+}
+.history.mail tr{
+    margin-bottom: 10px;
+}
