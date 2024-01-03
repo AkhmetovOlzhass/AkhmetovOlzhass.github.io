@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="header__logo">
+                    <img src="../img/icons/logo-black.svg" alt="logo">
+                </a>
+                <div class="header__hamburger header__hamburger-black">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="registration">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="registration__block">
+                            <h1 class="title title-black">Вход</h1>
+                            <h2 class="subtitle subtitle-black">Заполните, поля для входа</h2>
+
+                            <form>
+                                <input type="text" placeholder="Логин">
+                                <input type="password" placeholder="Пароль">
+
+                                <div class="checkbox-row">
+                                    <div class="checkbox-block">
+                                        <input id="highload0" class="checkbox-custom" name="highload0" type="checkbox">
+                                        <label for="highload0" class="checkbox-custom-label">Запомнить</label>
+                                    </div>
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+
+                                <button class="button" type="submit">
+                                    Войти
+                                </button>
+                                <button class="button button-white">
+                                    Зарегистрироваться
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="registration__img">
+                            <img src="../img/registration/sign-in.png" alt="reg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
