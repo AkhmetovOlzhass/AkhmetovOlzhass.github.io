@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X2SELL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="../images/icons/cross.svg" class="menu__close" alt="cross">
+        <a href="../">Главная</a>
+        <a href="../pages/catalog.html">Каталог товаров</a>
+        <a href="../pages/shop.html">Магазины</a>
+        <a href="../pages/notifications.html">Уведомления системы</a>
+        <a href="../pages/FAQ.html">FAQ</a>
+        <a href="../pages/tickets.html">Служба поддержки</a>
+        <div class="line"></div>
+        <a href="../profile-pages/be-seller.html">Стать продавцом</a>
+        <a href="../profile-pages/hiring.html">Найм исполнителей</a>
+        <a href="../profile-pages/advertise.html">Реклама</a>
+        <div class="line"></div>
+        <a href="../form-pages/login.html"><span>Вход</span> <img src="../images/icons/sign-in.svg" alt="sign in"></a>
+        <a href="../form-pages/registration.html">Регистрация <img src="../images/icons/profile.svg" alt="profile"></a>
+
+        <a href="../" class="menu__logo"><img src="../images/icons/logo.svg"  alt="logo"></a>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="menu-btns">
+                <a href="#" class="menu-btns__btn menu-trigger">
+                    <img src="../images/icons/menu.svg" alt="menu">
+                    Меню
+                </a>
+                <a href="../pages/notifications.html" class="menu-btns__btn">
+                    <img src="../images/icons/notification.svg" alt="icon">
+                    Уведомления
+                </a>
+            </div>
+            <a href="../" class="logo">
+                <img src="../images/icons/logo.svg" alt="logo">
+            </a>
+            <div class="menu-sign">
+                <a href="../form-pages/login.html" class="menu-sign__btn">
+                    <span>Вход</span>
+                    <img src="../images/icons/sign-in.svg" alt="sign in">
+                </a>
+                <a href="../form-pages/registration.html" class="menu-sign__btn">
+                    Регистрация
+                    <img src="../images/icons/profile.svg" alt="sign in">
+                </a>
+                <label class="wrapper__block-switch">
+                    <input id="fluency" type="checkbox">
+                    <span class="wrapper__block-switch-round"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>  
+        <section class="profile">
+            <div class="container">
+                <div class="profile__header">
+                    <h2 class="title">Личный кабинет</h2>
+                    <a href="#" class="profile__btn">Выход <img src="../images/icons/sign-in.svg" alt="icon"></a>
+                </div>
+    
+                <div class="profile__forms">
+                    <div class="profile__forms-avatar">
+                        <img src="../images/profile-avatar.png" class="profile__forms-avatar-img" alt="avatar">
+                        <div class="profile__forms-avatar-block">
+                            Редактировать
+                            <img src="../images/icons/pencil-mini.svg" alt="pencil-mini">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="forms__input">
+                                    <input id="userName" type="text" disabled>
+                                    <label for="userName">User name / login</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="forms__input">
+                                    <input id="telegram" type="text" disabled>
+                                    <label for="telegram">Telegram / Jabber</label>
+                                    <img src="../images/icons/pencil.svg" alt="pencil">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="profile__menu">
+                    <a href="#" class="profile__menu-el">
+                        Изменить пароль 
+                    </a>
+                    <a href="#" class="profile__menu-el">
+                        Баланс
+                    </a>
+                    <a href="#" class="profile__menu-el">
+                        Споры
+                    </a>
+                    <a href="#" class="profile__menu-el active">
+                        Пригласительные коды
+                    </a>
+                    <a href="#" class="profile__menu-el">
+                        Заказы
+                    </a>
+                    <a href="#" class="profile__menu-el">
+                        Транзакции
+                    </a>
+                </div>
+
+                <div class="profile__content">
+                    <div class="invite__block">
+                        <h2 class="invite__block-title">
+                            Поделитесь кодом с другом и получите бонус на свой счет
+                        </h2>
+
+                        <div class="invite__block-wrapper">
+                            <div class="invite__block-number">
+                                <span>465454241321321</span>
+                                <div class="invite__block-number-btn">
+                                    <img src="../images/icons/copy-btn.svg" alt="copy">
+                                </div>
+                            </div>
+                            <div class="invite__block-delete">
+                                <img src="../images/icons/remove-btn.svg" alt="remove">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="button">
+                        Создать новый
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <ul>
+                            <li><a href="../">Главная</a></li>
+                            <li><a href="../pages/catalog.html">Каталог товаров</a></li>
+                            <li><a href="../pages/shop.html">Магазины</a></li>
+                            <li><a href="../pages/notifications.html">О нас</a></li>
+                            <li><a href="../pages/FAQ.html">FAQ</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../profile-pages/be-seller.html">Стать продавцом</a></li>
+                            <li><a href="../profile-pages/hiring.html">Найм исполнителей</a></li>
+                            <li><a href="../profile-pages/advertise.html">Реклама</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-contacts">
+                        <li><span>Наши контакы</span></li>
+                        <li><a href="#">Онлайн поддержка <img src="../images/icons/arrow-red.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/invite.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
