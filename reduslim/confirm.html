@@ -1,24 +1,7 @@
-<!doctype html>
-<html lang="fr" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Merci de votre commande !</title>
-        <!--[if lt IE 9]>
+<!doctype html><html lang="fr" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Merci de votre commande !</title><!--[if lt IE 9]>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.8/es5-shim.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="confirm/css/fonts.css">
-        <link rel="stylesheet" href="confirm/css/style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-                <!-- new resend lead form. Place it outside main wrapper/container to make styles work properly -->
-                <style>
-                    /* default styles for form */
+        <![endif]--><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="confirm/css/fonts.css"><link rel="stylesheet" href="confirm/css/style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- new resend lead form. Place it outside main wrapper/container to make styles work properly --><style>/* default styles for form */
                     #resend-lead-popup {
                         display: none;
                         position: fixed;
@@ -140,14 +123,7 @@
                         background-size: 400% 400%;
                         -webkit-animation: animate_gradient2 5s ease infinite;
                         animation: animate_gradient2 5s ease infinite
-                    }
-                </style>
-    </head>
-    <body>
-
-        
-        <script>
-            function $_GET(key) {
+                    }</style></head><body><script>function $_GET(key) {
                 var s = window.location.search;
                 s = s.match(new RegExp(key + '=([^&=]+)'));
                 return s ? s[1] : '';
@@ -160,296 +136,37 @@
             }
             if (site.replace(/(v\d{1,3})$/, '') === 'fr39prelp') {
                 document.write('<scr' + 'ipt src="39/prelp/counter.js"></scr' + 'ipt>');
-            }
-        </script>
-        <div class="wrapper">
-            <div class="thank">
-                <div class="thank__logo">
-                    <img src="confirm/images/land-icon.png" alt=""><h1>Reduslim </h1>
-                </div><div class="thank__body">
-                    <div class="thank__content">
-                        <div class="thank__info">
-                            <div class="thank__order">
-                                <p>Merci de votre commande ! </p>
-                            </div><div class="thank__status">
-                                <p>Votre demande a &#233;t&#233; accept&#233;e et est en cours de traitement ! </p>
-                            </div><div class="thank__about">
-                                <ul>
-                                    <li> Produit : <span class="tovar">Reduslim</span> </li>
-                                    <li> Votre nom : <span class="name" id="leadprofit-name">Jean-Martin</span> </li>
-                                    <li> Votre t&#233;l&#233;phone : <span class="phone" id="leadprofit-phone">+33 999 99 99 99</span> </li>
-
-                                </ul>
-                            </div><div class="thank__call">
-                                <p>Un sp&#233;cialiste vous contactera prochainement pour plus de d&#233;tails</p>
-                            </div>
-                        </div><div class="thank__product">
-                            <div class="thank__pack">
-                                <img src="confirm/images/thank-pack.png" alt="">
-                            </div><div class="thank__glass">
-                                <img src="confirm/images/thank-glass.png" alt="">
-                            </div>
-                        </div>
-                    </div><div class="thank__atten">
-                        <div class="thank__atten-desc">
-                            <p>Si vous faites une erreur lors de la saisie des donn&#233;es, vous pouvez r&#233;p&#233;ter la saisie.</p>
-                        </div><div class="thank__atten-btn">
-                            <a id="leadprofit-returnurl" href="#">R&#233;&#233;diter</a>
-                        </div>
-                    </div>
-                </div>
-            </div><div class="question">
-                <div class="question__body">
-                    <div class="question__doctor">
-                        <div class="question__doctor-img">
-                            <img src="confirm/images/doctor-img.png" alt="">
-                        </div><div class="question__doctor-content">
-                            <div class="question__title">
-                                <h2>Questions fr&#233;quemment pos&#233;es</h2>
-                            </div><div class="question__doctor-answer">
-                                <p>Notre consultant nutritionniste-endocrinologue r&#233;pond &#224; vos questions</p>
-                            </div><div class="question__doctor-name">
-                                <p>Patrick Morel</p>
-                            </div>
-                        </div>
-                    </div><div class="question__info">
-                        <div class="question__item">
-                            <div class="question__ask">
-                                <p>- Reduslim aide-t-il &#224; r&#233;duire la graisse visc&#233;rale?</p>
-                            </div><div class="question__answer">
-                                <p>Ce produit a une composition &#233;quilibr&#233;e, qui a un effet complexe sur le corps - il r&#233;duit l&#39;app&#233;tit et augmente les performances. Reduslim combat la graisse &#224; tous les niveaux. Toutefois, si vous voulez mincir et perdre de la graisse visc&#233;rale, demandez &#224; nos op&#233;rateurs comment faire et ils se feront un plaisir de vous conseiller.</p>
-                            </div>
-                        </div><div class="question__item">
-                            <div class="question__ask">
-                                <p>- Comment dois-je prendre une drogue?</p>
-                            </div><div class="question__answer">
-                                <p>Pour les adultes 1 capsule 2 fois par jour :
-Les adultes doivent prendre 1 capsule 2 fois par jour, 30 minutes avant un repas ou pendant un repas. Il est recommand&#233; de boire beaucoup d&#39;eau.</p>
-                            </div>
-                        </div><div class="question__item">
-                            <div class="question__ask">
-                                <p>- Combien dois-je en prendre pour obtenir un effet?</p>
-                            </div><div class="question__answer">
-                                <p>La meilleure solution pour vous sera d&#233;termin&#233;e par notre sp&#233;cialiste lors d&#39;une consultation t&#233;l&#233;phonique. Il est recommand&#233; de prendre le produit pendant au moins 30 jours pour obtenir un premier r&#233;sultat visible. Le traitement peut &#234;tre prolong&#233; ou r&#233;appliqu&#233; pour maintenir l&#39;effet durable. </p>
-                            </div>
-                        </div><div class="question__item">
-                            <div class="question__ask">
-                                <p>- L&#39;effet de la perte de poids sera-t-il maintenu apr&#232;s la fin du cours?</p>
-                            </div><div class="question__answer">
-                                <p>Oui. Reduslim corrige le m&#233;tabolisme, de sorte que les r&#233;sultats sont durables.</p>
-                            </div>
-                        </div><div class="question__item">
-                            <div class="question__ask">
-                                <p>- L&#39;efficacit&#233; de Reduslim diminue-t-elle avec l&#39;&#226;ge?</p>
-                            </div><div class="question__answer">
-                                <p>Non. Reduslim est aussi efficace &#224; tout &#226;ge. Il affecte les processus sous-jacents du corps qui sont ind&#233;pendants de l&#39;&#226;ge biologique. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><div class="prefer">
-                <div class="prefer__border"></div>
-                <div class="prefer__body">
-                    <div class="prefer__list">
-                        <ul>
-                            <li>
-                                <div class="prefer__list-desc">
-                                    <p>Approuv&#233; dans la France</p>
-                                </div>
-                            </li><li>
-                                <div class="prefer__list-desc">
-                                    <p>Garantie de qualit&#233; &#224; 100</p>
-                                </div>
-                            </li><li>
-                                <p>Reduslim s&#39;est soumis &#224; toutes les mesures d&#39;enregistrement et de contr&#244;le conform&#233;ment &#224; la l&#233;gislation en vigueur.</p>
-                            </li>
-                        </ul>
-                    </div><div class="prefer__info">
-                        <div class="prefer__award">
-                            <img src="confirm/images/prefer-award.png" alt="">
-                        </div><div class="prefer__pack">
-                            <img src="confirm/images/prefer-pack.png" alt="">
-                        </div><div class="prefer__sert">
-                            <ul>
-                                <li>
-                                    <img src="confirm/images/prefer-sert1.png" alt="">
-                                </li><li>
-                                    <img src="confirm/images/prefer-sert2.png" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div><div class="feed">
-                <div class="feed__title">
-                    <h2>Pendant que votre commande est en cours de traitement, lisez les avis de ceux qui ont d&#233;j&#224; essay&#233; <span>Reduslim:</span></h2>
-                </div><div class="feed__gif">
-                    <ul>
-                        <li>
-                            <img src="confirm/images/gif1.gif" alt="foto">
-                        </li><li>
-                            <img src="confirm/images/gif2.gif" alt="foto">
-                        </li><li>
-                            <img src="confirm/images/gif3.gif" alt="foto">
-                        </li>
-                    </ul>
-                </div><div class="feed__content">
-                    <div class="feed__item">
-                        <div class="feed__img">
-                            <img src="confirm/images/feed-img1.png" alt="">
-                        </div><div class="feed__info">
-                            <div class="feed__desc">
-                                <p><span>Nathalie</span> Mon mari et moi avons décidé de perdre du poids lorsqu'on nous a diagnostiqué une infertilité. Nous ne pouvions pas concevoir parce que 
-								nous étions en surpoids. Nous avons essayé de suivre un régime, mais les envies de sucreries et de graisses nous empêchaient de perdre du poids.
-								Nous avons <span class="feed__more">alors cherché de l'aide et on nous a conseillé de prendre Reduslim. Avec son aide, nous avons perdu du poids et avons pu concevoir un 
-								bébé en bonne santé! Nous sommes heureux!</span><span class="more">... lire la suite</span></p>
-								
-								
-								 
-                            </div><div class="feed__bottom">
-                                <div class="it__rev_content_bottom_wrp"> <span class="st st_2">Like</span> <span class="st st_2">Reply</span>
-                                    <span class="st st_fl st_like"> <img src="confirm/images/like.png" alt="Like"> <span class="st_1">2</span> </span> <span class="st st_1"><script>
-                                        var appendNull = function (num) {
+            }</script><div class="wrapper"><div class="thank"><div class="thank__logo"><img src="confirm/images/land-icon.png" alt=""><h1>Reduslim</h1></div><div class="thank__body"><div class="thank__content"><div class="thank__info"><div class="thank__order"><p>Merci de votre commande !</p></div><div class="thank__status"><p>Votre demande a &#233;t&#233; accept&#233;e et est en cours de traitement !</p></div><div class="thank__about"><ul><li>Produit : <span class="tovar">Reduslim</span></li><li>Votre nom : <span class="name" id="leadprofit-name">Jean-Martin</span></li><li>Votre t&#233;l&#233;phone : <span class="phone" id="leadprofit-phone">+33 999 99 99 99</span></li></ul></div><div class="thank__call"><p>Un sp&#233;cialiste vous contactera prochainement pour plus de d&#233;tails</p></div></div><div class="thank__product"><div class="thank__pack"><img src="confirm/images/thank-pack.png" alt=""></div><div class="thank__glass"><img src="confirm/images/thank-glass.png" alt=""></div></div></div><div class="thank__atten"><div class="thank__atten-desc"><p>Si vous faites une erreur lors de la saisie des donn&#233;es, vous pouvez r&#233;p&#233;ter la saisie.</p></div><div class="thank__atten-btn"><a id="leadprofit-returnurl" href="#">R&#233;&#233;diter</a></div></div></div></div><div class="question"><div class="question__body"><div class="question__doctor"><div class="question__doctor-img"><img src="confirm/images/doctor-img.png" alt=""></div><div class="question__doctor-content"><div class="question__title"><h2>Questions fr&#233;quemment pos&#233;es</h2></div><div class="question__doctor-answer"><p>Notre consultant nutritionniste-endocrinologue r&#233;pond &#224; vos questions</p></div><div class="question__doctor-name"><p>Patrick Morel</p></div></div></div><div class="question__info"><div class="question__item"><div class="question__ask"><p>- Reduslim aide-t-il &#224; r&#233;duire la graisse visc&#233;rale?</p></div><div class="question__answer"><p>Ce produit a une composition &#233;quilibr&#233;e, qui a un effet complexe sur le corps - il r&#233;duit l&#39;app&#233;tit et augmente les performances. Reduslim combat la graisse &#224; tous les niveaux. Toutefois, si vous voulez mincir et perdre de la graisse visc&#233;rale, demandez &#224; nos op&#233;rateurs comment faire et ils se feront un plaisir de vous conseiller.</p></div></div><div class="question__item"><div class="question__ask"><p>- Comment dois-je prendre une drogue?</p></div><div class="question__answer"><p>Pour les adultes 1 capsule 2 fois par jour : Les adultes doivent prendre 1 capsule 2 fois par jour, 30 minutes avant un repas ou pendant un repas. Il est recommand&#233; de boire beaucoup d&#39;eau.</p></div></div><div class="question__item"><div class="question__ask"><p>- Combien dois-je en prendre pour obtenir un effet?</p></div><div class="question__answer"><p>La meilleure solution pour vous sera d&#233;termin&#233;e par notre sp&#233;cialiste lors d&#39;une consultation t&#233;l&#233;phonique. Il est recommand&#233; de prendre le produit pendant au moins 30 jours pour obtenir un premier r&#233;sultat visible. Le traitement peut &#234;tre prolong&#233; ou r&#233;appliqu&#233; pour maintenir l&#39;effet durable.</p></div></div><div class="question__item"><div class="question__ask"><p>- L&#39;effet de la perte de poids sera-t-il maintenu apr&#232;s la fin du cours?</p></div><div class="question__answer"><p>Oui. Reduslim corrige le m&#233;tabolisme, de sorte que les r&#233;sultats sont durables.</p></div></div><div class="question__item"><div class="question__ask"><p>- L&#39;efficacit&#233; de Reduslim diminue-t-elle avec l&#39;&#226;ge?</p></div><div class="question__answer"><p>Non. Reduslim est aussi efficace &#224; tout &#226;ge. Il affecte les processus sous-jacents du corps qui sont ind&#233;pendants de l&#39;&#226;ge biologique.</p></div></div></div></div></div><div class="prefer"><div class="prefer__border"></div><div class="prefer__body"><div class="prefer__list"><ul><li><div class="prefer__list-desc"><p>Approuv&#233; dans la France</p></div></li><li><div class="prefer__list-desc"><p>Garantie de qualit&#233; &#224; 100</p></div></li><li><p>Reduslim s&#39;est soumis &#224; toutes les mesures d&#39;enregistrement et de contr&#244;le conform&#233;ment &#224; la l&#233;gislation en vigueur.</p></li></ul></div><div class="prefer__info"><div class="prefer__award"><img src="confirm/images/prefer-award.png" alt=""></div><div class="prefer__pack"><img src="confirm/images/prefer-pack.png" alt=""></div><div class="prefer__sert"><ul><li><img src="confirm/images/prefer-sert1.png" alt=""></li><li><img src="confirm/images/prefer-sert2.png" alt=""></li></ul></div></div></div></div><div class="feed"><div class="feed__title"><h2>Pendant que votre commande est en cours de traitement, lisez les avis de ceux qui ont d&#233;j&#224; essay&#233; <span>Reduslim:</span></h2></div><div class="feed__gif"><ul><li><img src="confirm/images/gif1.gif" alt="foto"></li><li><img src="confirm/images/gif2.gif" alt="foto"></li><li><img src="confirm/images/gif3.gif" alt="foto"></li></ul></div><div class="feed__content"><div class="feed__item"><div class="feed__img"><img src="confirm/images/feed-img1.png" alt=""></div><div class="feed__info"><div class="feed__desc"><p><span>Nathalie</span> Mon mari et moi avons décidé de perdre du poids lorsqu'on nous a diagnostiqué une infertilité. Nous ne pouvions pas concevoir parce que nous étions en surpoids. Nous avons essayé de suivre un régime, mais les envies de sucreries et de graisses nous empêchaient de perdre du poids. Nous avons <span class="feed__more">alors cherché de l'aide et on nous a conseillé de prendre Reduslim. Avec son aide, nous avons perdu du poids et avons pu concevoir un bébé en bonne santé! Nous sommes heureux!</span><span class="more">... lire la suite</span></p></div><div class="feed__bottom"><div class="it__rev_content_bottom_wrp"><span class="st st_2">Like</span> <span class="st st_2">Reply</span> <span class="st st_fl st_like"><img src="confirm/images/like.png" alt="Like"> <span class="st_1">2</span> </span><span class="st st_1"><script>var appendNull = function (num) {
                                             return num < 10 ? 0 + num.toString() : num;
                                         };
                                         d = new Date();
                                         p = new Date(d.getTime() - 3 * 86400000);
                                         monthb = 'janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre'.split(',');
-                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());
-                                        </script></span> </div>
-                            </div>
-                        </div>
-                    </div><div class="feed__item">
-                        <div class="feed__img">
-                            <img src="confirm/images/feed-img2.png" alt="">
-                        </div><div class="feed__info">
-                            <div class="feed__desc">
-                                <p><span>Catherine</span> Après l'accouchement, j'ai pris beaucoup de poids. J'avais peur que mon mari me quitte. Il m'aime, mais un homme veut toujours une belle femme à la maison.
-								Et quand il me regardait, je savais que je le dégoûtais. J'ai commencé à chercher une solution pour perdre du poids <span class="feed__more">et j'ai découvert Reduslim! En deux mois 
-								seulement, j'ai résolu le problème de surpoids qui me tourmentait depuis des années! C'est un vrai miracle! Ma relation avec mon mari est à nouveau tendre
-								et romantique! Il me regarde avec admiration!</span><span class="more">... lire la suite</span></p>
-								
-								 
-                            </div><div class="feed__bottom">
-                                <div class="it__rev_content_bottom_wrp"> <span class="st st_2">Like</span> <span class="st st_2">Reply</span>
-                                    <span class="st st_fl st_like"> <img src="confirm/images/like.png" alt="Like"> <span class="st_1">6</span> </span> <span class="st st_1"><script>
-                                        var appendNull = function (num) {
+                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());</script></span></div></div></div></div><div class="feed__item"><div class="feed__img"><img src="confirm/images/feed-img2.png" alt=""></div><div class="feed__info"><div class="feed__desc"><p><span>Catherine</span> Après l'accouchement, j'ai pris beaucoup de poids. J'avais peur que mon mari me quitte. Il m'aime, mais un homme veut toujours une belle femme à la maison. Et quand il me regardait, je savais que je le dégoûtais. J'ai commencé à chercher une solution pour perdre du poids <span class="feed__more">et j'ai découvert Reduslim! En deux mois seulement, j'ai résolu le problème de surpoids qui me tourmentait depuis des années! C'est un vrai miracle! Ma relation avec mon mari est à nouveau tendre et romantique! Il me regarde avec admiration!</span><span class="more">... lire la suite</span></p></div><div class="feed__bottom"><div class="it__rev_content_bottom_wrp"><span class="st st_2">Like</span> <span class="st st_2">Reply</span> <span class="st st_fl st_like"><img src="confirm/images/like.png" alt="Like"> <span class="st_1">6</span> </span><span class="st st_1"><script>var appendNull = function (num) {
                                             return num < 10 ? 0 + num.toString() : num;
                                         };
                                         d = new Date();
                                         p = new Date(d.getTime() - 2 * 86400000);
                                         monthb = 'janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre'.split(',');
-                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());
-                                        </script></span> </div>
-                            </div>
-                        </div>
-                    </div><div class="feed__item">
-                        <div class="feed__img">
-                            <img src="confirm/images/feed-img3.png" alt="">
-                        </div><div class="feed__info">
-                            <div class="feed__desc">
-                                <p><span>Silvia</span> J'avais un problème de surpoids, je n'arrivais pas à le stabiliser. J'étais très inquiet à ce sujet. J'avais l'impression que mes amies avaient
-								honte de moi et que les garçons ne voulaient pas sortir avec moi... J'ai découvert par hasard
-								<span class="feed__more">l'existence de Reduslim sur un forum et je l'ai immédiatement
-								commandé. Mon poids est revenu à la normale après quelques mois et maintenant je n'ai plus de complexes et mes amis sont fiers de moi!</span><span class="more">... lire la suite</span></p>
-								
-								 
-								
-                            </div><div class="feed__bottom">
-                                <div class="it__rev_content_bottom_wrp"> <span class="st st_2">Like</span> <span class="st st_2">Reply</span>
-                                    <span class="st st_fl st_like"> <img src="confirm/images/like.png" alt="Like"> <span class="st_1">12</span> </span> <span class="st st_1"><script>
-                                        var appendNull = function (num) {
+                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());</script></span></div></div></div></div><div class="feed__item"><div class="feed__img"><img src="confirm/images/feed-img3.png" alt=""></div><div class="feed__info"><div class="feed__desc"><p><span>Silvia</span> J'avais un problème de surpoids, je n'arrivais pas à le stabiliser. J'étais très inquiet à ce sujet. J'avais l'impression que mes amies avaient honte de moi et que les garçons ne voulaient pas sortir avec moi... J'ai découvert par hasard <span class="feed__more">l'existence de Reduslim sur un forum et je l'ai immédiatement commandé. Mon poids est revenu à la normale après quelques mois et maintenant je n'ai plus de complexes et mes amis sont fiers de moi!</span><span class="more">... lire la suite</span></p></div><div class="feed__bottom"><div class="it__rev_content_bottom_wrp"><span class="st st_2">Like</span> <span class="st st_2">Reply</span> <span class="st st_fl st_like"><img src="confirm/images/like.png" alt="Like"> <span class="st_1">12</span> </span><span class="st st_1"><script>var appendNull = function (num) {
                                             return num < 10 ? 0 + num.toString() : num;
                                         };
                                         d = new Date();
                                         p = new Date(d.getTime() - 2 * 86400000);
                                         monthb = 'janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre'.split(',');
-                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());
-                                        </script></span> </div>
-                            </div>
-                        </div>
-                    </div><div class="feed__item">
-                        <div class="feed__img">
-                            <img src="confirm/images/feed-img4.png" alt="">
-                        </div><div class="feed__info">
-                            <div class="feed__desc">
-                                <p><span>S&#233;bastien</span> J'ai toujours été gros. Je voulais perdre au moins quelques kilos en trop. Mais les régimes n'ont pas donné le résultat escompté.
-								Sur les conseils d'un ami, j'ai essayé Reduslim<span class="feed__more">, un excellent moyen de réduire l'appétit et de brûler les graisses. J'ai fondu devant mes yeux!
-								Je n'avais jamais été aussi maigre. Ma vie a radicalement changé et je suis maintenant une personne complètement différente, tant à l'extérieur qu'à l'intérieur!</span><span class="more">... lire la suite</span></p>
-								
-								 
-								
-                            </div><div class="feed__bottom">
-                                <div class="it__rev_content_bottom_wrp"> <span class="st st_2">Like</span> <span class="st st_2">Reply</span>
-                                    <span class="st st_fl st_like"> <img src="confirm/images/like.png" alt="Like"> <span class="st_1">1</span> </span> <span class="st st_1"><script>
-                                        var appendNull = function (num) {
+                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());</script></span></div></div></div></div><div class="feed__item"><div class="feed__img"><img src="confirm/images/feed-img4.png" alt=""></div><div class="feed__info"><div class="feed__desc"><p><span>S&#233;bastien</span> J'ai toujours été gros. Je voulais perdre au moins quelques kilos en trop. Mais les régimes n'ont pas donné le résultat escompté. Sur les conseils d'un ami, j'ai essayé Reduslim<span class="feed__more">, un excellent moyen de réduire l'appétit et de brûler les graisses. J'ai fondu devant mes yeux! Je n'avais jamais été aussi maigre. Ma vie a radicalement changé et je suis maintenant une personne complètement différente, tant à l'extérieur qu'à l'intérieur!</span><span class="more">... lire la suite</span></p></div><div class="feed__bottom"><div class="it__rev_content_bottom_wrp"><span class="st st_2">Like</span> <span class="st st_2">Reply</span> <span class="st st_fl st_like"><img src="confirm/images/like.png" alt="Like"> <span class="st_1">1</span> </span><span class="st st_1"><script>var appendNull = function (num) {
                                             return num < 10 ? 0 + num.toString() : num;
                                         };
                                         d = new Date();
                                         p = new Date(d.getTime() - 1 * 86400000);
                                         monthb = 'janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre'.split(',');
-                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());
-                                        </script></span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><footer>
-            <div class="footer__body">
-                <div class="footer__logo">
-                    <img src="confirm/images/land-icon.png" alt=""><h3>Reduslim</h3>
-                </div>
-            </div>
-        </footer>
-        <script src="confirm/js/main.js"></script>
-
-
-
-        <div id="resend-lead-popup">
-            <div class="resend-lead-popup__body">
-                <button type="button" class="resend-lead-popup__close">
-                    <svg width="14px" height="14px" viewbox="0 0 311 311.07733" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"></path>
-                    <path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"></path>
-                    </svg>
-                </button>
-                <form class="resend-lead-form">
-                    <!-- Тут нужно перевести контент на язык ленда  -->
-                    <h3 class="resend-lead-form__title">Corriger votre commande</h3>
-                    <!-- Две ошибки, тк сервер текст ошибок не возвращает, тем более под нужный язык не переводит -->
-                    <p class="notification success">La demande a &#233;t&#233; mise &#224; jour avec succ&#232;s!</p>
-                    <p class="notification error">Une erreur s&#39;est produite lors de la soumission du formulaire. Essayez d&#39;envoyer une demande &#224; partir de la page principale </p>
-                    <!-- форма -->
-                    <input id="resend-lead-name" placeholder="Votre nom" name="name" type="text">
-
-                    <input id="resend-lead-phone" placeholder="Numéro de téléphone" name="phone">
-                    <script>
-                                        // REMOVE number="number" fom input above to make it work
+                                        document.write(appendNull(p.getDate()) + '  ' + monthb[p.getMonth()] + '  ' + p.getFullYear());</script></span></div></div></div></div></div></div></div><footer><div class="footer__body"><div class="footer__logo"><img src="confirm/images/land-icon.png" alt=""><h3>Reduslim</h3></div></div></footer><script src="confirm/js/main.js"></script><div id="resend-lead-popup"><div class="resend-lead-popup__body"><button type="button" class="resend-lead-popup__close"><svg width="14px" height="14px" viewbox="0 0 311 311.07733" xmlns="http://www.w3.org/2000/svg"><path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"></path><path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"></path></svg></button><form class="resend-lead-form"><!-- Тут нужно перевести контент на язык ленда  --><h3 class="resend-lead-form__title">Corriger votre commande</h3><!-- Две ошибки, тк сервер текст ошибок не возвращает, тем более под нужный язык не переводит --><p class="notification success">La demande a &#233;t&#233; mise &#224; jour avec succ&#232;s!</p><p class="notification error">Une erreur s&#39;est produite lors de la soumission du formulaire. Essayez d&#39;envoyer une demande &#224; partir de la page principale</p><!-- форма --> <input id="resend-lead-name" placeholder="Votre nom" name="name" type="text"> <input id="resend-lead-phone" placeholder="Numéro de téléphone" name="phone"><script>// REMOVE number="number" fom input above to make it work
                                         // script to work with masked phone number
                                         var re = /[^\d\+\s()]/
                                         var phoneInputPopup = document.getElementById('resend-lead-phone')
 
                                         phoneInputPopup.addEventListener('input', function (e) {
                                             e.target.value = e.target.value.replace(re, '')
-                                        })
-                    </script>
-                    <button type="submit" class="resend-lead__submit"> Corriger les donn&#233;es </button>
-                </form>
-            </div>
-        </div>
-        <!-- end of new form -->
-
-        <!-- Подключение к гиту -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
-        <!-- leadprofit.js - скрипт подключения к пп -->
-        <script src="https://click.lucky.online/js/leadprofit.js"></script>
-        <script>
-                                        $(document).ready(function () {
+                                        })</script><button type="submit" class="resend-lead__submit">Corriger les donn&#233;es</button></form></div></div><!-- end of new form --><!-- Подключение к гиту --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script><!-- leadprofit.js - скрипт подключения к пп --><script src="https://click.lucky.online/js/leadprofit.js"></script><script>$(document).ready(function () {
                                             $(document).leadprofitConfirm();
-                                        });
-        </script>
-    </body>
-</html>
+                                        });</script></body></html>
