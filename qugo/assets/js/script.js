@@ -1,8 +1,4 @@
-// function activate(elements){
-//     elements.forEach(el => {
-//         el.classList.add('active');
-//     })
-// }
+
 
 // function disactivate(elements){
 //     elements.forEach(el => {
@@ -59,6 +55,11 @@ function activateCalc(triggers, contents){
         })
     })
 }
+
+
+
+
+
 
 const FAQHeader = document.querySelectorAll('.FAQ__block-header');
 const FAQBlock = document.querySelectorAll('.FAQ__block-content');

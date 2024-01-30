@@ -88,7 +88,7 @@
                 </nav>
 
                 <div class="header__btns">
-                    <a href="#" class="button button-white">Личный кабинет</a>
+                    <a href="#" class="button button-white registrationTrigger">Личный кабинет</a>
                     <a href="#" class="button button-blue">
                         Обратный звонок
                         <img src="./assets/img/icons/header-call.svg" alt="call">
@@ -478,7 +478,8 @@
     </footer>
 
     <div class="modal">
-        <!-- <div class="modal__block" id="sign-in">
+        <div class="overlay"></div>
+        <div class="modal__block" id="sign-in">
             <h3 class="modal__block-title">Вход</h3>
             <p class="modal__block-descr">
                 Введите ваш номер телефона, на который поступит СМС с кодом подтверждения
@@ -487,9 +488,9 @@
             <form class="modal__sign-in">
                 <input placeholder="Телефон*" required type="tel">
                 <button class="button button-blue" type="submit">Отправить</button>
-                <a href="#" class="modal__block-link">Перейти к регистрации</a>
+                <a href="#" class="modal__block-link" id="modal-sign-up">Перейти к регистрации</a>
             </form>
-        </div> -->
+        </div>
 
         <div class="modal__block" id="sign-up">
             <h3 class="modal__block-title">Регистрация</h3>
@@ -547,13 +548,15 @@
                 </div>
 
                 <div class="modal__sign-up-btns">
-                    <a href="#" class="button button-white">Отменить регистрацию</a>
-                    <button type="submit" class="button button-blue">Следующий шаг</button>
+                    <a href="#" class="button button-white" id="modal-sign-in">Отменить регистрацию</a>
+                    <a href="#" type="submit" id="registration-next" class="button button-blue">Следующий шаг</a>
                 </div>
 
-                <p class="modal__sign-up-descr">Регистрируясь в сервисе, вы принимаете условия <a href="#">пользовательского соглашения и политики о данных</a></p>
+                <p class="modal__sign-up-descr">Регистрируясь в сервисе, вы принимаете условия <a href="#">пользовательского соглашения</a> и <a href="#">политики о данных</a></p>
             </form>
         </div>
     </div>
+
+    <script src="./assets/js/modals.js"></script>
 </body>
 </html>

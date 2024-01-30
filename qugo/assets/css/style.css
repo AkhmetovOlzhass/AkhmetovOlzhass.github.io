@@ -1722,11 +1722,27 @@ input:checked + .profile__content-switch-round:before {
     transform:translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.modal.active{
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__block{
@@ -1739,7 +1755,19 @@ input:checked + .profile__content-switch-round:before {
     box-shadow: 0px 0px 12px 0px rgba(38, 38, 38, 0.12);
     padding: 40px;
     gap: 24px;
+    z-index: 2;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.modal__block.active{
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__block-title{
@@ -1837,6 +1865,68 @@ border: 1px solid #B4B4B4;
 .modal__sign-up-descr a{
     color: #51839A;
     text-decoration: none;
+}
+
+.executer__labels{
+    gap: 12px;
+    margin-left: 0;
+}
+
+.executer__input{
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 0;
+    justify-content: start;
+}
+
+.executer__btns{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.steps__img{
+    width: 100%;
+}
+.executer__btns-one{
+    justify-content: center;
+}
+#status.customer-select{
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid #B4B4B4;
+    padding: 16px 100px 16px 28px;
+    color: #000000;
+}
+.customer__labels{
+    margin-top: 12px;
+}
+
+.registration-thanks__block{
+    border-radius: 12px;
+    background: #F1EDEB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 12px 0px rgba(38, 38, 38, 0.12);
+    padding: 40px 88px;
+    text-align: center;
+}
+
+.registration-thanks-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.registration-thanks-descr{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.registration-thanks{
+    min-height: 100vh;
 }
 
 @media(max-width:1200px){
@@ -2085,5 +2175,36 @@ border: 1px solid #B4B4B4;
     }
     .profile__content-title{
         text-align: center;
+    }
+
+    .modal__block{
+        padding: 10px;
+        width: 90%;
+    }
+    .modal__sign-up .col-md-6{
+        margin-bottom: 20px;
+    }
+    .modal__sign-up-btns{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .modal__sign-up-btns .button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .modal__sign-up-block{
+        padding: 5px;
+    }
+    .modal__sign-up-img{
+        width: 40px;
+        height: 40px;
+    }
+    .executer__btns{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .registration-thanks__block{
+        padding: 20px 5px;
     }
 }
