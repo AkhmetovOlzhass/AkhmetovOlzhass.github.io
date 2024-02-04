@@ -1,0 +1,165 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    width: 1330px;
+}
+
+.header__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 16px 0;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #262626;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+nav img{
+    width: 110px;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 2px solid transparent;
+}
+
+.profile a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.profile a:last-child:hover{
+    border: none;
+}
+
+.profile a:last-child{
+    border: none;
+}
+
+.profile a img{
+    width: 20px;
+}
+
+.profile a:last-child img{
+    width: 30px;
+}
+
+.promo{
+    background: url(../img/promo-bg.jfif) no-repeat 50% / cover;
+    padding: 100px 0 120px;
+}
+
+.promo__content{
+    width: 34%;
+}
+
+.promo__title{
+    font-size: 2.3125rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.promo__descr{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.button{
+    background-color: #0067b8;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    padding: 0.625rem 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover{
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.13), 0 0 0.0625rem 0 rgba(0,0,0,.11);
+    background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+}
+
+.blocks__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks__block{
+    width: 23.7%;
+    text-decoration: none;
+    color: #000;
+}
+
+.blocks__block img{
+    width: 100%;
+}
+
+.blocks__block p{
+    line-height: 24px;
+}
+
+.blocks__title{
+    font-size: 1.8125rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.blocks__link{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #0067b8;
+    margin-top: 0;
+
+}
+
+.blocks__link:hover{
+    text-decoration: underline;
+}
+
+.blocks__link:hover img{
+    transform: translate(0.25em,0);
+}
+
+.blocks{
+    margin-top: 100px;
+}
+
+.blocks__link img{
+    width: 16px;
+    height: 16px;
+    transition: .6s cubic-bezier(.19,1,.22,1);
+}
