@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./../asets/fonts/roboto/Roboto-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  vertical-align: baseline;
+  font: inherit;
+  font-family: "Roboto", sans-serif;
+  color: rgba(6, 6, 15, 0.87);
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 14px;
+  }
+}
