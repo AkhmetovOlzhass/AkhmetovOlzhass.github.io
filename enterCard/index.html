@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1 class="title">Enter card details</h1>
+            <form>
+                <label>Credit card number
+                    <input type="text" required placeholder="Enter Card Number">
+                </label>
+                <div class="card__wrapper">
+                    <label>Expiry Date
+                        <input type="text" required placeholder="XX/XX/XX">
+                    </label>
+                    <label>CVV Number*
+                        <input type="text" required placeholder="Enter Card Number">
+                    </label>
+                </div>
+
+                <div class="card__images">
+                    <img src="img/card1.png" alt="card">
+                    <img src="img/card2.png" alt="card">
+                    <img src="img/card3.png" alt="card">
+                    <img src="img/card4.png" alt="card">
+                </div>
+
+                <button type="submit" class="button">Pay</button>
+            </form>
+
+            <p class="required">*Required fields to fill in</p>
+        </div>
+    </main>
+</body>
+</html>

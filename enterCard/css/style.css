@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    transition: all .3s;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.card{
+    width: 628px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 16px;
+    gap: 8px;
+    margin-bottom: 12px;
+    width: 100%;
+
+}
+
+input{
+    width: 100%;
+    padding: 12px 0 12px 32px;
+    border-radius: 100px;
+    border: 1px solid #A6A6A6;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.card__wrapper{
+    display: flex;
+    gap: 12px;
+}
+
+.card__images{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button{
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+    background-color: #000;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 100px;
+    padding: 14px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-white{
+    margin-top: 10px;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+}
+
+.button-green{
+    background-color: #03AF00;
+}
+
+.required{
+    text-align: left;
+    color: #A6A6A6;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.error .card__images{
+    width: 100%;
+}
+
+.error .card__images img{
+    height: 40px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.error__text{
+    text-align: center;
+    font-size: 16px;
+}
+.error__text span{
+    display: block;
+    color: #FF0000;
+    width: 100%;
+    font-weight: 500;
+}
+
+.links{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+
+.links a{
+    color: #000;
+}
+
+.error label{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.error__descr{
+    text-align-last: left;
+    display: block;
+}
+
+.error__descr span{
+    color: #FF0000;
+}
+
+
+
+@media(max-width: 576px){
+    .card{
+        width: 100%;
+    }
+    
+    .card__images{
+        width: 100%;
+    }
+    input{
+        padding-left: 16px;
+        font-size: 14px;
+    }
+}
