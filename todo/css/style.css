@@ -1,0 +1,140 @@
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.promo{
+    padding-top: 100px;
+    min-height: 100vh;
+    padding-bottom: 140px;
+}
+
+.promo form{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.promo form input{
+    width: 70%;
+    border: 1px solid #878787;
+    border-radius: 5px;
+    padding: 10px 0 10px 30px;
+}
+
+.promo form button{
+    width: 10%;
+    border: none;
+    background-color: #4174f5;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.promo form button:hover{
+    background-color: #2a59d0;
+}
+
+.promo__tasks{
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.promo__tasks-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.promo__tasks-task:last-child{
+    border-bottom: none;
+}
+
+.promo__tasks-block{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.promo__tasks-task button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.promo__tasks-task button svg{
+    width: 16px;
+    height: 16px;
+    transition: all .3s;
+}
+
+.promo__tasks-task button:hover svg{
+    width: 18px;
+    height: 18px;
+    fill: #a51111;
+}
+
+.checkbox-block input{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.checkbox-block input ~ label::before{
+    content: '\2713';
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0066FF;
+    border-radius: 0.25em;
+    margin: 0.25em;
+    display: inline-block;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.checkTask input ~ label::before {
+    color: #0066FF;
+    border: 1px solid #0066FF;
+}
+
+.checkTask ~ .checkValue{
+    text-decoration: line-through;
+}
+
+.checkValue{
+    word-wrap: break-word;
+    max-width: 90%;
+    width: 100%;
+}
+
+@media (max-width: 576px){
+    .promo form button{
+        width: 30%;
+    }
+    .promo form{
+        gap: 20px;
+    }
+    .promo__tasks-task{
+        padding: 8px 20px;
+    }
+
+    .checkValue{
+        max-width: 80%;
+    }
+    .promo__tasks-task{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
