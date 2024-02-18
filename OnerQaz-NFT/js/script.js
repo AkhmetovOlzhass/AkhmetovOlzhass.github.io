@@ -86,8 +86,8 @@ let buyButtons = document.querySelectorAll('.promo__block-content-block .button'
 let buyPrice = document.querySelectorAll('.value');
 buyButtons.forEach((el, i) => {
   el.addEventListener("click", () => {
-    balance -= buyPrice[i].innerHTML;
-    if(balance >= 0){
+    if(balance-buyPrice[i].innerHTML >= 0){
+      balance -= buyPrice[i].innerHTML;
       updateBalance(balance);
       addSold(el);
       localStorage.setItem("sold", JSON.stringify(sold));
