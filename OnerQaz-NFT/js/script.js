@@ -10,7 +10,7 @@ function createMainSlider() {
           ${el.title}
       </h3>
       <h4 class="promo__block-price">
-          Floor: 
+      Baǵasy: 
           <span>${el.price}</span> ETH
       </h4>
     `
@@ -28,11 +28,11 @@ function createCollection(slider, db){
           <h3 class="promo__block-content-title">${el.title}</h3>
           <div class="promo__block-content-wrap">
               <div class="promo__block-content-block">
-                  <span class="info">Floor</span>
+                  <span class="info">Baǵasy</span>
                   <p><span class="value">${el.price}</span> ETH</p>
               </div>
               <div class="promo__block-content-block">
-                  <p class="button">Buy</p>
+                  <p class="button">Satyp alý</p>
               </div>
           </div>
       </div>
@@ -51,17 +51,18 @@ createCollection(collectionSlider[1], collection2);
 
 
 $('.promo__wrapper').slick({
-  infinite: false,
+  infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 1,
+  slidesToScroll: 4,
   autoplay: true
 });
 
 $('.collections__wrapper').slick({
-  infinite: false,
+  infinite: true,
   slidesToShow: 5,
-  slidesToScroll: 1
+  slidesToScroll: 2
 });
+
 
 
 let sold;
@@ -91,7 +92,7 @@ buyButtons.forEach((el, i) => {
       updateBalance(balance);
       addSold(el);
       localStorage.setItem("sold", JSON.stringify(sold));
-      el.innerHTML = "SOLD";
+      el.innerHTML = "Satyp alyndy";
       el.style.pointerEvents = "none";
     } else{
       alert("Недостаточно средств");

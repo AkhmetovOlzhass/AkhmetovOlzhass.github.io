@@ -27,7 +27,7 @@ function createCollection(slider, db){
             <h3 class="promo__block-content-title">${el.title}</h3>
             <div class="promo__block-content-wrap">
                 <div class="promo__block-content-block">
-                    <span class="info">Floor</span>
+                    <span class="info">Baǵasy</span>
                     <p><span class="value">${el.price}</span> ETH</p>
                 </div>
             </div>

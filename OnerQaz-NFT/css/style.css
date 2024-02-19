@@ -62,7 +62,7 @@ nav ul li a:hover{
 }
 
 .promo{
-    background: #DA1B4C;
+    background: #2d0043;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -371,11 +371,12 @@ nav ul li a:hover{
 
 .title{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
     padding-left: 50px;
     margin-bottom: 20px;
     padding-top: 40px;
+    text-transform: uppercase;
 }
 
 .registration{
@@ -476,9 +477,11 @@ nav ul li a:hover{
 }
 
 .profile-bg__circle img{
+    object-fit: cover;
+    max-width: 100%;
     width: 100%;
-    border-radius: 100%;
     height: 100%;
+    border-radius: 100%;
 }
 
 .profile-content{
@@ -486,8 +489,11 @@ nav ul li a:hover{
 }
 
 .profile-content .title{
-    font-size: 32px;
+    font-size: 22px;
     margin-left: 10px;
+}
+.profile-content .title.name{
+    margin-left: 25px;
 }
 
 .create form{

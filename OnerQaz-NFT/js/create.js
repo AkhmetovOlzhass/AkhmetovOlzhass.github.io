@@ -24,7 +24,7 @@ inputSrc.addEventListener("change", (e) => {
         alert('Ничего не загружено');
         return;
     } else{
-        document.querySelector(".create__img p").innerHTML = "Изображение добавлено";
+        document.querySelector(".create__img p").innerHTML = "Sýret qosyldy";
         document.querySelector(".create__img p").style.color = "#fff";
     }
 
@@ -40,6 +40,6 @@ form.addEventListener("submit", (event) => {
     createdElem.push(temp);
     localStorage.setItem("created", JSON.stringify(createdElem));
     form.reset();
-    document.querySelector(".create__img p").innerHTML = "Выберите Изображение";
+    document.querySelector(".create__img p").innerHTML = "Sýretti tańdańyz";
     document.querySelector(".create__img p").style.color = "#919191";
 })
