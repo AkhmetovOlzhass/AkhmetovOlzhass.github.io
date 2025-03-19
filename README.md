@@ -1,31 +1,31 @@
-# 🏗️ Мои фриланс-проекты  
+# 🏗️ My Freelance Projects  
 
-Добро пожаловать в мой репозиторий, где собраны **40+ проектов**, выполненных на заказ. Здесь есть **разные уровни сложности**, от простых лендингов до сложных интерфейсов.  
+Welcome to my repository, where I've collected **40+ projects** completed for clients. These projects range from **simple landing pages** to **complex interfaces** of varying difficulty.  
 
-## 🔥 Стек технологий  
-В проектах использованы:  
-- **HTML/CSS** (БЭМ, SCSS, SASS)  
+## 🔥 Tech Stack  
+The following technologies were used in these projects:  
+- **HTML/CSS** (BEM, SCSS, SASS)  
 - **JavaScript / TypeScript**  
 - **Gulp / Webpack**  
-- **Анимации (GSAP, CSS Animations)**  
-- **UI-фреймворки (Bootstrap, Tailwind, Material UI)**  
+- **Animations** (GSAP, CSS Animations)  
+- **UI Frameworks** (Bootstrap, Tailwind, Material UI)  
 
-## 📌 Категории проектов  
-🔹 **Лендинги** – адаптивная верстка, Pixel Perfect, анимации  
-🔹 **Многостраничные сайты** – SEO-оптимизация, Gulp, Webpack  
-🔹 **SPA** – Angular, React, динамический контент  
-🔹 **Админ-панели** – кастомные UI-компоненты, API-интеграции  
-🔹 **E-commerce** – верстка интернет-магазинов, интеграция с CMS  WordPress
+## 📌 Project Categories  
+🔹 **Landing Pages** – Responsive design, Pixel Perfect, animations  
+🔹 **Multi-Page Websites** – SEO optimization, Gulp, Webpack  
+🔹 **SPA** – Angular, React, dynamic content  
+🔹 **Admin Panels** – Custom UI components, API integrations  
+🔹 **E-commerce** – Online store layouts, WordPress CMS integration  
 
-## 📂 Структура репозитория  
-Каждый проект находится в отдельной папке. Внутри можно найти:  
-- 📂 `src/` – исходный код  
-- 📂 `dist/` – готовая версия (если применимо)  
+## 📂 Repository Structure  
+Each project is stored in a separate folder. Inside, you can find:  
+- 📂 `src/` – Source code  
+- 📂 `dist/` – Final version (if applicable)  
 
-## 🎯 Чем могу быть полезен?
-Опыт работы с различными заказами позволил мне:
-✅ Создавать адаптивные и быстрые интерфейсы
-✅ Работать с чистым кодом и оптимизированной версткой
-✅ Разрабатывать UI-компоненты для различных платформ
+## 🎯 How Can I Help You?  
+My experience with various projects allows me to:  
+✅ Create **adaptive and high-performance** interfaces  
+✅ Work with **clean, optimized code**  
+✅ Develop **custom UI components** for different platforms  
 
-Если у тебя есть фронтенд-задача – можешь связаться со мной! 🚀
+If you have a **frontend task**, feel free to reach out! 🚀  
